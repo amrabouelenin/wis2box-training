@@ -26,7 +26,7 @@
     
     
       
-        <title>Hoja de trucos de Docker - WIS2 in a box training</title>
+        <title>Docker cheatsheet - WIS2 in a box training</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hoja-de-trucos-de-docker" class="md-skip">
+        <a href="#docker-cheatsheet" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hoja de trucos de Docker
+              Docker cheatsheet
             
           </span>
         </div>
@@ -1011,10 +1011,10 @@
 
 
 
-<h1 id="hoja-de-trucos-de-docker">Hoja de trucos de Docker</h1>
+<h1 id="docker-cheatsheet">Docker cheatsheet</h1>
 <h2 id="vision-general">Visión general</h2>
-<p>Docker permite la creación de entornos virtuales de manera aislada en apoyo de la virtualización de recursos informáticos. El concepto básico detrás de Docker es la contenerización, donde el software puede funcionar como servicios, interactuando con otros contenedores de software, por ejemplo.</p>
-<p>El flujo de trabajo típico de Docker implica crear y construir <strong>imágenes</strong>, que luego se ejecutan como <strong>contenedores</strong> en vivo.</p>
+<p>Docker permite crear entornos virtuales de manera aislada en apoyo de la virtualización de recursos informáticos. El concepto básico detrás de Docker es la contenerización, donde el software puede funcionar como servicios, interactuando con otros contenedores de software, por ejemplo.</p>
+<p>El flujo de trabajo típico de Docker implica crear y construir <strong>imágenes</strong>, que luego se ejecutan como <strong>contenedores</strong> activos.</p>
 <p>Docker se utiliza para ejecutar el conjunto de servicios que componen wis2box utilizando imágenes preconstruidas.</p>
 <h3 id="gestion-de-imagenes">Gestión de imágenes</h3>
 <ul>
@@ -1039,7 +1039,7 @@
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>ls
 </code></pre></div>
 <ul>
-<li>Mostrar información detallada de un volumen:</li>
+<li>Mostrar información detallada sobre un volumen:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>inspect<span class="w"> </span>my-volume
 </code></pre></div>
@@ -1069,7 +1069,7 @@
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>usa <code>docker ps</code> para usar el id del contenedor en el comando a continuación</p>
+<p>use <code>docker ps</code> para usar el id del contenedor en el comando a continuación</p>
 </div>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>my-container<span class="w"> </span>/bin/bash
 </code></pre></div>

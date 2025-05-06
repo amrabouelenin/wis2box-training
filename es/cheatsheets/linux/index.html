@@ -26,7 +26,7 @@
     
     
       
-        <title>Hoja de trucos de Linux - WIS2 in a box training</title>
+        <title>Linux cheatsheet - WIS2 in a box training</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hoja-de-trucos-de-linux" class="md-skip">
+        <a href="#linux-cheatsheet" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hoja de trucos de Linux
+              Linux cheatsheet
             
           </span>
         </div>
@@ -733,9 +733,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vision-general" class="md-nav__link">
+  <a href="#resumen" class="md-nav__link">
     <span class="md-ellipsis">
-      Visión general
+      Resumen
     </span>
   </a>
   
@@ -963,9 +963,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vision-general" class="md-nav__link">
+  <a href="#resumen" class="md-nav__link">
     <span class="md-ellipsis">
-      Visión general
+      Resumen
     </span>
   </a>
   
@@ -1029,8 +1029,8 @@
 
 
 
-<h1 id="hoja-de-trucos-de-linux">Hoja de trucos de Linux</h1>
-<h2 id="vision-general">Visión general</h2>
+<h1 id="linux-cheatsheet">Linux cheatsheet</h1>
+<h2 id="resumen">Resumen</h2>
 <p>Los conceptos básicos para trabajar en un sistema operativo Linux son <strong>archivos</strong> y <strong>directorios</strong> (carpetas) organizados en
 una estructura de árbol dentro de un <strong>entorno</strong>.</p>
 <p>Una vez que inicias sesión en un sistema Linux, estás trabajando en una <strong>shell</strong> en la que puedes trabajar con archivos y directorios,
@@ -1049,12 +1049,12 @@ se encuentra típicamente en los sistemas Linux.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>./somedir
 </code></pre></div>
 <ul>
-<li>Subir un directorio:</li>
+<li>Moverse un directorio hacia arriba:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
 <ul>
-<li>Subir dos directorios:</li>
+<li>Moverse dos directorios hacia arriba:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>../..
 </code></pre></div>
@@ -1087,37 +1087,37 @@ se encuentra típicamente en los sistemas Linux.</p>
 <ul>
 <li>Crear un archivo desde un comando <code>echo</code>:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hola&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hi there&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Ver el contenido de un archivo:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Copiar un archivo:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>archivo1<span class="w"> </span>archivo2
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>file1<span class="w"> </span>file2
 </code></pre></div>
 <ul>
-<li>Comodines: operar con patrones de archivos:</li>
+<li>Comodines: operar sobre patrones de archivos:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>arch*<span class="w">  </span><span class="c1"># coincide con archivo1 y archivo2</span>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>fil*<span class="w">  </span><span class="c1"># coincide con file1 y file2</span>
 </code></pre></div>
 <ul>
-<li>Concatenar dos archivos en un nuevo archivo llamado <code>nuevoarchivo</code>:</li>
+<li>Concatenar dos archivos en un nuevo archivo llamado <code>newfile</code>:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>archivo1<span class="w"> </span>archivo2<span class="w"> </span>&gt;<span class="w"> </span>nuevoarchivo
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>file1<span class="w"> </span>file2<span class="w"> </span>&gt;<span class="w"> </span>newfile
 </code></pre></div>
 <ul>
-<li>Añadir otro archivo a <code>nuevoarchivo</code></li>
+<li>Añadir otro archivo a <code>newfile</code></li>
 </ul>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>archivo3<span class="w"> </span>&gt;&gt;<span class="w"> </span>nuevoarchivo
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>file3<span class="w"> </span>&gt;&gt;<span class="w"> </span>newfile
 </code></pre></div>
 <ul>
 <li>Eliminar un archivo:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>nuevoarchivo
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>newfile
 </code></pre></div>
 <ul>
 <li>Eliminar todos los archivos con la misma extensión de archivo:</li>
@@ -1131,60 +1131,60 @@ se encuentra típicamente en los sistemas Linux.</p>
 </code></pre></div>
 <h3 id="encadenar-comandos-juntos-con-tuberias">Encadenar comandos juntos con tuberías</h3>
 <p>Las tuberías permiten a un usuario enviar la salida de un comando a otro usando el símbolo de tubería <code>|</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hola&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/hola/adiós/&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hi&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/hi/bye/&#39;</span>
 </code></pre></div>
 <ul>
 <li>Filtrar salidas de comandos usando grep:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;id,título&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>archivo-prueba.txt
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;1,pájaros&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>archivo-prueba.txt
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;2,peces&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>archivo-prueba.txt
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;3,gatos&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;id,title&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;1,birds&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;2,fish&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;3,cats&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
 
-cat<span class="w"> </span>archivo-prueba.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>peces
+cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>fish
 </code></pre></div>
 <ul>
 <li>Ignorar mayúsculas y minúsculas:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-i<span class="w"> </span>PECES<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-i<span class="w"> </span>FISH<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Contar líneas coincidentes:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-c<span class="w"> </span>peces<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-c<span class="w"> </span>fish<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Devolver salidas que no contienen la palabra clave:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-v<span class="w"> </span>pájaros<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-v<span class="w"> </span>birds<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
-<li>Contar el número de líneas en <code>archivo-prueba.txt</code>:</li>
+<li>Contar el número de líneas en <code>test-file.txt</code>:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>wc<span class="w"> </span>-l<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>wc<span class="w"> </span>-l<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
-<li>Mostrar salida una pantalla a la vez:</li>
+<li>Mostrar la salida una pantalla a la vez:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>more<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>more<span class="w"> </span>test-file.txt
 </code></pre></div>
 <p>...con controles:</p>
 <ul>
 <li>Desplazarse hacia abajo línea por línea: <em>enter</em></li>
 <li>Ir a la siguiente página: <em>barra espaciadora</em></li>
 <li>
-<p>Regresar una página: <em>b</em></p>
+<p>Volver una página: <em>b</em></p>
 </li>
 <li>
 <p>Mostrar las primeras 3 líneas del archivo:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-3<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-3<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Mostrar las últimas 2 líneas del archivo:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-2<span class="w"> </span>archivo-prueba.txt
+<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-2<span class="w"> </span>test-file.txt
 </code></pre></div>
 
 

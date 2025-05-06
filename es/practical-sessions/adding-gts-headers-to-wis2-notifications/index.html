@@ -26,7 +26,7 @@
     
     
       
-        <title>Agregando encabezados GTS a las notificaciones WIS2 - WIS2 in a box training</title>
+        <title>Añadiendo encabezados GTS a las notificaciones WIS2 - WIS2 in a box training</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#agregando-encabezados-gts-a-las-notificaciones-wis2" class="md-skip">
+        <a href="#anadiendo-encabezados-gts-a-las-notificaciones-wis2" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agregando encabezados GTS a las notificaciones WIS2
+              Añadiendo encabezados GTS a las notificaciones WIS2
             
           </span>
         </div>
@@ -614,7 +614,7 @@
         <li class="md-nav__item">
   <a href="#creando-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Creando gts_headers_mapping.csv
+      creando gts_headers_mapping.csv
     </span>
   </a>
   
@@ -630,18 +630,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ingiriendo-datos-con-encabezados-gts" class="md-nav__link">
+  <a href="#ingeriendo-datos-con-encabezados-gts" class="md-nav__link">
     <span class="md-ellipsis">
-      Ingiriendo datos con encabezados GTS
+      Ingeriendo datos con encabezados GTS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualizando-los-encabezados-gts-en-la-notificacion-wis2" class="md-nav__link">
+  <a href="#viendo-los-encabezados-gts-en-la-notificacion-wis2" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualizando los encabezados GTS en la Notificación WIS2
+      Viendo los encabezados GTS en la Notificación WIS2
     </span>
   </a>
   
@@ -995,7 +995,7 @@
         <li class="md-nav__item">
   <a href="#creando-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Creando gts_headers_mapping.csv
+      creando gts_headers_mapping.csv
     </span>
   </a>
   
@@ -1011,18 +1011,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ingiriendo-datos-con-encabezados-gts" class="md-nav__link">
+  <a href="#ingeriendo-datos-con-encabezados-gts" class="md-nav__link">
     <span class="md-ellipsis">
-      Ingiriendo datos con encabezados GTS
+      Ingeriendo datos con encabezados GTS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualizando-los-encabezados-gts-en-la-notificacion-wis2" class="md-nav__link">
+  <a href="#viendo-los-encabezados-gts-en-la-notificacion-wis2" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualizando los encabezados GTS en la Notificación WIS2
+      Viendo los encabezados GTS en la Notificación WIS2
     </span>
   </a>
   
@@ -1053,20 +1053,20 @@
 
 
 
-<h1 id="agregando-encabezados-gts-a-las-notificaciones-wis2">Agregando encabezados GTS a las notificaciones WIS2</h1>
+<h1 id="anadiendo-encabezados-gts-a-las-notificaciones-wis2">Añadiendo encabezados GTS a las notificaciones WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objetivos de aprendizaje</p>
+<p class="admonition-title">Resultados de aprendizaje</p>
 <p>Al final de esta sesión práctica, podrás:</p>
 <ul>
-<li>configurar un mapeo entre nombre de archivo y encabezados GTS</li>
+<li>configurar un mapeo entre el nombre del archivo y los encabezados GTS</li>
 <li>ingerir datos con un nombre de archivo que coincida con los encabezados GTS</li>
 <li>ver los encabezados GTS en las notificaciones WIS2</li>
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
-<p>Los Miembros de la OMM que deseen detener su transmisión de datos en GTS durante la fase de transición a WIS2 necesitarán agregar encabezados GTS a sus notificaciones WIS2. Estos encabezados permiten que la pasarela WIS2 a GTS reenvíe los datos a la red GTS.</p>
-<p>Esto permite a los Miembros que han migrado a usar un nodo WIS2 para la publicación de datos desactivar su sistema MSS y asegurar que sus datos sigan estando disponibles para los Miembros que aún no han migrado a WIS2.</p>
-<p>La propiedad GTS en el Mensaje de Notificación WIS2 debe agregarse como una propiedad adicional al Mensaje de Notificación WIS2. La propiedad GTS es un objeto JSON que contiene los encabezados GTS necesarios para que los datos sean reenviados a la red GTS.</p>
+<p>Los miembros de la OMM que deseen detener su transmisión de datos en el GTS durante la fase de transición a WIS2 necesitarán añadir encabezados GTS a sus notificaciones WIS2. Estos encabezados permiten que la puerta de enlace de WIS2 a GTS reenvíe los datos a la red GTS.</p>
+<p>Esto permite a los miembros que han migrado a usar un nodo WIS2 para la publicación de datos desactivar su sistema MSS y asegurar que sus datos sigan estando disponibles para los miembros que aún no han migrado a WIS2.</p>
+<p>La propiedad GTS en el Mensaje de Notificación WIS2 necesita ser añadida como una propiedad adicional al Mensaje de Notificación WIS2. La propiedad GTS es un objeto JSON que contiene los encabezados GTS que se requieren para que los datos sean reenviados a la red GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;ttaaii&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FTAE31&quot;</span><span class="p">,</span>
@@ -1074,28 +1074,28 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Dentro de wis2box puedes agregar esto a las Notificaciones WIS2 automáticamente proporcionando un archivo adicional llamado <code>gts_headers_mapping.csv</code> que contiene la información necesaria para mapear los encabezados GTS a los nombres de archivo entrantes.</p>
-<p>Este archivo debe colocarse en el directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code> y debe tener las siguientes columnas:</p>
+<p>Dentro de wis2box puedes añadir esto a las Notificaciones WIS2 automáticamente proporcionando un archivo adicional llamado <code>gts_headers_mapping.csv</code> que contiene la información requerida para mapear los encabezados GTS a los nombres de archivos entrantes.</p>
+<p>Este archivo debe ser colocado en el directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code> y debe tener las siguientes columnas:</p>
 <ul>
-<li><code>string_in_filepath</code>: una cadena que es parte del nombre del archivo que se usará para hacer coincidir los encabezados GTS</li>
-<li><code>TTAAii</code>: el encabezado TTAAii que se agregará a la notificación WIS2</li>
-<li><code>CCCC</code>: el encabezado CCCC que se agregará a la notificación WIS2</li>
+<li><code>string_in_filepath</code>: una cadena que es parte del nombre del archivo que se utilizará para coincidir con los encabezados GTS</li>
+<li><code>TTAAii</code>: el encabezado TTAAii que se añadirá a la notificación WIS2</li>
+<li><code>CCCC</code>: el encabezado CCCC que se añadirá a la notificación WIS2</li>
 </ul>
 <h2 id="preparacion">Preparación</h2>
 <p>Asegúrate de tener acceso SSH a tu VM de estudiante y que tu instancia de wis2box esté funcionando.</p>
-<p>Asegúrate de estar conectado al broker MQTT de tu instancia wis2box usando MQTT Explorer. Puedes usar las credenciales públicas <code>everyone/everyone</code> para conectarte al broker.</p>
-<p>Asegúrate de tener un navegador web abierto con el panel de Grafana para tu instancia yendo a <code>http://YOUR-HOST:3000</code></p>
-<h2 id="creando-gts_headers_mappingcsv">Creando <code>gts_headers_mapping.csv</code></h2>
-<p>Para agregar encabezados GTS a tus notificaciones WIS2, se requiere un archivo CSV que mapee los encabezados GTS a los nombres de archivo entrantes.</p>
-<p>El archivo CSV debe llamarse (exactamente) <code>gts_headers_mapping.csv</code> y debe colocarse en el directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code>.</p>
+<p>Asegúrate de estar conectado al broker MQTT de tu instancia de wis2box usando MQTT Explorer. Puedes usar las credenciales públicas <code>everyone/everyone</code> para conectarte al broker.</p>
+<p>Asegúrate de tener un navegador web abierto con el tablero de Grafana para tu instancia yendo a <code>http://YOUR-HOST:3000</code></p>
+<h2 id="creando-gts_headers_mappingcsv">creando <code>gts_headers_mapping.csv</code></h2>
+<p>Para añadir encabezados GTS a tus notificaciones WIS2, se requiere un archivo CSV que mapee los encabezados GTS a los nombres de archivos entrantes.</p>
+<p>El archivo CSV debe ser nombrado (exactamente) <code>gts_headers_mapping.csv</code> y debe ser colocado en el directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code>. </p>
 <h2 id="proporcionando-un-archivo-gts_headers_mappingcsv">Proporcionando un archivo <code>gts_headers_mapping.csv</code></h2>
-<p>Copia el archivo <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> a tu instancia wis2box y colócalo en el directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code>.</p>
+<p>Copia el archivo <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> a tu instancia de wis2box y colócalo en el directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code>.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/gts_headers_mapping.csv<span class="w"> </span>~/wis2box-data
 </code></pre></div>
-<p>Luego reinicia el contenedor wis2box-management para aplicar los cambios:</p>
+<p>Luego reinicia el contenedor de wis2box-management para aplicar los cambios:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-management
 </code></pre></div>
-<h2 id="ingiriendo-datos-con-encabezados-gts">Ingiriendo datos con encabezados GTS</h2>
+<h2 id="ingeriendo-datos-con-encabezados-gts">Ingeriendo datos con encabezados GTS</h2>
 <p>Copia el archivo <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> al directorio definido por <code>WIS2BOX_HOST_DATADIR</code> en tu <code>wis2box.env</code>:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>~/wis2box-data
 </code></pre></div>
@@ -1107,16 +1107,16 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:core.surface-based-observations.synop
 </code></pre></div>
 <p>Asegúrate de reemplazar la opción <code>metadata-id</code> con el identificador correcto para tu conjunto de datos.</p>
-<p>Verifica el panel de Grafana para ver si los datos se ingirieron correctamente. Si ves alguna ADVERTENCIA o ERROR, intenta corregirlos y repite el ejercicio con el comando <code>wis2box data ingest</code>.</p>
-<h2 id="visualizando-los-encabezados-gts-en-la-notificacion-wis2">Visualizando los encabezados GTS en la Notificación WIS2</h2>
-<p>Ve a MQTT Explorer y busca el Mensaje de Notificación WIS2 para los datos que acabas de ingerir.</p>
-<p>El Mensaje de Notificación WIS2 debe contener los encabezados GTS que proporcionaste en el archivo <code>gts_headers_mapping.csv</code>.</p>
+<p>Revisa el tablero de Grafana para ver si los datos fueron ingeridos correctamente. Si ves alguna ADVERTENCIA o ERROR, intenta solucionarlo y repite el comando <code>wis2box data ingest</code>.</p>
+<h2 id="viendo-los-encabezados-gts-en-la-notificacion-wis2">Viendo los encabezados GTS en la Notificación WIS2</h2>
+<p>Ve a MQTT Explorer y verifica el Mensaje de Notificación WIS2 para los datos que acabas de ingerir.</p>
+<p>El Mensaje de Notificación WIS2 debería contener los encabezados GTS que proporcionaste en el archivo <code>gts_headers_mapping.csv</code>.</p>
 <h2 id="conclusion">Conclusión</h2>
 <div class="admonition success">
-<p class="admonition-title">¡Felicitaciones!</p>
+<p class="admonition-title">¡Felicidades!</p>
 <p>En esta sesión práctica, aprendiste cómo:
-  - agregar encabezados GTS a tus notificaciones WIS2
-  - verificar que los encabezados GTS estén disponibles a través de tu instalación wis2box</p>
+  - añadir encabezados GTS a tus notificaciones WIS2
+  - verificar que los encabezados GTS estén disponibles a través de tu instalación de wis2box</p>
 </div>
 
 
