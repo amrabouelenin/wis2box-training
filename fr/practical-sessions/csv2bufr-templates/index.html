@@ -26,7 +26,7 @@
     
     
       
-        <title>Modèles de conversion CSV-vers-BUFR - WIS2 in a box training</title>
+        <title>Modèles de mappage de CSV à BUFR - WIS2 in a box training</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modeles-de-conversion-csv-vers-bufr" class="md-skip">
+        <a href="#modeles-de-mappage-de-csv-a-bufr" class="md-skip">
           Aller au contenu
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modèles de conversion CSV-vers-BUFR
+              Modèles de mappage de CSV à BUFR
             
           </span>
         </div>
@@ -598,13 +598,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creation-dun-modele-de-conversion" class="md-nav__link">
+  <a href="#creation-dun-modele-de-mappage" class="md-nav__link">
     <span class="md-ellipsis">
-      Création d'un modèle de conversion
+      Création d'un modèle de mappage
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Création d&#39;un modèle de conversion">
+    <nav class="md-nav" aria-label="Création d&#39;un modèle de mappage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -617,9 +617,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#utilisation-du-modele-de-conversion-dans-wis2box" class="md-nav__link">
+  <a href="#utilisation-du-modele-de-mappage-dans-le-wis2box" class="md-nav__link">
     <span class="md-ellipsis">
-      Utilisation du modèle de conversion dans wis2box
+      Utilisation du modèle de mappage dans le wis2box
     </span>
   </a>
   
@@ -634,6 +634,99 @@
   <a href="#utilisation-du-modele-aws" class="md-nav__link">
     <span class="md-ellipsis">
       Utilisation du modèle 'AWS'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation du modèle &#39;AWS&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examiner-les-donnees-dentree-de-lexemple-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examiner les données d'entrée de l'exemple aws
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-le-fichier-exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour le fichier exemple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telechargez-les-donnees-sur-minio-et-verifiez-le-resultat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Téléchargez les données sur MinIO et vérifiez le résultat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-du-modele-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation du modèle 'DayCLI'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation du modèle &#39;DayCLI&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-jeu-de-donnees-wis2box-pour-la-publication-des-messages-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Création d'un jeu de données wis2box pour la publication des messages DAYCLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examiner-les-donnees-dentree-de-lexemple-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examiner les données d'entrée de l'exemple daycli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-le-fichier-exemple_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour le fichier exemple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telecharger-les-donnees-sur-minio-et-verifier-le-resultat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Télécharger les données sur MinIO et vérifier le résultat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -998,13 +1091,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creation-dun-modele-de-conversion" class="md-nav__link">
+  <a href="#creation-dun-modele-de-mappage" class="md-nav__link">
     <span class="md-ellipsis">
-      Création d'un modèle de conversion
+      Création d'un modèle de mappage
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Création d&#39;un modèle de conversion">
+    <nav class="md-nav" aria-label="Création d&#39;un modèle de mappage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1017,9 +1110,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#utilisation-du-modele-de-conversion-dans-wis2box" class="md-nav__link">
+  <a href="#utilisation-du-modele-de-mappage-dans-le-wis2box" class="md-nav__link">
     <span class="md-ellipsis">
-      Utilisation du modèle de conversion dans wis2box
+      Utilisation du modèle de mappage dans le wis2box
     </span>
   </a>
   
@@ -1034,6 +1127,99 @@
   <a href="#utilisation-du-modele-aws" class="md-nav__link">
     <span class="md-ellipsis">
       Utilisation du modèle 'AWS'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation du modèle &#39;AWS&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examiner-les-donnees-dentree-de-lexemple-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examiner les données d'entrée de l'exemple aws
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-le-fichier-exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour le fichier exemple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telechargez-les-donnees-sur-minio-et-verifiez-le-resultat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Téléchargez les données sur MinIO et vérifiez le résultat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-du-modele-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation du modèle 'DayCLI'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation du modèle &#39;DayCLI&#39;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-jeu-de-donnees-wis2box-pour-la-publication-des-messages-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Création d'un jeu de données wis2box pour la publication des messages DAYCLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examiner-les-donnees-dentree-de-lexemple-daycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examiner les données d'entrée de l'exemple daycli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-le-fichier-exemple_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour le fichier exemple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telecharger-les-donnees-sur-minio-et-verifier-le-resultat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Télécharger les données sur MinIO et vérifier le résultat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -1055,31 +1241,31 @@
 
 
 
-<h1 id="modeles-de-conversion-csv-vers-bufr">Modèles de conversion CSV-vers-BUFR</h1>
+<h1 id="modeles-de-mappage-de-csv-a-bufr">Modèles de mappage de CSV à BUFR</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objectifs d'apprentissage</p>
+<p class="admonition-title">Résultats d'apprentissage</p>
 <p>À la fin de cette session pratique, vous serez capable de :</p>
 <ul>
-<li>créer un nouveau modèle de conversion BUFR pour vos données CSV</li>
-<li>éditer et déboguer votre modèle de conversion BUFR personnalisé depuis la ligne de commande</li>
-<li>configurer le plugin de données CSV-vers-BUFR pour utiliser un modèle de conversion BUFR personnalisé</li>
+<li>créer un nouveau modèle de mappage BUFR pour vos données CSV</li>
+<li>éditer et déboguer votre modèle de mappage BUFR personnalisé depuis la ligne de commande</li>
+<li>configurer le plugin de données CSV à BUFR pour utiliser un modèle de mappage BUFR personnalisé</li>
 <li>utiliser les modèles intégrés AWS et DAYCLI pour convertir des données CSV en BUFR</li>
 </ul>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>Les fichiers de données en valeurs séparées par des virgules (CSV) sont souvent utilisés pour enregistrer des observations et autres données dans un format tabulaire.
-La plupart des enregistreurs de données utilisés pour enregistrer les sorties de capteurs peuvent exporter les observations dans des fichiers délimités, y compris en CSV.
-De même, lorsque les données sont ingérées dans une base de données, il est facile d'exporter les données requises dans des fichiers au format CSV.</p>
-<p>Le module wis2box csv2bufr fournit un outil en ligne de commande pour convertir les données CSV au format BUFR. Lors de l'utilisation de csv2bufr, vous devez fournir un modèle de conversion BUFR qui fait correspondre les colonnes CSV aux éléments BUFR correspondants. Si vous ne souhaitez pas créer votre propre modèle de conversion, vous pouvez utiliser les modèles intégrés AWS et DAYCLI pour convertir les données CSV en BUFR, mais vous devrez vous assurer que les données CSV que vous utilisez sont dans le format correct pour ces modèles. Si vous souhaitez décoder des paramètres qui ne sont pas inclus dans les modèles AWS et DAYCLI, vous devrez créer votre propre modèle de conversion.</p>
-<p>Dans cette session, vous apprendrez à créer votre propre modèle de conversion pour convertir des données CSV en BUFR. Vous apprendrez également à utiliser les modèles intégrés AWS et DAYCLI pour convertir des données CSV en BUFR.</p>
+<p>Les fichiers de données à valeurs séparées par des virgules (CSV) sont souvent utilisés pour enregistrer des données observationnelles et autres dans un format tabulaire.
+La plupart des enregistreurs de données utilisés pour enregistrer la sortie des capteurs sont capables d'exporter les observations dans des fichiers délimités, y compris en CSV.
+De même, lorsque les données sont ingérées dans une base de données, il est facile d'exporter les données requises dans des fichiers formatés CSV.</p>
+<p>Le module csv2bufr de wis2box fournit un outil en ligne de commande pour convertir les données CSV en format BUFR. Lorsque vous utilisez csv2bufr, vous devez fournir un modèle de mappage BUFR qui associe les colonnes CSV aux éléments BUFR correspondants. Si vous ne souhaitez pas créer votre propre modèle de mappage, vous pouvez utiliser les modèles intégrés AWS et DAYCLI pour convertir les données CSV en BUFR, mais vous devrez vous assurer que les données CSV que vous utilisez sont dans le format correct pour ces modèles. Si vous souhaitez décoder des paramètres qui ne sont pas inclus dans les modèles AWS et DAYCLI, vous devrez créer votre propre modèle de mappage.</p>
+<p>Dans cette session, vous apprendrez à créer votre propre modèle de mappage pour convertir des données CSV en BUFR. Vous apprendrez également à utiliser les modèles intégrés AWS et DAYCLI pour convertir des données CSV en BUFR.</p>
 <h2 id="preparation">Préparation</h2>
-<p>Assurez-vous que wis2box-stack a été démarré avec <code>python3 wis2box.py start</code></p>
-<p>Assurez-vous d'avoir un navigateur web ouvert avec l'interface MinIO pour votre instance en allant sur <code>http://YOUR-HOST:9000</code>
+<p>Assurez-vous que la pile wis2box a été démarrée avec <code>python3 wis2box.py start</code></p>
+<p>Assurez-vous que vous avez un navigateur web ouvert avec l'interface utilisateur MinIO pour votre instance en allant à <code>http://YOUR-HOST:9000</code>
 Si vous ne vous souvenez pas de vos identifiants MinIO, vous pouvez les trouver dans le fichier <code>wis2box.env</code> dans le répertoire <code>wis2box</code> sur votre VM étudiant.</p>
-<p>Assurez-vous d'avoir MQTT Explorer ouvert et connecté à votre broker en utilisant les identifiants <code>everyone/everyone</code>.</p>
-<h2 id="creation-dun-modele-de-conversion">Création d'un modèle de conversion</h2>
-<p>Le module csv2bufr est livré avec un outil en ligne de commande pour créer votre propre modèle de conversion en utilisant un ensemble de séquences BUFR et/ou d'éléments BUFR comme entrée.</p>
-<p>Pour trouver des séquences et éléments BUFR spécifiques, vous pouvez consulter les tables BUFR sur <a href="https://confluence.ecmwf.int/display/ECC/BUFR+tables">https://confluence.ecmwf.int/display/ECC/BUFR+tables</a>.</p>
+<p>Assurez-vous que vous avez MQTT Explorer ouvert et connecté à votre courtier en utilisant les identifiants <code>everyone/everyone</code>.</p>
+<h2 id="creation-dun-modele-de-mappage">Création d'un modèle de mappage</h2>
+<p>Le module csv2bufr est livré avec un outil en ligne de commande pour créer votre propre modèle de mappage en utilisant un ensemble de séquences BUFR et/ou d'élément BUFR comme entrée.</p>
+<p>Pour trouver des séquences et des éléments BUFR spécifiques, vous pouvez vous référer aux tables BUFR à <a href="https://confluence.ecmwf.int/display/ECC/BUFR+tables">https://confluence.ecmwf.int/display/ECC/BUFR+tables</a>.</p>
 <h3 id="outil-en-ligne-de-commande-csv2bufr-mappings">Outil en ligne de commande csv2bufr mappings</h3>
 <p>Pour accéder à l'outil en ligne de commande csv2bufr, vous devez vous connecter au conteneur wis2box-api :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
@@ -1090,91 +1276,93 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span 
 </code></pre></div>
 <p>La page d'aide montre 2 sous-commandes :</p>
 <ul>
-<li><code>csv2bufr mappings create</code> : Créer un nouveau modèle de conversion</li>
-<li><code>csv2bufr mappings list</code> : Lister les modèles de conversion disponibles dans le système</li>
+<li><code>csv2bufr mappings create</code> : Créer un nouveau modèle de mappage</li>
+<li><code>csv2bufr mappings list</code> : Lister les modèles de mappage disponibles dans le système</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">csv2bufr mapping list</p>
-<p>La commande <code>csv2bufr mapping list</code> vous montrera les modèles de conversion disponibles dans le système.
+<p>La commande <code>csv2bufr mapping list</code> vous montrera les modèles de mappage disponibles dans le système.
 Les modèles par défaut sont stockés dans le répertoire <code>/opt/wis2box/csv2bufr/templates</code> dans le conteneur.</p>
-<p>Pour partager des modèles de conversion personnalisés avec le système, vous pouvez les stocker dans le répertoire défini par <code>$CSV2BUFR_TEMPLATES</code>, qui est défini par défaut sur <code>/data/wis2box/mappings</code> dans le conteneur. Comme le répertoire <code>/data/wis2box/mappings</code> dans le conteneur est monté sur le répertoire <code>$WIS2BOX_HOST_DATADIR/mappings</code> sur l'hôte, vous trouverez vos modèles de conversion personnalisés dans le répertoire <code>$WIS2BOX_HOST_DATADIR/mappings</code> sur l'hôte.</p>
+<p>Pour partager des modèles de mappage personnalisés avec le système, vous pouvez les stocker dans le répertoire défini par <code>$CSV2BUFR_TEMPLATES</code>, qui est défini par défaut à <code>/data/wis2box/mappings</code> dans le conteneur. Étant donné que le répertoire <code>/data/wis2box/mappings</code> dans le conteneur est monté sur le répertoire <code>$WIS2BOX_HOST_DATADIR/mappings</code> sur l'hôte, vous trouverez vos modèles de mappage personnalisés dans le répertoire <code>$WIS2BOX_HOST_DATADIR/mappings</code> sur l'hôte.</p>
 </div>
-<p>Essayons de créer un nouveau modèle de conversion personnalisé en utilisant la commande <code>csv2bufr mapping create</code> avec comme entrée la séquence BUFR 301150 plus l'élément BUFR 012101.</p>
+<p>Essayons de créer un nouveau modèle de mappage personnalisé en utilisant la commande <code>csv2bufr mapping create</code> en utilisant comme entrée la séquence BUFR 301150 plus l'élément BUFR 012101.</p>
 <div class="highlight"><pre><span></span><code>csv2bufr<span class="w"> </span>mappings<span class="w"> </span>create<span class="w"> </span><span class="m">301150</span><span class="w"> </span><span class="m">012101</span><span class="w"> </span>--output<span class="w"> </span>/data/wis2box/mappings/my_custom_template.json
 </code></pre></div>
-<p>Vous pouvez vérifier le contenu du modèle de conversion que vous venez de créer en utilisant la commande <code>cat</code> :</p>
+<p>Vous pouvez vérifier le contenu du modèle de mappage que vous venez de créer en utilisant la commande <code>cat</code> :</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/data/wis2box/mappings/my_custom_template.json
 </code></pre></div>
 <div class="admonition question">
-<p class="admonition-title">Inspection du modèle de conversion</p>
+<p class="admonition-title">Inspection du modèle de mappage</p>
 <p>Combien de colonnes CSV sont mappées aux éléments BUFR ? Quel est l'en-tête CSV pour chaque élément BUFR mappé ?</p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>Le modèle de conversion que vous avez créé mappe <strong>5</strong> colonnes CSV aux éléments BUFR, à savoir les 4 éléments BUFR de la séquence 301150 plus l'élément BUFR 012101.</p>
+<p>Le modèle de mappage que vous avez créé mappe <strong>5</strong> colonnes CSV aux éléments BUFR, à savoir les 4 éléments BUFR de la séquence 301150 plus l'élément BUFR 012101. </p>
 <p>Les colonnes CSV suivantes sont mappées aux éléments BUFR :</p>
 <ul>
-<li><strong>wigosIdentifierSeries</strong> correspond à <code>"eccodes_key": "#1#wigosIdentifierSeries"</code> (élément BUFR 001125)</li>
-<li><strong>wigosIssuerOfIdentifier</strong> correspond à <code>"eccodes_key": "#1#wigosIssuerOfIdentifier</code> (élément BUFR 001126)</li>
-<li><strong>wigosIssueNumber</strong> correspond à <code>"eccodes_key": "#1#wigosIssueNumber"</code> (élément BUFR 001127)</li>
-<li><strong>wigosLocalIdentifierCharacter</strong> correspond à <code>"eccodes_key": "#1#wigosLocalIdentifierCharacter"</code> (élément BUFR 001128)</li>
-<li><strong>airTemperature</strong> correspond à <code>"eccodes_key": "#1#airTemperature"</code> (élément BUFR 012101)</li>
+<li><strong>wigosIdentifierSeries</strong> mappe à <code>"eccodes_key": "#1#wigosIdentifierSeries"</code> (élément BUFR 001125)</li>
+<li><strong>wigosIssuerOfIdentifier</strong> mappe à <code>"eccodes_key": "#1#wigosIssuerOfIdentifier</code> (élément BUFR 001126)</li>
+<li><strong>wigosIssueNumber</strong> mappe à <code>"eccodes_key": "#1#wigosIssueNumber"</code> (élément BUFR 001127)</li>
+<li><strong>wigosLocalIdentifierCharacter</strong> mappe à <code>"eccodes_key": "#1#wigosLocalIdentifierCharacter"</code> (élément BUFR 001128)</li>
+<li><strong>airTemperature</strong> mappe à <code>"eccodes_key": "#1#airTemperature"</code> (élément BUFR 012101)</li>
 </ul>
 </details>
-<p>Le modèle de conversion que vous avez créé manque des métadonnées importantes sur l'observation qui a été faite, la date et l'heure de l'observation, et la latitude et la longitude de la station.</p>
-<p>Nous allons maintenant mettre à jour le modèle de conversion et ajouter les séquences suivantes :</p>
+<p>Le modèle de mappage que vous avez créé omet des métadonnées importantes sur l'observation effectuée, la date et l'heure de l'observation, et la latitude et la longitude de la station.</p>
+<p>Ensuite, nous mettrons à jour le modèle de mappage et ajouterons les séquences suivantes :</p>
 <ul>
 <li><strong>301011</strong> pour la Date (Année, mois, jour)</li>
 <li><strong>301012</strong> pour l'Heure (Heure, minute)</li>
-<li><strong>301023</strong> pour la Localisation (Latitude/longitude (précision grossière))</li>
+<li><strong>301023</strong> pour l'Emplacement (Latitude/longitude (précision grossière))</li>
 </ul>
 <p>Et les éléments suivants :</p>
 <ul>
 <li><strong>010004</strong> pour la Pression</li>
 <li><strong>007031</strong> pour la Hauteur du baromètre au-dessus du niveau moyen de la mer</li>
 </ul>
-<p>Exécutez la commande suivante pour mettre à jour le modèle de conversion :</p>
+<p>Exécutez la commande suivante pour mettre à jour le modèle de mappage :</p>
 <div class="highlight"><pre><span></span><code>csv2bufr<span class="w"> </span>mappings<span class="w"> </span>create<span class="w"> </span><span class="m">301150</span><span class="w"> </span><span class="m">301011</span><span class="w"> </span><span class="m">301012</span><span class="w"> </span><span class="m">301023</span><span class="w"> </span><span class="m">007031</span><span class="w"> </span><span class="m">012101</span><span class="w"> </span><span class="m">010004</span><span class="w">  </span>--output<span class="w"> </span>/data/wis2box/mappings/my_custom_template.json
 </code></pre></div>
-<p>Et inspectez à nouveau le contenu du modèle de conversion :</p>
+<p>Et inspectez à nouveau le contenu du modèle de mappage :</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/data/wis2box/mappings/my_custom_template.json
 </code></pre></div>
 <div class="admonition question">
-<p class="admonition-title">Inspection du modèle de conversion mis à jour</p>
+<p class="admonition-title">Inspection du modèle de mappage mis à jour</p>
 <p>Combien de colonnes CSV sont maintenant mappées aux éléments BUFR ? Quel est l'en-tête CSV pour chaque élément BUFR mappé ?</p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>Le modèle de conversion que vous avez créé mappe maintenant <strong>18</strong> colonnes CSV aux éléments BUFR :
-- 4 éléments BUFR de la séquence BUFR 301150
-- 3 éléments BUFR de la séquence BUFR 301011
-- 2 éléments BUFR de la séquence BUFR 301012
-- 2 éléments BUFR de la séquence BUFR 301023
+<p>Le modèle de mappage que vous avez créé mappe maintenant <strong>18</strong> colonnes CSV aux éléments BUFR :
+- 4 éléments BUFR de la séquence 301150
+- 3 éléments BUFR de la séquence 301011
+- 2 éléments BUFR de la séquence 301012
+- 2 éléments BUFR de la séquence 301023
 - élément BUFR 007031
 - élément BUFR 012101</p>
 <p>Les colonnes CSV suivantes sont mappées aux éléments BUFR :</p>
 <ul>
-<li><strong>wigosIdentifierSeries</strong> correspond à <code>"eccodes_key": "#1#wigosIdentifierSeries"</code> (élément BUFR 001125)</li>
-<li><strong>wigosIssuerOfIdentifier</strong> correspond à <code>"eccodes_key": "#1#wigosIssuerOfIdentifier</code> (élément BUFR 001126)</li>
-<li><strong>wigosIssueNumber</strong> correspond à <code>"eccodes_key": "#1#wigosIssueNumber"</code> (élément BUFR 001127)</li>
-<li><strong>wigosLocalIdentifierCharacter</strong> correspond à <code>"eccodes_key": "#1#wigosLocalIdentifierCharacter"</code> (élément BUFR 001128)</li>
-<li><strong>year</strong> correspond à <code>"eccodes_key": "#1#year"</code> (élément BUFR 004001)</li>
-<li><strong>month</strong> correspond à <code>"eccodes_key": "#1#month"</code> (élément BUFR 004002)</li>
-<li><strong>day</strong> correspond à <code>"eccodes_key": "#1#day"</code> (élément BUFR 004003)</li>
-<li><strong>hour</strong> correspond à <code>"eccodes_key": "#1#hour"</code> (élément BUFR 004004)</li>
-<li><strong>minute</strong> correspond à <code>"eccodes_key": "#1#minute"</code> (élément BUFR 004005)</li>
-<li><strong>latitude</strong> correspond à <code>"eccodes_key": "#1#latitude"</code> (élément BUFR 005002)</li>
-<li><strong>longitude</strong> correspond à <code>"eccodes_key": "#1#longitude"</code> (élément BUFR 006002)</li>
-<li><strong>heightOfBarometerAboveMeanSeaLevel"</strong> correspond à <code>"eccodes_key": "#1#heightOfBarometerAboveMeanSeaLevel"</code> (élément BUFR 007031)</li>
-<li><strong>airTemperature</strong> correspond à <code>"eccodes_key": "#1#airTemperature"</code> (élément BUFR 012101)</li>
-<li><strong>nonCoordinatePressure</strong> correspond à <code>"eccodes_key": "#1#nonCoordinatePressure"</code> (élément BUFR 010004)</li>
+<li><strong>wigosIdentifierSeries</strong> mappe à <code>"eccodes_key": "#1#wigosIdentifierSeries"</code> (élément BUFR 001125)</li>
+<li><strong>wigosIssuerOfIdentifier</strong> mappe à <code>"eccodes_key": "#1#wigosIssuerOfIdentifier</code> (élément BUFR 001126)</li>
+<li><strong>wigosIssueNumber</strong> mappe à <code>"eccodes_key": "#1#wigosIssueNumber"</code> (élément BUFR 001127)</li>
+<li><strong>wigosLocalIdentifierCharacter</strong> mappe à <code>"eccodes_key": "#1#wigosLocalIdentifierCharacter"</code> (élément BUFR 001128)</li>
+<li><strong>year</strong> mappe à <code>"eccodes_key": "#1#year"</code> (élément BUFR 004001)</li>
+<li><strong>month</strong> mappe à <code>"eccodes_key": "#1#month"</code> (élément BUFR 004002)</li>
+<li><strong>day</strong> mappe à <code>"eccodes_key": "#1#day"</code> (élément BUFR 004003)</li>
+<li><strong>hour</strong> mappe à <code>"eccodes_key": "#1#hour"</code> (élément BUFR 004004)</li>
+<li><strong>minute</strong> mappe à <code>"eccodes_key": "#1#minute"</code> (élément BUFR 004005)</li>
+<li><strong>latitude</strong> mappe à <code>"eccodes_key": "#1#latitude"</code> (élément BUFR 005002)</li>
+<li><strong>longitude</strong> mappe à <code>"eccodes_key": "#1#longitude"</code> (élément BUFR 006002)</li>
+<li><strong>heightOfBarometerAboveMeanSeaLevel"</strong> mappe à <code>"eccodes_key": "#1#heightOfBarometerAboveMeanSeaLevel"</code> (élément BUFR 007031)</li>
+<li><strong>airTemperature</strong> mappe à <code>"eccodes_key": "#1#airTemperature"</code> (élément BUFR 012101)</li>
 </ul>
 </details>
+<ul>
+<li><strong>nonCoordinatePressure</strong> est mappé à <code>"eccodes_key": "#1#nonCoordinatePressure"</code> (élément BUFR 010004)</li>
+</ul>
 <p>Vérifiez le contenu du fichier <code>custom_template_data.csv</code> dans le répertoire <code>/root/data-conversion-exercises</code> :</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/root/data-conversion-exercises/custom_template_data.csv
 </code></pre></div>
-<p>Notez que les en-têtes de ce fichier CSV sont les mêmes que les en-têtes CSV dans le modèle de conversion que vous avez créé.</p>
-<p>Pour tester la conversion des données, nous pouvons utiliser l'outil en ligne de commande <code>csv2bufr</code> pour convertir le fichier CSV en BUFR en utilisant le modèle de conversion que nous avons créé :</p>
+<p>Notez que les en-têtes de ce fichier CSV sont les mêmes que ceux des en-têtes CSV dans le modèle de mappage que vous avez créé.</p>
+<p>Pour tester la conversion des données, nous pouvons utiliser l'outil en ligne de commande <code>csv2bufr</code> pour convertir le fichier CSV en BUFR en utilisant le modèle de mappage que nous avons créé :</p>
 <div class="highlight"><pre><span></span><code>csv2bufr<span class="w"> </span>data<span class="w"> </span>transform<span class="w"> </span>--bufr-template<span class="w"> </span>my_custom_template<span class="w"> </span>/root/data-conversion-exercises/custom_template_data.csv
 </code></pre></div>
 <p>Vous devriez voir la sortie suivante :</p>
@@ -1185,39 +1373,118 @@ CLI:<span class="w">    </span>End<span class="w"> </span>of<span class="w"> </s
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Vérifier le contenu du fichier BUFR</p>
-<p>Comment pouvez-vous vérifier le contenu du fichier BUFR que vous venez de créer et vérifier qu'il a correctement encodé les données ?</p>
+<p>Comment pouvez-vous vérifier le contenu du fichier BUFR que vous venez de créer et vérifier qu'il a encodé les données correctement ?</p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>Vous pouvez utiliser la commande <code>bufr_dump -p</code> pour vérifier le contenu du fichier BUFR que vous venez de créer.
+<p>Vous pouvez utiliser la commande <code>bufr_dump -p</code> pour vérifier le contenu du fichier BUFR que vous venez de créer. 
 La commande vous montrera le contenu du fichier BUFR dans un format lisible par l'homme.</p>
 <div class="highlight"><pre><span></span><code>bufr_dump<span class="w"> </span>-p<span class="w"> </span>./WIGOS_0-20000-0-15015_20250412T210000.bufr4
 </code></pre></div>
-<p>Dans la sortie, vous verrez les valeurs des éléments BUFR que vous avez mappés dans le modèle, par exemple la "airTemperature" montrera :</p>
+<p>Dans la sortie, vous verrez les valeurs pour les éléments BUFR que vous avez mappés dans le modèle, par exemple la "airTemperature" affichera :</p>
 <div class="highlight"><pre><span></span><code><span class="nv">airTemperature</span><span class="o">=</span><span class="m">298</span>.15
 </code></pre></div>
 </details>
 <p>Vous pouvez maintenant quitter le conteneur :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<h3 id="utilisation-du-modele-de-conversion-dans-wis2box">Utilisation du modèle de conversion dans wis2box</h3>
-<p>Pour s'assurer que le nouveau modèle de conversion est reconnu par le conteneur wis2box-api, vous devez redémarrer le conteneur :</p>
+<h3 id="utilisation-du-modele-de-mappage-dans-le-wis2box">Utilisation du modèle de mappage dans le wis2box</h3>
+<p>Pour garantir que le nouveau modèle de mappage est reconnu par le conteneur wis2box-api, vous devez redémarrer le conteneur :</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-api
 </code></pre></div>
-<p>Vous pouvez maintenant configurer votre jeu de données dans wis2box-webapp pour utiliser le modèle de conversion personnalisé pour le plugin de conversion CSV vers BUFR.</p>
-<p>Le wis2box-webapp détectera automatiquement le modèle de conversion que vous avez créé et le rendra disponible dans la liste des modèles pour le plugin de conversion CSV vers BUFR.</p>
-<p>Cliquez sur le jeu de données que vous avez créé lors de la session pratique précédente et cliquez sur "UPDATE" à côté du plugin nommé "CSV data converted to BUFR" :</p>
-<p><img alt="Image montrant l'éditeur de jeu de données dans wis2box-webapp" src="../../assets/img/wis2box-webapp-data-mapping-update-csv2bufr.png"/></p>
+<p>Vous pouvez maintenant configurer votre jeu de données dans le wis2box-webapp pour utiliser le modèle de mappage personnalisé pour le plugin de conversion CSV en BUFR.</p>
+<p>Le wis2box-webapp détectera automatiquement le modèle de mappage que vous avez créé et le rendra disponible dans la liste des modèles pour le plugin de conversion CSV en BUFR.</p>
+<p>Cliquez sur le jeu de données que vous avez créé lors de la session pratique précédente et cliquez sur "MISE À JOUR" à côté du plugin nommé "CSV data converted to BUFR" :</p>
+<p><img alt="Image montrant l'éditeur de jeu de données dans le wis2box-webapp" src="../../assets/img/wis2box-webapp-data-mapping-update-csv2bufr.png"/></p>
 <p>Vous devriez voir le nouveau modèle que vous avez créé dans la liste des modèles disponibles :</p>
-<p><img alt="Image montrant les modèles csv2bufr dans wis2box-webapp" src="../../assets/img/wis2box-webapp-csv2bufr-templates.png"/></p>
+<p><img alt="Image montrant les modèles csv2bufr dans le wis2box-webapp" src="../../assets/img/wis2box-webapp-csv2bufr-templates.png"/></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Notez que si vous ne voyez pas le nouveau modèle que vous avez créé, essayez de rafraîchir la page ou de l'ouvrir dans une nouvelle fenêtre de navigation privée.</p>
+<p>Notez que si vous ne voyez pas le nouveau modèle que vous avez créé, essayez de rafraîchir la page ou de l'ouvrir dans une nouvelle fenêtre en mode incognito.</p>
 </div>
 <p>Pour l'instant, gardez la sélection par défaut du modèle AWS (cliquez en haut à droite pour fermer la configuration du plugin).</p>
 <h2 id="utilisation-du-modele-aws">Utilisation du modèle 'AWS'</h2>
-<p>Le modèle 'AWS' fournit un modèle de conversion pour convertir les données CSV en séquence BUFR 301150, 307096, en support des exigences minimales GBON.</p>
-<p>La description du modèle AWS peut être trouvée ici [aws-template](/</p>
+<p>Le modèle 'AWS' fournit un modèle de mappage pour convertir les données CSV en séquence BUFR 301150, 307096, en soutien aux exigences minimales du GBON.</p>
+<p>La description du modèle AWS peut être trouvée ici <a href="/csv2bufr-templates/aws-template">aws-template</a>.</p>
+<h3 id="examiner-les-donnees-dentree-de-lexemple-aws">Examiner les données d'entrée de l'exemple aws</h3>
+<p>Téléchargez l'exemple pour cet exercice depuis le lien ci-dessous :</p>
+<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p>Ouvrez le fichier que vous avez téléchargé dans un éditeur et inspectez le contenu :</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>En examinant les champs de date, d'heure et d'identité (identifiants WIGOS et traditionnels), que remarquez-vous ? Comment la date d'aujourd'hui serait-elle représentée ?</p>
+</div>
+<details class="success">
+<summary>Cliquez pour révéler la réponse</summary>
+<p>Chaque colonne contient une seule information. Par exemple, la date est divisée en année, mois et jour, reflétant la manière dont les données sont stockées dans le BUFR. La date d'aujourd'hui serait divisée entre les colonnes "année", "mois" et "jour". De même, l'heure doit être divisée en "heure" et "minute" et l'identifiant de la station WIGOS en ses composants respectifs.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>En regardant le fichier de données, comment les données manquantes sont-elles codées ?</p>
+</div>
+<details class="success">
+<summary>Cliquez pour révéler la réponse</summary>
+<p>Les données manquantes dans le fichier sont représentées par des cellules vides. Dans un fichier CSV, cela serait codé par <code>,,</code>. Notez qu'il s'agit d'une cellule vide et non codée comme une chaîne de longueur zéro, par exemple <code>,"",</code>.</p>
+</details>
+<div class="admonition hint">
+<p class="admonition-title">Données manquantes</p>
+<p>Il est reconnu que les données peuvent être manquantes pour diverses raisons, que ce soit en raison d'une défaillance du capteur ou du paramètre non observé. Dans ces cas, les données manquantes peuvent être codées comme indiqué ci-dessus, les autres données du rapport restant valides.</p>
+</div>
+<h3 id="mettre-a-jour-le-fichier-exemple">Mettre à jour le fichier exemple</h3>
+<p>Mettez à jour le fichier exemple que vous avez téléchargé pour utiliser la date et l'heure d'aujourd'hui et changez les identifiants des stations WIGOS pour utiliser les stations que vous avez enregistrées dans le wis2box-webapp.</p>
+<h3 id="telechargez-les-donnees-sur-minio-et-verifiez-le-resultat">Téléchargez les données sur MinIO et vérifiez le résultat</h3>
+<p>Naviguez vers l'interface utilisateur de MinIO et connectez-vous en utilisant les informations d'identification du fichier <code>wis2box.env</code>.</p>
+<p>Naviguez vers <strong>wis2box-incoming</strong> et cliquez sur le bouton "Créer un nouveau chemin" :</p>
+<p><img alt="Image montrant l'interface utilisateur de MinIO avec le bouton de création de dossier en surbrillance" src="../../assets/img/minio-create-new-path.png"/></p>
+<p>Créez un nouveau dossier dans le seau MinIO qui correspond à l'identifiant de jeu de données pour le jeu de données que vous avez créé avec le modèle='weather/surface-weather-observations/synop' :</p>
+<p><img alt="Image montrant l'interface utilisateur de MinIO avec le bouton de création de dossier en surbrillance" src="../../assets/img/minio-create-new-path-metadata_id.png"/></p>
+<p>Téléchargez le fichier exemple que vous avez téléchargé dans le dossier que vous avez créé dans le seau MinIO :</p>
+<p><img alt="Image montrant l'interface utilisateur de MinIO avec aws-example téléchargé" src="../../assets/img/minio-upload-aws-example.png"/></center></p>
+<p>Vérifiez le tableau de bord Grafana à <code>http://YOUR-HOST:3000</code> pour voir s'il y a des AVERTISSEMENTS ou des ERREURS. Si vous en voyez, essayez de les corriger et répétez l'exercice.</p>
+<p>Vérifiez l'explorateur MQTT pour voir si vous recevez des notifications de données WIS2.</p>
+<p>Si vous avez réussi à ingérer les données, vous devriez voir 3 notifications dans l'explorateur MQTT sur le sujet <code>origin/a/wis2/&lt;centre-id&gt;/data/weather/surface-weather-observations/synop</code> pour les 3 stations pour lesquelles vous avez signalé des données :</p>
+<p><img width="450" alt="Image montrant l'explorateur MQTT après le téléchargement d'AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/></p>
+<h2 id="utilisation-du-modele-daycli">Utilisation du modèle 'DayCLI'</h2>
+<p>Le modèle <strong>DayCLI</strong> fournit un modèle de mappage pour convertir les données CSV climatiques quotidiennes en séquence BUFR 307075, en soutien à la notification des données climatiques quotidiennes.</p>
+<p>La description du modèle DAYCLI peut être trouvée ici <a href="/csv2bufr-templates/daycli-template">daycli-template</a>.</p>
+<p>Pour partager ces données sur WIS2, vous devrez créer un nouveau jeu de données dans le wis2box-webapp qui a la bonne hiérarchie de sujets WIS2 et qui utilise le modèle DAYCLI pour convertir les données CSV en BUFR.</p>
+<h3 id="creation-dun-jeu-de-donnees-wis2box-pour-la-publication-des-messages-daycli">Création d'un jeu de données wis2box pour la publication des messages DAYCLI</h3>
+<p>Allez dans l'éditeur de jeu de données dans le wis2box-webapp et créez un nouveau jeu de données. Utilisez le même identifiant de centre que lors des sessions pratiques précédentes et sélectionnez <strong>Data Type='climate/surface-based-observations/daily'</strong> :</p>
+<p><img alt="Créer un nouveau jeu de données dans le wis2box-webapp pour DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/></p>
+<p>Cliquez sur "CONTINUER VERS LE FORMULAIRE" et ajoutez une description pour votre jeu de données, définissez la zone de délimitation et fournissez les informations de contact pour le jeu de données. Une fois que vous avez rempli toutes les sections, cliquez sur 'VALIDER LE FORMULAIRE' et vérifiez le formulaire.</p>
+<p>Examinez les plugins de données pour les jeux de données. Cliquez sur "MISE À JOUR" à côté du plugin avec le nom "CSV data converted to BUFR" et vous verrez que le modèle est défini sur <strong>DayCLI</strong> :</p>
+<p><img alt="Mettre à jour le plugin de données pour le jeu de données pour utiliser le modèle DAYCLI" src="../../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/></p>
+<p>Fermez la configuration du plugin et soumettez le formulaire en utilisant le jeton d'authentification que vous avez créé lors de la session pratique précédente.</p>
+<p>Vous devriez maintenant avoir un deuxième jeu de données dans le wis2box-webapp qui est configuré pour utiliser le modèle DAYCLI pour convertir les données CSV en BUFR.</p>
+<h3 id="examiner-les-donnees-dentree-de-lexemple-daycli">Examiner les données d'entrée de l'exemple daycli</h3>
+<p>Téléchargez l'exemple pour cet exercice depuis le lien ci-dessous :</p>
+<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p>Ouvrez le fichier que vous avez téléchargé dans un éditeur et inspectez le contenu :</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Quelles variables supplémentaires sont incluses dans le modèle daycli ?</p>
+</div>
+<details class="success">
+<summary>Cliquez pour révéler la réponse</summary>
+</details>
+<p>Le modèle daycli inclut des métadonnées importantes sur le positionnement de l'instrument et les classifications de la qualité des mesures pour la température et l'humidité, les indicateurs de contrôle de qualité et des informations sur la manière dont la température moyenne quotidienne a été calculée.</p>
+<h3 id="mettre-a-jour-le-fichier-exemple_1">Mettre à jour le fichier exemple</h3>
+<p>Le fichier exemple contient une ligne de données pour chaque jour d'un mois, et rapporte les données pour une station. Mettez à jour le fichier exemple que vous avez téléchargé pour utiliser la date et l'heure d'aujourd'hui et changez les identifiants de station WIGOS pour utiliser une station que vous avez enregistrée dans le wis2box-webapp.</p>
+<h3 id="telecharger-les-donnees-sur-minio-et-verifier-le-resultat">Télécharger les données sur MinIO et vérifier le résultat</h3>
+<p>Comme précédemment, vous devrez télécharger les données dans le seau 'wis2box-incoming' sur MinIO pour qu'elles soient traitées par le convertisseur csv2bufr. Cette fois, vous devrez créer un nouveau dossier dans le seau MinIO qui correspond à l'identifiant de l'ensemble de données pour l'ensemble de données que vous avez créé avec le modèle='climate/surface-based-observations/daily' qui sera différent de l'identifiant de l'ensemble de données que vous avez utilisé dans l'exercice précédent :</p>
+<p><img alt="Image montrant l'interface utilisateur de MinIO avec DAYCLI-example téléchargé" src="../../assets/img/minio-upload-daycli-example.png"/></p>
+<p>Après avoir téléchargé les données, vérifiez qu'il n'y a pas d'AVERTISSEMENTS ou d'ERREURS dans le tableau de bord Grafana et consultez le MQTT Explorer pour voir si vous recevez des notifications de données WIS2.</p>
+<p>Si vous avez réussi à ingérer les données, vous devriez voir 30 notifications dans MQTT Explorer sur le sujet <code>origin/a/wis2/&lt;centre-id&gt;/data/climate/surface-based-observations/daily</code> pour les 30 jours du mois pour lesquels vous avez rapporté des données :</p>
+<p><img width="450" alt="Image montrant MQTT Explorer après le téléchargement de DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/></p>
+<h2 id="conclusion">Conclusion</h2>
+<div class="admonition success">
+<p class="admonition-title">Félicitations</p>
+<p>Au cours de cette session pratique, vous avez appris :</p>
+<ul>
+<li>comment créer un modèle de mappage personnalisé pour convertir des données CSV en BUFR</li>
+<li>comment utiliser les modèles intégrés AWS et DAYCLI pour convertir des données CSV en BUFR</li>
+</ul>
+</div>
 
 
 
