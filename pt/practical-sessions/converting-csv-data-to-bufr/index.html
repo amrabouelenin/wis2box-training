@@ -1058,10 +1058,10 @@ Se você não se lembrar de suas credenciais MinIO, você pode encontrá-las no 
 <p>Certifique-se de que você tem o MQTT Explorer aberto e conectado ao seu corretor usando as credenciais <code>everyone/everyone</code>.</p>
 <h2 id="exercicio-1-usando-csv2bufr-com-o-modelo-aws">Exercício 1: Usando csv2bufr com o modelo 'AWS'</h2>
 <p>O modelo 'AWS' fornece um modelo de mapeamento predefinido para converter dados CSV de estações AWS em apoio aos requisitos de relatório do GBON.</p>
-<p>A descrição do modelo AWS pode ser encontrada <a href="/csv2bufr-templates/aws-template">aqui</a>.</p>
+<p>A descrição do modelo AWS pode ser encontrada <a href="../../csv2bufr-templates/aws-template/">aqui</a>.</p>
 <h3 id="revisar-os-dados-de-entrada-do-exemplo-aws">Revisar os dados de entrada do exemplo aws</h3>
 <p>Baixe o exemplo para este exercício no link abaixo:</p>
-<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p><a href="../../../sample-data/aws-example.csv">aws-example.csv</a></p>
 <p>Abra o arquivo que você baixou em um editor e inspecione o conteúdo:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1123,7 +1123,7 @@ conforme a resposta acima, os outros dados no relatório permanecem válidos.</p
 <h2 id="exercicio-2-usando-o-modelo-daycli">Exercício 2 - Usando o modelo 'DayCLI'</h2>
 <p>No exercício anterior, usamos o conjunto de dados que você criou com Data-type='weather/surface-weather-observations/synop', que tem predefinido o modelo de conversão de CSV para BUFR para o modelo AWS.</p>
 <p>No próximo exercício, usaremos o modelo 'DayCLI' para converter dados climáticos diários para BUFR.</p>
-<p>A descrição do modelo DAYCLI pode ser encontrada <a href="/csv2bufr-templates/daycli-template">aqui</a>.</p>
+<p>A descrição do modelo DAYCLI pode ser encontrada <a href="../../csv2bufr-templates/daycli-template/">aqui</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Sobre o modelo DAYCLI</p>
 <p>Observe que a sequência BUFR DAYCLI será atualizada durante 2025 para incluir informações adicionais e bandeiras de QC revisadas. O modelo DAYCLI incluído no wis2box será atualizado para refletir essas mudanças. A OMM comunicará quando o software wis2box for atualizado para incluir o novo modelo DAYCLI, para permitir que os usuários atualizem seus sistemas de acordo.</p>
@@ -1138,7 +1138,7 @@ conforme a resposta acima, os outros dados no relatório permanecem válidos.</p
 <p>Você agora deve ter um segundo conjunto de dados no wis2box-webapp que está configurado para usar o modelo DAYCLI para converter dados CSV para BUFR.</p>
 <h3 id="revisar-os-dados-de-entrada-do-exemplo-daycli">Revisar os dados de entrada do exemplo daycli</h3>
 <p>Baixe o exemplo para este exercício no link abaixo:</p>
-<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p><a href="../../../sample-data/daycli-example.csv">daycli-example.csv</a></p>
 <p>Abra o arquivo que você baixou em um editor e inspecione o conteúdo:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1162,7 +1162,7 @@ conforme a resposta acima, os outros dados no relatório permanecem válidos.</p
 <h3 id="usando-o-formulario-csv-no-aplicativo-web-wis2box">Usando o Formulário CSV no aplicativo web wis2box</h3>
 <p>Navegue até o Formulário CSV no aplicativo web wis2box
 (<code>http://&lt;seu-nome-de-host&gt;/wis2box-webapp/csv2bufr_form</code>).
-Use o arquivo <a href="/sample-data/aws-example.csv">aws-example.csv</a> para este exercício.
+Use o arquivo <a href="../../../sample-data/aws-example.csv">aws-example.csv</a> para este exercício.
 Você agora deve ser capaz de clicar em próximo para visualizar e validar o arquivo.</p>
 <p><center><img alt="Imagem mostrando a tela de upload de CSV para BUFR" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
 <p>Clicar no botão próximo carrega o arquivo no navegador e valida o conteúdo contra um esquema predefinido.
@@ -1183,7 +1183,7 @@ Clique em inspecionar para visualizar os dados e confirmar que os valores estão
 <p>Neste exercício, examinaremos o que acontece com dados de entrada inválidos. Baixe o próximo arquivo de exemplo clicando no
 link abaixo. Este contém os mesmos dados que o primeiro arquivo, mas com as colunas vazias removidas.
 Examine o arquivo e confirme quais colunas foram removidas e, em seguida, siga o mesmo processo para converter os dados para BUFR.</p>
-<p><a href="/sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Com as colunas ausentes do arquivo, você conseguiu converter os dados para BUFR?
@@ -1195,7 +1195,7 @@ Você notou alguma mudança nos avisos na página de validação?</p>
 para indicar que as colunas estavam completamente ausentes, em vez de conter um valor ausente.</p>
 </details>
 <p>No próximo exemplo, uma coluna adicional foi adicionada ao arquivo CSV.</p>
-<p><a href="/sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Sem fazer o upload ou enviar o arquivo, você pode prever o que acontecerá quando fizer?</p>
@@ -1208,7 +1208,7 @@ não é encontrada no esquema e que os dados serão ignorados. Você deve ser ca
 através e converter para BUFR como no exemplo anterior.</p>
 </details>
 <p>No exemplo final deste exercício, os dados foram modificados. Examine o conteúdo do arquivo CSV.</p>
-<p><a href="/sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>O que mudou no arquivo e o que você acha que acontecerá?</p>

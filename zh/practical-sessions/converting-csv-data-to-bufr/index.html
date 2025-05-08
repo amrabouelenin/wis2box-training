@@ -1079,10 +1079,10 @@
 <h2 id="1-aws-csv2bufr">练习 1：使用带有 'AWS' 模板的 csv2bufr</h2>
 <p>'AWS' 模板提供了一个预定义的映射模板，用于转换 AWS 站点的 CSV 数据，以支持 GBON 报告要求。</p>
 <p>可以在此处找到 AWS 模板的描述：</p>
-<p><a href="/csv2bufr-templates/aws-template">aws-template</a></p>
+<p><a href="../../csv2bufr-templates/aws-template/">aws-template</a></p>
 <h3 id="aws-example">审查 aws-example 输入数据</h3>
 <p>从下面的链接下载本练习的示例：</p>
-<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p><a href="../../../sample-data/aws-example.csv">aws-example.csv</a></p>
 <p>打开您下载的文件，并检查内容：</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1137,7 +1137,7 @@
 <p>在上一个练习中，我们使用了您创建的数据类型为 'weather/surface-weather-observations/synop' 的数据集，该数据集已预配置了 CSV 到 BUFR 转换模板为 AWS 模板。</p>
 <p>在下一个练习中，我们将使用 'DayCLI' 模板将日常气候数据转换为 BUFR。</p>
 <p>可以在此处找到 DAYCLI 模板的描述：</p>
-<p><a href="/csv2bufr-templates/daycli-template">daycli-template</a></p>
+<p><a href="../../csv2bufr-templates/daycli-template/">daycli-template</a></p>
 <div class="admonition note">
 <p class="admonition-title">关于 DAYCLI 模板</p>
 <p>请注意，DAYCLI BUFR 序列将在 2025 年更新，以包括额外的信息和修订的 QC 标志。wis2box 将更新 DAYCLI 模板以反映这些变化。WMO 将通知何时更新 wis2box 软件以包括新的 DAYCLI 模板，以便用户相应更新其系统。</p>
@@ -1152,7 +1152,7 @@
 <p>您现在应该在 wis2box-webapp 中有第二个配置为使用 DAYCLI 模板将 CSV 数据转换为 BUFR 的数据集。</p>
 <h3 id="daycli-example">审查 daycli-example 输入数据</h3>
 <p>从下面的链接下载本练习的示例：</p>
-<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p><a href="../../../sample-data/daycli-example.csv">daycli-example.csv</a></p>
 <p>打开您下载的文件，并检查内容：</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1176,7 +1176,7 @@
 <h3 id="wis2box-web-csv">在 wis2box web 应用程序中使用 CSV 表单</h3>
 <p>导航到 wis2box web 应用程序上的 CSV 表单
 (<code>http://&lt;your-host-name&gt;/wis2box-webapp/csv2bufr_form</code>)。
-在本练习中使用文件 <a href="/sample-data/aws-example.csv">aws-example.csv</a>。
+在本练习中使用文件 <a href="../../../sample-data/aws-example.csv">aws-example.csv</a>。
 您现在应该能够点击下一步以预览并验证文件。</p>
 <p><center><img alt="显示 CSV 到 BUFR 上传屏幕的图像" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
 <p>点击下一步按钮将文件加载到浏览器并根据预定义的模式验证内容。
@@ -1193,7 +1193,7 @@
 <h3 id="_5">调试无效输入数据</h3>
 <p>在这个练习中，我们将检查输入无效数据时会发生什么。通过点击下面的链接下载下一个示例文件。这包含与第一个文件相同的数据，但已删除空列。
 检查文件并确认已删除哪些列，然后按照相同的过程将数据转换为 BUFR。</p>
-<p><a href="/sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>由于文件中缺少列，您是否能够将数据转换为 BUFR？
@@ -1204,7 +1204,7 @@
 <p>您应该仍然能够将数据转换为 BUFR，但警告消息将更新为完全缺少列而不是包含缺失值。</p>
 </details>
 <p>在下一个示例中，CSV 文件中添加了一个额外的列。</p>
-<p><a href="/sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>在上传或提交文件之前，您能预测会发生什么吗？</p>
@@ -1215,7 +1215,7 @@
 <p>当文件被验证时，您应该会收到一个警告，指出列 <code>index</code> 在模式中未找到，数据将被跳过。您应该能够像之前的示例一样点击并转换为 BUFR。</p>
 </details>
 <p>在这个练习的最后一个示例中，数据已被修改。检查 CSV 文件的内容。</p>
-<p><a href="/sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>文件中发生了什么变化，您认为会发生什么？</p>

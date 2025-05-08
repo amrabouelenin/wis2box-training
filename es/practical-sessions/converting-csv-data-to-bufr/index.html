@@ -1054,10 +1054,10 @@ Si no recuerdas tus credenciales de MinIO, puedes encontrarlas en el archivo <co
 <p>Asegúrate de que tienes MQTT Explorer abierto y conectado a tu broker usando las credenciales <code>everyone/everyone</code>.</p>
 <h2 id="ejercicio-1-usar-csv2bufr-con-la-plantilla-aws">Ejercicio 1: Usar csv2bufr con la plantilla 'AWS'</h2>
 <p>La plantilla 'AWS' proporciona una plantilla de mapeo predefinida para convertir datos CSV de estaciones AWS en apoyo a los requisitos de informes de GBON.</p>
-<p>La descripción de la plantilla AWS se puede encontrar <a href="/csv2bufr-templates/aws-template">aquí</a>.</p>
+<p>La descripción de la plantilla AWS se puede encontrar <a href="../../csv2bufr-templates/aws-template/">aquí</a>.</p>
 <h3 id="revisar-los-datos-de-entrada-de-ejemplo-aws">Revisar los datos de entrada de ejemplo aws</h3>
 <p>Descarga el ejemplo para este ejercicio desde el enlace a continuación:</p>
-<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p><a href="../../../sample-data/aws-example.csv">aws-example.csv</a></p>
 <p>Abre el archivo que descargaste en un editor e inspecciona el contenido:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1119,7 +1119,7 @@ según la respuesta anterior, los otros datos en el informe siguen siendo válid
 <h2 id="ejercicio-2-usar-la-plantilla-daycli">Ejercicio 2 - Usar la plantilla 'DayCLI'</h2>
 <p>En el ejercicio anterior usamos el conjunto de datos que creaste con el tipo de datos='weather/surface-weather-observations/synop', que ha preconfigurado la plantilla de conversión de CSV a BUFR a la plantilla AWS.</p>
 <p>En el próximo ejercicio usaremos la plantilla 'DayCLI' para convertir datos climáticos diarios a BUFR.</p>
-<p>La descripción de la plantilla DAYCLI se puede encontrar <a href="/csv2bufr-templates/daycli-template">aquí</a>.</p>
+<p>La descripción de la plantilla DAYCLI se puede encontrar <a href="../../csv2bufr-templates/daycli-template/">aquí</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Acerca de la plantilla DAYCLI</p>
 <p>Ten en cuenta que la secuencia BUFR DAYCLI se actualizará durante 2025 para incluir información adicional y banderas de control de calidad revisadas. La plantilla DAYCLI incluida en wis2box se actualizará para reflejar estos cambios. La OMM comunicará cuando el software de wis2box se actualice para incluir la nueva plantilla DAYCLI, para permitir a los usuarios actualizar sus sistemas en consecuencia.</p>
@@ -1134,7 +1134,7 @@ según la respuesta anterior, los otros datos en el informe siguen siendo válid
 <p>Ahora deberías tener un segundo conjunto de datos en la aplicación web wis2box configurado para usar la plantilla DAYCLI para convertir datos CSV a BUFR.</p>
 <h3 id="revisar-los-datos-de-entrada-de-ejemplo-daycli">Revisar los datos de entrada de ejemplo daycli</h3>
 <p>Descarga el ejemplo para este ejercicio desde el enlace a continuación:</p>
-<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p><a href="../../../sample-data/daycli-example.csv">daycli-example.csv</a></p>
 <p>Abre el archivo que descargaste en un editor e inspecciona el contenido:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1158,7 +1158,7 @@ según la respuesta anterior, los otros datos en el informe siguen siendo válid
 <h3 id="usar-el-formulario-csv-en-la-aplicacion-web-wis2box">Usar el formulario CSV en la aplicación web wis2box</h3>
 <p>Navega al formulario CSV en la aplicación web wis2box
 (<code>http://&lt;tu-nombre-de-host&gt;/wis2box-webapp/csv2bufr_form</code>).
-Usa el archivo <a href="/sample-data/aws-example.csv">aws-example.csv</a> para este ejercicio.
+Usa el archivo <a href="../../../sample-data/aws-example.csv">aws-example.csv</a> para este ejercicio.
 Ahora deberías poder hacer clic en siguiente para previsualizar y validar el archivo.</p>
 <p><center><img alt="Imagen mostrando la pantalla de carga de CSV a BUFR" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
 <p>Al hacer clic en el botón siguiente, se carga el archivo en el navegador y se valida el contenido contra un esquema predefinido.
@@ -1179,7 +1179,7 @@ Haz clic en inspeccionar para ver los datos y confirmar que los valores son los 
 <p>En este ejercicio examinaremos qué sucede con los datos de entrada inválidos. Descarga el siguiente archivo de ejemplo haciendo clic en el
 enlace a continuación. Este contiene los mismos datos que el primer archivo pero con las columnas vacías eliminadas.
 Examina el archivo y confirma qué columnas han sido eliminadas y luego sigue el mismo proceso para convertir los datos a BUFR.</p>
-<p><a href="/sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3a.csv">csv2bufr-ex3a.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Con las columnas faltantes en el archivo, ¿pudiste convertir los datos a BUFR?
@@ -1191,7 +1191,7 @@ Examina el archivo y confirma qué columnas han sido eliminadas y luego sigue el
 para indicar que las columnas faltaban completamente en lugar de contener un valor faltante.</p>
 </details>
 <p>En este siguiente ejemplo se ha añadido una columna adicional al archivo CSV.</p>
-<p><a href="/sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3b.csv">csv2bufr-ex3b.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Sin subir ni enviar el archivo, ¿puedes predecir qué sucederá cuando lo hagas?</p>
@@ -1204,7 +1204,7 @@ no se encuentra en el esquema y que los datos serán omitidos. Deberías poder h
 y convertir a BUFR como en el ejemplo anterior.</p>
 </details>
 <p>En el último ejemplo de este ejercicio, los datos han sido modificados. Examina el contenido del archivo CSV.</p>
-<p><a href="/sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
+<p><a href="../../../sample-data/csv2bufr-ex3c.csv">csv2bufr-ex3c.csv</a></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>¿Qué ha cambiado en el archivo y qué crees que sucederá?</p>

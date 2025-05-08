@@ -1405,10 +1405,10 @@ La commande vous montrera le contenu du fichier BUFR dans un format lisible par 
 <p>Pour l'instant, gardez la sélection par défaut du modèle AWS (cliquez en haut à droite pour fermer la configuration du plugin).</p>
 <h2 id="utilisation-du-modele-aws">Utilisation du modèle 'AWS'</h2>
 <p>Le modèle 'AWS' fournit un modèle de mappage pour convertir les données CSV en séquence BUFR 301150, 307096, en soutien aux exigences minimales du GBON.</p>
-<p>La description du modèle AWS peut être trouvée ici <a href="/csv2bufr-templates/aws-template">aws-template</a>.</p>
+<p>La description du modèle AWS peut être trouvée ici <a href="./../csv2bufr-templates/aws-template">aws-template</a>.</p>
 <h3 id="examiner-les-donnees-dentree-de-lexemple-aws">Examiner les données d'entrée de l'exemple aws</h3>
 <p>Téléchargez l'exemple pour cet exercice depuis le lien ci-dessous :</p>
-<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p><a href="../../../sample-data/aws-example.csv">aws-example.csv</a></p>
 <p>Ouvrez le fichier que vous avez téléchargé dans un éditeur et inspectez le contenu :</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1446,7 +1446,7 @@ La commande vous montrera le contenu du fichier BUFR dans un format lisible par 
 <p><img width="450" alt="Image montrant l'explorateur MQTT après le téléchargement d'AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/></p>
 <h2 id="utilisation-du-modele-daycli">Utilisation du modèle 'DayCLI'</h2>
 <p>Le modèle <strong>DayCLI</strong> fournit un modèle de mappage pour convertir les données CSV climatiques quotidiennes en séquence BUFR 307075, en soutien à la notification des données climatiques quotidiennes.</p>
-<p>La description du modèle DAYCLI peut être trouvée ici <a href="/csv2bufr-templates/daycli-template">daycli-template</a>.</p>
+<p>La description du modèle DAYCLI peut être trouvée ici <a href="../../csv2bufr-templates/daycli-template/">daycli-template</a>.</p>
 <p>Pour partager ces données sur WIS2, vous devrez créer un nouveau jeu de données dans le wis2box-webapp qui a la bonne hiérarchie de sujets WIS2 et qui utilise le modèle DAYCLI pour convertir les données CSV en BUFR.</p>
 <h3 id="creation-dun-jeu-de-donnees-wis2box-pour-la-publication-des-messages-daycli">Création d'un jeu de données wis2box pour la publication des messages DAYCLI</h3>
 <p>Allez dans l'éditeur de jeu de données dans le wis2box-webapp et créez un nouveau jeu de données. Utilisez le même identifiant de centre que lors des sessions pratiques précédentes et sélectionnez <strong>Data Type='climate/surface-based-observations/daily'</strong> :</p>
@@ -1458,7 +1458,7 @@ La commande vous montrera le contenu du fichier BUFR dans un format lisible par 
 <p>Vous devriez maintenant avoir un deuxième jeu de données dans le wis2box-webapp qui est configuré pour utiliser le modèle DAYCLI pour convertir les données CSV en BUFR.</p>
 <h3 id="examiner-les-donnees-dentree-de-lexemple-daycli">Examiner les données d'entrée de l'exemple daycli</h3>
 <p>Téléchargez l'exemple pour cet exercice depuis le lien ci-dessous :</p>
-<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p><a href="../../../sample-data/daycli-example.csv">daycli-example.csv</a></p>
 <p>Ouvrez le fichier que vous avez téléchargé dans un éditeur et inspectez le contenu :</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>

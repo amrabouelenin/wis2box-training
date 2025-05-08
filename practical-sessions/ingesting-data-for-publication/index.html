@@ -1110,7 +1110,7 @@
 <p>During the exercise, we will monitor the status of the data ingestion using the <strong>Grafana dashboard</strong> and <strong>MQTT Explorer</strong>. The Grafana dashboard uses data from Prometheus and Loki to display the status of your wis2box, while MQTT Explorer allows you to see the WIS2 data notifications published by your wis2box instance.</p>
 <p>Note that wis2box will transform the example data into BUFR format before publishing it to the MQTT broker, as per the data mappings pre-configured in your dataset. For this exercise, we will focus on the different methods to upload data to your wis2box instance and verify successful ingestion and publication. Data transformation will be covered later in the <a href="../data-conversion-tools">Data Conversion Tools</a> practical session.</p>
 <h2 id="preparation">Preparation</h2>
-<p>This section uses the dataset for "surface-based-observations/synop" previously created in the <a href="/practical-sessions/configuring-wis2box-datasets">Configuring Datasets in wis2box</a> practical session. It also requires knowledge of configuring stations in the <strong>wis2box-webapp</strong>, as described in the <a href="/practical-sessions/configuring-station-metadata">Configuring Station Metadata</a> practical session.</p>
+<p>This section uses the dataset for "surface-based-observations/synop" previously created in the <a href="../configuring-wis2box-datasets">Configuring Datasets in wis2box</a> practical session. It also requires knowledge of configuring stations in the <strong>wis2box-webapp</strong>, as described in the <a href="../configuring-station-metadata">Configuring Station Metadata</a> practical session.</p>
 <p>Ensure you can log in to your student VM using your SSH client (e.g., PuTTY).</p>
 <p>Ensure wis2box is up and running:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box/
@@ -1216,7 +1216,7 @@ Done
 </details>
 <div class="admonition question">
 <p class="admonition-title">Upload New Data Using the MinIO Web Interface</p>
-<p>Download this sample file <a href="/sample-data/synop_202502040900.txt">synop_202502040900.txt</a> (right-click and select "save as" to download the file).</p>
+<p>Download this sample file <a href="../../sample-data/synop_202502040900.txt">synop_202502040900.txt</a> (right-click and select "save as" to download the file).</p>
 <p>Upload the file you downloaded using the web interface to the same path in MinIO as the previous file.</p>
 <p>Did the data ingest and publish successfully?</p>
 </div>
@@ -1240,7 +1240,7 @@ Done
 <div class="admonition question">
 <p class="admonition-title">Upload Data Using SFTP</p>
 <p>Download this sample file to your local computer:</p>
-<p><a href="/sample-data/synop_202503030900.txt">synop_202503030900.txt</a> (right-click and select "save as" to download the file).</p>
+<p><a href="../../sample-data/synop_202503030900.txt">synop_202503030900.txt</a> (right-click and select "save as" to download the file).</p>
 <p>Then upload it to the incoming dataset path in MinIO using your SFTP session in WinSCP.</p>
 <p>Check the Grafana dashboard and MQTT Explorer to see if the data was successfully ingested and published.</p>
 </div>

@@ -1078,10 +1078,10 @@ Wenn Sie sich an Ihre MinIO-Zugangsdaten nicht erinnern können, finden Sie dies
 <p>Stellen Sie sicher, dass Sie MQTT Explorer geöffnet und mit Ihrem Broker verbunden haben, indem Sie die Zugangsdaten <code>everyone/everyone</code> verwenden.</p>
 <h2 id="ubung-1-verwendung-von-csv2bufr-mit-der-aws-vorlage">Übung 1: Verwendung von csv2bufr mit der 'AWS'-Vorlage</h2>
 <p>Die 'AWS'-Vorlage bietet eine vordefinierte Mapping-Vorlage zur Konvertierung von CSV-Daten von AWS-Stationen zur Unterstützung der GBON-Berichtsanforderungen.</p>
-<p>Die Beschreibung der AWS-Vorlage finden Sie <a href="/csv2bufr-templates/aws-template">hier</a>.</p>
+<p>Die Beschreibung der AWS-Vorlage finden Sie <a href="../../csv2bufr-templates/aws-template/">hier</a>.</p>
 <h3 id="uberprufen-der-aws-example-eingabedaten">Überprüfen der aws-example Eingabedaten</h3>
 <p>Laden Sie das Beispiel für diese Übung von untenstehendem Link herunter:</p>
-<p><a href="/sample-data/aws-example.csv">aws-example.csv</a></p>
+<p><a href="../../../sample-data/aws-example.csv">aws-example.csv</a></p>
 <p>Öffnen Sie die heruntergeladene Datei in einem Editor und überprüfen Sie den Inhalt:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1137,7 +1137,7 @@ auf die Spalten "Jahr", "Monat" und "Tag" verteilt. Ähnlich muss die Zeit in "S
 <h2 id="ubung-2-verwendung-der-daycli-vorlage">Übung 2 - Verwendung der 'DayCLI'-Vorlage</h2>
 <p>In der vorherigen Übung haben wir den Datensatz verwendet, den Sie mit Data-type='weather/surface-weather-observations/synop' erstellt haben, der die CSV-zu-BUFR-Konvertierungsvorlage auf die AWS-Vorlage voreingestellt hat.</p>
 <p>In der nächsten Übung werden wir die 'DayCLI'-Vorlage verwenden, um tägliche Klimadaten in BUFR zu konvertieren.</p>
-<p>Die Beschreibung der DAYCLI-Vorlage finden Sie <a href="/csv2bufr-templates/daycli-template">hier</a>.</p>
+<p>Die Beschreibung der DAYCLI-Vorlage finden Sie <a href="../../csv2bufr-templates/daycli-template/">hier</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Über die DAYCLI-Vorlage</p>
 <p>Bitte beachten Sie, dass die DAYCLI BUFR-Sequenz während 2025 aktualisiert wird, um zusätzliche Informationen und überarbeitete QC-Flags einzubeziehen. Die DAYCLI-Vorlage in der wis2box wird aktualisiert, um diese Änderungen widerzuspiegeln. Die WMO wird mitteilen, wann die wis2box-Software aktualisiert wird, um die neue DAYCLI-Vorlage einzubeziehen, damit die Benutzer ihre Systeme entsprechend aktualisieren können.</p>
@@ -1152,7 +1152,7 @@ auf die Spalten "Jahr", "Monat" und "Tag" verteilt. Ähnlich muss die Zeit in "S
 <p>Sie sollten nun einen zweiten Datensatz in der wis2box-Webapp haben, der so konfiguriert ist, dass er die DAYCLI-Vorlage zur Konvertierung von CSV-Daten in BUFR verwendet.</p>
 <h3 id="uberprufen-der-daycli-example-eingabedaten">Überprüfen der daycli-example Eingabedaten</h3>
 <p>Laden Sie das Beispiel für diese Übung von untenstehendem Link herunter:</p>
-<p><a href="/sample-data/daycli-example.csv">daycli-example.csv</a></p>
+<p><a href="../../../sample-data/daycli-example.csv">daycli-example.csv</a></p>
 <p>Öffnen Sie die heruntergeladene Datei in einem Editor und überprüfen Sie den Inhalt:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1176,7 +1176,7 @@ auf die Spalten "Jahr", "Monat" und "Tag" verteilt. Ähnlich muss die Zeit in "S
 <h3 id="verwendung-des-csv-formulars-in-der-wis2box-webanwendung">Verwendung des CSV-Formulars in der wis2box-Webanwendung</h3>
 <p>Navigieren Sie zum CSV-Formular in der wis2box-Webanwendung
 (<code>http://&lt;Ihr-Hostname&gt;/wis2box-webapp/csv2bufr_form</code>).
-Verwenden Sie die Datei <a href="/sample-data/aws-example.csv">aws-example.csv</a> für diese Übung.
+Verwenden Sie die Datei <a href="../../../sample-data/aws-example.csv">aws-example.csv</a> für diese Übung.
 Sie sollten jetzt in der Lage sein, neben der Datei auf Weiter zu klicken, um eine Vorschau zu sehen und die Datei zu validieren.</p>
 <p><center><img alt="Bild zeigt CSV-zu-BUFR-Upload-Bildschirm" src="../../assets/img/csv2bufr-ex1.png"/></center></p>
 <p>Wenn Sie auf die Schaltfläche Weiter klicken, wird die Datei in den Browser geladen und der Inhalt gegen ein vordefiniertes Schema validiert.
