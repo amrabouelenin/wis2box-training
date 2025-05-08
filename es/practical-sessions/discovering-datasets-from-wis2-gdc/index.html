@@ -26,7 +26,7 @@
     
     
       
-        <title>Descubrimiento de conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2 - WIS2 in a box training</title>
+        <title>Descubriendo conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2 - WIS2 in a box training</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#descubrimiento-de-conjuntos-de-datos-desde-el-catalogo-global-de-descubrimiento-wis2" class="md-skip">
+        <a href="#descubriendo-conjuntos-de-datos-desde-el-catalogo-global-de-descubrimiento-wis2" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Descubrimiento de conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2
+              Descubriendo conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2
             
           </span>
         </div>
@@ -678,9 +678,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-pywiscat" class="md-nav__link">
+  <a href="#instalando-pywiscat" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de pywiscat
+      Instalando pywiscat
     </span>
   </a>
   
@@ -975,9 +975,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-pywiscat" class="md-nav__link">
+  <a href="#instalando-pywiscat" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de pywiscat
+      Instalando pywiscat
     </span>
   </a>
   
@@ -1017,12 +1017,12 @@
 
 
 
-<h1 id="descubrimiento-de-conjuntos-de-datos-desde-el-catalogo-global-de-descubrimiento-wis2">Descubrimiento de conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2</h1>
+<h1 id="descubriendo-conjuntos-de-datos-desde-el-catalogo-global-de-descubrimiento-wis2">Descubriendo conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Resultados de aprendizaje!</p>
 <p>Al final de esta sesión práctica, podrás:</p>
 <ul>
-<li>usar pywiscat para descubrir conjuntos de datos desde el Catálogo Global de Descubrimiento (GDC)</li>
+<li>usar pywiscat para descubrir conjuntos de datos desde el Global Discovery Catalogue (GDC)</li>
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
@@ -1030,16 +1030,16 @@
 <p>Actualmente, los siguientes GDC están disponibles:</p>
 <ul>
 <li>Environment and Climate Change Canada, Meteorological Service of Canada: <a href="https://wis2-gdc.weather.gc.ca">https://wis2-gdc.weather.gc.ca</a></li>
-<li>Administración Meteorológica de China: <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
-<li>Servicio Meteorológico Alemán: <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
+<li>China Meteorological Administration: <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
+<li>Deutscher Wetterdienst: <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
 </ul>
-<p>Durante las sesiones de entrenamiento locales, se configura un GDC local para permitir a los participantes consultar el GDC por los metadatos que han publicado desde sus instancias de wis2box. En este caso, los entrenadores proporcionarán la URL al GDC local.</p>
+<p>Durante las sesiones de entrenamiento locales, se configura un GDC local para permitir a los participantes consultar el GDC sobre los metadatos que publicaron desde sus instancias de wis2box. En este caso, los entrenadores proporcionarán la URL al GDC local.</p>
 <h2 id="preparacion">Preparación</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Antes de comenzar, por favor inicia sesión en tu VM de estudiante.</p>
 </div>
-<h2 id="instalacion-de-pywiscat">Instalación de pywiscat</h2>
+<h2 id="instalando-pywiscat">Instalando pywiscat</h2>
 <p>Usa el instalador de paquetes de Python <code>pip3</code> para instalar pywiscat en tu VM:
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>pywiscat
 </code></pre></div></p>
@@ -1054,14 +1054,14 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 </code></pre></div>
 <p>...donde <code>$USER</code> es tu nombre de usuario en tu VM.</p>
 </div>
-<p>Verifica que la instalación haya sido exitosa:</p>
+<p>Verifica que la instalación fue exitosa:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>--version
 </code></pre></div>
 <h2 id="encontrando-datos-con-pywiscat">Encontrando datos con pywiscat</h2>
 <p>Por defecto, pywiscat se conecta al Catálogo Global de Descubrimiento de Canadá. Configuremos pywiscat para consultar el GDC de entrenamiento estableciendo la variable de entorno <code>PYWISCAT_GDC_URL</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PYWISCAT_GDC_URL</span><span class="o">=</span>http://gdc.wis2.training:5002
 </code></pre></div>
-<p>Usamos <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> para consultar el GDC configurado como parte del entrenamiento.</p>
+<p>Usaremos <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> para consultar el GDC configurado como parte del entrenamiento.</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>--help
 </code></pre></div>
 <p>Ahora busca en el GDC todos los registros:</p>
@@ -1073,7 +1073,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 </div>
 <details class="success">
 <summary>Haz clic para revelar la respuesta</summary>
-<p>El número de registros depende del GDC que estés consultando. Al usar el GDC de entrenamiento local, deberías ver que el número de registros es igual al número de conjuntos de datos que han sido ingestados en el GDC durante las otras sesiones prácticas.</p>
+<p>El número de registros depende del GDC que estés consultando. Al usar el GDC de entrenamiento local, deberías ver que el número de registros es igual al número de conjuntos de datos que se han ingestado en el GDC durante las otras sesiones prácticas.</p>
 </details>
 <p>Intentemos consultar el GDC con una palabra clave:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>-q<span class="w"> </span>observations
@@ -1098,7 +1098,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <li><code>-q "synop OR temp"</code>: encuentra todos los registros con "synop" o "temp"</li>
 <li><code>-q "obs*"</code>: búsqueda difusa</li>
 </ul>
-<p>Al buscar términos con espacios, enciérralos entre comillas dobles.</p>
+<p>Al buscar términos con espacios, enciérralos en comillas dobles.</p>
 </div>
 <p>Obtengamos más detalles sobre un resultado de búsqueda específico que nos interesa:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>get<span class="w"> </span>&lt;id&gt;
@@ -1110,7 +1110,7 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <h2 id="conclusion">Conclusión</h2>
 <div class="admonition success">
 <p class="admonition-title">¡Felicidades!</p>
-<p>En esta sesión práctica, aprendiste a:</p>
+<p>En esta sesión práctica, aprendiste cómo:</p>
 <ul>
 <li>usar pywiscat para descubrir conjuntos de datos desde el Catálogo Global de Descubrimiento WIS2</li>
 </ul>

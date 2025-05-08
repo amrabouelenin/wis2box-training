@@ -1060,14 +1060,14 @@
 <ul>
 <li>crear un nuevo conjunto de datos con política de datos 'recomendado'</li>
 <li>añadir un token de acceso al conjunto de datos</li>
-<li>validar que el conjunto de datos no puede ser accedido sin el token de acceso</li>
+<li>validar que el conjunto de datos no se puede acceder sin el token de acceso</li>
 <li>añadir el token de acceso a las cabeceras HTTP para acceder al conjunto de datos</li>
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
 <p>Los conjuntos de datos que no se consideran 'núcleo' en la WMO pueden configurarse opcionalmente con una política de control de acceso. wis2box proporciona un mecanismo para añadir un token de acceso a un conjunto de datos que evitará que los usuarios descarguen datos a menos que proporcionen el token de acceso en las cabeceras HTTP.</p>
 <h2 id="preparacion">Preparación</h2>
-<p>Asegúrate de tener acceso SSH a tu VM de estudiante y que tu instancia de wis2box esté en funcionamiento.</p>
+<p>Asegúrate de tener acceso SSH a tu VM de estudiante y que tu instancia de wis2box esté funcionando.</p>
 <p>Asegúrate de estar conectado al broker MQTT de tu instancia de wis2box usando MQTT Explorer. Puedes usar las credenciales públicas <code>everyone/everyone</code> para conectarte al broker.</p>
 <p>Asegúrate de tener un navegador web abierto con el wis2box-webapp para tu instancia accediendo a <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
 <h2 id="crear-un-nuevo-conjunto-de-datos-con-politica-de-datos-recomendado">Crear un nuevo conjunto de datos con política de datos 'recomendado'</h2>
@@ -1075,14 +1075,14 @@
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-template.png" width="800"></p>
 <p>Para "Centre ID", usa el mismo que usaste en las sesiones prácticas anteriores.</p>
 <p>Haz clic en 'CONTINUE To FORM' para continuar.</p>
-<p>En el editor de conjuntos de datos, establece la política de datos a 'recomendado' (nota que cambiar la política de datos actualizará la 'Jerarquía de Temas').
-Reemplaza el 'Local ID' generado automáticamente con un nombre descriptivo para el conjunto de datos, por ejemplo, 'datos-recomendados-con-control-de-acceso':</p>
+<p>En el editor de conjuntos de datos, establece la política de datos a 'recomendado' (ten en cuenta que cambiar la política de datos actualizará la 'Jerarquía de Temas').
+Reemplaza el 'Local ID' generado automáticamente con un nombre descriptivo para el conjunto de datos, por ejemplo, 'recommended-data-with-access-control':</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-recommended.png" width="800"></p>
-<p>Continúa llenando los campos requeridos para Propiedades Espaciales e Información de Contacto, y 'Valida el formulario' para verificar si hay errores.</p>
-<p>Finalmente, envía el conjunto de datos, utilizando el token de autenticación creado previamente, y verifica que el nuevo conjunto de datos esté creado en el wis2box-webapp.</p>
+<p>Continúa llenando los campos requeridos para Propiedades Espaciales e Información de Contacto, y 'Valida el formulario' para buscar errores.</p>
+<p>Finalmente, envía el conjunto de datos, utilizando el token de autenticación creado previamente, y verifica que el nuevo conjunto de datos se haya creado en el wis2box-webapp.</p>
 <p>Revisa MQTT-explorer para ver que recibes el Mensaje de Notificación WIS2 anunciando el nuevo registro de Metadatos de Descubrimiento en el tema <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
 <h2 id="anadir-un-token-de-acceso-al-conjunto-de-datos">Añadir un token de acceso al conjunto de datos</h2>
-<p>Inicia sesión en el contenedor wis2box-management,</p>
+<p>Inicia sesión en el contenedor de wis2box-management,</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
@@ -1090,7 +1090,7 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p>Por ejemplo, para añadir el token de acceso <code>S3cr3tT0k3n</code> al conjunto de datos con identificador de metadatos <code>urn:wmo:md:not-my-centre:core.surface-based-observations.synop</code>:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop<span class="w"> </span>S3cr3tT0k3n
 </code></pre></div>
-<p>Sal del contenedor wis2box-management:</p>
+<p>Sal del contenedor de wis2box-management:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
 <h2 id="publicar-algunos-datos-en-el-conjunto-de-datos">Publicar algunos datos en el conjunto de datos</h2>
@@ -1102,7 +1102,7 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p>Esta estación ahora estará asociada a 2 temas, uno para el conjunto de datos 'núcleo' y otro para el conjunto de datos 'recomendado':</p>
 <p><img alt="edit-stations-add-topics" src="../../assets/img/edit-stations-add-topics.png" width="600"></p>
 <p>Necesitarás usar tu token para <code>collections/stations</code> para guardar los datos de la estación actualizada.</p>
-<p>A continuación, inicia sesión en el contenedor wis2box-management:</p>
+<p>A continuación, inicia sesión en el contenedor de wis2box-management:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
@@ -1129,7 +1129,7 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <ul>
 <li>crear un nuevo conjunto de datos con política de datos 'recomendado'</li>
 <li>añadir un token de acceso al conjunto de datos</li>
-<li>validar que el conjunto de datos no puede ser accedido sin el token de acceso</li>
+<li>validar que el conjunto de datos no se puede acceder sin el token de acceso</li>
 <li>añadir el token de acceso a las cabeceras HTTP para acceder al conjunto de datos</li>
 </ul>
 </div>

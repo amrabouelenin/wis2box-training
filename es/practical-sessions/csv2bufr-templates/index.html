@@ -609,9 +609,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#usando-la-plantilla-de-mapeo-en-wis2box" class="md-nav__link">
+  <a href="#usando-la-plantilla-de-mapeo-en-el-wis2box" class="md-nav__link">
     <span class="md-ellipsis">
-      Usando la plantilla de mapeo en wis2box
+      Usando la plantilla de mapeo en el wis2box
     </span>
   </a>
   
@@ -642,18 +642,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#actualizar-el-archivo-de-ejemplo" class="md-nav__link">
+  <a href="#actualiza-el-archivo-de-ejemplo" class="md-nav__link">
     <span class="md-ellipsis">
-      Actualizar el archivo de ejemplo
+      Actualiza el archivo de ejemplo
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#subir-los-datos-a-minio-y-verificar-el-resultado" class="md-nav__link">
+  <a href="#sube-los-datos-a-minio-y-verifica-el-resultado" class="md-nav__link">
     <span class="md-ellipsis">
-      Subir los datos a MinIO y verificar el resultado
+      Sube los datos a MinIO y verifica el resultado
     </span>
   </a>
   
@@ -684,16 +684,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#revisar-los-datos-de-entrada-de-ejemplo-de-daycli" class="md-nav__link">
+  <a href="#revisar-los-datos-de-entrada-del-ejemplo-daycli" class="md-nav__link">
     <span class="md-ellipsis">
-      Revisar los datos de entrada de ejemplo de daycli
+      Revisar los datos de entrada del ejemplo daycli
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#actualiza-el-archivo-de-ejemplo" class="md-nav__link">
+  <a href="#actualiza-el-archivo-de-ejemplo_1" class="md-nav__link">
     <span class="md-ellipsis">
       Actualiza el archivo de ejemplo
     </span>
@@ -702,7 +702,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sube-los-datos-a-minio-y-verifica-el-resultado" class="md-nav__link">
+  <a href="#sube-los-datos-a-minio-y-verifica-el-resultado_1" class="md-nav__link">
     <span class="md-ellipsis">
       Sube los datos a MinIO y verifica el resultado
     </span>
@@ -1102,9 +1102,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#usando-la-plantilla-de-mapeo-en-wis2box" class="md-nav__link">
+  <a href="#usando-la-plantilla-de-mapeo-en-el-wis2box" class="md-nav__link">
     <span class="md-ellipsis">
-      Usando la plantilla de mapeo en wis2box
+      Usando la plantilla de mapeo en el wis2box
     </span>
   </a>
   
@@ -1135,18 +1135,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#actualizar-el-archivo-de-ejemplo" class="md-nav__link">
+  <a href="#actualiza-el-archivo-de-ejemplo" class="md-nav__link">
     <span class="md-ellipsis">
-      Actualizar el archivo de ejemplo
+      Actualiza el archivo de ejemplo
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#subir-los-datos-a-minio-y-verificar-el-resultado" class="md-nav__link">
+  <a href="#sube-los-datos-a-minio-y-verifica-el-resultado" class="md-nav__link">
     <span class="md-ellipsis">
-      Subir los datos a MinIO y verificar el resultado
+      Sube los datos a MinIO y verifica el resultado
     </span>
   </a>
   
@@ -1177,16 +1177,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#revisar-los-datos-de-entrada-de-ejemplo-de-daycli" class="md-nav__link">
+  <a href="#revisar-los-datos-de-entrada-del-ejemplo-daycli" class="md-nav__link">
     <span class="md-ellipsis">
-      Revisar los datos de entrada de ejemplo de daycli
+      Revisar los datos de entrada del ejemplo daycli
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#actualiza-el-archivo-de-ejemplo" class="md-nav__link">
+  <a href="#actualiza-el-archivo-de-ejemplo_1" class="md-nav__link">
     <span class="md-ellipsis">
       Actualiza el archivo de ejemplo
     </span>
@@ -1195,7 +1195,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sube-los-datos-a-minio-y-verifica-el-resultado" class="md-nav__link">
+  <a href="#sube-los-datos-a-minio-y-verifica-el-resultado_1" class="md-nav__link">
     <span class="md-ellipsis">
       Sube los datos a MinIO y verifica el resultado
     </span>
@@ -1245,25 +1245,25 @@
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
-<p>Los archivos de datos de valores separados por comas (CSV) se utilizan a menudo para registrar datos observacionales y otros datos en un formato tabular.
+<p>Los archivos de datos en valores separados por comas (CSV) se utilizan a menudo para registrar datos observacionales y otros datos en un formato tabular.
 La mayoría de los registradores de datos utilizados para registrar la salida de sensores pueden exportar las observaciones en archivos delimitados, incluyendo en CSV.
 De manera similar, cuando los datos se ingieren en una base de datos, es fácil exportar los datos requeridos en archivos formateados CSV.</p>
-<p>El módulo csv2bufr de wis2box proporciona una herramienta de línea de comandos para convertir datos CSV a formato BUFR. Al usar csv2bufr necesitas proporcionar una plantilla de mapeo BUFR que mapee las columnas CSV a los elementos BUFR correspondientes. Si no deseas crear tu propia plantilla de mapeo, puedes usar las plantillas integradas de AWS y DAYCLI para convertir datos CSV a BUFR, pero necesitarás asegurarte de que los datos CSV que estás utilizando estén en el formato correcto para estas plantillas. Si deseas decodificar parámetros que no están incluidos en las plantillas de AWS y DAYCLI, necesitarás crear tu propia plantilla de mapeo.</p>
+<p>El módulo csv2bufr de wis2box proporciona una herramienta de línea de comandos para convertir datos CSV a formato BUFR. Al usar csv2bufr necesitas proporcionar una plantilla de mapeo BUFR que mapee las columnas CSV a los elementos BUFR correspondientes. Si no deseas crear tu propia plantilla de mapeo, puedes usar las plantillas integradas de AWS y DAYCLI para convertir datos CSV a BUFR, pero necesitarás asegurarte de que los datos CSV que estás usando están en el formato correcto para estas plantillas. Si deseas decodificar parámetros que no están incluidos en las plantillas de AWS y DAYCLI, necesitarás crear tu propia plantilla de mapeo.</p>
 <p>En esta sesión aprenderás cómo crear tu propia plantilla de mapeo para convertir datos CSV a BUFR. También aprenderás cómo usar las plantillas integradas de AWS y DAYCLI para convertir datos CSV a BUFR.</p>
 <h2 id="preparacion">Preparación</h2>
-<p>Asegúrate de que el wis2box-stack haya sido iniciado con <code>python3 wis2box.py start</code></p>
+<p>Asegúrate de que el wis2box-stack ha sido iniciado con <code>python3 wis2box.py start</code></p>
 <p>Asegúrate de que tienes un navegador web abierto con la interfaz de usuario de MinIO para tu instancia accediendo a <code>http://YOUR-HOST:9000</code>
 Si no recuerdas tus credenciales de MinIO, puedes encontrarlas en el archivo <code>wis2box.env</code> en el directorio <code>wis2box</code> en tu VM de estudiante.</p>
 <p>Asegúrate de que tienes MQTT Explorer abierto y conectado a tu broker usando las credenciales <code>everyone/everyone</code>.</p>
 <h2 id="creando-una-plantilla-de-mapeo">Creando una plantilla de mapeo</h2>
 <p>El módulo csv2bufr viene con una herramienta de línea de comandos para crear tu propia plantilla de mapeo usando un conjunto de secuencias BUFR y/o elemento BUFR como entrada.</p>
-<p>Para encontrar secuencias y elementos BUFR específicos puedes referirte a las tablas BUFR en <a href="https://confluence.ecmwf.int/display/ECC/BUFR+tables">https://confluence.ecmwf.int/display/ECC/BUFR+tables</a>.</p>
+<p>Para encontrar secuencias BUFR y elementos específicos puedes referirte a las tablas BUFR en <a href="https://confluence.ecmwf.int/display/ECC/BUFR+tables">https://confluence.ecmwf.int/display/ECC/BUFR+tables</a>.</p>
 <h3 id="herramienta-de-linea-de-comandos-csv2bufr-mappings">Herramienta de línea de comandos csv2bufr mappings</h3>
 <p>Para acceder a la herramienta de línea de comandos csv2bufr, necesitas iniciar sesión en el contenedor wis2box-api:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2box-api
 </code></pre></div>
-<p>Para imprimir la página de ayuda del comando <code>csv2bufr mapping</code>:</p>
+<p>Para imprimir la página de ayuda para el comando <code>csv2bufr mapping</code>:</p>
 <div class="highlight"><pre><span></span><code>csv2bufr<span class="w"> </span>mappings<span class="w"> </span>--help
 </code></pre></div>
 <p>La página de ayuda muestra 2 subcomandos:</p>
@@ -1275,7 +1275,7 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span 
 <p class="admonition-title">csv2bufr mapping list</p>
 <p>El comando <code>csv2bufr mapping list</code> te mostrará las plantillas de mapeo disponibles en el sistema.
 Las plantillas predeterminadas están almacenadas en el directorio <code>/opt/wis2box/csv2bufr/templates</code> en el contenedor.</p>
-<p>Para compartir plantillas de mapeo personalizadas con el sistema puedes almacenarlas en el directorio definido por <code>$CSV2BUFR_TEMPLATES</code>, que está configurado como <code>/data/wis2box/mappings</code> por defecto en el contenedor. Dado que el directorio <code>/data/wis2box/mappings</code> en el contenedor está montado en el directorio <code>$WIS2BOX_HOST_DATADIR/mappings</code> en el host, encontrarás tus plantillas de mapeo personalizadas en el directorio <code>$WIS2BOX_HOST_DATADIR/mappings</code> en el host.</p>
+<p>Para compartir plantillas de mapeo personalizadas con el sistema puedes almacenarlas en el directorio definido por <code>$CSV2BUFR_TEMPLATES</code>, que está configurado por defecto en <code>/data/wis2box/mappings</code> en el contenedor. Dado que el directorio <code>/data/wis2box/mappings</code> en el contenedor está montado en el directorio <code>$WIS2BOX_HOST_DATADIR/mappings</code> en el host, encontrarás tus plantillas de mapeo personalizadas en el directorio <code>$WIS2BOX_HOST_DATADIR/mappings</code> en el host.</p>
 </div>
 <p>Intentemos crear una nueva plantilla de mapeo personalizada usando el comando <code>csv2bufr mapping create</code> usando como entrada la secuencia BUFR 301150 más el elemento BUFR 012101.</p>
 <div class="highlight"><pre><span></span><code>csv2bufr<span class="w"> </span>mappings<span class="w"> </span>create<span class="w"> </span><span class="m">301150</span><span class="w"> </span><span class="m">012101</span><span class="w"> </span>--output<span class="w"> </span>/data/wis2box/mappings/my_custom_template.json
@@ -1299,7 +1299,7 @@ Las plantillas predeterminadas están almacenadas en el directorio <code>/opt/wi
 <li><strong>airTemperature</strong> se mapea a <code>"eccodes_key": "#1#airTemperature"</code> (elemento BUFR 012101)</li>
 </ul>
 </details>
-<p>La plantilla de mapeo que creaste omite metadatos importantes sobre la observación realizada, la fecha y hora de la observación, y la latitud y longitud de la estación.</p>
+<p>La plantilla de mapeo que creaste omite información importante sobre la observación que se realizó, la fecha y hora de la observación, y la latitud y longitud de la estación.</p>
 <p>A continuación, actualizaremos la plantilla de mapeo y añadiremos las siguientes secuencias:</p>
 <ul>
 <li><strong>301011</strong> para Fecha (Año, mes, día)</li>
@@ -1345,19 +1345,17 @@ Las plantillas predeterminadas están almacenadas en el directorio <code>/opt/wi
 <li><strong>longitude</strong> se mapea a <code>"eccodes_key": "#1#longitude"</code> (elemento BUFR 006002)</li>
 <li><strong>heightOfBarometerAboveMeanSeaLevel"</strong> se mapea a <code>"eccodes_key": "#1#heightOfBarometerAboveMeanSeaLevel"</code> (elemento BUFR 007031)</li>
 <li><strong>airTemperature</strong> se mapea a <code>"eccodes_key": "#1#airTemperature"</code> (elemento BUFR 012101)</li>
-</ul>
-</details>
-<ul>
 <li><strong>nonCoordinatePressure</strong> se mapea a <code>"eccodes_key": "#1#nonCoordinatePressure"</code> (elemento BUFR 010004)</li>
 </ul>
-<p>Revise el contenido del archivo <code>custom_template_data.csv</code> en el directorio <code>/root/data-conversion-exercises</code>:</p>
+</details>
+<p>Revisa el contenido del archivo <code>custom_template_data.csv</code> en el directorio <code>/root/data-conversion-exercises</code>:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/root/data-conversion-exercises/custom_template_data.csv
 </code></pre></div>
-<p>Note que los encabezados de este archivo CSV son los mismos que los encabezados CSV en la plantilla de mapeo que creó.</p>
-<p>Para probar la conversión de datos podemos usar la herramienta de línea de comandos <code>csv2bufr</code> para convertir el archivo CSV a BUFR utilizando la plantilla de mapeo que creamos:</p>
+<p>Nota que los encabezados de este archivo CSV son los mismos que los encabezados CSV en la plantilla de mapeo que creaste.</p>
+<p>Para probar la conversión de datos podemos usar la herramienta de línea de comandos <code>csv2bufr</code> para convertir el archivo CSV a BUFR usando la plantilla de mapeo que creamos:</p>
 <div class="highlight"><pre><span></span><code>csv2bufr<span class="w"> </span>data<span class="w"> </span>transform<span class="w"> </span>--bufr-template<span class="w"> </span>my_custom_template<span class="w"> </span>/root/data-conversion-exercises/custom_template_data.csv
 </code></pre></div>
-<p>Debería ver la siguiente salida:</p>
+<p>Deberías ver la siguiente salida:</p>
 <div class="highlight"><pre><span></span><code>CLI:<span class="w">    </span>...<span class="w"> </span>Transformando<span class="w"> </span>/root/data-conversion-exercises/custom_template_data.csv<span class="w"> </span>a<span class="w"> </span>BUFR<span class="w"> </span>...
 CLI:<span class="w">    </span>...<span class="w"> </span>Procesando<span class="w"> </span>subconjuntos:
 CLI:<span class="w">    </span>.....<span class="w"> </span><span class="m">94</span><span class="w"> </span>bytes<span class="w"> </span>escritos<span class="w"> </span>en<span class="w"> </span>./WIGOS_0-20000-0-15015_20250412T210000.bufr4
@@ -1365,115 +1363,113 @@ CLI:<span class="w">    </span>Fin<span class="w"> </span>del<span class="w"> </
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Verificar el contenido del archivo BUFR</p>
-<p>¿Cómo puede verificar el contenido del archivo BUFR que acaba de crear y verificar que ha codificado los datos correctamente?</p>
+<p>¿Cómo puedes verificar el contenido del archivo BUFR que acabas de crear y verificar que ha codificado los datos correctamente?</p>
 </div>
 <details class="success">
-<summary>Haga clic para revelar la respuesta</summary>
-<p>Puede usar el comando <code>bufr_dump -p</code> para verificar el contenido del archivo BUFR que acaba de crear.
-El comando le mostrará el contenido del archivo BUFR en un formato legible por humanos.</p>
+<summary>Haz clic para revelar la respuesta</summary>
+<p>Puedes usar el comando <code>bufr_dump -p</code> para verificar el contenido del archivo BUFR que acabas de crear.
+El comando te mostrará el contenido del archivo BUFR en un formato legible por humanos.</p>
 <div class="highlight"><pre><span></span><code>bufr_dump<span class="w"> </span>-p<span class="w"> </span>./WIGOS_0-20000-0-15015_20250412T210000.bufr4
 </code></pre></div>
-<p>En la salida verá valores para los elementos BUFR que mapeó en la plantilla, por ejemplo, la "airTemperature" mostrará:</p>
+<p>En la salida verás valores para los elementos BUFR que mapeaste en la plantilla, por ejemplo, la "airTemperature" mostrará:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">airTemperature</span><span class="o">=</span><span class="m">298</span>.15
 </code></pre></div>
 </details>
-<p>Ahora puede salir del contenedor:</p>
+<p>Ahora puedes salir del contenedor:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<h3 id="usando-la-plantilla-de-mapeo-en-wis2box">Usando la plantilla de mapeo en wis2box</h3>
-<p>Para asegurarse de que la nueva plantilla de mapeo sea reconocida por el contenedor de wis2box-api, necesita reiniciar el contenedor:</p>
+<h3 id="usando-la-plantilla-de-mapeo-en-el-wis2box">Usando la plantilla de mapeo en el wis2box</h3>
+<p>Para asegurar que la nueva plantilla de mapeo sea reconocida por el contenedor wis2box-api, necesitas reiniciar el contenedor:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-api
 </code></pre></div>
-<p>Ahora puede configurar su conjunto de datos en wis2box-webapp para usar la plantilla de mapeo personalizada para el complemento de conversión de CSV a BUFR.</p>
-<p>El wis2box-webapp detectará automáticamente la plantilla de mapeo que creó y la hará disponible en la lista de plantillas para el complemento de conversión de CSV a BUFR.</p>
-<p>Haga clic en el conjunto de datos que creó en la sesión práctica anterior y haga clic en "ACTUALIZAR" junto al complemento con el nombre "Datos CSV convertidos a BUFR":</p>
-<p><img alt="Imagen mostrando el editor de conjuntos de datos en wis2box-webapp" src="../../assets/img/wis2box-webapp-data-mapping-update-csv2bufr.png"/></p>
-<p>Debería ver la nueva plantilla que creó en la lista de plantillas disponibles:</p>
-<p><img alt="Imagen mostrando las plantillas csv2bufr en wis2box-webapp" src="../../assets/img/wis2box-webapp-csv2bufr-templates.png"/></p>
+<p>Ahora puedes configurar tu conjunto de datos en el wis2box-webapp para usar la plantilla de mapeo personalizada para el complemento de conversión de CSV a BUFR.</p>
+<p>El wis2box-webapp detectará automáticamente la plantilla de mapeo que creaste y la hará disponible en la lista de plantillas para el complemento de conversión de CSV a BUFR.</p>
+<p>Haz clic en el conjunto de datos que creaste en la sesión práctica anterior y haz clic en "ACTUALIZAR" junto al complemento con el nombre "Datos CSV convertidos a BUFR":</p>
+<p><img alt="Imagen que muestra el editor de conjuntos de datos en el wis2box-webapp" src="../../assets/img/wis2box-webapp-data-mapping-update-csv2bufr.png"/></p>
+<p>Deberías ver la nueva plantilla que creaste en la lista de plantillas disponibles:</p>
+<p><img alt="Imagen que muestra las plantillas csv2bufr en el wis2box-webapp" src="../../assets/img/wis2box-webapp-csv2bufr-templates.png"/></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Tenga en cuenta que si no ve la nueva plantilla que creó, intente actualizar la página o abrirla en una nueva ventana de incógnito.</p>
+<p>Ten en cuenta que si no ves la nueva plantilla que creaste, intenta actualizar la página o abrirla en una ventana de incógnito nueva.</p>
 </div>
-<p>Por ahora, mantenga la selección predeterminada de la plantilla de AWS (haga clic en la parte superior derecha para cerrar la configuración del complemento).</p>
+<p>Por ahora, mantén la selección predeterminada de la plantilla AWS (haz clic en la parte superior derecha para cerrar la configuración del complemento).</p>
 <h2 id="usando-la-plantilla-aws">Usando la plantilla 'AWS'</h2>
 <p>La plantilla 'AWS' proporciona una plantilla de mapeo para convertir datos CSV a la secuencia BUFR 301150, 307096, en apoyo de los requisitos mínimos de GBON.</p>
 <p>La descripción de la plantilla AWS se puede encontrar aquí <a href="../../csv2bufr-templates/aws-template/">aws-template</a>.</p>
 <h3 id="revisar-los-datos-de-entrada-de-ejemplo-de-aws">Revisar los datos de entrada de ejemplo de aws</h3>
-<p>Descargue el ejemplo para este ejercicio desde el siguiente enlace:</p>
+<p>Descarga el ejemplo para este ejercicio desde el siguiente enlace:</p>
 <p><a href="../../../sample-data/aws-example.csv">aws-example.csv</a></p>
-<p>Abra el archivo que descargó en un editor e inspeccione el contenido:</p>
+<p>Abre el archivo que descargaste en un editor e inspecciona el contenido:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Examinando los campos de fecha, hora e identificación (identificadores WIGOS y tradicionales) ¿qué
-nota? ¿Cómo se representaría la fecha de hoy?</p>
+<p>Examinando la fecha, la hora y los campos de identificación (identificadores WIGOS y tradicionales) ¿qué
+notas? ¿Cómo se representaría la fecha de hoy?</p>
 </div>
 <details class="success">
-<summary>Haga clic para revelar la respuesta</summary>
+<summary>Haz clic para revelar la respuesta</summary>
 <p>Cada columna contiene una sola pieza de información. Por ejemplo, la fecha se divide en
-año, mes y día, reflejando cómo se almacenan los datos en BUFR. La fecha de hoy se 
-dividiría en las columnas "año", "mes" y "día". De manera similar, la hora necesita ser
-dividida en "hora" y "minuto" y el identificador de la estación WIGOS en sus respectivos componentes.</p>
+año, mes y día, reflejando cómo se almacenan los datos en BUFR. La fecha de hoy se dividiría
+en las columnas "año", "mes" y "día". De manera similar, la hora necesita dividirse en "hora" y "minuto" y el identificador de la estación WIGOS en sus respectivos componentes.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Mirando el archivo de datos, ¿cómo se codifican los datos faltantes?</p>
 </div>
 <details class="success">
-<summary>Haga clic para revelar la respuesta</summary>
-<p>Los datos faltantes en el archivo están representados por celdas vacías. En un archivo CSV esto se codificaría como <code>,,</code>. Note que esto es una celda vacía y no se codifica como una cadena de longitud cero, 
-e.g. <code>,"",</code>.</p>
+<summary>Haz clic para revelar la respuesta</summary>
+<p>Los datos faltantes dentro del archivo están representados por celdas vacías. En un archivo CSV esto se codificaría como <code>,,</code>. Ten en cuenta que esto es una celda vacía y no se codifica como una cadena de longitud cero, 
+por ejemplo, <code>,"",</code>.</p>
 </details>
 <div class="admonition hint">
 <p class="admonition-title">Datos faltantes</p>
-<p>Se reconoce que los datos pueden faltar por diversas razones, ya sea debido a fallos en los sensores o a que el parámetro no se observó. En estos casos, los datos faltantes pueden codificarse
-según la respuesta anterior, los otros datos en el informe siguen siendo válidos.</p>
+<p>Se reconoce que los datos pueden faltar por diversas razones, ya sea debido a fallos en los sensores o a que el parámetro no se observó. En estos casos, los datos faltantes pueden codificarse según la respuesta anterior, los demás datos en el informe siguen siendo válidos.</p>
 </div>
-<h3 id="actualizar-el-archivo-de-ejemplo">Actualizar el archivo de ejemplo</h3>
-<p>Actualice el archivo de ejemplo que descargó para usar la fecha y hora de hoy y cambie los identificadores de las estaciones WIGOS para usar estaciones que haya registrado en wis2box-webapp.</p>
-<h3 id="subir-los-datos-a-minio-y-verificar-el-resultado">Subir los datos a MinIO y verificar el resultado</h3>
-<p>Navegue a la interfaz de usuario de MinIO y inicie sesión usando las credenciales del archivo <code>wis2box.env</code>.</p>
-<p>Navegue a <strong>wis2box-incoming</strong> y haga clic en el botón "Crear nueva ruta":</p>
-<p><img alt="Imagen mostrando la interfaz de usuario de MinIO con el botón de crear carpeta resaltado" src="../../assets/img/minio-create-new-path.png"/></p>
-<p>Cree una nueva carpeta en el bucket de MinIO que coincida con el id de conjunto de datos para el conjunto de datos que creó con la plantilla='weather/surface-weather-observations/synop':</p>
-<p><img alt="Imagen mostrando la interfaz de usuario de MinIO con el botón de crear carpeta resaltado" src="../../assets/img/minio-create-new-path-metadata_id.png"/></p>
-<p>Suba el archivo de ejemplo que descargó a la carpeta que creó en el bucket de MinIO:</p>
-<p><img alt="Imagen mostrando la interfaz de usuario de MinIO con aws-example subido" src="../../assets/img/minio-upload-aws-example.png"/></center></p>
-<p>Verifique el panel de Grafana en <code>http://YOUR-HOST:3000</code> para ver si hay ADVERTENCIAS o ERRORES. Si ve alguno, intente solucionarlo y repita el ejercicio.</p>
-<p>Verifique el MQTT Explorer para ver si recibe notificaciones de datos WIS2.</p>
-<p>Si ingirió los datos con éxito, debería ver 3 notificaciones en MQTT explorer en el tema <code>origin/a/wis2/&lt;centre-id&gt;/data/weather/surface-weather-observations/synop</code> para las 3 estaciones para las que informó datos:</p>
-<p><img width="450" alt="Imagen mostrando MQTT explorer después de subir AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/></p>
+<h3 id="actualiza-el-archivo-de-ejemplo">Actualiza el archivo de ejemplo</h3>
+<p>Actualiza el archivo de ejemplo que descargaste para usar la fecha y hora de hoy y cambia los identificadores de estación WIGOS para usar estaciones que hayas registrado en la <code>wis2box-webapp</code>.</p>
+<h3 id="sube-los-datos-a-minio-y-verifica-el-resultado">Sube los datos a MinIO y verifica el resultado</h3>
+<p>Navega a la interfaz de usuario de MinIO e inicia sesión usando las credenciales del archivo <code>wis2box.env</code>.</p>
+<p>Navega al <strong>wis2box-incoming</strong> y haz clic en el botón "Crear nueva ruta":</p>
+<p><img alt="Image showing MinIO UI with the create folder button highlighted" src="../../assets/img/minio-create-new-path.png"/></p>
+<p>Crea una nueva carpeta en el bucket de MinIO que coincida con el dataset-id para el conjunto de datos que creaste con el template='weather/surface-weather-observations/synop':</p>
+<p><img alt="Image showing MinIO UI with the create folder button highlighted" src="../../assets/img/minio-create-new-path-metadata_id.png"/></p>
+<p>Sube el archivo de ejemplo que descargaste a la carpeta que creaste en el bucket de MinIO:</p>
+<p><img alt="Image showing MinIO UI with aws-example uploaded" src="../../assets/img/minio-upload-aws-example.png"/></p>
+<p>Verifica el tablero de Grafana en <code>http://YOUR-HOST:3000</code> para ver si hay algún WARNING o ERROR. Si ves alguno, intenta solucionarlo y repite el ejercicio.</p>
+<p>Revisa el MQTT Explorer para ver si recibes notificaciones de datos WIS2.</p>
+<p>Si la ingestión de datos fue exitosa, deberías ver 3 notificaciones en MQTT Explorer en el tema <code>origin/a/wis2/&lt;centre-id&gt;/data/weather/surface-weather-observations/synop</code> para las 3 estaciones de las que reportaste datos:</p>
+<p><img width="450" alt="Image showing MQTT explorer after uploading AWS" src="../../assets/img/mqtt-explorer-aws-upload.png"/></p>
 <h2 id="usando-la-plantilla-daycli">Usando la plantilla 'DayCLI'</h2>
-<p>La plantilla <strong>DayCLI</strong> proporciona una plantilla de mapeo para convertir datos CSV de clima diario a la secuencia BUFR 307075, en apoyo de la presentación de datos climáticos diarios.</p>
+<p>La plantilla <strong>DayCLI</strong> proporciona una plantilla de mapeo para convertir datos diarios de clima en CSV a la secuencia BUFR 307075, en apoyo del reporte de datos climáticos diarios.</p>
 <p>La descripción de la plantilla DAYCLI se puede encontrar aquí <a href="../../csv2bufr-templates/daycli-template/">daycli-template</a>.</p>
-<p>Para compartir estos datos en WIS2, necesitará crear un nuevo conjunto de datos en wis2box-webapp que tenga la Jerarquía de Temas WIS2 correcta y que use la plantilla DAYCLI para convertir datos CSV a BUFR.</p>
+<p>Para compartir estos datos en WIS2 necesitarás crear un nuevo conjunto de datos en la <code>wis2box-webapp</code> que tenga la Jerarquía de Temas WIS2 correcta y que use la plantilla DAYCLI para convertir datos CSV a BUFR.</p>
 <h3 id="creando-un-conjunto-de-datos-wis2box-para-publicar-mensajes-daycli">Creando un conjunto de datos wis2box para publicar mensajes DAYCLI</h3>
-<p>Vaya al editor de conjuntos de datos en wis2box-webapp y cree un nuevo conjunto de datos. Use el mismo id de centro que en las sesiones prácticas anteriores y seleccione <strong>Data Type='climate/surface-based-observations/daily'</strong>:</p>
-<p><img alt="Crear un nuevo conjunto de datos en wis2box-webapp para DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/></p>
-<p>Haga clic en "CONTINUAR AL FORMULARIO" y agregue una descripción para su conjunto de datos, establezca el cuadro delimitador y proporcione la información de contacto para el conjunto de datos. Una vez que haya completado todas las secciones, haga clic en 'VALIDAR FORMULARIO' y revise el formulario.</p>
-<p>Revise los complementos de datos para los conjuntos de datos. Haga clic en "ACTUALIZAR" junto al complemento con el nombre "Datos CSV convertidos a BUFR" y verá que la plantilla está configurada para <strong>DayCLI</strong>:</p>
-<p><img alt="Actualizar el complemento de datos para el conjunto de datos para usar la plantilla DAYCLI" src="../../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/></p>
-<p>Cierre la configuración del complemento y envíe el formulario usando el token de autenticación que creó en la sesión práctica anterior.</p>
-<p>Ahora debería tener un segundo conjunto de datos en wis2box-webapp que está configurado para usar la plantilla DAYCLI para convertir datos CSV a BUFR.</p>
-<h3 id="revisar-los-datos-de-entrada-de-ejemplo-de-daycli">Revisar los datos de entrada de ejemplo de daycli</h3>
-<p>Descargue el ejemplo para este ejercicio desde el siguiente enlace:</p>
+<p>Ve al editor de conjuntos de datos en la <code>wis2box-webapp</code> y crea un nuevo conjunto de datos. Usa el mismo centre-id que en las sesiones prácticas anteriores y selecciona <strong>Data Type='climate/surface-based-observations/daily'</strong>:</p>
+<p><img alt="Create a new dataset in the wis2box-webapp for DAYCLI" src="../../assets/img/wis2box-webapp-create-dataset-daycli.png"/></p>
+<p>Haz clic en "CONTINUE TO FORM" y añade una descripción para tu conjunto de datos, establece el cuadro delimitador y proporciona la información de contacto para el conjunto de datos. Una vez que hayas completado todas las secciones, haz clic en 'VALIDATE FORM' y revisa el formulario.</p>
+<p>Revisa los plugins de datos para los conjuntos de datos. Haz clic en "UPDATE" junto al plugin con nombre "CSV data converted to BUFR" y verás que la plantilla está configurada para <strong>DayCLI</strong>:</p>
+<p><img alt="Update the data plugin for the dataset to use the DAYCLI template" src="../../assets/img/wis2box-webapp-update-data-plugin-daycli.png"/></p>
+<p>Cierra la configuración del plugin y envía el formulario usando el token de autenticación que creaste en la sesión práctica anterior.</p>
+<p>Ahora deberías tener un segundo conjunto de datos en la <code>wis2box-webapp</code> que está configurado para usar la plantilla DAYCLI para convertir datos CSV a BUFR.</p>
+<h3 id="revisar-los-datos-de-entrada-del-ejemplo-daycli">Revisar los datos de entrada del ejemplo daycli</h3>
+<p>Descarga el ejemplo para este ejercicio desde el siguiente enlace:</p>
 <p><a href="../../../sample-data/daycli-example.csv">daycli-example.csv</a></p>
-<p>Abra el archivo que descargó en un editor e inspeccione el contenido:</p>
+<p>Abre el archivo que descargaste en un editor e inspecciona el contenido:</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>¿Qué variables adicionales están incluidas en la plantilla daycli?</p>
+<p>¿Qué variables adicionales se incluyen en la plantilla daycli?</p>
 </div>
 <details class="success">
-<summary>Haga clic para revelar la respuesta</summary>
+<summary>Haz clic para revelar la respuesta</summary>
+<p>La plantilla daycli incluye metadatos importantes sobre la ubicación del instrumento y las clasificaciones de calidad de la medición para temperatura y humedad, banderas de control de calidad e información sobre cómo se ha calculado la temperatura media diaria.</p>
 </details>
-<p>La plantilla daycli incluye metadatos importantes sobre la ubicación del instrumento y las clasificaciones de calidad de medición para temperatura y humedad, banderas de control de calidad e información sobre cómo se ha calculado la temperatura media diaria.</p>
-<h3 id="actualiza-el-archivo-de-ejemplo">Actualiza el archivo de ejemplo</h3>
-<p>El archivo de ejemplo contiene una fila de datos para cada día del mes e informa datos de una estación. Actualiza el archivo de ejemplo que descargaste para usar la fecha y hora de hoy y cambia los identificadores de estación WIGOS para usar una estación que hayas registrado en la <code>wis2box-webapp</code>.</p>
-<h3 id="sube-los-datos-a-minio-y-verifica-el-resultado">Sube los datos a MinIO y verifica el resultado</h3>
-<p>Como antes, necesitarás subir los datos al bucket <code>wis2box-incoming</code> en MinIO para ser procesados por el conversor csv2bufr. Esta vez necesitarás crear una nueva carpeta en el bucket de MinIO que coincida con el dataset-id para el conjunto de datos que creaste con la plantilla='climate/surface-based-observations/daily' que será diferente del dataset-id que usaste en el ejercicio anterior:</p>
-<p><img alt="Imagen mostrando la interfaz de usuario de MinIO con DAYCLI-ejemplo subido" src="../../assets/img/minio-upload-daycli-example.png"/></p>
-<p>Después de subir los datos verifica que no haya ADVERTENCIAS o ERRORES en el tablero de Grafana y revisa el MQTT Explorer para ver si recibes notificaciones de datos WIS2.</p>
-<p>Si has ingerido los datos con éxito deberías ver 30 notificaciones en MQTT Explorer en el tema <code>origin/a/wis2/&lt;centre-id&gt;/data/climate/surface-based-observations/daily</code> por los 30 días del mes que reportaste datos para:</p>
-<p><img width="450" alt="Imagen mostrando MQTT Explorer después de subir DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/></p>
+<h3 id="actualiza-el-archivo-de-ejemplo_1">Actualiza el archivo de ejemplo</h3>
+<p>El archivo de ejemplo contiene una fila de datos para cada día en un mes, y reporta datos para una estación. Actualiza el archivo de ejemplo que descargaste para usar la fecha y hora de hoy y cambia los identificadores de estación WIGOS para usar una estación que hayas registrado en la <code>wis2box-webapp</code>.</p>
+<h3 id="sube-los-datos-a-minio-y-verifica-el-resultado_1">Sube los datos a MinIO y verifica el resultado</h3>
+<p>Como antes, necesitarás subir los datos al bucket 'wis2box-incoming' en MinIO para ser procesados por el convertidor csv2bufr. Esta vez necesitarás crear una nueva carpeta en el bucket de MinIO que coincida con el dataset-id para el conjunto de datos que creaste con el template='climate/surface-based-observations/daily' que será diferente del dataset-id que usaste en el ejercicio anterior:</p>
+<p><img alt="Image showing MinIO UI with DAYCLI-example uploaded" src="../../assets/img/minio-upload-daycli-example.png"/></p>
+<p>Después de subir los datos verifica que no haya WARNINGS o ERRORS en el tablero de Grafana y revisa el MQTT Explorer para ver si recibes notificaciones de datos WIS2.</p>
+<p>Si la ingestión de datos fue exitosa, deberías ver 30 notificaciones en MQTT Explorer en el tema <code>origin/a/wis2/&lt;centre-id&gt;/data/climate/surface-based-observations/daily</code> para los 30 días del mes que reportaste datos para:</p>
+<p><img width="450" alt="Image showing MQTT explorer after uploading DAYCLI" src="../../assets/img/mqtt-daycli-template-success.png"/></p>
 <h2 id="conclusion">Conclusión</h2>
 <div class="admonition success">
 <p class="admonition-title">Felicidades</p>

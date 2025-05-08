@@ -467,9 +467,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecciona-los-materiales-de-ejercicio" class="md-nav__link">
+  <a href="#inspecciona-los-materiales-de-los-ejercicios" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecciona los materiales de ejercicio
+      Inspecciona los materiales de los ejercicios
     </span>
   </a>
   
@@ -984,9 +984,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecciona-los-materiales-de-ejercicio" class="md-nav__link">
+  <a href="#inspecciona-los-materiales-de-los-ejercicios" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecciona los materiales de ejercicio
+      Inspecciona los materiales de los ejercicios
     </span>
   </a>
   
@@ -1023,12 +1023,12 @@
 <p>Al final de esta sesión práctica, podrás:</p>
 <ul>
 <li>acceder a tu VM de estudiante mediante SSH y WinSCP</li>
-<li>verificar que el software necesario para los ejercicios prácticos esté instalado</li>
-<li>verificar que tienes acceso a los materiales de los ejercicios para este entrenamiento en tu VM de estudiante local</li>
+<li>verificar que el software requerido para los ejercicios prácticos esté instalado</li>
+<li>verificar que tienes acceso a los materiales de los ejercicios para esta capacitación en tu VM de estudiante local</li>
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
-<p>Como parte de las sesiones de entrenamiento de wis2box realizadas localmente, puedes acceder a tu VM de estudiante personal en la red local de entrenamiento denominada "WIS2-training".</p>
+<p>Como parte de las sesiones de capacitación de wis2box que se realizan localmente, puedes acceder a tu VM de estudiante personal en la red local de entrenamiento denominada "WIS2-training".</p>
 <p>Tu VM de estudiante tiene el siguiente software preinstalado:</p>
 <ul>
 <li>Ubuntu 22.0.4.3 LTS <a href="https://releases.ubuntu.com/jammy/ubuntu-22.04.3-live-server-amd64.iso">ubuntu-22.04.3-live-server-amd64.iso</a></li>
@@ -1039,31 +1039,31 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si deseas realizar este entrenamiento fuera de una sesión de entrenamiento local, puedes proporcionar tu propia instancia utilizando cualquier proveedor de nube, por ejemplo:</p>
+<p>Si deseas realizar esta capacitación fuera de una sesión de entrenamiento local, puedes proporcionar tu propia instancia utilizando cualquier proveedor de nube, por ejemplo:</p>
 <ul>
 <li>Instancia VM de GCP (Google Cloud Platform) <code>e2-medium</code></li>
 <li>Instancia ec2 de AWS (Amazon Web Services) <code>t3a.medium</code></li>
-<li>Máquina Virtual de Azure (Microsoft) <code>standard_b2s</code></li>
+<li>Máquina Virtual Azure de Azure (Microsoft) <code>standard_b2s</code></li>
 </ul>
 <p>Selecciona Ubuntu Server 22.0.4 LTS como sistema operativo.</p>
 <p>Después de crear tu VM asegúrate de haber instalado python, docker y docker compose, como se describe en <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
-<p>El archivo de lanzamiento para wis2box utilizado en este entrenamiento se puede descargar de la siguiente manera:</p>
+<p>El archivo de lanzamiento para wis2box utilizado en esta capacitación se puede descargar de la siguiente manera:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/World-Meteorological-Organization/wis2box-release/releases/download/1.0.0/wis2box-setup.zip
 unzip<span class="w"> </span>wis2box-setup.zip
 </code></pre></div>
-<p>Siempre puedes encontrar el último archivo 'wis2box-setup' en <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
-<p>Los materiales de ejercicio utilizados en este entrenamiento se pueden descargar de la siguiente manera:</p>
+<p>Siempre puedes encontrar el último archivo de configuración de 'wis2box-setup' en <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
+<p>Los materiales de ejercicio utilizados en esta capacitación se pueden descargar de la siguiente manera:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://training.wis2box.wis.wmo.int/exercise-materials.zip
 unzip<span class="w"> </span>exercise-materials.zip
 </code></pre></div>
-<p>Los siguientes paquetes adicionales de Python son necesarios para ejecutar los materiales de ejercicio:</p>
+<p>Los siguientes paquetes adicionales de Python son necesarios para ejecutar los materiales de los ejercicios:</p>
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
 pip3<span class="w"> </span>install<span class="w"> </span><span class="nv">pywiscat</span><span class="o">==</span><span class="m">0</span>.2.2
 </code></pre></div>
-<p>Si estás utilizando la VM de estudiante proporcionada durante las sesiones locales de entrenamiento WIS2, el software necesario ya estará instalado.</p>
+<p>Si estás utilizando la VM de estudiante proporcionada durante las sesiones locales de entrenamiento de WIS2, el software requerido ya estará instalado.</p>
 </div>
 <h2 id="conectate-a-tu-vm-de-estudiante-en-la-red-local-de-entrenamiento">Conéctate a tu VM de estudiante en la red local de entrenamiento</h2>
-<p>Conecta tu PC a la red Wi-Fi local transmitida en la sala durante el entrenamiento WIS2 según las instrucciones proporcionadas por el entrenador.</p>
+<p>Conecta tu PC a la red Wi-Fi local transmitida en la sala durante el entrenamiento de WIS2 según las instrucciones proporcionadas por el entrenador.</p>
 <p>Usa un cliente SSH para conectarte a tu VM de estudiante utilizando lo siguiente:</p>
 <ul>
 <li><strong>Host: (proporcionado durante el entrenamiento presencial)</strong></li>
@@ -1114,19 +1114,19 @@ devuelve:
 <span class="go">This message shows that your installation appears to be working correctly.</span>
 <span class="go">...</span>
 </code></pre></div>
-<h2 id="inspecciona-los-materiales-de-ejercicio">Inspecciona los materiales de ejercicio</h2>
-<p>Inspecciona los contenidos de tu directorio home; estos son los materiales utilizados como parte del entrenamiento y las sesiones prácticas.</p>
+<h2 id="inspecciona-los-materiales-de-los-ejercicios">Inspecciona los materiales de los ejercicios</h2>
+<p>Inspecciona los contenidos de tu directorio home; estos son los materiales utilizados como parte de la capacitación y las sesiones prácticas.</p>
 <p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>~/
 </code></pre></div>
 devuelve:
 <div class="highlight"><pre><span></span><code><span class="go">exercise-materials  wis2box</span>
 </code></pre></div></p>
 <p>Si tienes WinSCP instalado en tu PC local, puedes usarlo para conectarte a tu VM de estudiante e inspeccionar los contenidos de tu directorio home y descargar o subir archivos entre tu VM y tu PC local. </p>
-<p>WinSCP no es necesario para el entrenamiento, pero puede ser útil si deseas editar archivos en tu VM usando un editor de texto en tu PC local.</p>
+<p>WinSCP no es necesario para la capacitación, pero puede ser útil si deseas editar archivos en tu VM usando un editor de texto en tu PC local.</p>
 <p>Aquí te mostramos cómo puedes conectarte a tu VM de estudiante usando WinSCP:</p>
-<p>Abre WinSCP y haz clic en "Nuevo Sitio". Puedes crear una nueva conexión SCP a tu VM de la siguiente manera:</p>
+<p>Abre WinSCP y haz clic en "Nuevo sitio". Puedes crear una nueva conexión SCP a tu VM de la siguiente manera:</p>
 <p><img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400"></p>
-<p>Haz clic en 'Guardar' y luego en 'Conectar' para conectarte a tu VM.</p>
+<p>Haz clic en 'Guardar' y luego en 'Iniciar sesión' para conectarte a tu VM.</p>
 <p>Y deberías poder ver el siguiente contenido:</p>
 <p><img alt="winscp-student-vm-exercise-materials.png" src="../../assets/img/winscp-student-vm-exercise-materials.png" width="600"></p>
 <h2 id="conclusion">Conclusión</h2>
@@ -1135,8 +1135,8 @@ devuelve:
 <p>En esta sesión práctica, aprendiste cómo:</p>
 <ul>
 <li>acceder a tu VM de estudiante mediante SSH y WinSCP</li>
-<li>verificar que el software necesario para los ejercicios prácticos esté instalado</li>
-<li>verificar que tienes acceso a los materiales de los ejercicios para este entrenamiento en tu VM de estudiante local</li>
+<li>verificar que el software requerido para los ejercicios prácticos esté instalado</li>
+<li>verificar que tienes acceso a los materiales de los ejercicios para esta capacitación en tu VM de estudiante local</li>
 </ul>
 </div>
 

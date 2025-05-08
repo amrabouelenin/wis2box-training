@@ -524,9 +524,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#anadir-metadatos-de-estacion-usando-el-wis2box-webapp" class="md-nav__link">
+  <a href="#anadir-metadatos-de-estaciones-usando-el-wis2box-webapp" class="md-nav__link">
     <span class="md-ellipsis">
-      añadir metadatos de estación usando el wis2box-webapp
+      añadir metadatos de estaciones usando el wis2box-webapp
     </span>
   </a>
   
@@ -984,9 +984,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#anadir-metadatos-de-estacion-usando-el-wis2box-webapp" class="md-nav__link">
+  <a href="#anadir-metadatos-de-estaciones-usando-el-wis2box-webapp" class="md-nav__link">
     <span class="md-ellipsis">
-      añadir metadatos de estación usando el wis2box-webapp
+      añadir metadatos de estaciones usando el wis2box-webapp
     </span>
   </a>
   
@@ -1041,13 +1041,13 @@
 <p>Al final de esta sesión práctica, podrás:</p>
 <ul>
 <li>crear un token de autorización para el endpoint <code>collections/stations</code></li>
-<li>añadir metadatos de estación a wis2box</li>
-<li>actualizar/eliminar metadatos de estación usando el <strong>wis2box-webapp</strong></li>
+<li>añadir metadatos de estaciones a wis2box</li>
+<li>actualizar/eliminar metadatos de estaciones usando el <strong>wis2box-webapp</strong></li>
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
-<p>Para compartir datos internacionalmente entre los miembros de la OMM, es importante tener un entendimiento común de las estaciones que están produciendo los datos. El Sistema Global Integrado de Observación de la OMM (WIGOS) proporciona un marco para la integración de sistemas de observación y sistemas de gestión de datos. El <strong>Identificador de Estación WIGOS (WSI)</strong> se utiliza como la referencia única de la estación que produjo un conjunto específico de datos de observación.</p>
-<p>wis2box tiene una colección de metadatos de estación que se utiliza para describir las estaciones que están produciendo los datos de observación y deben ser recuperados de <strong>OSCAR/Surface</strong>. Los metadatos de estación en wis2box son utilizados por las herramientas de transformación BUFR para verificar que los datos de entrada contengan un Identificador de Estación WIGOS (WSI) válido y para proporcionar un mapeo entre el WSI y los metadatos de la estación.</p>
+<p>Para compartir datos internacionalmente entre los Miembros de la OMM, es importante tener un entendimiento común de las estaciones que están produciendo los datos. El Sistema Global Integrado de Observación de la OMM (WIGOS) proporciona un marco para la integración de sistemas de observación y sistemas de gestión de datos. El <strong>Identificador de Estación WIGOS (WSI)</strong> se utiliza como la referencia única de la estación que produjo un conjunto específico de datos de observación.</p>
+<p>wis2box tiene una colección de metadatos de estaciones que se utiliza para describir las estaciones que están produciendo los datos de observación y deben ser recuperados de <strong>OSCAR/Surface</strong>. Los metadatos de estaciones en wis2box son utilizados por las herramientas de transformación BUFR para verificar que los datos de entrada contengan un Identificador de Estación WIGOS (WSI) válido y para proporcionar un mapeo entre el WSI y los metadatos de la estación.</p>
 <h2 id="crear-un-token-de-autorizacion-para-collectionsstations">Crear un token de autorización para collections/stations</h2>
 <p>Para editar estaciones a través del <strong>wis2box-webapp</strong> primero necesitarás crear un token de autorización.</p>
 <p>Inicia sesión en tu VM de estudiante y asegúrate de estar en el directorio <code>wis2box</code>:</p>
@@ -1064,7 +1064,7 @@
 <div class="highlight"><pre><span></span><code>Continue with token: 7ca20386a131f0de384e6ffa288eb1ae385364b3694e47e3b451598c82e899d1 [y/N]? y
 Token successfully created
 </code></pre></div>
-<p>O, si quieres definir tu propio token para el endpoint <code>collections/stations</code>, puedes usar el siguiente ejemplo:</p>
+<p>O, si deseas definir tu propio token para el endpoint <code>collections/stations</code>, puedes usar el siguiente ejemplo:</p>
 <div class="highlight"><pre><span></span><code>wis2box auth add-token --path collections/stations DataIsMagic
 </code></pre></div>
 <p>Salida:</p>
@@ -1072,15 +1072,15 @@ Token successfully created
 Token successfully created
 </code></pre></div>
 <p>Por favor, crea un token de autorización para el endpoint <code>collections/stations</code> usando las instrucciones anteriores.</p>
-<h2 id="anadir-metadatos-de-estacion-usando-el-wis2box-webapp">añadir metadatos de estación usando el <strong>wis2box-webapp</strong></h2>
-<p>El <strong>wis2box-webapp</strong> proporciona una interfaz gráfica para editar metadatos de estación.</p>
+<h2 id="anadir-metadatos-de-estaciones-usando-el-wis2box-webapp">añadir metadatos de estaciones usando el <strong>wis2box-webapp</strong></h2>
+<p>El <strong>wis2box-webapp</strong> proporciona una interfaz gráfica para editar metadatos de estaciones.</p>
 <p>Abre el <strong>wis2box-webapp</strong> en tu navegador navegando a <code>http://YOUR-HOST/wis2box-webapp</code>, y selecciona estaciones:</p>
 <p><img alt="wis2box-webapp-select-stations" src="../../assets/img/wis2box-webapp-select-stations.png" width="250"></p>
-<p>Cuando hagas clic en 'añadir nueva estación' se te pedirá que proporciones el identificador de estación WIGOS para la estación que quieres añadir:</p>
+<p>Cuando hagas clic en 'añadir nueva estación' se te pedirá que proporciones el identificador de estación WIGOS para la estación que deseas añadir:</p>
 <p><img alt="wis2box-webapp-import-station-from-oscar" src="../../assets/img/wis2box-webapp-import-station-from-oscar.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Añadir metadatos de estación para 3 o más estaciones</p>
-<p>Por favor, añade tres o más estaciones a la colección de metadatos de estación de tu wis2box. </p>
+<p>Por favor, añade tres o más estaciones a la colección de metadatos de estaciones de tu wis2box. </p>
 <p>Si es posible, utiliza estaciones de tu país, especialmente si trajiste tus propios datos.</p>
 <p>Si tu país no tiene ninguna estación en OSCAR/Surface, puedes usar las siguientes estaciones para el propósito de este ejercicio:</p>
 <ul>
@@ -1097,8 +1097,8 @@ Token successfully created
 <p><img alt="wis2box-webapp-stations-with-one-station" src="../../assets/img/wis2box-webapp-stations-with-one-station.png" width="800"></p>
 <p>Repite este proceso hasta que tengas al menos 3 estaciones configuradas.</p>
 <div class="admonition tip">
-<p class="admonition-title">Derivar información de elevación faltante</p>
-<p>Si falta la elevación de tu estación, hay servicios en línea que ayudan a buscar la elevación utilizando datos de elevación abiertos. Un ejemplo es la <a href="https://www.opentopodata.org">API de Open Topo Data</a>.</p>
+<p class="admonition-title">Derivando información de elevación faltante</p>
+<p>Si falta la elevación de tu estación, hay servicios en línea que ayudan a buscar la elevación usando datos de elevación abiertos. Un ejemplo es la <a href="https://www.opentopodata.org">API de Datos Topográficos Abiertos</a>.</p>
 <p>Por ejemplo, para obtener la elevación en la latitud -6.15558 y longitud 106.84204, puedes copiar y pegar la siguiente URL en una nueva pestaña del navegador:</p>
 <div class="highlight"><pre><span></span><code>https://api.opentopodata.org/v1/aster30m?locations=-6.15558,106.84204
 </code></pre></div>
@@ -1119,8 +1119,8 @@ Token successfully created
 </code></pre></div>
 </div>
 <h2 id="revisar-tus-metadatos-de-estacion">Revisar tus metadatos de estación</h2>
-<p>Los metadatos de estación están almacenados en el backend de wis2box y están disponibles a través del <strong>wis2box-api</strong>.</p>
-<p>Si abres un navegador y navegas a <code>http://YOUR-HOST/oapi/collections/stations/items</code> verás los metadatos de estación que añadiste:</p>
+<p>Los metadatos de la estación están almacenados en el backend de wis2box y están disponibles a través del <strong>wis2box-api</strong>. </p>
+<p>Si abres un navegador y navegas a <code>http://YOUR-HOST/oapi/collections/stations/items</code> verás los metadatos de la estación que añadiste:</p>
 <p><img alt="wis2box-api-stations" src="../../assets/img/wis2box-api-stations.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Revisar tus metadatos de estación</p>
@@ -1129,7 +1129,7 @@ Token successfully created
 <p>También tienes la opción de ver/actualizar/eliminar la estación en el <strong>wis2box-webapp</strong>. Ten en cuenta que se requiere proporcionar tu token de autorización para el endpoint <code>collections/stations</code> para actualizar/eliminar la estación.</p>
 <div class="admonition note">
 <p class="admonition-title">Actualizar/eliminar metadatos de estación</p>
-<p>Intenta ver si puedes actualizar/eliminar los metadatos de estación para una de las estaciones que añadiste usando el <strong>wis2box-webapp</strong>.</p>
+<p>Intenta ver si puedes actualizar/eliminar los metadatos de la estación para una de las estaciones que añadiste usando el <strong>wis2box-webapp</strong>.</p>
 </div>
 <h2 id="carga-masiva-de-metadatos-de-estacion">Carga masiva de metadatos de estación</h2>
 <p>Ten en cuenta que wis2box también tiene la capacidad de realizar la carga "masiva" de metadatos de estación desde un archivo CSV usando la línea de comandos en el contenedor <strong>wis2box-management</strong>.</p>
@@ -1137,8 +1137,8 @@ Token successfully created
 wis2box<span class="w"> </span>metadata<span class="w"> </span>station<span class="w"> </span>publish-collection<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/metadata/station/station_list.csv<span class="w"> </span>-th<span class="w"> </span>origin/a/wis2/centre-id/weather/surface-based-observations/synop
 </code></pre></div>
 <p>Esto te permite subir un gran número de estaciones a la vez y asociarlas con un tema específico.</p>
-<p>Puedes crear el archivo CSV usando Excel o un editor de texto y luego subirlo al wis2box-host-datadir para hacerlo disponible en el directorio <code>/data/wis2box/</code>.</p>
-<p>Después de realizar una carga masiva de estaciones, se recomienda revisar las estaciones en el <strong>wis2box-webapp</strong> para asegurarse de que los datos se cargaron correctamente.</p>
+<p>Puedes crear el archivo CSV usando Excel o un editor de texto y luego subirlo al wis2box-host-datadir para hacerlo disponible al contenedor <strong>wis2box-management</strong> en el directorio <code>/data/wis2box/</code>.</p>
+<p>Después de realizar una carga masiva de estaciones, se recomienda revisar las estaciones en el <strong>wis2box-webapp</strong> para asegurarse de que los datos se subieron correctamente.</p>
 <p>Consulta la <a href="https://docs.wis2box.wis.wmo.int">documentación oficial de wis2box</a> para obtener más información sobre cómo usar esta característica.</p>
 <h2 id="conclusion">Conclusión</h2>
 <div class="admonition success">
@@ -1146,8 +1146,8 @@ wis2box<span class="w"> </span>metadata<span class="w"> </span>station<span clas
 <p>En esta sesión práctica, aprendiste cómo:</p>
 <ul>
 <li>crear un token de autorización para el endpoint <code>collections/stations</code> para usarlo con el <strong>wis2box-webapp</strong></li>
-<li>añadir metadatos de estación a wis2box usando el <strong>wis2box-webapp</strong></li>
-<li>ver/actualizar/eliminar metadatos de estación usando el <strong>wis2box-webapp</strong></li>
+<li>añadir metadatos de estaciones a wis2box usando el <strong>wis2box-webapp</strong></li>
+<li>ver/actualizar/eliminar metadatos de estaciones usando el <strong>wis2box-webapp</strong></li>
 </ul>
 </div>
 

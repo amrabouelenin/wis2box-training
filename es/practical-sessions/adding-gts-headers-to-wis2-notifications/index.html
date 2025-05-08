@@ -1064,9 +1064,9 @@
 </ul>
 </div>
 <h2 id="introduccion">Introducción</h2>
-<p>Los miembros de la OMM que deseen detener su transmisión de datos en el GTS durante la fase de transición a WIS2 necesitarán añadir encabezados GTS a sus notificaciones WIS2. Estos encabezados permiten que la puerta de enlace de WIS2 a GTS reenvíe los datos a la red GTS.</p>
+<p>Los miembros de la OMM que deseen detener su transmisión de datos en GTS durante la fase de transición a WIS2 necesitarán añadir encabezados GTS a sus notificaciones WIS2. Estos encabezados permiten que la puerta de enlace de WIS2 a GTS reenvíe los datos a la red GTS.</p>
 <p>Esto permite a los miembros que han migrado a usar un nodo WIS2 para la publicación de datos desactivar su sistema MSS y asegurar que sus datos sigan estando disponibles para los miembros que aún no han migrado a WIS2.</p>
-<p>La propiedad GTS en el Mensaje de Notificación WIS2 necesita ser añadida como una propiedad adicional al Mensaje de Notificación WIS2. La propiedad GTS es un objeto JSON que contiene los encabezados GTS que se requieren para que los datos sean reenviados a la red GTS.</p>
+<p>La propiedad GTS en el Mensaje de Notificación WIS2 necesita ser añadida como una propiedad adicional al Mensaje de Notificación WIS2. La propiedad GTS es un objeto JSON que contiene los encabezados GTS que son necesarios para que los datos sean reenviados a la red GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;ttaaii&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FTAE31&quot;</span><span class="p">,</span>
@@ -1109,7 +1109,7 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p>Asegúrate de reemplazar la opción <code>metadata-id</code> con el identificador correcto para tu conjunto de datos.</p>
 <p>Revisa el tablero de Grafana para ver si los datos fueron ingeridos correctamente. Si ves alguna ADVERTENCIA o ERROR, intenta solucionarlo y repite el comando <code>wis2box data ingest</code>.</p>
 <h2 id="viendo-los-encabezados-gts-en-la-notificacion-wis2">Viendo los encabezados GTS en la Notificación WIS2</h2>
-<p>Ve a MQTT Explorer y verifica el Mensaje de Notificación WIS2 para los datos que acabas de ingerir.</p>
+<p>Ve al MQTT Explorer y verifica el Mensaje de Notificación WIS2 para los datos que acabas de ingerir.</p>
 <p>El Mensaje de Notificación WIS2 debería contener los encabezados GTS que proporcionaste en el archivo <code>gts_headers_mapping.csv</code>.</p>
 <h2 id="conclusion">Conclusión</h2>
 <div class="admonition success">
