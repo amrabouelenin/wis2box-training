@@ -22,7 +22,7 @@
     
     
       
-        <title>الاستعلام عن البيانات باستخدام واجهة برمجة تطبيقات wis2box - WIS2 in a box training</title>
+        <title>استعلام البيانات باستخدام واجهة برمجة تطبيقات wis2box - WIS2 in a box training</title>
       
     
     
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              الاستعلام عن البيانات باستخدام واجهة برمجة تطبيقات wis2box
+              استعلام البيانات باستخدام واجهة برمجة تطبيقات wis2box
             
           </span>
         </div>
@@ -915,7 +915,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      فحص الرصدات
+      فحص الملاحظات
     </span>
   </a>
   
@@ -924,7 +924,7 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      الخاتمة
+      الختام
     </span>
   </a>
   
@@ -946,145 +946,145 @@
 
 
 
-<h1 id="wis2box">الاستعلام عن البيانات باستخدام واجهة برمجة تطبيقات wis2box</h1>
+<h1 id="wis2box">استعلام البيانات باستخدام واجهة برمجة تطبيقات wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">مخرجات التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p class="admonition-title">نتائج التعلم</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام عن محطاتك وتصفيتها</li>
-<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام عن بياناتك وتصفيتها</li>
+<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام وتصفية محطاتك</li>
+<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام وتصفية بياناتك</li>
 </ul>
 </div>
 <h2 id="_1">مقدمة</h2>
-<p>توفر واجهة برمجة تطبيقات wis2box إمكانية الاكتشاف والاستعلام بطريقة قابلة للقراءة آلياً للبيانات التي تم إدخالها في wis2box. تستند واجهة برمجة التطبيقات على معيار OGC API - Features وتم تنفيذها باستخدام <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>توفر واجهة برمجة تطبيقات wis2box إمكانية الاكتشاف والاستعلام بطريقة قابلة للقراءة آليًا للبيانات التي تم استيعابها في wis2box. تعتمد الواجهة على معيار OGC API - Features ويتم تنفيذها باستخدام <a href="https://pygeoapi.io">pygeoapi</a>.</p>
 <p>توفر واجهة برمجة تطبيقات wis2box الوصول إلى المجموعات التالية:</p>
 <ul>
 <li>المحطات</li>
-<li>البيانات الوصفية للاكتشاف</li>
+<li>بيانات الاكتشاف</li>
 <li>إشعارات البيانات</li>
-<li>بالإضافة إلى مجموعة واحدة لكل مجموعة بيانات تم تكوينها، والتي تخزن المخرجات من bufr2geojson (يجب تمكين الإضافة <code>bufr2geojson</code> في تكوين تعيينات البيانات لملء العناصر في مجموعة البيانات).</li>
+<li>بالإضافة إلى مجموعة واحدة لكل مجموعة بيانات مُعدة، والتي تخزن الناتج من bufr2geojson (يجب تمكين الإضافة <code>bufr2geojson</code> في تكوين تعيينات البيانات لملء العناصر في مجموعة البيانات).</li>
 </ul>
-<p>في هذه الجلسة العملية ستتعلم كيفية استخدام واجهة برمجة تطبيقات البيانات لتصفح البيانات التي تم إدخالها في wis2box والاستعلام عنها.</p>
+<p>في هذه الجلسة العملية ستتعلم كيفية استخدام واجهة برمجة تطبيقات البيانات لتصفح واستعلام البيانات التي تم استيعابها في wis2box.</p>
 <h2 id="_2">التحضير</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>انتقل إلى الصفحة الرئيسية لواجهة برمجة تطبيقات wis2box في متصفح الويب الخاص بك:</p>
+<p>انتقل إلى صفحة الهبوط الخاصة بواجهة برمجة تطبيقات wis2box في متصفح الويب الخاص بك:</p>
 <p><code>http://YOUR-HOST/oapi</code></p>
 </div>
 <p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
 <h2 id="_3">فحص المجموعات</h2>
-<p>من الصفحة الرئيسية، انقر على رابط 'المجموعات'.</p>
+<p>من صفحة الهبوط، انقر على رابط 'المجموعات'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كم عدد مجموعات البيانات التي تراها في الصفحة الناتجة؟ ما الذي تعتقد أن كل مجموعة تمثله؟</p>
+<p>كم عدد مجموعات البيانات التي تراها في الصفحة الناتجة؟ ماذا تعتقد أن كل مجموعة تمثل؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>يجب أن تكون هناك 4 مجموعات معروضة، بما في ذلك "المحطات"، و"البيانات الوصفية للاكتشاف"، و"إشعارات البيانات"</p>
+<p>يجب أن يتم عرض 4 مجموعات، بما في ذلك "المحطات"، "بيانات الاكتشاف"، و"إشعارات البيانات"</p>
 </details>
 <h2 id="_4">فحص المحطات</h2>
-<p>من الصفحة الرئيسية، انقر على رابط 'المجموعات'، ثم انقر على رابط 'المحطات'.</p>
+<p>من صفحة الهبوط، انقر على رابط 'المجموعات'، ثم انقر على رابط 'المحطات'.</p>
 <p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
 <p>انقر على رابط 'تصفح'، ثم انقر على رابط 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كم عدد المحطات المُرجعة؟ قارن هذا الرقم بقائمة المحطات في <code>http://YOUR-HOST/wis2box-webapp/station</code></p>
+<p>كم عدد المحطات التي يتم إرجاعها؟ قارن هذا العدد بقائمة المحطات في <code>http://YOUR-HOST/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>يجب أن يكون عدد المحطات من واجهة برمجة التطبيقات مساوياً لعدد المحطات التي تراها في تطبيق wis2box.</p>
+<p>يجب أن يكون عدد المحطات من الواجهة مساويًا لعدد المحطات التي تراها في تطبيق wis2box الويب.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا الاستعلام عن محطة واحدة (مثل <code>Balaka</code>)؟</p>
+<p>كيف يمكننا الاستعلام عن محطة واحدة (مثلاً <code>Balaka</code>)؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>استعلم عن واجهة برمجة التطبيقات باستخدام <code>http://YOUR-HOST/oapi/collections/stations/items?q=Balaka</code>.</p>
+<p>استعلم عن الواجهة باستخدام <code>http://YOUR-HOST/oapi/collections/stations/items?q=Balaka</code>.</p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>المثال أعلاه مبني على بيانات اختبار مالاوي. حاول الاختبار مقابل المحطات التي قمت بإدخالها كجزء من التمارين السابقة.</p>
+<p>المثال أعلاه يعتمد على بيانات اختبار مالاوي. جرب الاختبار ضد المحطات التي قمت بإدخالها كجزء من التمارين السابقة.</p>
 </div>
-<h2 id="_5">فحص الرصدات</h2>
+<h2 id="_5">فحص الملاحظات</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>المثال أعلاه مبني على بيانات اختبار مالاوي. حاول الاختبار مقابل الرصدات التي قمت بإدخالها كجزء من التمارين.</p>
+<p>المثال أعلاه يعتمد على بيانات اختبار مالاوي. جرب الاختبار ضد الملاحظة التي قمت بإدخالها كجزء من التمارين.</p>
 </div>
-<p>من الصفحة الرئيسية، انقر على رابط 'المجموعات'، ثم انقر على رابط 'رصدات الطقس السطحية من مالاوي'.</p>
+<p>من صفحة الهبوط، انقر على رابط 'المجموعات'، ثم انقر على رابط 'ملاحظات الطقس السطحية من مالاوي'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
-<p>انقر على رابط 'القابل للاستعلام'.</p>
+<p>انقر على رابط 'الاستعلامات'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>أي قابل للاستعلام سيتم استخدامه للتصفية حسب معرف المحطة؟</p>
+<p>أي استعلام يمكن استخدامه للتصفية حسب معرف المحطة؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p><code>wigos_station_identifer</code> هو القابل للاستعلام الصحيح.</p>
+<p>الاستعلام <code>wigos_station_identifer</code> هو الصحيح.</p>
 </details>
 <p>انتقل إلى الصفحة السابقة (أي <code>http://YOUR-HOST/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
 <p>انقر على رابط 'تصفح'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا تصور استجابة JSON؟</p>
+<p>كيف يمكننا تصور الاستجابة JSON؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>بالنقر على رابط 'JSON' في أعلى يمين الصفحة، أو بإضافة <code>f=json</code> إلى طلب واجهة برمجة التطبيقات في متصفح الويب.</p>
+<p>بالنقر على رابط 'JSON' في أعلى يمين الصفحة، أو بإضافة <code>f=json</code> إلى طلب الواجهة في المتصفح الويب.</p>
 </details>
-<p>افحص استجابة JSON للرصدات.</p>
+<p>فحص استجابة JSON للملاحظات.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>كم عدد السجلات المُرجعة؟</p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا تحديد الاستجابة إلى 3 رصدات؟</p>
+<p>كيف يمكننا تحديد الاستجابة إلى 3 ملاحظات؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>أضف <code>limit=3</code> إلى طلب واجهة برمجة التطبيقات.</p>
+<p>أضف <code>limit=3</code> إلى طلب الواجهة.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا ترتيب الاستجابة حسب أحدث الرصدات؟</p>
+<p>كيف يمكننا فرز الاستجابة حسب أحدث الملاحظات؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>أضف <code>sortby=-resultTime</code> إلى طلب واجهة برمجة التطبيقات (لاحظ علامة <code>-</code> للإشارة إلى ترتيب تنازلي). للترتيب حسب أقدم الرصدات، قم بتحديث الطلب ليتضمن <code>sortby=resultTime</code>.</p>
+<p>أضف <code>sortby=-resultTime</code> إلى طلب الواجهة (لاحظ العلامة <code>-</code> للدلالة على ترتيب تنازلي). للفرز حسب أقدم الملاحظات، قم بتحديث الطلب ليشمل <code>sortby=resultTime</code>.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا تصفية الرصدات حسب محطة واحدة؟</p>
+<p>كيف يمكننا تصفية الملاحظات حسب محطة واحدة؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>أضف <code>wigos_station_identifier=&lt;WSI&gt;</code> إلى طلب واجهة برمجة التطبيقات.</p>
+<p>أضف <code>wigos_station_identifier=&lt;WSI&gt;</code> إلى طلب الواجهة.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا استلام الرصدات بتنسيق CSV؟</p>
+<p>كيف يمكننا استلام الملاحظات كملف CSV؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>أضف <code>f=csv</code> إلى طلب واجهة برمجة التطبيقات.</p>
+<p>أضف <code>f=csv</code> إلى طلب الواجهة.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>كيف يمكننا عرض رصد واحد (معرف)؟</p>
+<p>كيف يمكننا عرض ملاحظة واحدة (id)؟</p>
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>باستخدام معرف الميزة من طلب واجهة برمجة التطبيقات مقابل الرصدات، استعلم عن واجهة برمجة التطبيقات لـ <code>http://YOUR-HOST/oapi/collections/{collectionId}/items/{featureId}</code>، حيث <code>{collectionId}</code> هو اسم مجموعة الرصدات الخاصة بك و <code>{itemId}</code> هو معرف الرصد الواحد المطلوب.</p>
+<p>باستخدام معرف الميزة من طلب واجهة ضد الملاحظات، استعلم عن الواجهة لـ <code>http://YOUR-HOST/oapi/collections/{collectionId}/items/{featureId}</code>، حيث <code>{collectionId}</code> هو اسم مجموعة الملاحظات الخاصة بك و<code>{itemId}</code> هو معرف الملاحظة المفردة المهمة.</p>
 </details>
-<h2 id="_6">الخاتمة</h2>
+<h2 id="_6">الختام</h2>
 <div class="admonition success">
 <p class="admonition-title">تهانينا!</p>
 <p>في هذه الجلسة العملية، تعلمت كيفية:</p>
 <ul>
-<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام عن محطاتك وتصفيتها</li>
-<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام عن بياناتك وتصفيتها</li>
+<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام وتصفية محطاتك</li>
+<li>استخدام واجهة برمجة تطبيقات wis2box للاستعلام وتصفية بياناتك</li>
 </ul>
 </div>
 

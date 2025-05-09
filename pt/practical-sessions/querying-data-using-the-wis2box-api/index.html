@@ -22,7 +22,7 @@
     
     
       
-        <title>Consultando dados usando a API do wis2box - WIS2 in a box training</title>
+        <title>Consultando dados usando a API wis2box - WIS2 in a box training</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#consultando-dados-usando-a-api-do-wis2box" class="md-skip">
+        <a href="#consultando-dados-usando-a-api-wis2box" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Consultando dados usando a API do wis2box
+              Consultando dados usando a API wis2box
             
           </span>
         </div>
@@ -887,27 +887,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecionando-colecoes" class="md-nav__link">
+  <a href="#inspecao-de-colecoes" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecionando coleções
+      Inspeção de coleções
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecionando-estacoes" class="md-nav__link">
+  <a href="#inspecao-de-estacoes" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecionando estações
+      Inspeção de estações
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecionando-observacoes" class="md-nav__link">
+  <a href="#inspecao-de-observacoes" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecionando observações
+      Inspeção de observações
     </span>
   </a>
   
@@ -938,57 +938,57 @@
 
 
 
-<h1 id="consultando-dados-usando-a-api-do-wis2box">Consultando dados usando a API do wis2box</h1>
+<h1 id="consultando-dados-usando-a-api-wis2box">Consultando dados usando a API wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objetivos de aprendizagem</p>
+<p class="admonition-title">Resultados de aprendizado</p>
 <p>Ao final desta sessão prática, você será capaz de:</p>
 <ul>
-<li>usar a API do wis2box para consultar e filtrar suas estações</li>
-<li>usar a API do wis2box para consultar e filtrar seus dados</li>
+<li>usar a API wis2box para consultar e filtrar suas estações</li>
+<li>usar a API wis2box para consultar e filtrar seus dados</li>
 </ul>
 </div>
 <h2 id="introducao">Introdução</h2>
-<p>A API do wis2box fornece acesso de descoberta e consulta de forma legível por máquina aos dados que foram inseridos no wis2box. A API é baseada no padrão OGC API - Features e é implementada usando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
-<p>A API do wis2box fornece acesso às seguintes coleções:</p>
+<p>A API wis2box fornece acesso de descoberta e consulta de maneira legível por máquina aos dados que foram ingeridos no wis2box. A API é baseada no padrão OGC API - Features e é implementada usando <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>A API wis2box oferece acesso às seguintes coleções:</p>
 <ul>
 <li>Estações</li>
 <li>Metadados de descoberta</li>
 <li>Notificações de dados</li>
-<li>mais uma coleção por conjunto de dados configurado, que armazena a saída do bufr2geojson (o plugin <code>bufr2geojson</code> precisa estar habilitado na configuração dos mapeamentos de dados para preencher os itens na coleção do conjunto de dados).</li>
+<li>mais uma coleção por conjunto de dados configurado, que armazena a saída de bufr2geojson (o plugin <code>bufr2geojson</code> precisa ser ativado na configuração de mapeamento de dados para preencher os itens na coleção de conjunto de dados).</li>
 </ul>
-<p>Nesta sessão prática, você aprenderá como usar a API de dados para navegar e consultar dados que foram inseridos no wis2box.</p>
+<p>Nesta sessão prática, você aprenderá a usar a API de dados para navegar e consultar dados que foram ingeridos no wis2box.</p>
 <h2 id="preparacao">Preparação</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Navegue até a página inicial da API do wis2box em seu navegador:</p>
+<p>Navegue até a página inicial da API wis2box no seu navegador web:</p>
 <p><code>http://YOUR-HOST/oapi</code></p>
 </div>
 <p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
-<h2 id="inspecionando-colecoes">Inspecionando coleções</h2>
-<p>Na página inicial, clique no link 'Collections'.</p>
+<h2 id="inspecao-de-colecoes">Inspeção de coleções</h2>
+<p>Da página inicial, clique no link 'Coleções'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quantas coleções de dados você vê na página resultante? O que você acha que cada coleção representa?</p>
+<p>Quantas coleções de conjuntos de dados você vê na página resultante? O que você acha que cada coleção representa?</p>
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
-<p>Devem ser exibidas 4 coleções, incluindo "Stations", "Discovery metadata" e "Data notifications"</p>
+<p>Deveriam ser exibidas 4 coleções, incluindo "Estações", "Metadados de descoberta" e "Notificações de dados"</p>
 </details>
-<h2 id="inspecionando-estacoes">Inspecionando estações</h2>
-<p>Na página inicial, clique no link 'Collections' e depois no link 'Stations'.</p>
+<h2 id="inspecao-de-estacoes">Inspeção de estações</h2>
+<p>Da página inicial, clique no link 'Coleções', depois clique no link 'Estações'.</p>
 <p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
-<p>Clique no link 'Browse' e depois no link 'json'.</p>
+<p>Clique no link 'Navegar', depois clique no link 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quantas estações são retornadas? Compare este número com a lista de estações em <code>http://YOUR-HOST/wis2box-webapp/station</code></p>
+<p>Quantas estações são retornadas? Compare esse número com a lista de estações em <code>http://YOUR-HOST/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
-<p>O número de estações da API deve ser igual ao número de estações que você vê no webapp do wis2box.</p>
+<p>O número de estações da API deve ser igual ao número de estações que você vê no wis2box-webapp.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Como podemos consultar uma única estação (por exemplo, <code>Balaka</code>)?</p>
+<p>Como podemos consultar por uma única estação (por exemplo, <code>Balaka</code>)?</p>
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
@@ -996,36 +996,36 @@
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>O exemplo acima é baseado nos dados de teste do Malawi. Tente testar com as estações que você inseriu como parte dos exercícios anteriores.</p>
+<p>O exemplo acima é baseado nos dados de teste do Malawi. Tente testar contra as estações que você ingeriu como parte dos exercícios anteriores.</p>
 </div>
-<h2 id="inspecionando-observacoes">Inspecionando observações</h2>
+<h2 id="inspecao-de-observacoes">Inspeção de observações</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>O exemplo acima é baseado nos dados de teste do Malawi. Tente testar com as observações que você inseriu como parte dos exercícios.</p>
+<p>O exemplo acima é baseado nos dados de teste do Malawi. Tente testar contra a observação que você ingeriu como parte dos exercícios.</p>
 </div>
-<p>Na página inicial, clique no link 'Collections' e depois no link 'Surface weather observations from Malawi'.</p>
+<p>Da página inicial, clique no link 'Coleções', depois clique no link 'Observações meteorológicas de superfície do Malawi'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
-<p>Clique no link 'Queryables'.</p>
+<p>Clique no link 'Consultáveis'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Qual queryable seria usado para filtrar por identificador de estação?</p>
+<p>Qual consultável seria usado para filtrar pelo identificador da estação?</p>
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
-<p>O <code>wigos_station_identifer</code> é o queryable correto.</p>
+<p>O <code>wigos_station_identifer</code> é o consultável correto.</p>
 </details>
-<p>Navegue até a página anterior (ou seja, <code>http://YOUR-HOST/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
-<p>Clique no link 'Browse'.</p>
+<p>Navegue para a página anterior (ou seja, <code>http://YOUR-HOST/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
+<p>Clique no link 'Navegar'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Como podemos visualizar a resposta JSON?</p>
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
-<p>Clicando no link 'JSON' no canto superior direito da página, ou adicionando <code>f=json</code> à solicitação da API no navegador.</p>
+<p>Clicando no link 'JSON' no canto superior direito da página, ou adicionando <code>f=json</code> à solicitação da API no navegador web.</p>
 </details>
-<p>Inspecione a resposta JSON das observações.</p>
+<p>Inspeccione a resposta JSON das observações.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Quantos registros são retornados?</p>
@@ -1044,7 +1044,7 @@
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
-<p>Adicione <code>sortby=-resultTime</code> à solicitação da API (observe o sinal <code>-</code> para indicar ordem decrescente). Para ordenar pelas observações mais antigas, atualize a solicitação para incluir <code>sortby=resultTime</code>.</p>
+<p>Adicione <code>sortby=-resultTime</code> à solicitação da API (observe o sinal <code>-</code> para denotar ordem decrescente). Para ordenar pelas observações mais antigas, atualize a solicitação para incluir <code>sortby=resultTime</code>.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1056,7 +1056,7 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Como podemos receber as observações como CSV?</p>
+<p>Como podemos receber as observações como um CSV?</p>
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
@@ -1068,15 +1068,15 @@
 </div>
 <details class="success">
 <summary>Clique para revelar a resposta</summary>
-<p>Usando o identificador de recurso de uma solicitação da API contra as observações, consulte a API em <code>http://YOUR-HOST/oapi/collections/{collectionId}/items/{featureId}</code>, onde <code>{collectionId}</code> é o nome da sua coleção de observações e <code>{itemId}</code> é o identificador da observação única de interesse.</p>
+<p>Usando o identificador de recurso de uma solicitação da API contra as observações, consulte a API para <code>http://YOUR-HOST/oapi/collections/{collectionId}/items/{featureId}</code>, onde <code>{collectionId}</code> é o nome da sua coleção de observações e <code>{itemId}</code> é o identificador da observação única de interesse.</p>
 </details>
 <h2 id="conclusao">Conclusão</h2>
 <div class="admonition success">
 <p class="admonition-title">Parabéns!</p>
-<p>Nesta sessão prática, você aprendeu como:</p>
+<p>Nesta sessão prática, você aprendeu a:</p>
 <ul>
-<li>usar a API do wis2box para consultar e filtrar suas estações</li>
-<li>usar a API do wis2box para consultar e filtrar seus dados</li>
+<li>usar a API wis2box para consultar e filtrar suas estações</li>
+<li>usar a API wis2box para consultar e filtrar seus dados</li>
 </ul>
 </div>
 

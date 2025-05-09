@@ -413,9 +413,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#materiais-de-exercicio" class="md-nav__link">
+  <a href="#materiais-do-exercicio" class="md-nav__link">
     <span class="md-ellipsis">
-      Materiais de exercício
+      Materiais do exercício
     </span>
   </a>
   
@@ -1086,9 +1086,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#materiais-de-exercicio" class="md-nav__link">
+  <a href="#materiais-do-exercicio" class="md-nav__link">
     <span class="md-ellipsis">
-      Materiais de exercício
+      Materiais do exercício
     </span>
   </a>
   
@@ -1119,40 +1119,42 @@
 
 
 
-<p><img alt="WMO logo" src="../assets/img/wmo-logo.png" width="200"></p>
+<p><img alt="Logotipo da WMO" src="assets/img/wmo-logo.png" width="200"></p>
 <h1 id="treinamento-wis2-in-a-box">Treinamento WIS2 in a box</h1>
-<p>WIS2 in a box (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) é uma Implementação de Referência Livre e de Código Aberto (FOSS) de um WMO WIS2 Node. O projeto fornece um conjunto de ferramentas plug and play para ingerir, processar e publicar dados meteorológicos/climáticos/hídricos usando abordagens baseadas em padrões alinhados com os princípios do WIS2. O wis2box também fornece acesso a todos os dados na rede WIS2. O wis2box foi projetado para ter uma baixa barreira de entrada para provedores de dados, fornecendo infraestrutura e serviços habilitadores para descoberta, acesso e visualização de dados.</p>
-<p>Este treinamento fornece explicações passo a passo de vários aspectos do projeto wis2box, bem como diversos exercícios para ajudá-lo a publicar e baixar dados do WIS2. O treinamento é fornecido na forma de apresentações gerais e exercícios práticos.</p>
-<p>Os participantes poderão trabalhar com dados e metadados de teste de exemplo, além de integrar seus próprios dados e metadados.</p>
+<p>WIS2 in a box (<a href="https://docs.wis2box.wis.wmo.int">wis2box</a>) é uma Implementação de Referência Livre e de Código Aberto (FOSS) de um WIS2 Node da WMO. O projeto fornece um conjunto de ferramentas plug and play para ingestão, processamento e publicação de dados meteorológicos/climáticos/hídricos usando abordagens baseadas em padrões alinhadas aos princípios do WIS2. wis2box também oferece acesso a todos os dados na rede WIS2. wis2box é projetado para ter uma barreira baixa de entrada para provedores de dados, fornecendo infraestrutura e serviços habilitadores para descoberta, acesso e visualização de dados.</p>
+<p>Este treinamento fornece explicações passo a passo sobre vários aspectos do projeto wis2box, bem como uma série de exercícios
+para ajudá-lo a publicar e baixar dados do WIS2. O treinamento é fornecido na forma de apresentações gerais, bem como
+exercícios práticos.</p>
+<p>Os participantes poderão trabalhar com dados e metadados de teste de amostra, bem como integrar seus próprios dados e metadados.</p>
 <p>Este treinamento abrange uma ampla gama de tópicos (instalação/configuração/configuração, publicação/download de dados, etc.).</p>
 <h2 id="objetivos-e-resultados-de-aprendizagem">Objetivos e resultados de aprendizagem</h2>
-<p>Os objetivos deste treinamento são familiarizar-se com o seguinte:</p>
+<p>Os objetivos deste treinamento são se familiarizar com o seguinte:</p>
 <ul>
-<li>Conceitos e componentes fundamentais da arquitetura WIS2</li>
-<li>Formatos de dados e metadados utilizados no WIS2 para descoberta e acesso</li>
-<li>Arquitetura e ambiente wis2box</li>
+<li>Conceitos e componentes centrais da arquitetura WIS2</li>
+<li>Formatos de dados e metadados usados no WIS2 para descoberta e acesso</li>
+<li>Arquitetura e ambiente do wis2box</li>
 <li>Funções principais do wis2box:<ul>
-<li>Gerenciamento de metadados</li>
-<li>Ingestão de dados e transformação para formato BUFR</li>
-<li>Broker MQTT para publicação de mensagens WIS2</li>
-<li>Endpoint HTTP para download de dados</li>
-<li>Endpoint API para acesso programático aos dados</li>
+<li>gestão de metadados</li>
+<li>ingestão de dados e transformação para o formato BUFR</li>
+<li>broker MQTT para publicação de mensagens WIS2</li>
+<li>ponto de extremidade HTTP para download de dados</li>
+<li>ponto de extremidade da API para acesso programático aos dados</li>
 </ul>
 </li>
 </ul>
 <h2 id="navegacao">Navegação</h2>
-<p>A navegação à esquerda fornece um sumário para todo o treinamento.</p>
-<p>A navegação à direita fornece um sumário para uma página específica.</p>
+<p>A navegação à esquerda fornece um índice para todo o treinamento.</p>
+<p>A navegação à direita fornece um índice para uma página específica.</p>
 <h2 id="pre-requisitos">Pré-requisitos</h2>
 <h3 id="conhecimento">Conhecimento</h3>
 <ul>
-<li>Comandos básicos de Linux (veja o <a href="cheatsheets/linux/">guia de referência</a>)</li>
-<li>Conhecimento básico de redes e protocolos de Internet</li>
+<li>Comandos básicos de Linux (veja o <a href="cheatsheets/linux/">cheatsheet</a>)</li>
+<li>Conhecimento básico de redes e protocolos da Internet</li>
 </ul>
 <h3 id="software">Software</h3>
 <p>Este treinamento requer as seguintes ferramentas:</p>
 <ul>
-<li>Uma instância executando sistema operacional Ubuntu (fornecida pelos instrutores da WMO durante sessões de treinamento locais) veja <a href="practical-sessions/accessing-your-student-vm/#introduction">Acessando sua VM de estudante</a></li>
+<li>Uma instância rodando o sistema operacional Ubuntu (fornecida pelos instrutores da WMO durante sessões de treinamento locais) veja <a href="practical-sessions/accessing-your-student-vm/#introduction">Acessando sua VM de estudante</a></li>
 <li>Cliente SSH para acessar sua instância</li>
 <li>MQTT Explorer em sua máquina local</li>
 <li>Cliente SCP e SFTP para copiar arquivos de sua máquina local</li>
@@ -1160,19 +1162,19 @@
 <h2 id="convencoes">Convenções</h2>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Uma seção marcada desta forma convida você a responder uma pergunta.</p>
+<p>Uma seção marcada assim convida você a responder uma pergunta.</p>
 </div>
-<p>Você também notará seções de dicas e notas no texto:</p>
+<p>Você também notará seções de dicas e notas dentro do texto:</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>As dicas compartilham ajuda sobre como melhor realizar as tarefas.</p>
+<p>Dicas compartilham ajuda sobre como realizar tarefas da melhor forma.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>As notas fornecem informações adicionais sobre o tópico abordado pela sessão prática, bem como sobre como melhor realizar as tarefas.</p>
+<p>Notas fornecem informações adicionais sobre o tópico coberto pela sessão prática, bem como sobre como realizar tarefas da melhor forma.</p>
 </div>
-<p>Os exemplos são indicados da seguinte forma:</p>
-<p>Configuration
+<p>Exemplos são indicados da seguinte forma:</p>
+<p>Configuração
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1184,17 +1186,18 @@
 <p>Trechos que precisam ser digitados em um terminal/console são indicados como:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Hello world&#39;</span>
 </code></pre></div>
-<p>Os nomes dos contêineres (imagens em execução) são indicados em <strong>negrito</strong>.</p>
+<p>Nomes de contêineres (imagens em execução) são denotados em <strong>negrito</strong>.</p>
 <h2 id="local-e-materiais-do-treinamento">Local e materiais do treinamento</h2>
-<p>O conteúdo do treinamento, wiki e rastreador de problemas são gerenciados no GitHub em <a href="https://github.com/World-Meteorological-Organization/wis2box-training">https://github.com/World-Meteorological-Organization/wis2box-training</a>.</p>
+<p>Os conteúdos do treinamento, wiki e rastreador de problemas são gerenciados no GitHub em <a href="https://github.com/World-Meteorological-Organization/wis2box-training">https://github.com/World-Meteorological-Organization/wis2box-training</a>.</p>
 <h2 id="imprimindo-o-material">Imprimindo o material</h2>
-<p>Este treinamento pode ser exportado para PDF. Para salvar ou imprimir este material de treinamento, vá para a <a href="print_page">página de impressão</a> e selecione Arquivo &gt; Imprimir &gt; Salvar como PDF.</p>
-<h2 id="materiais-de-exercicio">Materiais de exercício</h2>
-<p>Os materiais de exercício podem ser baixados do arquivo <a href="/exercise-materials.zip">exercise-materials.zip</a>.</p>
+<p>Este treinamento pode ser exportado para PDF. Para salvar ou imprimir este material de treinamento, vá para a <a href="print_page">página de impressão</a> e selecione
+Arquivo &gt; Imprimir &gt; Salvar como PDF.</p>
+<h2 id="materiais-do-exercicio">Materiais do exercício</h2>
+<p>Os materiais do exercício podem ser baixados do arquivo zip <a href="/exercise-materials.zip">exercise-materials.zip</a>.</p>
 <h2 id="suporte">Suporte</h2>
-<p>Para problemas/bugs/sugestões ou melhorias/contribuições para este treinamento, utilize o <a href="https://github.com/World-Meteorological-Organization/wis2box-training/issues">rastreador de problemas do GitHub</a>.</p>
+<p>Para problemas/bugs/sugestões ou melhorias/contribuições para este treinamento, por favor, use o <a href="https://github.com/World-Meteorological-Organization/wis2box-training/issues">rastreador de problemas do GitHub</a>.</p>
 <p>Todos os bugs, melhorias e problemas do wis2box podem ser relatados no <a href="https://github.com/World-Meteorological-Organization/wis2box/issues">GitHub</a>.</p>
-<p>Para suporte adicional ou dúvidas, entre em contato com wis2-support@wmo.int.</p>
+<p>Para suporte adicional ou perguntas, por favor, entre em contato com wis2-support@wmo.int.</p>
 <p>Como sempre, a documentação principal do wis2box pode ser encontrada em <a href="https://docs.wis2box.wis.wmo.int">https://docs.wis2box.wis.wmo.int</a>.</p>
 <p>Contribuições são sempre incentivadas e bem-vindas!</p>
 

@@ -26,7 +26,7 @@
     
     
       
-        <title>اكتشاف مجموعات البيانات من كتالوج الاكتشاف العالمي WIS2 - WIS2 in a box training</title>
+        <title>اكتشاف مجموعات البيانات من فهرس الاكتشاف العالمي WIS2 - WIS2 in a box training</title>
       
     
     
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              اكتشاف مجموعات البيانات من كتالوج الاكتشاف العالمي WIS2
+              اكتشاف مجموعات البيانات من فهرس الاكتشاف العالمي WIS2
             
           </span>
         </div>
@@ -701,7 +701,7 @@
         <li class="md-nav__item">
   <a href="#pywiscat_1" class="md-nav__link">
     <span class="md-ellipsis">
-      البحث عن البيانات باستخدام pywiscat
+      العثور على البيانات باستخدام pywiscat
     </span>
   </a>
   
@@ -710,7 +710,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      الخاتمة
+      خاتمة
     </span>
   </a>
   
@@ -998,7 +998,7 @@
         <li class="md-nav__item">
   <a href="#pywiscat_1" class="md-nav__link">
     <span class="md-ellipsis">
-      البحث عن البيانات باستخدام pywiscat
+      العثور على البيانات باستخدام pywiscat
     </span>
   </a>
   
@@ -1007,7 +1007,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      الخاتمة
+      خاتمة
     </span>
   </a>
   
@@ -1029,30 +1029,30 @@
 
 
 
-<h1 id="wis2">اكتشاف مجموعات البيانات من كتالوج الاكتشاف العالمي WIS2</h1>
+<h1 id="wis2">اكتشاف مجموعات البيانات من فهرس الاكتشاف العالمي WIS2</h1>
 <div class="admonition abstract">
 <p class="admonition-title">نتائج التعلم!</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>استخدام pywiscat لاكتشاف مجموعات البيانات من Global Discovery Catalogue (GDC)</li>
+<li>استخدام pywiscat لاكتشاف مجموعات البيانات من فهرس الاكتشاف العالمي (GDC)</li>
 </ul>
 </div>
 <h2 id="_1">مقدمة</h2>
-<p>في هذه الجلسة ستتعلم كيفية اكتشاف البيانات من WIS2 Global Discovery Catalogue (GDC).</p>
-<p>حالياً، تتوفر كتالوجات GDC التالية:</p>
+<p>في هذه الجلسة ستتعلم كيفية اكتشاف البيانات من فهرس الاكتشاف العالمي WIS2 (GDC).</p>
+<p>في الوقت الحالي، الفهارس العالمية GDCs المتاحة هي:</p>
 <ul>
-<li>Environment and Climate Change Canada, Meteorological Service of Canada: <a href="https://wis2-gdc.weather.gc.ca">https://wis2-gdc.weather.gc.ca</a></li>
-<li>China Meteorological Administration: <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
-<li>Deutscher Wetterdienst: <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
+<li>بيئة وتغير المناخ كندا، خدمة الأرصاد الجوية الكندية: <a href="https://wis2-gdc.weather.gc.ca">https://wis2-gdc.weather.gc.ca</a></li>
+<li>إدارة الأرصاد الجوية الصينية: <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
+<li>الخدمة الجوية الألمانية: <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
 </ul>
-<p>خلال جلسات التدريب المحلية، يتم إعداد GDC محلي للسماح للمشاركين بالاستعلام عن البيانات الوصفية التي نشروها من أجهزة wis2box الخاصة بهم. في هذه الحالة سيقدم المدربون رابط GDC المحلي.</p>
+<p>خلال الجلسات التدريبية المحلية، يتم إعداد GDC محلي للسماح للمشاركين بالاستعلام عن الفهرس للبيانات الوصفية التي نشروها من نسخهم من wis2box. في هذه الحالة، سيقدم المدربون عنوان URL للـ GDC المحلي.</p>
 <h2 id="_2">التحضير</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>قبل البدء، يرجى تسجيل الدخول إلى الجهاز الافتراضي الخاص بك.</p>
+<p>قبل البدء، يرجى تسجيل الدخول إلى VM الطالب الخاص بك.</p>
 </div>
 <h2 id="pywiscat">تثبيت pywiscat</h2>
-<p>استخدم مثبت حزم Python <code>pip3</code> لتثبيت pywiscat على جهازك الافتراضي:
+<p>استخدم مثبت حزمة Python <code>pip3</code> لتثبيت pywiscat على VM الخاص بك:
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>pywiscat
 </code></pre></div></p>
 <div class="admonition note">
@@ -1061,19 +1061,19 @@
 <div class="highlight"><pre><span></span><code>WARNING: The script pywiscat is installed in &#39;/home/username/.local/bin&#39; which is not on PATH.
 Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 </code></pre></div>
-<p>قم بتنفيذ الأمر التالي:</p>
+<p>ثم قم بتشغيل الأمر التالي:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/home/<span class="nv">$USER</span>/.local/bin
 </code></pre></div>
-<p>حيث <code>$USER</code> هو اسم المستخدم الخاص بك على جهازك الافتراضي.</p>
+<p>...حيث <code>$USER</code> هو اسم المستخدم الخاص بك على VM.</p>
 </div>
 <p>تحقق من نجاح التثبيت:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>--version
 </code></pre></div>
-<h2 id="pywiscat_1">البحث عن البيانات باستخدام pywiscat</h2>
-<p>افتراضياً، يتصل pywiscat بكتالوج الاكتشاف العالمي الكندي. دعنا نقوم بتكوين pywiscat للاستعلام عن GDC التدريبي عن طريق تعيين متغير البيئة <code>PYWISCAT_GDC_URL</code>:</p>
+<h2 id="pywiscat_1">العثور على البيانات باستخدام pywiscat</h2>
+<p>بشكل افتراضي، يتصل pywiscat بفهرس الاكتشاف العالمي في كندا. دعونا نقوم بتكوين pywiscat للاستعلام عن GDC التدريبي بتعيين متغير البيئة <code>PYWISCAT_GDC_URL</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PYWISCAT_GDC_URL</span><span class="o">=</span>http://gdc.wis2.training:5002
 </code></pre></div>
-<p>لنستخدم <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> للاستعلام عن GDC المعد كجزء من التدريب.</p>
+<p>دعونا نستخدم <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> للاستعلام عن GDC المُعد كجزء من التدريب.</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>--help
 </code></pre></div>
 <p>الآن ابحث في GDC عن جميع السجلات:</p>
@@ -1084,10 +1084,10 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>كم عدد السجلات التي تم إرجاعها من البحث؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
-<p>يعتمد عدد السجلات على GDC الذي تستعلم عنه. عند استخدام GDC التدريبي المحلي، يجب أن ترى أن عدد السجلات يساوي عدد مجموعات البيانات التي تم إدخالها في GDC خلال الجلسات العملية الأخرى.</p>
+<summary>انقر للكشف عن الإجابة</summary>
+<p>عدد السجلات يعتمد على GDC الذي تستعلم عنه. عند استخدام GDC التدريبي المحلي، يجب أن ترى أن عدد السجلات يساوي عدد مجموعات البيانات التي تم استيعابها في GDC خلال الجلسات العملية الأخرى.</p>
 </details>
-<p>دعنا نجرب الاستعلام عن GDC باستخدام كلمة مفتاحية:</p>
+<p>دعونا نحاول الاستعلام عن GDC باستخدام كلمة رئيسية:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>-q<span class="w"> </span>observations
 </code></pre></div>
 <div class="admonition question">
@@ -1095,36 +1095,36 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <p>ما هي سياسة البيانات للنتائج؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
-<p>جميع البيانات المرجعة يجب أن تحدد بيانات "core"</p>
+<summary>انقر للكشف عن الإجابة</summary>
+<p>جميع البيانات المُرجعة يجب أن تحدد "بيانات أساسية"</p>
 </details>
-<p>جرب استعلامات إضافية باستخدام <code>-q</code></p>
+<p>جرب استعلامات إضافية مع <code>-q</code></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>يسمح خيار <code>-q</code> بالصيغ التالية:</p>
+<p>يسمح العلم <code>-q</code> بالصيغ التالية:</p>
 <ul>
-<li><code>-q synop</code>: البحث عن جميع السجلات التي تحتوي على كلمة "synop"</li>
-<li><code>-q temp</code>: البحث عن جميع السجلات التي تحتوي على كلمة "temp"</li>
-<li><code>-q "observations AND oman"</code>: البحث عن جميع السجلات التي تحتوي على كلمتي "observations" و "oman"</li>
-<li><code>-q "observations NOT oman"</code>: البحث عن جميع السجلات التي تحتوي على كلمة "observations" ولكن لا تحتوي على كلمة "oman"</li>
-<li><code>-q "synop OR temp"</code>: البحث عن جميع السجلات التي تحتوي على "synop" أو "temp"</li>
-<li><code>-q "obs*"</code>: البحث الضبابي</li>
+<li><code>-q synop</code>: العثور على جميع السجلات التي تحتوي على كلمة "synop"</li>
+<li><code>-q temp</code>: العثور على جميع السجلات التي تحتوي على كلمة "temp"</li>
+<li><code>-q "observations AND oman"</code>: العثور على جميع السجلات التي تحتوي على كلمتي "observations" و "oman"</li>
+<li><code>-q "observations NOT oman"</code>: العثور على جميع السجلات التي تحتوي على كلمة "observations" ولكن ليس "oman"</li>
+<li><code>-q "synop OR temp"</code>: العثور على جميع السجلات التي تحتوي على "synop" أو "temp"</li>
+<li><code>-q "obs*"</code>: بحث غامض</li>
 </ul>
-<p>عند البحث عن مصطلحات تحتوي على مسافات، ضعها بين علامتي اقتباس مزدوجة.</p>
+<p>عند البحث عن مصطلحات تحتوي على مسافات، قم بتضمينها في علامات اقتباس مزدوجة.</p>
 </div>
-<p>دعنا نحصل على مزيد من التفاصيل حول نتيجة بحث محددة نهتم بها:</p>
+<p>دعونا نحصل على المزيد من التفاصيل حول نتيجة بحث معينة نهتم بها:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>get<span class="w"> </span>&lt;id&gt;
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>استخدم قيمة <code>id</code> من البحث السابق.</p>
 </div>
-<h2 id="_3">الخاتمة</h2>
+<h2 id="_3">خاتمة</h2>
 <div class="admonition success">
 <p class="admonition-title">تهانينا!</p>
 <p>في هذه الجلسة العملية، تعلمت كيفية:</p>
 <ul>
-<li>استخدام pywiscat لاكتشاف مجموعات البيانات من WIS2 Global Discovery Catalogue</li>
+<li>استخدام pywiscat لاكتشاف مجموعات البيانات من فهرس الاكتشاف العالمي WIS2</li>
 </ul>
 </div>
 

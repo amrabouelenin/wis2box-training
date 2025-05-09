@@ -689,9 +689,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#uberprufen-der-wis2downloader-konfiguration" class="md-nav__link">
+  <a href="#uberprufung-der-wis2downloader-konfiguration" class="md-nav__link">
     <span class="md-ellipsis">
-      Überprüfen der wis2downloader-Konfiguration
+      Überprüfung der wis2downloader-Konfiguration
     </span>
   </a>
   
@@ -754,6 +754,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schlussfolgerung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schlussfolgerung
+    </span>
+  </a>
   
 </li>
       
@@ -1059,9 +1068,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#uberprufen-der-wis2downloader-konfiguration" class="md-nav__link">
+  <a href="#uberprufung-der-wis2downloader-konfiguration" class="md-nav__link">
     <span class="md-ellipsis">
-      Überprüfen der wis2downloader-Konfiguration
+      Überprüfung der wis2downloader-Konfiguration
     </span>
   </a>
   
@@ -1127,6 +1136,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#schlussfolgerung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schlussfolgerung
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1145,110 +1163,110 @@
 
 <h1 id="herunterladen-und-dekodieren-von-daten-aus-wis2">Herunterladen und Dekodieren von Daten aus WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Lernziele!</p>
-<p>Nach Abschluss dieser praktischen Einheit werden Sie in der Lage sein:</p>
+<p class="admonition-title">Lernergebnisse!</p>
+<p>Am Ende dieser praktischen Sitzung werden Sie in der Lage sein:</p>
 <ul>
 <li>den "wis2downloader" zu verwenden, um WIS2-Datenbenachrichtigungen zu abonnieren und Daten auf Ihr lokales System herunterzuladen</li>
-<li>den Status der Downloads im Grafana-Dashboard zu überwachen</li>
-<li>heruntergeladene Daten mithilfe des "decode-bufr-jupyter"-Containers zu dekodieren</li>
+<li>den Status der Downloads im Grafana-Dashboard anzuzeigen</li>
+<li>einige heruntergeladene Daten mit dem "decode-bufr-jupyter" Container zu dekodieren</li>
 </ul>
 </div>
 <h2 id="einfuhrung">Einführung</h2>
-<p>In dieser Einheit lernen Sie, wie Sie ein Abonnement bei einem WIS2 Broker einrichten und automatisch Daten mit dem in wis2box enthaltenen "wis2downloader"-Dienst auf Ihr lokales System herunterladen können.</p>
+<p>In dieser Sitzung lernen Sie, wie Sie ein Abonnement für einen WIS2 Broker einrichten und automatisch Daten auf Ihr lokales System herunterladen, indem Sie den "wis2downloader"-Dienst verwenden, der in wis2box enthalten ist.</p>
 <div class="admonition note">
 <p class="admonition-title">Über wis2downloader</p>
-<p>Der wis2downloader ist auch als eigenständiger Dienst verfügbar und kann auf einem anderen System ausgeführt werden als dem, das die WIS2-Benachrichtigungen veröffentlicht. Weitere Informationen zur Verwendung des wis2downloader als eigenständigen Dienst finden Sie unter <a href="https://pypi.org/project/wis2downloader/">wis2downloader</a>.</p>
-<p>Wenn Sie Ihren eigenen Dienst zum Abonnieren von WIS2-Benachrichtigungen und Herunterladen von Daten entwickeln möchten, können Sie den <a href="https://github.com/World-Meteorological-Organization/wis2downloader">wis2downloader source code</a> als Referenz verwenden.</p>
+<p>Der wis2downloader ist auch als eigenständiger Dienst verfügbar, der auf einem anderen System als dem, das die WIS2-Benachrichtigungen veröffentlicht, ausgeführt werden kann. Siehe <a href="https://pypi.org/project/wis2downloader/">wis2downloader</a> für weitere Informationen zur Verwendung des wis2downloader als eigenständigen Dienst.</p>
+<p>Wenn Sie Ihren eigenen Dienst zum Abonnieren von WIS2-Benachrichtigungen und Herunterladen von Daten entwickeln möchten, können Sie den <a href="https://github.com/World-Meteorological-Organization/wis2downloader">wis2downloader Quellcode</a> als Referenz verwenden.</p>
 </div>
-<div class="admonition weitere werkzeuge für den zugriff auf wis2-daten">
-<p class="admonition-title">Weitere</p>
-<p>Die folgenden Werkzeuge können ebenfalls verwendet werden, um Daten aus WIS2 zu finden und darauf zuzugreifen:</p>
+<div class="admonition andere werkzeuge für den zugriff auf wis2-daten">
+<p class="admonition-title">Andere</p>
+<p>Die folgenden Werkzeuge können ebenfalls verwendet werden, um Daten aus WIS2 zu entdecken und darauf zuzugreifen:</p>
 <ul>
-<li><a href="https://github.com/wmo-im/pywiscat">pywiscat</a> bietet Suchfunktionen für den WIS2 Global Discovery Catalogue zur Unterstützung der Berichterstattung und Analyse des WIS2-Katalogs und seiner zugehörigen Metadaten</li>
-<li><a href="https://github.com/World-Meteorological-Organization/pywis-pubsub">pywis-pubsub</a> ermöglicht das Abonnieren und Herunterladen von WMO-Daten aus WIS2-Infrastrukturdiensten</li>
+<li><a href="https://github.com/wmo-im/pywiscat">pywiscat</a> bietet Suchfunktionen auf dem WIS2 Global Discovery Catalogue zur Unterstützung der Berichterstattung und Analyse des WIS2-Katalogs und seiner zugehörigen Entdeckungsmetadaten</li>
+<li><a href="https://github.com/World-Meteorological-Organization/pywis-pubsub">pywis-pubsub</a> bietet Abonnement- und Download-Fähigkeiten für WMO-Daten aus WIS2-Infrastrukturdiensten</li>
 </ul>
 </div>
 <h2 id="vorbereitung">Vorbereitung</h2>
-<p>Bitte melden Sie sich vor dem Start an Ihrer Student-VM an und stellen Sie sicher, dass Ihre wis2box-Instanz läuft.</p>
+<p>Bitte loggen Sie sich vor Beginn in Ihre Studenten-VM ein und stellen Sie sicher, dass Ihre wis2box-Instanz läuft.</p>
 <h2 id="anzeigen-des-wis2downloader-dashboards-in-grafana">Anzeigen des wis2downloader-Dashboards in Grafana</h2>
-<p>Öffnen Sie einen Webbrowser und navigieren Sie zum Grafana-Dashboard Ihrer wis2box-Instanz unter <code>http://YOUR-HOST:3000</code>.</p>
-<p>Klicken Sie im linken Menü auf Dashboards und wählen Sie dann das <strong>wis2downloader dashboard</strong>.</p>
+<p>Öffnen Sie einen Webbrowser und navigieren Sie zum Grafana-Dashboard Ihrer wis2box-Instanz, indem Sie <code>http://YOUR-HOST:3000</code> aufrufen.</p>
+<p>Klicken Sie im linken Menü auf Dashboards und dann auf das <strong>wis2downloader Dashboard</strong>.</p>
 <p>Sie sollten folgendes Dashboard sehen:</p>
 <p><img alt="wis2downloader dashboard" src="../../assets/img/wis2downloader-dashboard.png" /></p>
-<p>Dieses Dashboard basiert auf Metriken, die vom wis2downloader-Dienst veröffentlicht werden, und zeigt Ihnen den Status der aktuell laufenden Downloads an.</p>
-<p>In der oberen linken Ecke sehen Sie die derzeit aktiven Abonnements.</p>
-<p>Lassen Sie dieses Dashboard geöffnet, da Sie es in der nächsten Übung zur Überwachung des Download-Fortschritts verwenden werden.</p>
-<h2 id="uberprufen-der-wis2downloader-konfiguration">Überprüfen der wis2downloader-Konfiguration</h2>
-<p>Der vom wis2box-Stack gestartete wis2downloader-Dienst kann über die Umgebungsvariablen in Ihrer wis2box.env-Datei konfiguriert werden.</p>
+<p>Dieses Dashboard basiert auf Metriken, die vom wis2downloader-Dienst veröffentlicht werden, und zeigt Ihnen den Status der derzeit laufenden Downloads.</p>
+<p>In der oberen linken Ecke können Sie die derzeit aktiven Abonnements sehen.</p>
+<p>Halten Sie dieses Dashboard offen, da Sie es verwenden werden, um den Fortschritt des Downloads im nächsten Übungsteil zu überwachen.</p>
+<h2 id="uberprufung-der-wis2downloader-konfiguration">Überprüfung der wis2downloader-Konfiguration</h2>
+<p>Der wis2downloader-Dienst, der vom wis2box-Stack gestartet wurde, kann mit den Umgebungsvariablen konfiguriert werden, die in Ihrer wis2box.env-Datei definiert sind.</p>
 <p>Die folgenden Umgebungsvariablen werden vom wis2downloader verwendet:</p>
 <pre><code>- DOWNLOAD_BROKER_HOST: Der Hostname des MQTT-Brokers, mit dem eine Verbindung hergestellt werden soll. Standardmäßig globalbroker.meteo.fr
 - DOWNLOAD_BROKER_PORT: Der Port des MQTT-Brokers, mit dem eine Verbindung hergestellt werden soll. Standardmäßig 443 (HTTPS für Websockets)
-- DOWNLOAD_BROKER_USERNAME: Der Benutzername für die Verbindung zum MQTT-Broker. Standardmäßig everyone
-- DOWNLOAD_BROKER_PASSWORD: Das Passwort für die Verbindung zum MQTT-Broker. Standardmäßig everyone
-- DOWNLOAD_BROKER_TRANSPORT: websockets oder tcp, der zu verwendende Transport-Mechanismus für die Verbindung zum MQTT-Broker. Standardmäßig websockets
-- DOWNLOAD_RETENTION_PERIOD_HOURS: Die Aufbewahrungsdauer der heruntergeladenen Daten in Stunden. Standardmäßig 24
-- DOWNLOAD_WORKERS: Die Anzahl der zu verwendenden Download-Worker. Standardmäßig 8. Bestimmt die Anzahl der parallelen Downloads
-- DOWNLOAD_MIN_FREE_SPACE_GB: Der minimale freie Speicherplatz in GB, der auf dem Volume mit den Downloads verfügbar sein muss. Standardmäßig 1
+- DOWNLOAD_BROKER_USERNAME: Der Benutzername, der verwendet werden soll, um eine Verbindung zum MQTT-Broker herzustellen. Standardmäßig everyone
+- DOWNLOAD_BROKER_PASSWORD: Das Passwort, das verwendet werden soll, um eine Verbindung zum MQTT-Broker herzustellen. Standardmäßig everyone
+- DOWNLOAD_BROKER_TRANSPORT: Websockets oder tcp, der Transportmechanismus, der verwendet werden soll, um eine Verbindung zum MQTT-Broker herzustellen. Standardmäßig websockets,
+- DOWNLOAD_RETENTION_PERIOD_HOURS: Die Aufbewahrungszeit in Stunden für die heruntergeladenen Daten. Standardmäßig 24
+- DOWNLOAD_WORKERS: Die Anzahl der Download-Arbeiter, die verwendet werden sollen. Standardmäßig 8. Bestimmt die Anzahl der parallelen Downloads.
+- DOWNLOAD_MIN_FREE_SPACE_GB: Der minimale freie Speicherplatz in GB, der auf dem Volume, das die Downloads hostet, freigehalten werden soll. Standardmäßig 1.
 </code></pre>
-<p>Um die aktuelle Konfiguration des wis2downloader zu überprüfen, können Sie folgenden Befehl verwenden:</p>
+<p>Um die aktuelle Konfiguration des wis2downloader zu überprüfen, können Sie den folgenden Befehl verwenden:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/wis2box/wis2box.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>DOWNLOAD
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Überprüfen Sie die Konfiguration des wis2downloader</p>
-<p>Welcher MQTT-Broker wird standardmäßig vom wis2downloader verwendet?</p>
-<p>Wie lange ist die standardmäßige Aufbewahrungsdauer für die heruntergeladenen Daten?</p>
+<p>Was ist der Standard-MQTT-Broker, mit dem sich der wis2downloader verbindet?</p>
+<p>Was ist die Standard-Aufbewahrungszeit für die heruntergeladenen Daten?</p>
 </div>
 <details class="success">
-<summary>Klicken Sie hier für die Antwort</summary>
-<p>Der standardmäßige MQTT-Broker, mit dem sich der wis2downloader verbindet, ist <code>globalbroker.meteo.fr</code>.</p>
-<p>Die standardmäßige Aufbewahrungsdauer für die heruntergeladenen Daten beträgt 24 Stunden.</p>
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
+<p>Der Standard-MQTT-Broker, mit dem sich der wis2downloader verbindet, ist <code>globalbroker.meteo.fr</code>.</p>
+<p>Die Standard-Aufbewahrungszeit für die heruntergeladenen Daten beträgt 24 Stunden.</p>
 </details>
 <div class="admonition note">
-<p class="admonition-title">Aktualisieren der wis2downloader-Konfiguration</p>
-<p>Um die Konfiguration des wis2downloader zu aktualisieren, können Sie die wis2box.env-Datei bearbeiten. Um die Änderungen zu übernehmen, führen Sie den Startbefehl für den wis2box-Stack erneut aus:</p>
+<p class="admonition-title">Aktualisieren der Konfiguration des wis2downloader</p>
+<p>Um die Konfiguration des wis2downloader zu aktualisieren, können Sie die Datei wis2box.env bearbeiten. Um die Änderungen anzuwenden, können Sie den Startbefehl für den wis2box-Stack erneut ausführen:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>start
 </code></pre></div>
-<p>Der wis2downloader-Dienst wird dann mit der neuen Konfiguration neu gestartet.</p>
+<p>Und Sie werden sehen, dass der wis2downloader-Dienst mit der neuen Konfiguration neu gestartet wird.</p>
 </div>
-<p>Für diese Übung können Sie die Standardkonfiguration beibehalten.</p>
+<p>Sie können die Standardkonfiguration für den Zweck dieser Übung beibehalten.</p>
 <h2 id="hinzufugen-von-abonnements-zum-wis2downloader">Hinzufügen von Abonnements zum wis2downloader</h2>
-<p>Im <strong>wis2downloader</strong>-Container können Sie über die Kommandozeile Abonnements auflisten, hinzufügen und löschen.</p>
-<p>Um sich am <strong>wis2downloader</strong>-Container anzumelden, verwenden Sie folgenden Befehl:</p>
+<p>Im <strong>wis2downloader</strong> Container können Sie die Befehlszeile verwenden, um Abonnements aufzulisten, hinzuzufügen und zu löschen.</p>
+<p>Um sich beim <strong>wis2downloader</strong> Container anzumelden, verwenden Sie den folgenden Befehl:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2downloader
 </code></pre></div>
 <p>Verwenden Sie dann den folgenden Befehl, um die derzeit aktiven Abonnements aufzulisten:</p>
 <div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>list-subscriptions
 </code></pre></div>
 <p>Dieser Befehl gibt eine leere Liste zurück, da derzeit keine Abonnements aktiv sind.</p>
-<p>Für diese Übung abonnieren wir das Thema <code>cache/a/wis2/de-dwd-gts-to-wis2/#</code>, um Daten zu abonnieren, die vom DWD-gehosteten GTS-to-WIS2-Gateway veröffentlicht werden, und laden Benachrichtigungen aus dem Global Cache herunter.</p>
+<p>Für den Zweck dieser Übung werden wir das folgende Thema abonnieren <code>cache/a/wis2/de-dwd-gts-to-wis2/#</code>, um Daten zu abonnieren, die vom DWD-gehosteten GTS-to-WIS2-Gateway veröffentlicht werden, und Download-Benachrichtigungen aus dem Global Cache.</p>
 <p>Um dieses Abonnement hinzuzufügen, verwenden Sie den folgenden Befehl:</p>
 <div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>add-subscription<span class="w"> </span>--topic<span class="w"> </span>cache/a/wis2/de-dwd-gts-to-wis2/#
 </code></pre></div>
-<p>Verlassen Sie dann den <strong>wis2downloader</strong>-Container durch Eingabe von <code>exit</code>:</p>
+<p>Verlassen Sie dann den <strong>wis2downloader</strong> Container, indem Sie <code>exit</code> eingeben:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<p>Überprüfen Sie das wis2downloader-Dashboard in Grafana, um das neue Abonnement zu sehen. Warten Sie einige Minuten, und Sie sollten sehen, wie die ersten Downloads beginnen. Gehen Sie zur nächsten Übung, sobald Sie bestätigt haben, dass die Downloads beginnen.</p>
+<p>Überprüfen Sie das wis2downloader-Dashboard in Grafana, um das neue Abonnement hinzugefügt zu sehen. Warten Sie einige Minuten und Sie sollten sehen, dass die ersten Downloads beginnen. Gehen Sie zur nächsten Übung, sobald Sie bestätigt haben, dass die Downloads beginnen.</p>
 <h2 id="anzeigen-der-heruntergeladenen-daten">Anzeigen der heruntergeladenen Daten</h2>
-<p>Der wis2downloader-Dienst im wis2box-Stack lädt die Daten in das Verzeichnis 'downloads' in dem Verzeichnis herunter, das Sie als WIS2BOX_HOST_DATADIR in Ihrer wis2box.env-Datei definiert haben. Um den Inhalt des Downloads-Verzeichnisses anzuzeigen, können Sie folgenden Befehl verwenden:</p>
+<p>Der wis2downloader-Dienst im wis2box-Stack lädt die Daten im Verzeichnis 'downloads' im Verzeichnis herunter, das Sie als WIS2BOX_HOST_DATADIR in Ihrer wis2box.env-Datei definiert haben. Um den Inhalt des Downloads-Verzeichnisses anzuzeigen, können Sie den folgenden Befehl verwenden:</p>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-R<span class="w"> </span>~/wis2box-data/downloads
 </code></pre></div>
-<p>Beachten Sie, dass die heruntergeladenen Daten in Verzeichnissen gespeichert werden, die nach dem Thema benannt sind, unter dem die WIS2-Benachrichtigung veröffentlicht wurde.</p>
+<p>Beachten Sie, dass die heruntergeladenen Daten in Verzeichnissen gespeichert sind, die nach dem Thema benannt sind, unter dem die WIS2-Benachrichtigung veröffentlicht wurde.</p>
 <h2 id="entfernen-von-abonnements-aus-dem-wis2downloader">Entfernen von Abonnements aus dem wis2downloader</h2>
-<p>Melden Sie sich nun erneut am wis2downloader-Container an:</p>
+<p>Melden Sie sich als Nächstes wieder beim wis2downloader-Container an:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2downloader
 </code></pre></div>
-<p>und entfernen Sie das von Ihnen erstellte Abonnement aus dem wis2downloader mit folgendem Befehl:</p>
+<p>und entfernen Sie das Abonnement, das Sie vom wis2downloader gemacht haben, mit dem folgenden Befehl:</p>
 <div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>remove-subscription<span class="w"> </span>--topic<span class="w"> </span>cache/a/wis2/de-dwd-gts-to-wis2/#
 </code></pre></div>
-<p>Verlassen Sie den wis2downloader-Container durch Eingabe von <code>exit</code>:</p>
+<p>Und verlassen Sie den wis2downloader-Container, indem Sie <code>exit</code> eingeben:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<p>Überprüfen Sie das wis2downloader-Dashboard in Grafana, um zu sehen, dass das Abonnement entfernt wurde. Sie sollten sehen, dass die Downloads stoppen.</p>
+<p>Überprüfen Sie das wis2downloader-Dashboard in Grafana, um das entfernte Abonnement zu sehen. Sie sollten sehen, dass die Downloads stoppen.</p>
 <h2 id="herunterladen-und-dekodieren-von-daten-fur-eine-tropische-zyklonspur">Herunterladen und Dekodieren von Daten für eine tropische Zyklonspur</h2>
-<p>In dieser Übung abonnieren Sie den WIS2 Training Broker, der Beispieldaten für Schulungszwecke veröffentlicht. Sie richten ein Abonnement ein, um Daten für eine tropische Zyklonspur herunterzuladen. Anschließend dekodieren Sie die heruntergeladenen Daten mit dem "decode-bufr-jupyter"-Container.</p>
+<p>In dieser Übung abonnieren Sie den WIS2 Training Broker, der Beispieldata für Schulungszwecke veröffentlicht. Sie richten ein Abonnement ein, um Daten für eine tropische Zyklonspur herunterzuladen. Anschließend dekodieren Sie die heruntergeladenen Daten mit dem "decode-bufr-jupyter" Container.</p>
 <h3 id="abonnieren-des-wis2training-brokers-und-einrichten-eines-neuen-abonnements">Abonnieren des wis2training-brokers und Einrichten eines neuen Abonnements</h3>
-<p>Dies zeigt, wie man einen Broker abonniert, der nicht der Standard-Broker ist, und ermöglicht es Ihnen, einige vom WIS2 Training Broker veröffentlichte Daten herunterzuladen.</p>
-<p>Bearbeiten Sie die wis2box.env-Datei und ändern Sie DOWNLOAD_BROKER_HOST zu <code>wis2training-broker.wis2dev.io</code>, DOWNLOAD_BROKER_PORT zu <code>1883</code> und DOWNLOAD_BROKER_TRANSPORT zu <code>tcp</code>:</p>
+<p>Dies zeigt, wie Sie ein Abonnement für einen Broker einrichten, der nicht der Standardbroker ist, und ermöglicht es Ihnen, einige Daten herunterzuladen, die vom WIS2 Training Broker veröffentlicht werden.</p>
+<p>Bearbeiten Sie die Datei wis2box.env und ändern Sie DOWNLOAD_BROKER_HOST in <code>wis2training-broker.wis2dev.io</code>, ändern Sie DOWNLOAD_BROKER_PORT in <code>1883</code> und ändern Sie DOWNLOAD_BROKER_TRANSPORT in <code>tcp</code>:</p>
 <div class="highlight"><pre><span></span><code># downloader settings
 DOWNLOAD_BROKER_HOST=wis2training-broker.wis2dev.io
 DOWNLOAD_BROKER_PORT=1883
@@ -1257,43 +1275,43 @@ DOWNLOAD_BROKER_PASSWORD=everyone
 # download transport mechanism (tcp or websockets)
 DOWNLOAD_BROKER_TRANSPORT=tcp
 </code></pre></div>
-<p>Führen Sie dann den 'start'-Befehl erneut aus, um die Änderungen zu übernehmen:</p>
+<p>Führen Sie dann den 'start'-Befehl erneut aus, um die Änderungen anzuwenden:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>start
 </code></pre></div>
-<p>Überprüfen Sie die Logs des wis2downloader, um zu sehen, ob die Verbindung zum neuen Broker erfolgreich war:</p>
+<p>Überprüfen Sie die Protokolle des wis2downloader, um zu sehen, ob die Verbindung zum neuen Broker erfolgreich war:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>logs<span class="w"> </span>wis2downloader
 </code></pre></div>
-<p>Sie sollten folgende Protokollmeldung sehen:</p>
+<p>Sie sollten die folgende Protokollnachricht sehen:</p>
 <div class="highlight"><pre><span></span><code>...
 INFO - Connecting...
 INFO - Host: wis2training-broker.wis2dev.io, port: 1883
 INFO - Connected successfully
 </code></pre></div>
-<p>Jetzt richten wir ein neues Abonnement für das Thema ein, um Zyklon-Spurdaten vom WIS2 Training Broker herunterzuladen.</p>
-<p>Melden Sie sich am <strong>wis2downloader</strong>-Container an:</p>
+<p>Jetzt richten wir ein neues Abonnement für das Thema ein, um Zyklonspurdaten vom WIS2 Training Broker herunterzuladen.</p>
+<p>Melden Sie sich beim <strong>wis2downloader</strong> Container an:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2downloader
 </code></pre></div>
 <p>Und führen Sie den folgenden Befehl aus (kopieren Sie diesen, um Tippfehler zu vermeiden):</p>
 <div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>add-subscription<span class="w"> </span>--topic<span class="w"> </span>origin/a/wis2/int-wis2-training/data/core/weather/prediction/forecast/medium-range/probabilistic/trajectory
 </code></pre></div>
-<p>Verlassen Sie den <strong>wis2downloader</strong>-Container durch Eingabe von <code>exit</code>.</p>
-<p>Warten Sie, bis Sie im wis2downloader-Dashboard in Grafana sehen, dass die Downloads beginnen.</p>
+<p>Verlassen Sie den <strong>wis2downloader</strong> Container, indem Sie <code>exit</code> eingeben.</p>
+<p>Warten Sie, bis Sie sehen, dass die Downloads im wis2downloader-Dashboard in Grafana beginnen.</p>
 <div class="admonition note">
 <p class="admonition-title">Herunterladen von Daten vom WIS2 Training Broker</p>
-<p>Der WIS2 Training Broker ist ein Testbroker, der für Schulungszwecke verwendet wird und möglicherweise nicht ständig Daten veröffentlicht.</p>
-<p>Während der Präsenzschulungen wird der lokale Trainer sicherstellen, dass der WIS2 Training Broker Daten zum Herunterladen veröffentlicht.</p>
-<p>Wenn Sie diese Übung außerhalb einer Schulung durchführen, sehen Sie möglicherweise keine heruntergeladenen Daten.</p>
+<p>Der WIS2 Training Broker ist ein Testbroker, der zu Schulungszwecken verwendet wird und möglicherweise nicht die ganze Zeit Daten veröffentlicht.</p>
+<p>Während der Präsenzschulungen wird der lokale Trainer sicherstellen, dass der WIS2 Training Broker Daten für Sie zum Herunterladen veröffentlicht.</p>
+<p>Wenn Sie diese Übung außerhalb einer Schulungssitzung durchführen, sehen Sie möglicherweise keine heruntergeladenen Daten.</p>
 </div>
-<p>Überprüfen Sie, ob die Daten heruntergeladen wurden, indem Sie die wis2downloader-Logs erneut überprüfen:</p>
+<p>Überprüfen Sie, ob die Daten heruntergeladen wurden, indem Sie die Protokolle des wis2downloader erneut überprüfen mit:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>logs<span class="w"> </span>wis2downloader
 </code></pre></div>
-<p>Sie sollten eine Protokollmeldung ähnlich der folgenden sehen:</p>
-<div class="highlight"><pre><span></span><code>[...] INFO - Message received under topic origin/a/wis2/int-wis2-training/data/core/weather/prediction/forecast/medium-range/probabilistic/trajectory
-[...] INFO - Downloaded A_JSXX05ECEP020000_C_ECMP_...
+<p>Sie sollten eine Protokollnachricht sehen, die der folgenden ähnelt:</p>
+<div class="highlight"><pre><span></span><code>[...] INFO - Nachricht unter dem Thema origin/a/wis2/int-wis2-training/data/core/weather/prediction/forecast/medium-range/probabilistic/trajectory erhalten
+[...] INFO - Heruntergeladen A_JSXX05ECEP020000_C_ECMP_...
 </code></pre></div>
 <h3 id="dekodieren-heruntergeladener-daten">Dekodieren heruntergeladener Daten</h3>
-<p>Um zu demonstrieren, wie Sie die heruntergeladenen Daten dekodieren können, starten wir einen neuen Container mit dem 'decode-bufr-jupyter'-Image.</p>
-<p>Dieser Container startet einen Jupyter Notebook Server auf Ihrer Instanz, der die "ecCodes"-Bibliothek enthält, mit der Sie BUFR-Daten dekodieren können.</p>
+<p>Um zu demonstrieren, wie Sie die heruntergeladenen Daten dekodieren können, werden wir einen neuen Container mit dem Image 'decode-bufr-jupyter' starten.</p>
+<p>Dieser Container wird einen Jupyter-Notebook-Server auf Ihrer Instanz starten, der die "ecCodes"-Bibliothek enthält, die Sie zum Dekodieren von BUFR-Daten verwenden können.</p>
 <p>Wir verwenden die Beispiel-Notebooks in <code>~/exercise-materials/notebook-examples</code>, um die heruntergeladenen Daten für die Zyklonspuren zu dekodieren.</p>
 <p>Um den Container zu starten, verwenden Sie den folgenden Befehl:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>decode-bufr-jupyter<span class="w"> </span><span class="se">\</span>
@@ -1304,7 +1322,50 @@ INFO - Connected successfully
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Über den decode-bufr-jupyter Container</p>
-<p>Der <code>decode-bufr-jupyter</code>-Container ist ein spezieller Container, der die ecCodes-Bibli</p>
+<p>Der <code>decode-bufr-jupyter</code> Container ist ein benutzerdefinierter Container, der die ecCodes-Bibliothek enthält und einen Jupyter-Notebook-Server ausführt. Der Container basiert auf einem Image, das die <code>ecCodes</code>-Bibliothek zum Dekodieren von BUFR-Daten enthält, zusammen mit Bibliotheken für das Plotten und die Datenanalyse.</p>
+<p>Der obige Befehl startet den Container im abgetrennten Modus, mit dem Namen <code>decode-bufr-jupyter</code>, der Port 8888 wird auf das Hostsystem gemappt und die Umgebungsvariable <code>JUPYTER_TOKEN</code> ist auf <code>dataismagic!</code> gesetzt.</p>
+<p>Der obige Befehl montiert auch das Verzeichnis <code>~/wis2box-data/downloads</code> auf <code>/root/downloads</code> im Container. Dies stellt sicher, dass die heruntergeladenen Daten dem Jupyter-Notebook-Server zur Verfügung stehen.</p>
+</div>
+<p>Sobald der Container gestartet ist, können Sie auf den Jupyter-Notebook-Server zugreifen, indem Sie in Ihrem Webbrowser <code>http://YOUR-HOST:8888</code> aufrufen.</p>
+<p>Sie sehen einen Bildschirm, auf dem Sie aufgefordert werden, ein "Passwort oder Token" einzugeben.</p>
+<p>Geben Sie das Token <code>dataismagic!</code> ein, um sich beim Jupyter-Notebook-Server anzumelden.</p>
+<p>Nachdem Sie sich angemeldet haben, sollten Sie den folgenden Bildschirm sehen, der die Verzeichnisse im Container auflistet:</p>
+<p><img alt="Jupyter notebook home" src="../../assets/img/jupyter-files-screen1.png" /></p>
+<p>Doppelklicken Sie auf das Verzeichnis <code>example-notebooks</code>, um es zu öffnen.</p>
+<p>Sie sollten den folgenden Bildschirm sehen, der die Beispiel-Notebooks auflistet, doppelklicken Sie auf das Notebook <code>tropical_cyclone_track.ipynb</code>, um es zu öffnen:</p>
+<p><img alt="Jupyter notebook example notebooks" src="../../assets/img/jupyter-files-screen2.png" /></p>
+<p>Sie sollten jetzt im Jupyter-Notebook für das Dekodieren der Daten der tropischen Zyklonspur sein:</p>
+<p><img alt="Jupyter notebook tropical cyclone track" src="../../assets/img/jupyter-tropical-cyclone-track.png" /></p>
+<p>Lesen Sie die Anweisungen im Notizbuch und führen Sie die Zellen aus, um die heruntergeladenen Daten für die Zugbahnen tropischer Zyklone zu entschlüsseln. Führen Sie jede Zelle aus, indem Sie auf die Zelle klicken und dann auf die Schaltfläche Ausführen in der Symbolleiste klicken oder <code>Shift+Enter</code> drücken.</p>
+<p>Am Ende sollten Sie eine Darstellung der Schlagwahrscheinlichkeit für die Zugbahnen tropischer Zyklone sehen:</p>
+<p><img alt="Tropical cyclone tracks" src="../../assets/img/tropical-cyclone-track-map.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Das Ergebnis zeigt die vorhergesagte Wahrscheinlichkeit eines tropischen Sturmzugs innerhalb von 200 km. Wie würden Sie das Notizbuch aktualisieren, um die vorhergesagte Wahrscheinlichkeit eines tropischen Sturmzugs innerhalb von 300 km anzuzeigen?</p>
+</div>
+<details class="success">
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
+<p>Um das Notizbuch zu aktualisieren und die vorhergesagte Wahrscheinlichkeit eines tropischen Sturmzugs innerhalb einer anderen Entfernung anzuzeigen, können Sie die Variable <code>distance_threshold</code> im Code-Block, der die Schlagwahrscheinlichkeit berechnet, aktualisieren.</p>
+<p>Um die vorhergesagte Wahrscheinlichkeit eines tropischen Sturmzugs innerhalb von 300 km anzuzeigen,</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># set distance threshold (meters)</span>
+<span class="n">distance_threshold</span> <span class="o">=</span> <span class="mi">300000</span>  <span class="c1"># 300 km in meters</span>
+</code></pre></div>
+<p>Führen Sie dann die Zellen im Notizbuch erneut aus, um die aktualisierte Darstellung zu sehen.</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Dekodierung von BUFR-Daten</p>
+<p>Die Übung, die Sie gerade durchgeführt haben, lieferte ein spezifisches Beispiel dafür, wie Sie BUFR-Daten mit der ecCodes-Bibliothek dekodieren können. Verschiedene Datentypen können unterschiedliche Dekodierungsschritte erfordern, und Sie müssen möglicherweise die Dokumentation für den Datentyp, mit dem Sie arbeiten, konsultieren.</p>
+<p>Für weitere Informationen konsultieren Sie bitte die <a href="https://confluence.ecmwf.int/display/ECC">ecCodes-Dokumentation</a>.</p>
+</div>
+<h2 id="schlussfolgerung">Schlussfolgerung</h2>
+<div class="admonition success">
+<p class="admonition-title">Herzlichen Glückwunsch!</p>
+<p>In dieser praktischen Sitzung haben Sie gelernt, wie Sie:</p>
+<ul>
+<li>den 'wis2downloader' verwenden, um sich bei einem WIS2 Broker zu abonnieren und Daten auf Ihr lokales System herunterzuladen</li>
+<li>den Status der Downloads im Grafana-Dashboard anzeigen</li>
+<li>einige heruntergeladene Daten mit dem 'decode-bufr-jupyter' Container dekodieren</li>
+</ul>
 </div>
 
 

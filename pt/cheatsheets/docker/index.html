@@ -26,7 +26,7 @@
     
     
       
-        <title>Guia de Consulta Rápida do Docker - WIS2 in a box training</title>
+        <title>Docker cheatsheet - WIS2 in a box training</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#guia-de-consulta-rapida-do-docker" class="md-skip">
+        <a href="#docker-cheatsheet" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -129,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Guia de Consulta Rápida do Docker
+              Docker cheatsheet
             
           </span>
         </div>
@@ -1015,12 +1015,11 @@
 
 
 
-<h1 id="guia-de-consulta-rapida-do-docker">Guia de Consulta Rápida do Docker</h1>
+<h1 id="docker-cheatsheet">Docker cheatsheet</h1>
 <h2 id="visao-geral">Visão Geral</h2>
-<p>O Docker permite a criação de ambientes virtuais de maneira isolada, apoiando a virtualização de recursos computacionais. O conceito básico por trás do Docker é a contêinerização,
-onde softwares podem ser executados como serviços, interagindo com outros contêineres de software, por exemplo.</p>
-<p>O fluxo de trabalho típico do Docker envolve a criação e construção de <strong>imagens</strong>, que são então executadas como <strong>contêineres</strong> ativos.</p>
-<p>O Docker é usado para executar o conjunto de serviços que compõem o wis2box usando imagens pré-construídas.</p>
+<p>Docker permite a criação de ambientes virtuais de maneira isolada, apoiando a virtualização de recursos computacionais. O conceito básico por trás do Docker é a contêinerização, onde softwares podem rodar como serviços, interagindo com outros contêineres de software, por exemplo.</p>
+<p>O fluxo de trabalho típico do Docker envolve criar e construir <strong>imagens</strong>, que são então executadas como <strong>contêineres</strong> ativos.</p>
+<p>Docker é usado para executar o conjunto de serviços que compõem o wis2box usando imagens pré-construídas.</p>
 <h3 id="gerenciamento-de-imagens">Gerenciamento de Imagens</h3>
 <ul>
 <li>Listar imagens disponíveis</li>
@@ -1033,7 +1032,7 @@ onde softwares podem ser executados como serviços, interagindo com outros cont�
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>my-image:latest
 </code></pre></div>
 <ul>
-<li>Remover uma imagem:</li>
+<li>Removendo uma imagem:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rmi<span class="w"> </span>my-image:local
 </code></pre></div>
@@ -1072,9 +1071,9 @@ onde softwares podem ser executados como serviços, interagindo com outros cont�
 <ul>
 <li>Entrar no terminal interativo de um contêiner em execução:</li>
 </ul>
-<div class="admonition dica">
-<p class="admonition-title">Dica</p>
-<p>use <code>docker ps</code> para usar o ID do contêiner no comando abaixo</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>use <code>docker ps</code> para usar o id do contêiner no comando abaixo</p>
 </div>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>my-container<span class="w"> </span>/bin/bash
 </code></pre></div>

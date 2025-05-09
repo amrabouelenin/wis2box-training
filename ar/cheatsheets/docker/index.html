@@ -26,7 +26,7 @@
     
     
       
-        <title>ورقة غش دوكر - WIS2 in a box training</title>
+        <title>Docker cheatsheet - WIS2 in a box training</title>
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#docker-cheatsheet" class="md-skip">
           انتقل إلى المحتوى
         </a>
       
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ورقة غش دوكر
+              Docker cheatsheet
             
           </span>
         </div>
@@ -767,7 +767,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       نظرة عامة
     </span>
@@ -777,7 +777,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الصور
     </span>
@@ -786,7 +786,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الأحجام
     </span>
@@ -795,7 +795,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الحاويات
     </span>
@@ -966,7 +966,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       نظرة عامة
     </span>
@@ -976,7 +976,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الصور
     </span>
@@ -985,7 +985,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الأحجام
     </span>
@@ -994,7 +994,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الحاويات
     </span>
@@ -1023,12 +1023,12 @@
 
 
 
-<h1 id="_1">ورقة غش دوكر</h1>
-<h2 id="_2">نظرة عامة</h2>
-<p>يتيح دوكر إنشاء بيئات افتراضية بطريقة معزولة لدعم تقنيات الحوسبة الافتراضية. المفهوم الأساسي وراء دوكر هو التحويض، حيث يمكن تشغيل البرمجيات كخدمات، والتفاعل مع حاويات برمجية أخرى، على سبيل المثال.</p>
-<p>يتضمن سير عمل دوكر النموذجي إنشاء وبناء <strong>الصور</strong>، والتي يتم تشغيلها بعد ذلك كـ <strong>حاويات</strong> حية.</p>
-<p>يُستخدم دوكر لتشغيل مجموعة الخدمات التي تشكل wis2box باستخدام صور مُعدة مسبقًا.</p>
-<h3 id="_3">إدارة الصور</h3>
+<h1 id="docker-cheatsheet">Docker cheatsheet</h1>
+<h2 id="_1">نظرة عامة</h2>
+<p>يتيح Docker إنشاء بيئات افتراضية بطريقة معزولة دعمًا لتقنيات الحوسبة الافتراضية. المفهوم الأساسي وراء Docker هو الحاويات، حيث يمكن تشغيل البرمجيات كخدمات، تتفاعل مع حاويات برمجية أخرى، على سبيل المثال.</p>
+<p>يتضمن سير العمل النموذجي لـ Docker إنشاء وبناء <strong>الصور</strong>، والتي يتم تشغيلها بعد ذلك كـ <strong>حاويات</strong> حية.</p>
+<p>يُستخدم Docker لتشغيل مجموعة الخدمات التي تشكل wis2box باستخدام صور مُعدة مسبقًا.</p>
+<h3 id="_2">إدارة الصور</h3>
 <ul>
 <li>عرض الصور المتاحة</li>
 </ul>
@@ -1044,7 +1044,7 @@
 </ul>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rmi<span class="w"> </span>my-image:local
 </code></pre></div>
-<h3 id="_4">إدارة الأحجام</h3>
+<h3 id="_3">إدارة الأحجام</h3>
 <ul>
 <li>عرض جميع الأحجام المُنشأة:</li>
 </ul>
@@ -1065,7 +1065,7 @@
 </ul>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>prune
 </code></pre></div>
-<h3 id="_5">إدارة الحاويات</h3>
+<h3 id="_4">إدارة الحاويات</h3>
 <ul>
 <li>عرض قائمة بالحاويات الجاري تشغيلها:</li>
 </ul>
@@ -1077,10 +1077,10 @@
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>-a
 </code></pre></div>
 <ul>
-<li>الدخول إلى واجهة الأوامر التفاعلية لحاوية جاري تشغيلها:</li>
+<li>الدخول إلى الطرفية التفاعلية لحاوية جاري تشغيلها:</li>
 </ul>
-<div class="admonition نصيحة">
-<p class="admonition-title">نصيحة</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>استخدم <code>docker ps</code> لاستخدام معرف الحاوية في الأمر أدناه</p>
 </div>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>my-container<span class="w"> </span>/bin/bash

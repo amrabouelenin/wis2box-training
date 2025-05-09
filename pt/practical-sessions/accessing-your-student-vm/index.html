@@ -453,27 +453,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conecte-se-a-sua-vm-de-estudante-na-rede-local-de-treinamento" class="md-nav__link">
+  <a href="#conecte-se-a-sua-vm-de-estudante-na-rede-de-treinamento-local" class="md-nav__link">
     <span class="md-ellipsis">
-      Conecte-se à sua VM de estudante na rede local de treinamento
+      Conecte-se à sua VM de estudante na rede de treinamento local
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verificar-versoes-do-software" class="md-nav__link">
+  <a href="#verifique-as-versoes-do-software" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificar versões do software
+      Verifique as versões do software
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecionar-os-materiais-de-exercicio" class="md-nav__link">
+  <a href="#inspecione-os-materiais-de-exercicio" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecionar os materiais de exercício
+      Inspecione os materiais de exercício
     </span>
   </a>
   
@@ -970,27 +970,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conecte-se-a-sua-vm-de-estudante-na-rede-local-de-treinamento" class="md-nav__link">
+  <a href="#conecte-se-a-sua-vm-de-estudante-na-rede-de-treinamento-local" class="md-nav__link">
     <span class="md-ellipsis">
-      Conecte-se à sua VM de estudante na rede local de treinamento
+      Conecte-se à sua VM de estudante na rede de treinamento local
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verificar-versoes-do-software" class="md-nav__link">
+  <a href="#verifique-as-versoes-do-software" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificar versões do software
+      Verifique as versões do software
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspecionar-os-materiais-de-exercicio" class="md-nav__link">
+  <a href="#inspecione-os-materiais-de-exercicio" class="md-nav__link">
     <span class="md-ellipsis">
-      Inspecionar os materiais de exercício
+      Inspecione os materiais de exercício
     </span>
   </a>
   
@@ -1023,17 +1023,17 @@
 
 <h1 id="acessando-sua-vm-de-estudante">Acessando sua VM de estudante</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objetivos de aprendizagem</p>
+<p class="admonition-title">Resultados de aprendizado</p>
 <p>Ao final desta sessão prática, você será capaz de:</p>
 <ul>
 <li>acessar sua VM de estudante via SSH e WinSCP</li>
 <li>verificar se o software necessário para os exercícios práticos está instalado</li>
-<li>verificar se você tem acesso aos materiais de exercício para este treinamento em sua VM local de estudante</li>
+<li>verificar se você tem acesso aos materiais de exercício para este treinamento na sua VM de estudante local</li>
 </ul>
 </div>
 <h2 id="introducao">Introdução</h2>
-<p>Como parte das sessões de treinamento wis2box executadas localmente, você pode acessar sua VM pessoal de estudante na rede local de treinamento chamada "WIS2-training".</p>
-<p>Sua VM de estudante tem os seguintes softwares pré-instalados:</p>
+<p>Como parte das sessões de treinamento locais do wis2box, você pode acessar sua VM de estudante pessoal na rede de treinamento local chamada "WIS2-training".</p>
+<p>Sua VM de estudante tem o seguinte software pré-instalado:</p>
 <ul>
 <li>Ubuntu 22.0.4.3 LTS <a href="https://releases.ubuntu.com/jammy/ubuntu-22.04.3-live-server-amd64.iso">ubuntu-22.04.3-live-server-amd64.iso</a></li>
 <li>Python 3.10.12</li>
@@ -1043,43 +1043,43 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Se você quiser executar este treinamento fora de uma sessão local de treinamento, você pode fornecer sua própria instância usando qualquer provedor de nuvem, por exemplo:</p>
+<p>Se você deseja realizar este treinamento fora de uma sessão de treinamento local, você pode fornecer sua própria instância usando qualquer provedor de nuvem, por exemplo:</p>
 <ul>
-<li>GCP (Google Cloud Platform) VM instance <code>e2-medium</code></li>
-<li>AWS (Amazon Web Services) ec2-instance <code>t3a.medium</code></li>
-<li>Azure (Microsoft) Azure Virtual Machine <code>standard_b2s</code></li>
+<li>Instância VM GCP (Google Cloud Platform) <code>e2-medium</code></li>
+<li>Instância ec2 AWS (Amazon Web Services) <code>t3a.medium</code></li>
+<li>Máquina Virtual Azure (Microsoft) <code>standard_b2s</code></li>
 </ul>
-<p>Selecione Ubuntu Server 22.0.4 LTS como SO.</p>
+<p>Selecione Ubuntu Server 22.0.4 LTS como sistema operacional.</p>
 <p>Após criar sua VM, certifique-se de ter instalado python, docker e docker compose, conforme descrito em <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
 <p>O arquivo de lançamento do wis2box usado neste treinamento pode ser baixado da seguinte forma:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/World-Meteorological-Organization/wis2box-release/releases/download/1.0.0/wis2box-setup.zip
 unzip<span class="w"> </span>wis2box-setup.zip
 </code></pre></div>
-<p>Você sempre pode encontrar o arquivo mais recente do 'wis2box-setup' em <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
+<p>Você sempre pode encontrar o arquivo 'wis2box-setup' mais recente em <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
 <p>O material de exercício usado neste treinamento pode ser baixado da seguinte forma:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://training.wis2box.wis.wmo.int/exercise-materials.zip
 unzip<span class="w"> </span>exercise-materials.zip
 </code></pre></div>
-<p>Os seguintes pacotes Python adicionais são necessários para executar os materiais de exercício:</p>
+<p>Os seguintes pacotes adicionais de Python são necessários para executar os materiais de exercício:</p>
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
 pip3<span class="w"> </span>install<span class="w"> </span><span class="nv">pywiscat</span><span class="o">==</span><span class="m">0</span>.2.2
 </code></pre></div>
 <p>Se você estiver usando a VM de estudante fornecida durante as sessões locais de treinamento WIS2, o software necessário já estará instalado.</p>
 </div>
-<h2 id="conecte-se-a-sua-vm-de-estudante-na-rede-local-de-treinamento">Conecte-se à sua VM de estudante na rede local de treinamento</h2>
-<p>Conecte seu PC ao Wi-Fi local transmitido na sala durante o treinamento WIS2 conforme as instruções fornecidas pelo instrutor.</p>
+<h2 id="conecte-se-a-sua-vm-de-estudante-na-rede-de-treinamento-local">Conecte-se à sua VM de estudante na rede de treinamento local</h2>
+<p>Conecte seu PC à rede Wi-Fi local transmitida na sala durante o treinamento WIS2 conforme as instruções fornecidas pelo instrutor.</p>
 <p>Use um cliente SSH para se conectar à sua VM de estudante usando o seguinte:</p>
 <ul>
 <li><strong>Host: (fornecido durante o treinamento presencial)</strong></li>
 <li><strong>Porta: 22</strong></li>
-<li><strong>Nome de usuário: (fornecido durante o treinamento presencial)</strong></li>
-<li><strong>Senha: (fornecida durante o treinamento presencial)</strong></li>
+<li><strong>Usuário: (fornecido durante o treinamento presencial)</strong></li>
+<li><strong>Senha: (fornecido durante o treinamento presencial)</strong></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Entre em contato com um instrutor se você não tiver certeza sobre o hostname/nome de usuário ou tiver problemas para se conectar.</p>
+<p>Contate um instrutor se você estiver incerto sobre o hostname/usuário ou tiver problemas para conectar.</p>
 </div>
-<p>Uma vez conectado, altere sua senha para garantir que outros não possam acessar sua VM:</p>
+<p>Uma vez conectado, por favor, altere sua senha para garantir que outros não possam acessar sua VM:</p>
 <div class="highlight"><pre><span></span><code>limper@student-vm:~$<span class="w"> </span>passwd
 Changing<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>testuser.
 Current<span class="w"> </span>password:
@@ -1087,51 +1087,51 @@ New<span class="w"> </span>password:
 Retype<span class="w"> </span>new<span class="w"> </span>password:
 passwd:<span class="w"> </span>password<span class="w"> </span>updated<span class="w"> </span>successfully
 </code></pre></div>
-<h2 id="verificar-versoes-do-software">Verificar versões do software</h2>
-<p>Para poder executar o wis2box, a VM do estudante deve ter Python, Docker e Docker Compose pré-instalados.</p>
-<p>Verificar versão do Python:
+<h2 id="verifique-as-versoes-do-software">Verifique as versões do software</h2>
+<p>Para poder executar o wis2box, a VM de estudante deve ter Python, Docker e Docker Compose pré-instalados. </p>
+<p>Verifique a versão do Python:
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
 </code></pre></div>
 retorna:
 <div class="highlight"><pre><span></span><code><span class="go">Python 3.10.12</span>
 </code></pre></div></p>
-<p>Verificar versão do docker:
+<p>Verifique a versão do docker:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
 </code></pre></div>
 retorna:
 <div class="highlight"><pre><span></span><code><span class="go">Docker version 24.0.6, build ed223bc</span>
 </code></pre></div></p>
-<p>Verificar versão do Docker Compose:
+<p>Verifique a versão do Docker Compose:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>version
 </code></pre></div>
 retorna:
 <div class="highlight"><pre><span></span><code><span class="go">Docker Compose version v2.21.0</span>
 </code></pre></div></p>
-<p>Para garantir que seu usuário possa executar comandos Docker, seu usuário foi adicionado ao grupo <code>docker</code>.</p>
-<p>Para testar se seu usuário pode executar o docker hello-world, execute o seguinte comando:
+<p>Para garantir que seu usuário possa executar comandos Docker, seu usuário foi adicionado ao grupo <code>docker</code>. </p>
+<p>Para testar que seu usuário pode executar docker hello-world, execute o seguinte comando:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>hello-world
 </code></pre></div></p>
-<p>Isso deve baixar a imagem hello-world e executar um contêiner que imprime uma mensagem.</p>
+<p>Isso deve baixar a imagem hello-world e executar um contêiner que imprime uma mensagem. </p>
 <p>Verifique se você vê o seguinte na saída:</p>
 <div class="highlight"><pre><span></span><code><span class="go">...</span>
 <span class="go">Hello from Docker!</span>
 <span class="go">This message shows that your installation appears to be working correctly.</span>
 <span class="go">...</span>
 </code></pre></div>
-<h2 id="inspecionar-os-materiais-de-exercicio">Inspecionar os materiais de exercício</h2>
-<p>Inspecione o conteúdo do seu diretório inicial; estes são os materiais usados como parte do treinamento e sessões práticas.</p>
+<h2 id="inspecione-os-materiais-de-exercicio">Inspecione os materiais de exercício</h2>
+<p>Inspecione o conteúdo do seu diretório pessoal; estes são os materiais usados como parte do treinamento e das sessões práticas.</p>
 <p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>~/
 </code></pre></div>
 retorna:
 <div class="highlight"><pre><span></span><code><span class="go">exercise-materials  wis2box</span>
 </code></pre></div></p>
-<p>Se você tiver o WinSCP instalado em seu PC local, pode usá-lo para se conectar à sua VM de estudante e inspecionar o conteúdo do seu diretório inicial e baixar ou enviar arquivos entre sua VM e seu PC local.</p>
-<p>O WinSCP não é necessário para o treinamento, mas pode ser útil se você quiser editar arquivos em sua VM usando um editor de texto em seu PC local.</p>
-<p>Aqui está como você pode se conectar à sua VM de estudante usando WinSCP:</p>
-<p>Abra o WinSCP e clique em "New Site". Você pode criar uma nova conexão SCP para sua VM da seguinte forma:</p>
+<p>Se você tiver o WinSCP instalado no seu PC local, você pode usá-lo para conectar à sua VM de estudante e inspecionar o conteúdo do seu diretório pessoal e baixar ou subir arquivos entre sua VM e seu PC local. </p>
+<p>O WinSCP não é necessário para o treinamento, mas pode ser útil se você quiser editar arquivos na sua VM usando um editor de texto no seu PC local.</p>
+<p>Aqui está como você pode conectar à sua VM de estudante usando o WinSCP:</p>
+<p>Abra o WinSCP e clique em "Novo Site". Você pode criar uma nova conexão SCP para sua VM da seguinte forma:</p>
 <p><img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400"></p>
-<p>Clique em 'Save' e depois em 'Login' para se conectar à sua VM.</p>
-<p>E você deve poder ver o seguinte conteúdo:</p>
+<p>Clique em 'Salvar' e depois em 'Login' para conectar à sua VM.</p>
+<p>E você deverá ser capaz de ver o seguinte conteúdo:</p>
 <p><img alt="winscp-student-vm-exercise-materials.png" src="../../assets/img/winscp-student-vm-exercise-materials.png" width="600"></p>
 <h2 id="conclusao">Conclusão</h2>
 <div class="admonition success">
@@ -1140,7 +1140,7 @@ retorna:
 <ul>
 <li>acessar sua VM de estudante via SSH e WinSCP</li>
 <li>verificar se o software necessário para os exercícios práticos está instalado</li>
-<li>verificar se você tem acesso aos materiais de exercício para este treinamento em sua VM local de estudante</li>
+<li>verificar se você tem acesso aos materiais de exercício para este treinamento na sua VM de estudante local</li>
 </ul>
 </div>
 

@@ -1037,9 +1037,9 @@
 
 <h1 id="docker-spickzettel">Docker Spickzettel</h1>
 <h2 id="ubersicht">Übersicht</h2>
-<p>Docker ermöglicht das Erstellen von virtuellen Umgebungen auf isolierte Weise zur Unterstützung der Virtualisierung von Rechenressourcen. Das grundlegende Konzept hinter Docker ist die Containerisierung, bei der Software als Dienste ausgeführt werden kann, die mit anderen Softwarecontainern interagieren, zum Beispiel.</p>
-<p>Der typische Docker-Arbeitsablauf umfasst das Erstellen und Bauen von <strong>Images</strong>, die dann als laufende <strong>Container</strong> ausgeführt werden.</p>
-<p>Docker wird verwendet, um die Dienstesammlung, die wis2box bildet, mit vorab erstellten Images zu betreiben.</p>
+<p>Docker ermöglicht das Erstellen virtueller Umgebungen auf isolierte Weise zur Unterstützung der Virtualisierung von Rechenressourcen. Das grundlegende Konzept hinter Docker ist die Containerisierung, bei der Software als Dienste ausgeführt werden kann, die mit anderen Softwarecontainern interagieren, zum Beispiel.</p>
+<p>Der typische Docker-Workflow umfasst das Erstellen und Bauen von <strong>Images</strong>, die dann als laufende <strong>Container</strong> ausgeführt werden.</p>
+<p>Docker wird verwendet, um die Suite von Diensten auszuführen, die wis2box mit vorab erstellten Images bilden.</p>
 <h3 id="bildverwaltung">Bildverwaltung</h3>
 <ul>
 <li>Liste verfügbarer Images</li>
@@ -1089,10 +1089,10 @@
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>-a
 </code></pre></div>
 <ul>
-<li>In das interaktive Terminal eines laufenden Containers eintreten:</li>
+<li>Das interaktive Terminal eines laufenden Containers betreten:</li>
 </ul>
-<div class="admonition tipp">
-<p class="admonition-title">Tipp</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>Verwenden Sie <code>docker ps</code>, um die Container-ID im folgenden Befehl zu verwenden</p>
 </div>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>my-container<span class="w"> </span>/bin/bash

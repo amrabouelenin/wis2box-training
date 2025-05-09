@@ -638,9 +638,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#criar-um-novo-conjunto-de-dados-com-politica-de-dados-recommended" class="md-nav__link">
+  <a href="#criar-um-novo-conjunto-de-dados-com-politica-de-dados-recomendada" class="md-nav__link">
     <span class="md-ellipsis">
-      Criar um novo conjunto de dados com política de dados 'recommended'
+      Criar um novo conjunto de dados com política de dados 'recomendada'
     </span>
   </a>
   
@@ -997,9 +997,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#criar-um-novo-conjunto-de-dados-com-politica-de-dados-recommended" class="md-nav__link">
+  <a href="#criar-um-novo-conjunto-de-dados-com-politica-de-dados-recomendada" class="md-nav__link">
     <span class="md-ellipsis">
-      Criar um novo conjunto de dados com política de dados 'recommended'
+      Criar um novo conjunto de dados com política de dados 'recomendada'
     </span>
   </a>
   
@@ -1059,30 +1059,30 @@
 
 <h1 id="configurando-um-conjunto-de-dados-recomendado-com-controle-de-acesso">Configurando um conjunto de dados recomendado com controle de acesso</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objetivos de aprendizagem</p>
+<p class="admonition-title">Resultados de aprendizado</p>
 <p>Ao final desta sessão prática, você será capaz de:</p>
 <ul>
-<li>criar um novo conjunto de dados com política de dados 'recommended'</li>
+<li>criar um novo conjunto de dados com política de dados 'recomendada'</li>
 <li>adicionar um token de acesso ao conjunto de dados</li>
 <li>validar que o conjunto de dados não pode ser acessado sem o token de acesso</li>
 <li>adicionar o token de acesso aos cabeçalhos HTTP para acessar o conjunto de dados</li>
 </ul>
 </div>
 <h2 id="introducao">Introdução</h2>
-<p>Conjuntos de dados que não são considerados conjuntos 'core' na WMO podem ser opcionalmente configurados com uma política de controle de acesso. O wis2box fornece um mecanismo para adicionar um token de acesso a um conjunto de dados que impedirá os usuários de baixar dados, a menos que forneçam o token de acesso nos cabeçalhos HTTP.</p>
+<p>Conjuntos de dados que não são considerados 'núcleo' na WMO podem opcionalmente ser configurados com uma política de controle de acesso. wis2box fornece um mecanismo para adicionar um token de acesso a um conjunto de dados que impedirá os usuários de baixar dados a menos que forneçam o token de acesso nos cabeçalhos HTTP.</p>
 <h2 id="preparacao">Preparação</h2>
-<p>Certifique-se de ter acesso SSH à sua VM de estudante e que sua instância wis2box esteja em execução.</p>
-<p>Certifique-se de estar conectado ao broker MQTT da sua instância wis2box usando o MQTT Explorer. Você pode usar as credenciais públicas <code>everyone/everyone</code> para se conectar ao broker.</p>
+<p>Certifique-se de ter acesso SSH à sua VM de estudante e que sua instância de wis2box esteja funcionando.</p>
+<p>Certifique-se de estar conectado ao broker MQTT de sua instância wis2box usando MQTT Explorer. Você pode usar as credenciais públicas <code>everyone/everyone</code> para se conectar ao broker.</p>
 <p>Certifique-se de ter um navegador web aberto com o wis2box-webapp para sua instância acessando <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
-<h2 id="criar-um-novo-conjunto-de-dados-com-politica-de-dados-recommended">Criar um novo conjunto de dados com política de dados 'recommended'</h2>
-<p>Vá para a página 'dataset editor' no wis2box-webapp e crie um novo conjunto de dados. Selecione o Data Type = 'weather/surface-weather-observations/synop'.</p>
+<h2 id="criar-um-novo-conjunto-de-dados-com-politica-de-dados-recomendada">Criar um novo conjunto de dados com política de dados 'recomendada'</h2>
+<p>Vá para a página 'editor de conjunto de dados' no wis2box-webapp e crie um novo conjunto de dados. Selecione o Tipo de Dados = 'weather/surface-weather-observations/synop'.</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-template.png" width="800"></p>
 <p>Para "Centre ID", use o mesmo que você usou nas sessões práticas anteriores.</p>
 <p>Clique em 'CONTINUE To FORM' para prosseguir.</p>
-<p>No editor de conjunto de dados, defina a política de dados como 'recommended' (observe que alterar a política de dados atualizará a 'Topic Hierarchy').
-Substitua o 'Local ID' gerado automaticamente por um nome descritivo para o conjunto de dados, por exemplo, 'recommended-data-with-access-control':</p>
+<p>No editor de conjunto de dados, defina a política de dados para 'recomendada' (observe que alterar a política de dados atualizará a 'Hierarquia de Tópicos').
+Substitua o 'Local ID' gerado automaticamente por um nome descritivo para o conjunto de dados, por exemplo, 'dados-recomendados-com-controle-de-acesso':</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-recommended.png" width="800"></p>
-<p>Continue preenchendo os campos obrigatórios para Propriedades Espaciais e Informações de Contato, e 'Validate form' para verificar se há erros.</p>
+<p>Continue preenchendo os campos necessários para Propriedades Espaciais e Informações de Contato, e 'Validar formulário' para verificar se há erros.</p>
 <p>Finalmente, envie o conjunto de dados, usando o token de autenticação criado anteriormente, e verifique se o novo conjunto de dados foi criado no wis2box-webapp.</p>
 <p>Verifique o MQTT-explorer para ver se você recebe a Mensagem de Notificação WIS2 anunciando o novo registro de Metadados de Descoberta no tópico <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
 <h2 id="adicionar-um-token-de-acesso-ao-conjunto-de-dados">Adicionar um token de acesso ao conjunto de dados</h2>
@@ -1090,7 +1090,7 @@ Substitua o 'Local ID' gerado automaticamente por um nome descritivo para o conj
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Na linha de comando dentro do contêiner, você pode proteger um conjunto de dados usando o comando <code>wis2box auth add-token</code>, usando a flag <code>--metadata-id</code> para especificar o identificador de metadados do conjunto de dados e o token de acesso como argumento.</p>
+<p>Do comando de linha dentro do contêiner, você pode proteger um conjunto de dados usando o comando <code>wis2box auth add-token</code>, usando a flag <code>--metadata-id</code> para especificar o identificador de metadados do conjunto de dados e o token de acesso como argumento.</p>
 <p>Por exemplo, para adicionar o token de acesso <code>S3cr3tT0k3n</code> ao conjunto de dados com identificador de metadados <code>urn:wmo:md:not-my-centre:core.surface-based-observations.synop</code>:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop<span class="w"> </span>S3cr3tT0k3n
 </code></pre></div>
@@ -1101,27 +1101,27 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p>Copie o arquivo <code>exercise-materials/access-control-exercises/aws-example.csv</code> para o diretório definido por <code>WIS2BOX_HOST_DATADIR</code> no seu <code>wis2box.env</code>:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/access-control-exercises/aws-example.csv<span class="w"> </span>~/wis2box-data
 </code></pre></div>
-<p>Em seguida, use o WinSCP ou um editor de linha de comando para editar o arquivo <code>aws-example.csv</code> e atualizar os identificadores WIGOS-station nos dados de entrada para corresponder às estações que você tem em sua instância wis2box.</p>
-<p>Em seguida, vá para o editor de estações no wis2box-webapp. Para cada estação que você usou em <code>aws-example.csv</code>, atualize o campo 'topic' para corresponder ao 'topic' do conjunto de dados que você criou no exercício anterior.</p>
-<p>Esta estação agora será associada a 2 tópicos, um para o conjunto de dados 'core' e outro para o conjunto de dados 'recommended':</p>
+<p>Em seguida, use WinSCP ou um editor de linha de comando para editar o arquivo <code>aws-example.csv</code> e atualizar os identificadores de estação WIGOS nos dados de entrada para corresponder às estações que você tem em sua instância wis2box.</p>
+<p>Em seguida, vá para o editor de estação no wis2box-webapp. Para cada estação que você usou em <code>aws-example.csv</code>, atualize o campo 'tópico' para corresponder ao 'tópico' do conjunto de dados que você criou no exercício anterior.</p>
+<p>Esta estação agora estará associada a 2 tópicos, um para o conjunto de dados 'núcleo' e outro para o conjunto de dados 'recomendado':</p>
 <p><img alt="edit-stations-add-topics" src="../../assets/img/edit-stations-add-topics.png" width="600"></p>
-<p>Você precisará usar seu token para <code>collections/stations</code> para salvar os dados atualizados da estação.</p>
+<p>Você precisará usar seu token para <code>collections/stations</code> para salvar os dados da estação atualizada.</p>
 <p>Em seguida, faça login no contêiner wis2box-management:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Na linha de comando do wis2box, podemos ingerir o arquivo de dados de exemplo <code>aws-example.csv</code> em um conjunto de dados específico da seguinte forma:</p>
+<p>A partir da linha de comando do wis2box, podemos ingerir o arquivo de dados de exemplo <code>aws-example.csv</code> em um conjunto de dados específico da seguinte forma:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/aws-example.csv<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop
 </code></pre></div>
 <p>Certifique-se de fornecer o identificador de metadados correto para seu conjunto de dados e <strong>verifique se você recebe notificações de dados WIS2 no MQTT Explorer</strong>, no tópico <code>origin/a/wis2/&lt;your-centre-id&gt;/data/recommended/surface-based-observations/synop</code>.</p>
 <p>Verifique o link canônico na Mensagem de Notificação WIS2 e copie/cole o link no navegador para tentar baixar os dados.</p>
-<p>Você deverá ver um erro 403 Forbidden.</p>
+<p>Você deverá ver um erro 403 Proibido.</p>
 <h2 id="adicionar-o-token-de-acesso-aos-cabecalhos-http-para-acessar-o-conjunto-de-dados">Adicionar o token de acesso aos cabeçalhos HTTP para acessar o conjunto de dados</h2>
-<p>Para demonstrar que o token de acesso é necessário para acessar o conjunto de dados, vamos reproduzir o erro que você viu no navegador usando a função de linha de comando <code>wget</code>.</p>
-<p>Na linha de comando em sua VM de estudante, use o comando <code>wget</code> com o link canônico que você copiou da Mensagem de Notificação WIS2.</p>
+<p>Para demonstrar que o token de acesso é necessário para acessar o conjunto de dados, reproduziremos o erro que você viu no navegador usando a função de linha de comando <code>wget</code>.</p>
+<p>Da linha de comando na sua VM de estudante, use o comando <code>wget</code> com o link canônico que você copiou da Mensagem de Notificação WIS2.</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>&lt;canonical-link&gt;
 </code></pre></div>
-<p>Você deverá ver que a solicitação HTTP retorna com <em>401 Unauthorized</em> e os dados não são baixados.</p>
+<p>Você verá que a solicitação HTTP retorna com <em>401 Não autorizado</em> e os dados não são baixados.</p>
 <p>Agora adicione o token de acesso aos cabeçalhos HTTP para acessar o conjunto de dados.</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>--header<span class="o">=</span><span class="s2">&quot;Authorization: Bearer S3cr3tT0k3n&quot;</span><span class="w"> </span>&lt;canonical-link&gt;
 </code></pre></div>
@@ -1131,7 +1131,7 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p class="admonition-title">Parabéns!</p>
 <p>Nesta sessão prática, você aprendeu como:</p>
 <ul>
-<li>criar um novo conjunto de dados com política de dados 'recommended'</li>
+<li>criar um novo conjunto de dados com política de dados 'recomendada'</li>
 <li>adicionar um token de acesso ao conjunto de dados</li>
 <li>validar que o conjunto de dados não pode ser acessado sem o token de acesso</li>
 <li>adicionar o token de acesso aos cabeçalhos HTTP para acessar o conjunto de dados</li>

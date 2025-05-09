@@ -26,7 +26,7 @@
     
     
       
-        <title>Доступ к вашей учебной виртуальной машине - WIS2 in a box training</title>
+        <title>Доступ к вашей студенческой виртуальной машине - WIS2 in a box training</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Доступ к вашей учебной виртуальной машине
+              Доступ к вашей студенческой виртуальной машине
             
           </span>
         </div>
@@ -447,7 +447,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Подключение к учебной виртуальной машине в локальной учебной сети
+      Подключение к вашей студенческой виртуальной машине в локальной учебной сети
     </span>
   </a>
   
@@ -465,7 +465,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Проверка учебных материалов
+      Осмотр учебных материалов
     </span>
   </a>
   
@@ -964,7 +964,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Подключение к учебной виртуальной машине в локальной учебной сети
+      Подключение к вашей студенческой виртуальной машине в локальной учебной сети
     </span>
   </a>
   
@@ -982,7 +982,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Проверка учебных материалов
+      Осмотр учебных материалов
     </span>
   </a>
   
@@ -1013,19 +1013,19 @@
 
 
 
-<h1 id="_1">Доступ к вашей учебной виртуальной машине</h1>
+<h1 id="_1">Доступ к вашей студенческой виртуальной машине</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Результаты обучения</p>
-<p>К концу этого практического занятия вы сможете:</p>
+<p class="admonition-title">Учебные результаты</p>
+<p>По окончании этой практической сессии вы сможете:</p>
 <ul>
-<li>получить доступ к вашей учебной виртуальной машине через SSH и WinSCP</li>
-<li>проверить, что необходимое программное обеспечение для практических занятий установлено</li>
-<li>убедиться, что у вас есть доступ к учебным материалам на вашей локальной учебной виртуальной машине</li>
+<li>получить доступ к вашей студенческой виртуальной машине через SSH и WinSCP</li>
+<li>проверить наличие необходимого программного обеспечения для практических упражнений</li>
+<li>убедиться, что у вас есть доступ к учебным материалам для этого тренинга на вашей локальной студенческой виртуальной машине</li>
 </ul>
 </div>
 <h2 id="_2">Введение</h2>
-<p>В рамках локально проводимых учебных сессий wis2box вы можете получить доступ к своей персональной учебной виртуальной машине в локальной учебной сети "WIS2-training".</p>
-<p>На вашей учебной виртуальной машине предварительно установлено следующее программное обеспечение:</p>
+<p>В рамках локальных тренинговых сессий wis2box вы можете получить доступ к вашей личной студенческой виртуальной машине в локальной учебной сети под названием "WIS2-training".</p>
+<p>На вашей студенческой виртуальной машине предустановлено следующее программное обеспечение:</p>
 <ul>
 <li>Ubuntu 22.0.4.3 LTS <a href="https://releases.ubuntu.com/jammy/ubuntu-22.04.3-live-server-amd64.iso">ubuntu-22.04.3-live-server-amd64.iso</a></li>
 <li>Python 3.10.12</li>
@@ -1035,43 +1035,43 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Если вы хотите пройти это обучение вне локальной учебной сессии, вы можете использовать собственный экземпляр через любого облачного провайдера, например:</p>
+<p>Если вы хотите провести этот тренинг вне локальной учебной сессии, вы можете использовать свой собственный экземпляр с помощью любого облачного провайдера, например:</p>
 <ul>
 <li>GCP (Google Cloud Platform) VM instance <code>e2-medium</code></li>
-<li>AWS (Amazon Web Services) ec2-instance <code>t3a.medium</code></li>
+<li>AWS (Amazon Web Services)  ec2-instance <code>t3a.medium</code> </li>
 <li>Azure (Microsoft) Azure Virtual Machine <code>standard_b2s</code></li>
 </ul>
-<p>Выберите Ubuntu Server 22.0.4 LTS в качестве операционной системы.</p>
-<p>После создания виртуальной машины убедитесь, что вы установили python, docker и docker compose, как описано в <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
-<p>Архив релиза wis2box, используемый в этом обучении, можно загрузить следующим образом:</p>
+<p>Выберите Ubuntu Server 22.0.4 LTS в качестве ОС.</p>
+<p>После создания вашей виртуальной машины убедитесь, что у вас установлены python, docker и docker compose, как описано на <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
+<p>Архив с релизом wis2box, используемым в этом тренинге, можно скачать следующим образом:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/World-Meteorological-Organization/wis2box-release/releases/download/1.0.0/wis2box-setup.zip
 unzip<span class="w"> </span>wis2box-setup.zip
 </code></pre></div>
-<p>Вы всегда можете найти последний архив 'wis2box-setup' на <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
-<p>Учебные материалы, используемые в этом обучении, можно загрузить следующим образом:</p>
+<p>Вы всегда можете найти последний архив 'wis2box-setup' по адресу <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
+<p>Учебные материалы, используемые в этом тренинге, можно скачать следующим образом:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://training.wis2box.wis.wmo.int/exercise-materials.zip
 unzip<span class="w"> </span>exercise-materials.zip
 </code></pre></div>
-<p>Для работы с учебными материалами требуются следующие дополнительные пакеты Python:</p>
+<p>Для выполнения учебных материалов требуются следующие дополнительные пакеты Python:</p>
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
 pip3<span class="w"> </span>install<span class="w"> </span><span class="nv">pywiscat</span><span class="o">==</span><span class="m">0</span>.2.2
 </code></pre></div>
-<p>Если вы используете учебную виртуальную машину, предоставленную во время локальных учебных сессий WIS2, необходимое программное обеспечение уже будет установлено.</p>
+<p>Если вы используете студенческую виртуальную машину, предоставленную во время локальных тренинговых сессий WIS2, необходимое программное обеспечение уже будет установлено.</p>
 </div>
-<h2 id="_3">Подключение к учебной виртуальной машине в локальной учебной сети</h2>
-<p>Подключите свой компьютер к локальной Wi-Fi сети, транслируемой в помещении во время обучения WIS2, согласно инструкциям, предоставленным инструктором.</p>
-<p>Используйте SSH-клиент для подключения к вашей учебной виртуальной машине, используя следующие параметры:</p>
+<h2 id="_3">Подключение к вашей студенческой виртуальной машине в локальной учебной сети</h2>
+<p>Подключите ваш ПК к локальному Wi-Fi, транслируемому в помещении во время тренинга WIS2, согласно инструкциям, предоставленным тренером.</p>
+<p>Используйте SSH-клиент для подключения к вашей студенческой виртуальной машине, используя следующие данные:</p>
 <ul>
-<li><strong>Хост: (предоставляется во время очного обучения)</strong></li>
-<li><strong>Порт: 22</strong></li>
-<li><strong>Имя пользователя: (предоставляется во время очного обучения)</strong></li>
-<li><strong>Пароль: (предоставляется во время очного обучения)</strong></li>
+<li><strong>Host: (предоставлено во время очного обучения)</strong></li>
+<li><strong>Port: 22</strong></li>
+<li><strong>Username: (предоставлено во время очного обучения)</strong></li>
+<li><strong>Password: (предоставлено во время очного обучения)</strong></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Обратитесь к инструктору, если вы не уверены в имени хоста/имени пользователя или у вас возникли проблемы с подключением.</p>
+<p>Обратитесь к тренеру, если вы не уверены в имени хоста/имени пользователя или у вас возникли проблемы с подключением.</p>
 </div>
-<p>После подключения измените свой пароль, чтобы другие не могли получить доступ к вашей виртуальной машине:</p>
+<p>После подключения, пожалуйста, измените ваш пароль, чтобы другие не могли получить доступ к вашей виртуальной машине:</p>
 <div class="highlight"><pre><span></span><code>limper@student-vm:~$<span class="w"> </span>passwd
 Changing<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>testuser.
 Current<span class="w"> </span>password:
@@ -1080,59 +1080,59 @@ Retype<span class="w"> </span>new<span class="w"> </span>password:
 passwd:<span class="w"> </span>password<span class="w"> </span>updated<span class="w"> </span>successfully
 </code></pre></div>
 <h2 id="_4">Проверка версий программного обеспечения</h2>
-<p>Для работы wis2box на учебной виртуальной машине должны быть предварительно установлены Python, Docker и Docker Compose.</p>
-<p>Проверка версии Python:
+<p>Чтобы иметь возможность запускать wis2box, на студенческой виртуальной машине должны быть предустановлены Python, Docker и Docker Compose. </p>
+<p>Проверьте версию Python:
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
 </code></pre></div>
 возвращает:
 <div class="highlight"><pre><span></span><code><span class="go">Python 3.10.12</span>
 </code></pre></div></p>
-<p>Проверка версии docker:
+<p>Проверьте версию Docker:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
 </code></pre></div>
 возвращает:
 <div class="highlight"><pre><span></span><code><span class="go">Docker version 24.0.6, build ed223bc</span>
 </code></pre></div></p>
-<p>Проверка версии Docker Compose:
+<p>Проверьте версию Docker Compose:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>version
 </code></pre></div>
 возвращает:
 <div class="highlight"><pre><span></span><code><span class="go">Docker Compose version v2.21.0</span>
 </code></pre></div></p>
-<p>Чтобы ваш пользователь мог выполнять команды Docker, он был добавлен в группу <code>docker</code>.</p>
+<p>Чтобы убедиться, что ваш пользователь может выполнять команды Docker, ваш пользователь был добавлен в группу <code>docker</code>. </p>
 <p>Чтобы проверить, что ваш пользователь может запустить docker hello-world, выполните следующую команду:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>hello-world
 </code></pre></div></p>
-<p>Это должно загрузить образ hello-world и запустить контейнер, который выведет сообщение.</p>
-<p>Убедитесь, что в выводе вы видите следующее:</p>
+<p>Это должно загрузить образ hello-world и запустить контейнер, который выводит сообщение. </p>
+<p>Убедитесь, что вы видите следующее в выводе:</p>
 <div class="highlight"><pre><span></span><code><span class="go">...</span>
 <span class="go">Hello from Docker!</span>
 <span class="go">This message shows that your installation appears to be working correctly.</span>
 <span class="go">...</span>
 </code></pre></div>
-<h2 id="_5">Проверка учебных материалов</h2>
-<p>Проверьте содержимое вашего домашнего каталога; это материалы, используемые в рамках обучения и практических занятий.</p>
+<h2 id="_5">Осмотр учебных материалов</h2>
+<p>Осмотрите содержимое вашего домашнего каталога; это материалы, используемые в рамках тренинга и практических сессий.</p>
 <p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>~/
 </code></pre></div>
 возвращает:
 <div class="highlight"><pre><span></span><code><span class="go">exercise-materials  wis2box</span>
 </code></pre></div></p>
-<p>Если на вашем локальном компьютере установлен WinSCP, вы можете использовать его для подключения к вашей учебной виртуальной машине и просмотра содержимого вашего домашнего каталога, а также загрузки или выгрузки файлов между вашей виртуальной машиной и локальным компьютером.</p>
-<p>WinSCP не требуется для обучения, но может быть полезен, если вы хотите редактировать файлы на вашей виртуальной машине с помощью текстового редактора на вашем локальном компьютере.</p>
-<p>Вот как можно подключиться к вашей учебной виртуальной машине с помощью WinSCP:</p>
-<p>Откройте WinSCP и нажмите "New Site". Вы можете создать новое SCP-подключение к вашей виртуальной машине следующим образом:</p>
+<p>Если на вашем локальном ПК установлен WinSCP, вы можете использовать его для подключения к вашей студенческой виртуальной машине и просмотра содержимого вашего домашнего каталога, а также для загрузки или выгрузки файлов между вашей виртуальной машиной и вашим локальным ПК. </p>
+<p>WinSCP не требуется для тренинга, но может быть полезен, если вы хотите редактировать файлы на вашей виртуальной машине с помощью текстового редактора на вашем локальном ПК.</p>
+<p>Вот как вы можете подключиться к вашей студенческой виртуальной машине с помощью WinSCP:</p>
+<p>Откройте WinSCP и нажмите на "New Site". Вы можете создать новое SCP-подключение к вашей виртуальной машине следующим образом:</p>
 <p><img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400"></p>
-<p>Нажмите 'Save', а затем 'Login' для подключения к вашей виртуальной машине.</p>
+<p>Нажмите 'Save' и затем 'Login' для подключения к вашей виртуальной машине.</p>
 <p>И вы должны увидеть следующее содержимое:</p>
 <p><img alt="winscp-student-vm-exercise-materials.png" src="../../assets/img/winscp-student-vm-exercise-materials.png" width="600"></p>
 <h2 id="_6">Заключение</h2>
 <div class="admonition success">
 <p class="admonition-title">Поздравляем!</p>
-<p>В этом практическом занятии вы научились:</p>
+<p>В этой практической сессии вы научились:</p>
 <ul>
-<li>получать доступ к вашей учебной виртуальной машине через SSH и WinSCP</li>
-<li>проверять, что необходимое программное обеспечение для практических занятий установлено</li>
-<li>проверять наличие доступа к учебным материалам на вашей локальной учебной виртуальной машине</li>
+<li>получить доступ к вашей студенческой виртуальной машине через SSH и WinSCP</li>
+<li>проверить наличие необходимого программного обеспечения для практических упражнений</li>
+<li>убедиться, что у вас есть доступ к учебным материалам для этого тренинга на вашей локальной студенческой виртуальной машине</li>
 </ul>
 </div>
 

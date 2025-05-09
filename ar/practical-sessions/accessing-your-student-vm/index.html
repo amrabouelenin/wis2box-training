@@ -26,7 +26,7 @@
     
     
       
-        <title>الوصول إلى الجهاز الافتراضي الخاص بالطالب - WIS2 in a box training</title>
+        <title>الوصول إلى جهاز الطالب الافتراضي الخاص بك - WIS2 in a box training</title>
       
     
     
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              الوصول إلى الجهاز الافتراضي الخاص بالطالب
+              الوصول إلى جهاز الطالب الافتراضي الخاص بك
             
           </span>
         </div>
@@ -463,7 +463,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      الاتصال بجهازك الافتراضي على شبكة التدريب المحلية
+      الاتصال بجهاز الطالب الافتراضي الخاص بك على شبكة التدريب المحلية
     </span>
   </a>
   
@@ -481,7 +481,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      فحص مواد التمارين
+      فحص مواد التمرين
     </span>
   </a>
   
@@ -980,7 +980,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      الاتصال بجهازك الافتراضي على شبكة التدريب المحلية
+      الاتصال بجهاز الطالب الافتراضي الخاص بك على شبكة التدريب المحلية
     </span>
   </a>
   
@@ -998,7 +998,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      فحص مواد التمارين
+      فحص مواد التمرين
     </span>
   </a>
   
@@ -1029,65 +1029,65 @@
 
 
 
-<h1 id="_1">الوصول إلى الجهاز الافتراضي الخاص بالطالب</h1>
+<h1 id="_1">الوصول إلى جهاز الطالب الافتراضي الخاص بك</h1>
 <div class="admonition abstract">
-<p class="admonition-title">مخرجات التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p class="admonition-title">نتائج التعلم</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>الوصول إلى جهازك الافتراضي عبر SSH و WinSCP</li>
+<li>الوصول إلى جهاز الطالب الافتراضي الخاص بك عبر SSH و WinSCP</li>
 <li>التحقق من تثبيت البرامج المطلوبة للتمارين العملية</li>
-<li>التحقق من وصولك إلى مواد التمارين لهذا التدريب على جهازك الافتراضي المحلي</li>
+<li>التحقق من وجود مواد التمرين لهذا التدريب على جهاز الطالب الافتراضي المحلي الخاص بك</li>
 </ul>
 </div>
 <h2 id="_2">مقدمة</h2>
-<p>كجزء من جلسات تدريب wis2box المحلية، يمكنك الوصول إلى جهازك الافتراضي الشخصي على شبكة التدريب المحلية المسماة "WIS2-training".</p>
-<p>جهازك الافتراضي مثبت عليه البرامج التالية مسبقاً:</p>
+<p>كجزء من جلسات تدريب wis2box المحلية، يمكنك الوصول إلى جهاز الطالب الافتراضي الشخصي الخاص بك على شبكة التدريب المحلية التي تُسمى "WIS2-training".</p>
+<p>يحتوي جهاز الطالب الافتراضي الخاص بك على البرامج التالية المثبتة مسبقًا:</p>
 <ul>
 <li>Ubuntu 22.0.4.3 LTS <a href="https://releases.ubuntu.com/jammy/ubuntu-22.04.3-live-server-amd64.iso">ubuntu-22.04.3-live-server-amd64.iso</a></li>
 <li>Python 3.10.12</li>
 <li>Docker 24.0.6</li>
 <li>Docker Compose 2.21.0</li>
-<li>محررات النصوص: vim, nano</li>
+<li>محررات النصوص: vim، nano</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>إذا كنت ترغب في تشغيل هذا التدريب خارج جلسة تدريب محلية، يمكنك توفير نسختك الخاصة باستخدام أي مزود سحابي، على سبيل المثال:</p>
 <ul>
-<li>GCP (Google Cloud Platform) VM instance <code>e2-medium</code></li>
-<li>AWS (Amazon Web Services) ec2-instance <code>t3a.medium</code></li>
-<li>Azure (Microsoft) Azure Virtual Machine <code>standard_b2s</code></li>
+<li>نسخة VM من GCP (Google Cloud Platform) <code>e2-medium</code></li>
+<li>نسخة ec2 من AWS (Amazon Web Services) <code>t3a.medium</code></li>
+<li>نسخة Azure Virtual Machine من Azure (Microsoft) <code>standard_b2s</code></li>
 </ul>
 <p>اختر Ubuntu Server 22.0.4 LTS كنظام تشغيل.</p>
-<p>بعد إنشاء جهازك الافتراضي، تأكد من تثبيت python و docker و docker compose، كما هو موضح في <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
-<p>يمكن تحميل أرشيف الإصدار لـ wis2box المستخدم في هذا التدريب كما يلي:</p>
+<p>بعد إنشاء جهاز الطالب الافتراضي الخاص بك، تأكد من تثبيت python، docker و docker compose، كما هو موضح في <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
+<p>يمكن تنزيل أرشيف الإصدار الخاص بـ wis2box المستخدم في هذا التدريب كما يلي:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/World-Meteorological-Organization/wis2box-release/releases/download/1.0.0/wis2box-setup.zip
 unzip<span class="w"> </span>wis2box-setup.zip
 </code></pre></div>
-<p>يمكنك دائماً العثور على أحدث أرشيف 'wis2box-setup' في <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
-<p>يمكن تحميل مواد التمارين المستخدمة في هذا التدريب كما يلي:</p>
+<p>يمكنك دائمًا العثور على أحدث أرشيف 'wis2box-setup' في <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
+<p>يمكن تنزيل مواد التمرين المستخدمة في هذا التدريب كما يلي:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://training.wis2box.wis.wmo.int/exercise-materials.zip
 unzip<span class="w"> </span>exercise-materials.zip
 </code></pre></div>
-<p>حزم Python الإضافية التالية مطلوبة لتشغيل مواد التمارين:</p>
+<p>تتطلب الحزم الإضافية لـ Python التالية لتشغيل مواد التمرين:</p>
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
 pip3<span class="w"> </span>install<span class="w"> </span><span class="nv">pywiscat</span><span class="o">==</span><span class="m">0</span>.2.2
 </code></pre></div>
-<p>إذا كنت تستخدم الجهاز الافتراضي للطالب المقدم خلال جلسات تدريب WIS2 المحلية، فسيتم تثبيت البرامج المطلوبة مسبقاً.</p>
+<p>إذا كنت تستخدم جهاز الطالب الافتراضي المقدم خلال جلسات تدريب WIS2 المحلية، فسيكون البرنامج المطلوب مثبتًا بالفعل.</p>
 </div>
-<h2 id="_3">الاتصال بجهازك الافتراضي على شبكة التدريب المحلية</h2>
-<p>قم بتوصيل جهاز الكمبيوتر الخاص بك بشبكة Wi-Fi المحلية المبثوثة في الغرفة خلال تدريب WIS2 وفقاً للتعليمات المقدمة من المدرب.</p>
-<p>استخدم عميل SSH للاتصال بجهازك الافتراضي باستخدام ما يلي:</p>
+<h2 id="_3">الاتصال بجهاز الطالب الافتراضي الخاص بك على شبكة التدريب المحلية</h2>
+<p>قم بتوصيل جهاز الكمبيوتر الخاص بك بشبكة Wi-Fi المحلية التي يتم بثها في الغرفة خلال تدريب WIS2 وفقًا للتعليمات التي يقدمها المدرب.</p>
+<p>استخدم عميل SSH للاتصال بجهاز الطالب الافتراضي الخاص بك باستخدام التالي:</p>
 <ul>
-<li><strong>المضيف: (يتم توفيره خلال التدريب الشخصي)</strong></li>
+<li><strong>المضيف: (مقدم خلال التدريب الشخصي)</strong></li>
 <li><strong>المنفذ: 22</strong></li>
-<li><strong>اسم المستخدم: (يتم توفيره خلال التدريب الشخصي)</strong></li>
-<li><strong>كلمة المرور: (يتم توفيرها خلال التدريب الشخصي)</strong></li>
+<li><strong>اسم المستخدم: (مقدم خلال التدريب الشخصي)</strong></li>
+<li><strong>كلمة المرور: (مقدمة خلال التدريب الشخصي)</strong></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>اتصل بالمدرب إذا كنت غير متأكد من اسم المضيف/اسم المستخدم أو واجهت مشاكل في الاتصال.</p>
+<p>اتصل بالمدرب إذا كنت غير متأكد من اسم المضيف/اسم المستخدم أو إذا واجهت مشكلات في الاتصال.</p>
 </div>
-<p>بمجرد الاتصال، يرجى تغيير كلمة المرور الخاصة بك لضمان عدم تمكن الآخرين من الوصول إلى جهازك الافتراضي:</p>
+<p>بمجرد الاتصال، يرجى تغيير كلمة المرور الخاصة بك لضمان عدم قدرة الآخرين على الوصول إلى جهاز الطالب الافتراضي الخاص بك:</p>
 <div class="highlight"><pre><span></span><code>limper@student-vm:~$<span class="w"> </span>passwd
 Changing<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>testuser.
 Current<span class="w"> </span>password:
@@ -1096,59 +1096,59 @@ Retype<span class="w"> </span>new<span class="w"> </span>password:
 passwd:<span class="w"> </span>password<span class="w"> </span>updated<span class="w"> </span>successfully
 </code></pre></div>
 <h2 id="_4">التحقق من إصدارات البرامج</h2>
-<p>لتتمكن من تشغيل wis2box، يجب أن يكون لدى الجهاز الافتراضي للطالب Python و Docker و Docker Compose مثبتة مسبقاً.</p>
+<p>لتتمكن من تشغيل wis2box، يجب أن يكون لدى جهاز الطالب الافتراضي الخاص بك Python، Docker و Docker Compose مثبتين مسبقًا.</p>
 <p>تحقق من إصدار Python:
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
 </code></pre></div>
-يعيد:
+يعود:
 <div class="highlight"><pre><span></span><code><span class="go">Python 3.10.12</span>
 </code></pre></div></p>
 <p>تحقق من إصدار docker:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
 </code></pre></div>
-يعيد:
+يعود:
 <div class="highlight"><pre><span></span><code><span class="go">Docker version 24.0.6, build ed223bc</span>
 </code></pre></div></p>
 <p>تحقق من إصدار Docker Compose:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>version
 </code></pre></div>
-يعيد:
+يعود:
 <div class="highlight"><pre><span></span><code><span class="go">Docker Compose version v2.21.0</span>
 </code></pre></div></p>
-<p>للتأكد من أن مستخدمك يمكنه تشغيل أوامر Docker، تمت إضافة مستخدمك إلى مجموعة <code>docker</code>.</p>
-<p>لاختبار أن مستخدمك يمكنه تشغيل docker hello-world، قم بتشغيل الأمر التالي:
+<p>لضمان قدرة المستخدم على تشغيل أوامر Docker، تمت إضافة المستخدم إلى مجموعة <code>docker</code>.</p>
+<p>لتجربة قدرة المستخدم على تشغيل docker hello-world، قم بتشغيل الأمر التالي:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>hello-world
 </code></pre></div></p>
 <p>يجب أن يقوم هذا بسحب صورة hello-world وتشغيل حاوية تطبع رسالة.</p>
-<p>تحقق من أنك ترى ما يلي في المخرجات:</p>
+<p>تحقق من رؤية التالي في الإخراج:</p>
 <div class="highlight"><pre><span></span><code><span class="go">...</span>
 <span class="go">Hello from Docker!</span>
 <span class="go">This message shows that your installation appears to be working correctly.</span>
 <span class="go">...</span>
 </code></pre></div>
-<h2 id="_5">فحص مواد التمارين</h2>
-<p>افحص محتويات الدليل الرئيسي الخاص بك؛ هذه هي المواد المستخدمة كجزء من التدريب والجلسات العملية.</p>
+<h2 id="_5">فحص مواد التمرين</h2>
+<p>افحص محتويات دليل البيت الخاص بك؛ هذه هي المواد المستخدمة كجزء من التدريب والجلسات العملية.</p>
 <p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>~/
 </code></pre></div>
-يعيد:
+يعود:
 <div class="highlight"><pre><span></span><code><span class="go">exercise-materials  wis2box</span>
 </code></pre></div></p>
-<p>إذا كان لديك WinSCP مثبت على جهاز الكمبيوتر المحلي الخاص بك، يمكنك استخدامه للاتصال بجهازك الافتراضي وفحص محتويات الدليل الرئيسي الخاص بك وتنزيل أو تحميل الملفات بين جهازك الافتراضي وجهاز الكمبيوتر المحلي الخاص بك.</p>
-<p>WinSCP ليس مطلوباً للتدريب، ولكنه قد يكون مفيداً إذا كنت تريد تحرير الملفات على جهازك الافتراضي باستخدام محرر نصوص على جهاز الكمبيوتر المحلي الخاص بك.</p>
-<p>إليك كيفية الاتصال بجهازك الافتراضي باستخدام WinSCP:</p>
-<p>افتح WinSCP وانقر على "New Site". يمكنك إنشاء اتصال SCP جديد بجهازك الافتراضي كما يلي:</p>
+<p>إذا كان لديك WinSCP مثبتًا على جهاز الكمبيوتر المحلي الخاص بك، يمكنك استخدامه للاتصال بجهاز الطالب الافتراضي الخاص بك وفحص محتويات دليل البيت الخاص بك وتنزيل أو تحميل الملفات بين جهاز الطالب الافتراضي الخاص بك وجهاز الكمبيوتر المحلي الخاص بك.</p>
+<p>ليس من الضروري استخدام WinSCP للتدريب، ولكنه قد يكون مفيدًا إذا كنت ترغب في تحرير الملفات على جهاز الطالب الافتراضي الخاص بك باستخدام محرر نصوص على جهاز الكمبيوتر المحلي الخاص بك.</p>
+<p>إليك كيفية الاتصال بجهاز الطالب الافتراضي الخاص بك باستخدام WinSCP:</p>
+<p>افتح WinSCP وانقر على "موقع جديد". يمكنك إنشاء اتصال SCP جديد بجهاز الطالب الافتراضي الخاص بك كما يلي:</p>
 <p><img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400"></p>
-<p>انقر على 'Save' ثم 'Login' للاتصال بجهازك الافتراضي.</p>
-<p>ويجب أن تكون قادراً على رؤية المحتوى التالي:</p>
+<p>انقر على 'حفظ' ثم 'تسجيل الدخول' للاتصال بجهاز الطالب الافتراضي الخاص بك.</p>
+<p>ويجب أن تتمكن من رؤية المحتوى التالي:</p>
 <p><img alt="winscp-student-vm-exercise-materials.png" src="../../assets/img/winscp-student-vm-exercise-materials.png" width="600"></p>
 <h2 id="_6">الخاتمة</h2>
 <div class="admonition success">
 <p class="admonition-title">تهانينا!</p>
 <p>في هذه الجلسة العملية، تعلمت كيفية:</p>
 <ul>
-<li>الوصول إلى جهازك الافتراضي عبر SSH و WinSCP</li>
+<li>الوصول إلى جهاز الطالب الافتراضي الخاص بك عبر SSH و WinSCP</li>
 <li>التحقق من تثبيت البرامج المطلوبة للتمارين العملية</li>
-<li>التحقق من وصولك إلى مواد التمارين لهذا التدريب على جهازك الافتراضي المحلي</li>
+<li>التحقق من وجود مواد التمرين لهذا التدريب على جهاز الطالب الافتراضي المحلي الخاص بك</li>
 </ul>
 </div>
 

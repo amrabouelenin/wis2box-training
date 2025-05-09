@@ -26,7 +26,7 @@
     
     
       
-        <title>Добавление заголовков GTS к уведомлениям WIS2 - WIS2 in a box training</title>
+        <title>Добавление заголовков GTS в уведомления WIS2 - WIS2 in a box training</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Добавление заголовков GTS к уведомлениям WIS2
+              Добавление заголовков GTS в уведомления WIS2
             
           </span>
         </div>
@@ -610,7 +610,7 @@
         <li class="md-nav__item">
   <a href="#gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Создание gts_headers_mapping.csv
+      создание gts_headers_mapping.csv
     </span>
   </a>
   
@@ -637,7 +637,7 @@
         <li class="md-nav__item">
   <a href="#gts-wis2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Просмотр заголовков GTS в Уведомлении WIS2
+      Просмотр заголовков GTS в уведомлении WIS2
     </span>
   </a>
   
@@ -991,7 +991,7 @@
         <li class="md-nav__item">
   <a href="#gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Создание gts_headers_mapping.csv
+      создание gts_headers_mapping.csv
     </span>
   </a>
   
@@ -1018,7 +1018,7 @@
         <li class="md-nav__item">
   <a href="#gts-wis2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Просмотр заголовков GTS в Уведомлении WIS2
+      Просмотр заголовков GTS в уведомлении WIS2
     </span>
   </a>
   
@@ -1049,20 +1049,20 @@
 
 
 
-<h1 id="gts-wis2">Добавление заголовков GTS к уведомлениям WIS2</h1>
+<h1 id="gts-wis2">Добавление заголовков GTS в уведомления WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Результаты обучения</p>
-<p>По завершении этого практического занятия вы сможете:</p>
+<p class="admonition-title">Учебные результаты</p>
+<p>К концу этой практической сессии вы сможете:</p>
 <ul>
-<li>настроить сопоставление между именем файла и заголовками GTS</li>
-<li>загружать данные с именем файла, соответствующим заголовкам GTS</li>
-<li>просматривать заголовки GTS в уведомлениях WIS2</li>
+<li>настроить соответствие между именем файла и заголовками GTS</li>
+<li>загрузить данные с именем файла, соответствующим заголовкам GTS</li>
+<li>просмотреть заголовки GTS в уведомлениях WIS2</li>
 </ul>
 </div>
 <h2 id="_1">Введение</h2>
-<p>Членам ВМО, желающим прекратить передачу данных по GTS в переходный период к WIS2, потребуется добавить заголовки GTS к своим уведомлениям WIS2. Эти заголовки позволяют шлюзу WIS2-GTS пересылать данные в сеть GTS.</p>
-<p>Это позволяет Членам, перешедшим на использование узла WIS2 для публикации данных, отключить свою систему MSS и обеспечить доступность их данных для Членов, еще не перешедших на WIS2.</p>
-<p>Свойство GTS в Сообщении Уведомления WIS2 должно быть добавлено как дополнительное свойство к Сообщению Уведомления WIS2. Свойство GTS представляет собой JSON-объект, содержащий заголовки GTS, необходимые для пересылки данных в сеть GTS.</p>
+<p>Члены ВМО, желающие прекратить передачу данных по GTS в переходный период к WIS2, должны добавить заголовки GTS в свои уведомления WIS2. Эти заголовки позволяют шлюзу WIS2 к GTS пересылать данные в сеть GTS.</p>
+<p>Это позволяет членам, перешедшим на использование узла WIS2 для публикации данных, отключить свою систему MSS и гарантировать, что их данные все еще доступны членам, которые еще не перешли на WIS2.</p>
+<p>Свойство GTS в сообщении уведомления WIS2 должно быть добавлено как дополнительное свойство к сообщению уведомления WIS2. Свойство GTS представляет собой объект JSON, который содержит необходимые заголовки GTS для пересылки данных в сеть GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;ttaaii&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FTAE31&quot;</span><span class="p">,</span>
@@ -1070,29 +1070,29 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>В wis2box вы можете автоматически добавлять это к Уведомлениям WIS2, предоставив дополнительный файл с названием <code>gts_headers_mapping.csv</code>, который содержит необходимую информацию для сопоставления заголовков GTS с входящими именами файлов.</p>
-<p>Этот файл должен быть размещен в директории, определенной параметром <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>, и должен содержать следующие столбцы:</p>
+<p>В рамках wis2box вы можете автоматически добавить это в уведомления WIS2, предоставив дополнительный файл с именем <code>gts_headers_mapping.csv</code>, который содержит необходимую информацию для сопоставления заголовков GTS с входящими именами файлов.</p>
+<p>Этот файл должен быть размещен в каталоге, определенном <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>, и должен иметь следующие столбцы:</p>
 <ul>
-<li><code>string_in_filepath</code>: строка, являющаяся частью имени файла, которая будет использоваться для сопоставления с заголовками GTS</li>
-<li><code>TTAAii</code>: заголовок TTAAii, который будет добавлен к уведомлению WIS2</li>
-<li><code>CCCC</code>: заголовок CCCC, который будет добавлен к уведомлению WIS2</li>
+<li><code>string_in_filepath</code>: строка, которая является частью имени файла, которая будет использоваться для сопоставления с заголовками GTS</li>
+<li><code>TTAAii</code>: заголовок TTAAii, который должен быть добавлен в уведомление WIS2</li>
+<li><code>CCCC</code>: заголовок CCCC, который должен быть добавлен в уведомление WIS2</li>
 </ul>
 <h2 id="_2">Подготовка</h2>
-<p>Убедитесь, что у вас есть SSH-доступ к вашей учебной виртуальной машине и что ваш экземпляр wis2box запущен и работает.</p>
-<p>Убедитесь, что вы подключены к MQTT-брокеру вашего экземпляра wis2box с помощью MQTT Explorer. Для подключения к брокеру можно использовать публичные учетные данные <code>everyone/everyone</code>.</p>
-<p>Убедитесь, что у вас открыт веб-браузер с панелью Grafana для вашего экземпляра, перейдя по адресу <code>http://YOUR-HOST:3000</code></p>
-<h2 id="gts_headers_mappingcsv">Создание <code>gts_headers_mapping.csv</code></h2>
-<p>Для добавления заголовков GTS к вашим уведомлениям WIS2 требуется CSV-файл, который сопоставляет заголовки GTS с входящими именами файлов.</p>
-<p>CSV-файл должен иметь точное название <code>gts_headers_mapping.csv</code> и должен быть размещен в директории, определенной параметром <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>. </p>
+<p>Убедитесь, что у вас есть доступ по SSH к вашей учебной виртуальной машине и что ваш экземпляр wis2box работает.</p>
+<p>Убедитесь, что вы подключены к брокеру MQTT вашего экземпляра wis2box с использованием MQTT Explorer. Вы можете использовать общедоступные учетные данные <code>everyone/everyone</code> для подключения к брокеру.</p>
+<p>Убедитесь, что у вас открыт веб-браузер с дашбордом Grafana для вашего экземпляра, перейдя по адресу <code>http://YOUR-HOST:3000</code></p>
+<h2 id="gts_headers_mappingcsv">создание <code>gts_headers_mapping.csv</code></h2>
+<p>Для добавления заголовков GTS в уведомления WIS2 требуется CSV-файл, который сопоставляет заголовки GTS с входящими именами файлов.</p>
+<p>CSV-файл должен быть назван (точно) <code>gts_headers_mapping.csv</code> и должен быть размещен в каталоге, определенном <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>. </p>
 <h2 id="gts_headers_mappingcsv_1">Предоставление файла <code>gts_headers_mapping.csv</code></h2>
-<p>Скопируйте файл <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> в ваш экземпляр wis2box и поместите его в директорию, определенную параметром <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>.</p>
+<p>Скопируйте файл <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> в ваш экземпляр wis2box и разместите его в каталоге, определенном <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/gts_headers_mapping.csv<span class="w"> </span>~/wis2box-data
 </code></pre></div>
 <p>Затем перезапустите контейнер wis2box-management, чтобы применить изменения:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-management
 </code></pre></div>
 <h2 id="gts">Загрузка данных с заголовками GTS</h2>
-<p>Скопируйте файл <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> в директорию, определенную параметром <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>:</p>
+<p>Скопируйте файл <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> в каталог, определенный <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>~/wis2box-data
 </code></pre></div>
 <p>Затем войдите в контейнер <strong>wis2box-management</strong>:</p>
@@ -1102,16 +1102,16 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p>Из командной строки wis2box мы можем загрузить образец файла данных <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> в определенный набор данных следующим образом:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:core.surface-based-observations.synop
 </code></pre></div>
-<p>Убедитесь, что заменили опцию <code>metadata-id</code> правильным идентификатором для вашего набора данных.</p>
-<p>Проверьте панель Grafana, чтобы убедиться, что данные были загружены корректно. Если вы видите какие-либо ПРЕДУПРЕЖДЕНИЯ или ОШИБКИ, попытайтесь исправить их и повторите упражнение с командой <code>wis2box data ingest</code>.</p>
-<h2 id="gts-wis2_1">Просмотр заголовков GTS в Уведомлении WIS2</h2>
-<p>Перейдите в MQTT Explorer и проверьте Сообщение Уведомления WIS2 для только что загруженных данных.</p>
-<p>Сообщение Уведомления WIS2 должно содержать заголовки GTS, которые вы указали в файле <code>gts_headers_mapping.csv</code>.</p>
+<p>Убедитесь, что вы заменили параметр <code>metadata-id</code> на правильный идентификатор для вашего набора данных.</p>
+<p>Проверьте дашборд Grafana, чтобы увидеть, были ли данные загружены правильно. Если вы видите какие-либо ПРЕДУПРЕЖДЕНИЯ или ОШИБКИ, попробуйте их исправить и повторите команду <code>wis2box data ingest</code>.</p>
+<h2 id="gts-wis2_1">Просмотр заголовков GTS в уведомлении WIS2</h2>
+<p>Перейдите в MQTT Explorer и проверьте сообщение уведомления WIS2 для данных, которые вы только что загрузили.</p>
+<p>Сообщение уведомления WIS2 должно содержать заголовки GTS, которые вы указали в файле <code>gts_headers_mapping.csv</code>.</p>
 <h2 id="_3">Заключение</h2>
 <div class="admonition success">
 <p class="admonition-title">Поздравляем!</p>
-<p>В этом практическом занятии вы научились:
-  - добавлять заголовки GTS к вашим уведомлениям WIS2
+<p>В ходе этой практической сессии вы научились:
+  - добавлять заголовки GTS в уведомления WIS2
   - проверять, что заголовки GTS доступны через вашу установку wis2box</p>
 </div>
 

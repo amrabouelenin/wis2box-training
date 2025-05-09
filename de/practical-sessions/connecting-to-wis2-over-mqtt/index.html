@@ -1065,13 +1065,13 @@
 <p>Am Ende dieser praktischen Sitzung werden Sie in der Lage sein:</p>
 <ul>
 <li>eine Verbindung zum WIS2 Global Broker mit MQTT Explorer herzustellen</li>
-<li>die WIS2 Themenstruktur zu überprüfen</li>
+<li>die WIS2-Themenstruktur zu überprüfen</li>
 <li>die Struktur der WIS2-Benachrichtigungsnachrichten zu überprüfen</li>
 </ul>
 </div>
 <h2 id="einfuhrung">Einführung</h2>
-<p>WIS2 verwendet das MQTT-Protokoll, um die Verfügbarkeit von Wetter-/Klima-/Wasserdaten zu bewerben. Der WIS2 Global Broker abonniert alle WIS2-Knoten im Netzwerk und veröffentlicht die empfangenen Nachrichten erneut. Der Global Cache abonniert den Global Broker, lädt die Daten in der Nachricht herunter und veröffentlicht die Nachricht dann erneut im <code>cache</code> Thema mit einer neuen URL. Der Global Discovery Katalog veröffentlicht Entdeckungsmetadaten vom Broker und bietet eine Such-API.</p>
-<p>Hier ist ein Beispiel für die Struktur einer WIS2-Benachrichtigungsnachricht für eine Nachricht, die im Thema <code>origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop</code> empfangen wurde:</p>
+<p>WIS2 verwendet das MQTT-Protokoll, um die Verfügbarkeit von Wetter-/Klima-/Wasserdaten zu bewerben. Der WIS2 Global Broker abonniert alle WIS2 Nodes im Netzwerk und veröffentlicht die empfangenen Nachrichten erneut. Der Global Cache abonniert den Global Broker, lädt die Daten in der Nachricht herunter und veröffentlicht dann die Nachricht im <code>cache</code> Thema mit einer neuen URL. Der Global Discovery Catalogue veröffentlicht Entdeckungsmetadaten vom Broker und bietet eine Such-API.</p>
+<p>Dies ist ein Beispiel für die Struktur einer WIS2-Benachrichtigungsnachricht für eine Nachricht, die im Thema <code>origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop</code> empfangen wurde:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;59f9b013-c4b3-410a-a52d-fff18f3f1b47&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
@@ -1109,11 +1109,11 @@
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>In dieser praktischen Sitzung lernen Sie, wie Sie das Tool MQTT Explorer verwenden, um eine MQTT-Clientverbindung zu einem WIS2 Global Broker einzurichten und WIS2-Benachrichtigungsnachrichten anzuzeigen.</p>
+<p>In dieser praktischen Sitzung lernen Sie, wie Sie das Tool MQTT Explorer verwenden, um eine MQTT-Clientverbindung zu einem WIS2 Global Broker einzurichten und WIS2-Benachrichtigungsnachrichten anzeigen zu können.</p>
 <p>MQTT Explorer ist ein nützliches Tool, um die Themenstruktur eines gegebenen MQTT-Brokers zu durchsuchen und die veröffentlichten Daten zu überprüfen.</p>
-<p>Beachten Sie, dass MQTT hauptsächlich für die "Maschine-zu-Maschine"-Kommunikation verwendet wird; das bedeutet, dass normalerweise ein Client die Nachrichten automatisch verarbeitet, sobald sie empfangen werden. Um programmatisch mit MQTT zu arbeiten (zum Beispiel in Python), können Sie MQTT-Client-Bibliotheken wie <a href="https://pypi.org/project/paho-mqtt">paho-mqtt</a> verwenden, um eine Verbindung zu einem MQTT-Broker herzustellen und eingehende Nachrichten zu verarbeiten. Es gibt zahlreiche MQTT-Client- und Server-Software, abhängig von Ihren Anforderungen und Ihrer technischen Umgebung.</p>
+<p>Beachten Sie, dass MQTT hauptsächlich für die "Maschine-zu-Maschine"-Kommunikation verwendet wird; das bedeutet, dass normalerweise ein Client die Nachrichten automatisch verarbeitet, sobald sie empfangen werden. Um programmatisch mit MQTT zu arbeiten (zum Beispiel in Python), können Sie MQTT-Client-Bibliotheken wie <a href="https://pypi.org/project/paho-mqtt">paho-mqtt</a> verwenden, um eine Verbindung zu einem MQTT-Broker herzustellen und eingehende Nachrichten zu verarbeiten. Es gibt zahlreiche MQTT-Client- und Server-Software, abhängig von Ihren Anforderungen und Ihrem technischen Umfeld.</p>
 <h2 id="verwendung-von-mqtt-explorer-zur-verbindung-mit-dem-global-broker">Verwendung von MQTT Explorer zur Verbindung mit dem Global Broker</h2>
-<p>Um Nachrichten, die von einem WIS2 Global Broker veröffentlicht wurden, anzusehen, können Sie "MQTT Explorer" verwenden, das von der <a href="https://mqtt-explorer.com">MQTT Explorer-Website</a> heruntergeladen werden kann.</p>
+<p>Um Nachrichten, die von einem WIS2 Global Broker veröffentlicht wurden, anzeigen zu können, können Sie "MQTT Explorer" verwenden, das von der <a href="https://mqtt-explorer.com">MQTT Explorer-Website</a> heruntergeladen werden kann.</p>
 <p>Öffnen Sie MQTT Explorer und fügen Sie eine neue Verbindung zum Global Broker hinzu, der von MeteoFrance gehostet wird, mit den folgenden Details:</p>
 <ul>
 <li>host: globalbroker.meteo.fr</li>
@@ -1129,10 +1129,10 @@
 <p><img alt="mqtt-explorer-global-broker-advanced" src="../../assets/img/mqtt-explorer-global-broker-sub-origin.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Beim Einrichten von MQTT-Abonnements können Sie die folgenden Platzhalter verwenden:</p>
+<p>Bei der Einrichtung von MQTT-Abonnements können Sie die folgenden Platzhalter verwenden:</p>
 <ul>
-<li><strong>Einzelniveau (+)</strong>: Ein Einzelniveau-Platzhalter ersetzt eine Themenstufe</li>
-<li><strong>Mehrfachniveau (#)</strong>: Ein Mehrfachniveau-Platzhalter ersetzt mehrere Themenstufen</li>
+<li><strong>Einzelniveau (+)</strong>: Ein Platzhalter auf Einzelniveau ersetzt eine Themenstufe</li>
+<li><strong>Mehrfachniveau (#)</strong>: Ein Platzhalter auf Mehrfachniveau ersetzt mehrere Themenstufen</li>
 </ul>
 <p>In diesem Fall wird <code>origin/a/wis2/#</code> alle Themen unter dem Thema <code>origin/a/wis2</code> abonnieren.</p>
 </div>
@@ -1147,21 +1147,21 @@
 <p>Wie können wir das WIS-Zentrum unterscheiden, das die Daten veröffentlicht hat?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
 <p>Sie können im linken Fenster in MQTT Explorer auf die Themenstruktur klicken, um sie zu erweitern.</p>
-<p>Wir können das WIS-Zentrum, das die Daten veröffentlicht hat, anhand der vierten Ebene der Themenstruktur erkennen. Zum Beispiel zeigt uns das folgende Thema:</p>
+<p>Wir können das WIS-Zentrum, das die Daten veröffentlicht hat, erkennen, indem wir auf die vierte Ebene der Themenstruktur schauen. Zum Beispiel sagt uns das folgende Thema:</p>
 <p><code>origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop</code></p>
 <p>dass die Daten von einem WIS-Zentrum mit der Zentrum-ID <code>br-inmet</code> veröffentlicht wurden, das die Zentrum-ID für das Instituto Nacional de Meteorologia - INMET, Brasilien, ist.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Wie können wir zwischen Nachrichten unterscheiden, die von WIS-Zentren veröffentlicht wurden, die ein GTS-zu-WIS2-Gateway hosten, und Nachrichten, die von WIS-Zentren veröffentlicht wurden, die einen WIS2-Knoten hosten?</p>
+<p>Wie können wir zwischen Nachrichten unterscheiden, die von WIS-Zentren veröffentlicht wurden, die ein GTS-to-WIS2-Gateway hosten, und Nachrichten, die von WIS-Zentren veröffentlicht wurden, die einen WIS2-Knoten hosten?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Wir können Nachrichten, die von einem GTS-zu-WIS2-Gateway kommen, anhand der Zentrum-ID in der Themenstruktur unterscheiden. Zum Beispiel zeigt uns das folgende Thema:</p>
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
+<p>Wir können Nachrichten, die von einem GTS-to-WIS2-Gateway kommen, anhand der Zentrum-ID in der Themenstruktur unterscheiden. Zum Beispiel sagt uns das folgende Thema:</p>
 <p><code>origin/a/wis2/de-dwd-gts-to-wis2/data/core/I/S/A/I/01/sbbr</code></p>
-<p>dass die Daten von dem GTS-zu-WIS2-Gateway veröffentlicht wurden, das vom Deutschen Wetterdienst (DWD) in Deutschland gehostet wird. Das GTS-zu-WIS2-Gateway ist eine spezielle Art von Datenveröffentlicher, der Daten vom Globalen Telekommunikationssystem (GTS) zu WIS2 veröffentlicht. Die Themenstruktur besteht aus den TTAAii CCCC-Headern für die GTS-Nachrichten.</p>
+<p>dass die Daten vom GTS-to-WIS2-Gateway veröffentlicht wurden, das vom Deutschen Wetterdienst (DWD) in Deutschland gehostet wird. Das GTS-to-WIS2-Gateway ist eine spezielle Art von Datenveröffentlicher, der Daten vom Globalen Telekommunikationssystem (GTS) zu WIS2 veröffentlicht. Die Themenstruktur besteht aus den TTAAii CCCC-Headern für die GTS-Nachrichten.</p>
 </details>
 <h2 id="ubung-2-uberprufung-der-wis2-nachrichtenstruktur">Übung 2: Überprüfung der WIS2-Nachrichtenstruktur</h2>
 <p>Trennen Sie die Verbindung von MQTT Explorer und aktualisieren Sie die 'Advanced'-Abschnitte, um das Abonnement auf die folgenden zu ändern:</p>
@@ -1178,12 +1178,12 @@
 <p>Sie können den Inhalt der WIS2-Nachricht im Abschnitt "Value" auf der rechten Seite anzeigen. Versuchen Sie, die Themenstruktur zu erweitern, um die verschiedenen Ebenen der Nachricht zu sehen, bis Sie die letzte Ebene erreichen und den Nachrichteninhalt einer der Nachrichten überprüfen.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Wie können wir den Zeitstempel identifizieren, zu dem die Daten veröffentlicht wurden? Und wie können wir den Zeitstempel identifizieren, zu dem die Daten erfasst wurden?</p>
+<p>Wie können wir den Zeitstempel identifizieren, zu dem die Daten veröffentlicht wurden? Und wie können wir den Zeitstempel identifizieren, zu dem die Daten gesammelt wurden?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Der Zeitstempel, zu dem die Daten veröffentlicht wurden, befindet sich im Abschnitt <code>properties</code> der Nachricht mit einem Schlüssel von <code>pubtime</code>.</p>
-<p>Der Zeitstempel, zu dem die Daten erfasst wurden, befindet sich im Abschnitt <code>properties</code> der Nachricht mit einem Schlüssel von <code>datetime</code>.</p>
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
+<p>Der Zeitstempel, zu dem die Daten veröffentlicht wurden, befindet sich im Abschnitt <code>properties</code> der Nachricht mit dem Schlüssel <code>pubtime</code>.</p>
+<p>Der Zeitstempel, zu dem die Daten gesammelt wurden, befindet sich im Abschnitt <code>properties</code> der Nachricht mit dem Schlüssel <code>datetime</code>.</p>
 <p><img alt="mqtt-explorer-global-broker-msg-properties" src="../../assets/img/mqtt-explorer-global-broker-msg-properties.png" width="800"></p>
 </details>
 <div class="admonition question">
@@ -1191,23 +1191,23 @@
 <p>Wie können wir die Daten von der in der Nachricht angegebenen URL herunterladen?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Die URL befindet sich im Abschnitt <code>links</code> mit <code>rel="canonical"</code> und ist durch den Schlüssel <code>href</code> definiert.</p>
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
+<p>Die URL befindet sich im Abschnitt <code>links</code> mit <code>rel="canonical"</code> und wird durch den Schlüssel <code>href</code> definiert.</p>
 <p>Sie können die URL kopieren und in einen Webbrowser einfügen, um die Daten herunterzuladen.</p>
 </details>
 <h2 id="ubung-3-uberprufung-des-unterschieds-zwischen-origin-und-cache-themen">Übung 3: Überprüfung des Unterschieds zwischen 'origin' und 'cache' Themen</h2>
-<p>Stellen Sie sicher, dass Sie weiterhin mit dem Global Broker verbunden sind und die Themenabonnements <code>origin/a/wis2/+/data/core/weather/surface-based-observations/synop</code> und <code>cache/a/wis2/+/data/core/weather/surface-based-observations/synop</code> verwenden, wie in Übung 2 beschrieben.</p>
-<p>Versuchen Sie, eine Nachricht für dieselbe Zentrum-ID zu identifizieren, die sowohl auf den <code>origin</code>- als auch auf den <code>cache</code>-Themen veröffentlicht wurde.</p>
+<p>Stellen Sie sicher, dass Sie weiterhin mit dem Global Broker verbunden sind, indem Sie die Themenabonnements <code>origin/a/wis2/+/data/core/weather/surface-based-observations/synop</code> und <code>cache/a/wis2/+/data/core/weather/surface-based-observations/synop</code> verwenden, wie in Übung 2 beschrieben.</p>
+<p>Versuchen Sie, eine Nachricht für dieselbe Zentrum-ID zu identifizieren, die sowohl auf den <code>origin</code> als auch auf den <code>cache</code> Themen veröffentlicht wurde.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Was ist der Unterschied zwischen den Nachrichten, die auf den <code>origin</code>- und den <code>cache</code>-Themen veröffentlicht wurden?</p>
+<p>Was ist der Unterschied zwischen den Nachrichten, die auf den <code>origin</code> und <code>cache</code> Themen veröffentlicht wurden?</p>
 </div>
 <details class="success">
-<summary>Klicken, um die Antwort zu enthüllen</summary>
-<p>Die Nachrichten, die auf den <code>origin</code>-Themen veröffentlicht wurden, sind die Originalnachrichten, die der Global Broker von den WIS2-Knoten im Netzwerk erneut veröffentlicht.</p>
-<p>Die Nachrichten, die auf den <code>cache</code>-Themen veröffentlicht wurden, sind die Nachrichten, für die Daten vom Global Cache heruntergeladen wurden. Wenn Sie den Inhalt der Nachricht aus dem Thema, das mit <code>cache</code> beginnt, überprüfen, werden Sie sehen, dass der 'canonical'-Link auf eine neue URL aktualisiert wurde.</p>
+<summary>Klicken Sie, um die Antwort zu enthüllen</summary>
+<p>Die Nachrichten, die auf den <code>origin</code> Themen veröffentlicht wurden, sind die Originalnachrichten, die der Global Broker von den WIS2 Nodes im Netzwerk erneut veröffentlicht.</p>
+<p>Die Nachrichten, die auf den <code>cache</code> Themen veröffentlicht wurden, sind die Nachrichten, für die Daten vom Global Cache heruntergeladen wurden. Wenn Sie den Inhalt der Nachricht aus dem Thema, das mit <code>cache</code> beginnt, überprüfen, werden Sie sehen, dass der 'canonical' Link auf eine neue URL aktualisiert wurde.</p>
 <p>Es gibt mehrere Global Caches im WIS2-Netzwerk, daher erhalten Sie eine Nachricht von jedem Global Cache, der die Nachricht heruntergeladen hat.</p>
-<p>Der Global Cache lädt nur Nachrichten herunter und veröffentlicht sie erneut, die auf dem <code>../data/core/...</code> Themenhierarchie veröffentlicht wurden.</p>
+<p>Der Global Cache wird nur Nachrichten herunterladen und erneut veröffentlichen, die auf der <code>../data/core/...</code> Themenhierarchie veröffentlicht wurden.</p>
 </details>
 <h2 id="schlussfolgerung">Schlussfolgerung</h2>
 <div class="admonition success">
@@ -1218,8 +1218,8 @@
 <li>die WIS2-Themenstruktur</li>
 <li>die WIS2-Benachrichtigungsnachrichtenstruktur</li>
 <li>den Unterschied zwischen Kern- und empfohlenen Daten</li>
-<li>die Themenstruktur, die vom GTS-zu-WIS2-Gateway verwendet wird</li>
-<li>den Unterschied zwischen Nachrichten des Global Brokers, die auf den <code>origin</code>- und <code>cache</code>-Themen veröffentlicht wurden</li>
+<li>die Themenstruktur, die vom GTS-to-WIS2-Gateway verwendet wird</li>
+<li>den Unterschied zwischen Nachrichten des Global Brokers, die auf den <code>origin</code> und <code>cache</code> Themen veröffentlicht wurden</li>
 </ul>
 </div>
 

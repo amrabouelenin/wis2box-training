@@ -630,9 +630,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#recommended" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Создание нового набора данных с политикой данных 'recommended'
+      Создание нового набора данных с политикой данных 'рекомендуемый'
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Добавление токена доступа к набору данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Публикация некоторых данных в наборе данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Добавление токена доступа в HTTP-заголовки для доступа к набору данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Заключение
     </span>
   </a>
   
@@ -953,9 +989,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#recommended" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Создание нового набора данных с политикой данных 'recommended'
+      Создание нового набора данных с политикой данных 'рекомендуемый'
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Добавление токена доступа к набору данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Публикация некоторых данных в наборе данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Добавление токена доступа в HTTP-заголовки для доступа к набору данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Заключение
     </span>
   </a>
   
@@ -979,33 +1051,84 @@
 
 <h1 id="_1">Настройка рекомендуемого набора данных с контролем доступа</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Результаты обучения</p>
-<p>По завершении этого практического занятия вы сможете:</p>
+<p class="admonition-title">Учебные результаты</p>
+<p>По окончании этого практического занятия вы сможете:</p>
 <ul>
-<li>создать новый набор данных с политикой данных 'recommended'</li>
+<li>создать новый набор данных с политикой данных 'рекомендуемый'</li>
 <li>добавить токен доступа к набору данных</li>
 <li>проверить, что доступ к набору данных невозможен без токена доступа</li>
 <li>добавить токен доступа в HTTP-заголовки для доступа к набору данных</li>
 </ul>
 </div>
 <h2 id="_2">Введение</h2>
-<p>Наборы данных, которые не считаются 'core' наборами данных в WMO, могут быть дополнительно настроены с политикой контроля доступа. wis2box предоставляет механизм добавления токена доступа к набору данных, который предотвратит загрузку данных пользователями, если они не предоставят токен доступа в HTTP-заголовках.</p>
+<p>Наборы данных, которые не считаются 'основными' в WMO, могут быть настроены с политикой контроля доступа. wis2box предоставляет механизм добавления токена доступа к набору данных, который не позволит пользователям скачивать данные, если они не предоставят токен доступа в HTTP-заголовках.</p>
 <h2 id="_3">Подготовка</h2>
-<p>Убедитесь, что у вас есть SSH-доступ к вашей учебной виртуальной машине и что ваш экземпляр wis2box запущен и работает.</p>
-<p>Убедитесь, что вы подключены к MQTT-брокеру вашего экземпляра wis2box с помощью MQTT Explorer. Для подключения к брокеру можно использовать публичные учетные данные <code>everyone/everyone</code>.</p>
+<p>Убедитесь, что у вас есть доступ по SSH к вашей учебной VM и что ваш экземпляр wis2box работает.</p>
+<p>Убедитесь, что вы подключены к брокеру MQTT вашего экземпляра wis2box с помощью MQTT Explorer. Вы можете использовать общедоступные учетные данные <code>everyone/everyone</code> для подключения к брокеру.</p>
 <p>Убедитесь, что у вас открыт веб-браузер с wis2box-webapp для вашего экземпляра, перейдя по адресу <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
-<h2 id="recommended">Создание нового набора данных с политикой данных 'recommended'</h2>
-<p>Перейдите на страницу 'dataset editor' в wis2box-webapp и создайте новый набор данных. Выберите Data Type = 'weather/surface-weather-observations/synop'.</p>
+<h2 id="_4">Создание нового набора данных с политикой данных 'рекомендуемый'</h2>
+<p>Перейдите на страницу 'редактор наборов данных' в wis2box-webapp и создайте новый набор данных. Выберите Data Type = 'weather/surface-weather-observations/synop'.</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-template.png" width="800"></p>
-<p>Для "Centre ID" используйте то же значение, что и в предыдущих практических занятиях.</p>
-<p>Нажмите 'CONTINUE To FORM' для продолжения.</p>
-<p>В редакторе наборов данных установите политику данных на 'recommended' (обратите внимание, что изменение data-policy обновит 'Topic Hierarchy').
+<p>Для "Centre ID" используйте тот же, что и в предыдущих практических занятиях.</p>
+<p>Нажмите 'CONTINUE To FORM', чтобы продолжить.</p>
+<p>В редакторе наборов данных установите политику данных на 'рекомендуемый' (обратите внимание, что изменение политики данных обновит 'Иерархию тем').
 Замените автоматически сгенерированный 'Local ID' на описательное имя для набора данных, например, 'recommended-data-with-access-control':</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-recommended.png" width="800"></p>
-<p>Продолжите заполнять обязательные поля для Пространственных свойств и Контактной информации, и 'Validate form' для проверки наличия ошибок.</p>
+<p>Продолжайте заполнять необходимые поля для Пространственных свойств и Контактной информации, и 'Проверьте форму' на наличие ошибок.</p>
 <p>Наконец, отправьте набор данных, используя ранее созданный токен аутентификации, и проверьте, что новый набор данных создан в wis2box-webapp.</p>
-<p>Проверьте MQTT-explorer, чтобы увидеть, что вы получаете WIS2 Notification Message, объявляющее новую запись Discovery Metadata по теме <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
-<p>[Продолжение перевода следует в том же стиле, сохраняя все технические термины и форматирование...]</p>
+<p>Проверьте MQTT-explorer, чтобы увидеть, что вы получили сообщение WIS2 Notification Message о новой записи метаданных обнаружения на тему <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
+<h2 id="_5">Добавление токена доступа к набору данных</h2>
+<p>Войдите в контейнер wis2box-management,</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
+python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
+</code></pre></div>
+<p>Из командной строки внутри контейнера вы можете защитить набор данных с помощью команды <code>wis2box auth add-token</code>, используя флаг <code>--metadata-id</code> для указания идентификатора метаданных набора данных и токен доступа в качестве аргумента.</p>
+<p>Например, чтобы добавить токен доступа <code>S3cr3tT0k3n</code> к набору данных с идентификатором метаданных <code>urn:wmo:md:not-my-centre:core.surface-based-observations.synop</code>:</p>
+<div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop<span class="w"> </span>S3cr3tT0k3n
+</code></pre></div>
+<p>Выйдите из контейнера wis2box-management:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span>
+</code></pre></div>
+<h2 id="_6">Публикация некоторых данных в наборе данных</h2>
+<p>Скопируйте файл <code>exercise-materials/access-control-exercises/aws-example.csv</code> в каталог, определенный <code>WIS2BOX_HOST_DATADIR</code> в вашем <code>wis2box.env</code>:</p>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/access-control-exercises/aws-example.csv<span class="w"> </span>~/wis2box-data
+</code></pre></div>
+<p>Затем используйте WinSCP или редактор командной строки, чтобы отредактировать файл <code>aws-example.csv</code> и обновить идентификаторы станций WIGOS во входных данных, чтобы они соответствовали станциям в вашем экземпляре wis2box.</p>
+<p>Затем перейдите в редактор станций в wis2box-webapp. Для каждой станции, которую вы использовали в <code>aws-example.csv</code>, обновите поле 'topic', чтобы оно соответствовало 'topic' набора данных, который вы создали в предыдущем упражнении.</p>
+<p>Теперь эта станция будет ассоциирована с 2 темами, одна для 'основного' набора данных и одна для 'рекомендуемого' набора данных:</p>
+<p><img alt="edit-stations-add-topics" src="../../assets/img/edit-stations-add-topics.png" width="600"></p>
+<p>Вам нужно будет использовать ваш токен для <code>collections/stations</code>, чтобы сохранить обновленные данные станции.</p>
+<p>Затем войдите в контейнер wis2box-management:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
+python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
+</code></pre></div>
+<p>Из командной строки wis2box мы можем загрузить образец файла данных <code>aws-example.csv</code> в определенный набор данных следующим образом:</p>
+<div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/aws-example.csv<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop
+</code></pre></div>
+<p>Убедитесь, что вы указали правильный идентификатор метаданных для вашего набора данных и <strong>проверьте, что вы получаете уведомления о данных WIS2 в MQTT Explorer</strong>, по теме <code>origin/a/wis2/&lt;your-centre-id&gt;/data/recommended/surface-based-observations/synop</code>.</p>
+<p>Проверьте каноническую ссылку в сообщении WIS2 Notification Message и скопируйте/вставьте ссылку в браузер, чтобы попытаться скачать данные.</p>
+<p>Вы должны увидеть ошибку 403 Forbidden.</p>
+<h2 id="http-">Добавление токена доступа в HTTP-заголовки для доступа к набору данных</h2>
+<p>Чтобы продемонстрировать, что токен доступа необходим для доступа к набору данных, мы воспроизведем ошибку, которую вы видели в браузере, используя функцию командной строки <code>wget</code>.</p>
+<p>Из командной строки в вашей учебной VM используйте команду <code>wget</code> с канонической ссылкой, которую вы скопировали из сообщения WIS2 Notification Message.</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>&lt;canonical-link&gt;
+</code></pre></div>
+<p>Вы должны увидеть, что HTTP-запрос возвращается с <em>401 Unauthorized</em> и данные не загружаются.</p>
+<p>Теперь добавьте токен доступа в HTTP-заголовки для доступа к набору данных.</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>--header<span class="o">=</span><span class="s2">&quot;Authorization: Bearer S3cr3tT0k3n&quot;</span><span class="w"> </span>&lt;canonical-link&gt;
+</code></pre></div>
+<p>Теперь данные должны быть успешно загружены.</p>
+<h2 id="_7">Заключение</h2>
+<div class="admonition success">
+<p class="admonition-title">Поздравляем!</p>
+<p>На этом практическом занятии вы научились:</p>
+<ul>
+<li>создавать новый набор данных с политикой данных 'рекомендуемый'</li>
+<li>добавлять токен доступа к набору данных</li>
+<li>проверять, что доступ к набору данных невозможен без токена доступа</li>
+<li>добавлять токен доступа в HTTP-заголовки для доступа к набору данных</li>
+</ul>
+</div>
 
 
 

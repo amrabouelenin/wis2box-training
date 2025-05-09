@@ -26,7 +26,7 @@
     
     
       
-        <title>Aggiungere intestazioni GTS alle notifiche WIS2 - WIS2 in a box training</title>
+        <title>Aggiunta di intestazioni GTS alle notifiche WIS2 - WIS2 in a box training</title>
       
     
     
@@ -110,7 +110,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aggiungere-intestazioni-gts-alle-notifiche-wis2" class="md-skip">
+        <a href="#aggiunta-di-intestazioni-gts-alle-notifiche-wis2" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -145,7 +145,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aggiungere intestazioni GTS alle notifiche WIS2
+              Aggiunta di intestazioni GTS alle notifiche WIS2
             
           </span>
         </div>
@@ -634,34 +634,34 @@
         <li class="md-nav__item">
   <a href="#creazione-di-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Creazione di gts_headers_mapping.csv
+      creazione di gts_headers_mapping.csv
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fornire-un-file-gts_headers_mappingcsv" class="md-nav__link">
+  <a href="#fornitura-di-un-file-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Fornire un file gts_headers_mapping.csv
+      Fornitura di un file gts_headers_mapping.csv
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inserimento-di-dati-con-intestazioni-gts" class="md-nav__link">
+  <a href="#ingestione-di-dati-con-intestazioni-gts" class="md-nav__link">
     <span class="md-ellipsis">
-      Inserimento di dati con intestazioni GTS
+      Ingestione di dati con intestazioni GTS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualizzazione-delle-intestazioni-gts-nella-notifica-wis2" class="md-nav__link">
+  <a href="#visualizzazione-delle-intestazioni-gts-nelle-notifiche-wis2" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualizzazione delle intestazioni GTS nella Notifica WIS2
+      Visualizzazione delle intestazioni GTS nelle Notifiche WIS2
     </span>
   </a>
   
@@ -1015,34 +1015,34 @@
         <li class="md-nav__item">
   <a href="#creazione-di-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Creazione di gts_headers_mapping.csv
+      creazione di gts_headers_mapping.csv
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fornire-un-file-gts_headers_mappingcsv" class="md-nav__link">
+  <a href="#fornitura-di-un-file-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Fornire un file gts_headers_mapping.csv
+      Fornitura di un file gts_headers_mapping.csv
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inserimento-di-dati-con-intestazioni-gts" class="md-nav__link">
+  <a href="#ingestione-di-dati-con-intestazioni-gts" class="md-nav__link">
     <span class="md-ellipsis">
-      Inserimento di dati con intestazioni GTS
+      Ingestione di dati con intestazioni GTS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualizzazione-delle-intestazioni-gts-nella-notifica-wis2" class="md-nav__link">
+  <a href="#visualizzazione-delle-intestazioni-gts-nelle-notifiche-wis2" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualizzazione delle intestazioni GTS nella Notifica WIS2
+      Visualizzazione delle intestazioni GTS nelle Notifiche WIS2
     </span>
   </a>
   
@@ -1073,20 +1073,20 @@
 
 
 
-<h1 id="aggiungere-intestazioni-gts-alle-notifiche-wis2">Aggiungere intestazioni GTS alle notifiche WIS2</h1>
+<h1 id="aggiunta-di-intestazioni-gts-alle-notifiche-wis2">Aggiunta di intestazioni GTS alle notifiche WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Obiettivi di apprendimento</p>
+<p class="admonition-title">Risultati di apprendimento</p>
 <p>Al termine di questa sessione pratica, sarai in grado di:</p>
 <ul>
-<li>configurare una mappatura tra nome file e intestazioni GTS</li>
-<li>inserire dati con un nome file che corrisponde alle intestazioni GTS</li>
+<li>configurare una mappatura tra nome del file e intestazioni GTS</li>
+<li>ingerire dati con un nome di file che corrisponde alle intestazioni GTS</li>
 <li>visualizzare le intestazioni GTS nelle notifiche WIS2</li>
 </ul>
 </div>
 <h2 id="introduzione">Introduzione</h2>
-<p>I Membri WMO che desiderano interrompere la trasmissione dei loro dati su GTS durante la fase di transizione a WIS2 dovranno aggiungere intestazioni GTS alle loro notifiche WIS2. Queste intestazioni consentono al gateway WIS2-GTS di inoltrare i dati alla rete GTS.</p>
-<p>Questo permette ai Membri che sono migrati all'utilizzo di un nodo WIS2 per la pubblicazione dei dati di disabilitare il loro sistema MSS e garantire che i loro dati siano ancora disponibili per i Membri non ancora migrati a WIS2.</p>
-<p>La proprietà GTS nel Messaggio di Notifica WIS2 deve essere aggiunta come proprietà aggiuntiva al Messaggio di Notifica WIS2. La proprietà GTS è un oggetto JSON che contiene le intestazioni GTS necessarie per l'inoltro dei dati alla rete GTS.</p>
+<p>I membri dell'OMM che desiderano interrompere la trasmissione dei loro dati su GTS durante la fase di transizione a WIS2 dovranno aggiungere le intestazioni GTS alle loro notifiche WIS2. Queste intestazioni consentono al gateway WIS2 a GTS di inoltrare i dati alla rete GTS.</p>
+<p>Questo permette ai membri che sono passati all'uso di un nodo WIS2 per la pubblicazione dei dati di disabilitare il loro sistema MSS e garantire che i loro dati siano ancora disponibili per i membri che non sono ancora migrati a WIS2.</p>
+<p>La proprietà GTS nel Messaggio di Notifica WIS2 deve essere aggiunta come proprietà aggiuntiva al Messaggio di Notifica WIS2. La proprietà GTS è un oggetto JSON che contiene le intestazioni GTS necessarie affinché i dati vengano inoltrati alla rete GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;ttaaii&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FTAE31&quot;</span><span class="p">,</span>
@@ -1094,28 +1094,28 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>All'interno di wis2box è possibile aggiungere questo automaticamente alle Notifiche WIS2 fornendo un file aggiuntivo chiamato <code>gts_headers_mapping.csv</code> che contiene le informazioni necessarie per mappare le intestazioni GTS ai nomi dei file in arrivo.</p>
-<p>Questo file dovrebbe essere posizionato nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code> e dovrebbe avere le seguenti colonne:</p>
+<p>All'interno di wis2box puoi aggiungere automaticamente questo alle Notifiche WIS2 fornendo un file aggiuntivo denominato <code>gts_headers_mapping.csv</code> che contiene le informazioni necessarie per mappare le intestazioni GTS ai nomi dei file in arrivo.</p>
+<p>Questo file dovrebbe essere collocato nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code> e dovrebbe avere le seguenti colonne:</p>
 <ul>
 <li><code>string_in_filepath</code>: una stringa che fa parte del nome del file che verrà utilizzata per abbinare le intestazioni GTS</li>
 <li><code>TTAAii</code>: l'intestazione TTAAii da aggiungere alla notifica WIS2</li>
 <li><code>CCCC</code>: l'intestazione CCCC da aggiungere alla notifica WIS2</li>
 </ul>
 <h2 id="preparazione">Preparazione</h2>
-<p>Assicurati di avere accesso SSH alla tua VM studente e che la tua istanza wis2box sia attiva e funzionante.</p>
+<p>Assicurati di avere accesso SSH alla tua VM studente e che la tua istanza di wis2box sia attiva e funzionante.</p>
 <p>Assicurati di essere connesso al broker MQTT della tua istanza wis2box utilizzando MQTT Explorer. Puoi utilizzare le credenziali pubbliche <code>everyone/everyone</code> per connetterti al broker.</p>
-<p>Assicurati di avere un browser web aperto con la dashboard Grafana per la tua istanza andando su <code>http://YOUR-HOST:3000</code></p>
-<h2 id="creazione-di-gts_headers_mappingcsv">Creazione di <code>gts_headers_mapping.csv</code></h2>
-<p>Per aggiungere intestazioni GTS alle tue notifiche WIS2, è necessario un file CSV che mappi le intestazioni GTS ai nomi dei file in arrivo.</p>
-<p>Il file CSV deve essere denominato (esattamente) <code>gts_headers_mapping.csv</code> e deve essere posizionato nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code>.</p>
-<h2 id="fornire-un-file-gts_headers_mappingcsv">Fornire un file <code>gts_headers_mapping.csv</code></h2>
-<p>Copia il file <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> nella tua istanza wis2box e posizionalo nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code>.</p>
+<p>Assicurati di avere un browser web aperto con la dashboard di Grafana per la tua istanza andando su <code>http://YOUR-HOST:3000</code></p>
+<h2 id="creazione-di-gts_headers_mappingcsv">creazione di <code>gts_headers_mapping.csv</code></h2>
+<p>Per aggiungere le intestazioni GTS alle tue notifiche WIS2, è necessario un file CSV che mappi le intestazioni GTS ai nomi dei file in arrivo.</p>
+<p>Il file CSV dovrebbe essere nominato (esattamente) <code>gts_headers_mapping.csv</code> e dovrebbe essere collocato nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code>. </p>
+<h2 id="fornitura-di-un-file-gts_headers_mappingcsv">Fornitura di un file <code>gts_headers_mapping.csv</code></h2>
+<p>Copia il file <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> nella tua istanza di wis2box e collocalo nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code>.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/gts_headers_mapping.csv<span class="w"> </span>~/wis2box-data
 </code></pre></div>
 <p>Quindi riavvia il container wis2box-management per applicare le modifiche:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-management
 </code></pre></div>
-<h2 id="inserimento-di-dati-con-intestazioni-gts">Inserimento di dati con intestazioni GTS</h2>
+<h2 id="ingestione-di-dati-con-intestazioni-gts">Ingestione di dati con intestazioni GTS</h2>
 <p>Copia il file <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> nella directory definita da <code>WIS2BOX_HOST_DATADIR</code> nel tuo <code>wis2box.env</code>:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>~/wis2box-data
 </code></pre></div>
@@ -1123,20 +1123,20 @@
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Dalla riga di comando wis2box possiamo inserire il file di dati di esempio <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> in un dataset specifico come segue:</p>
+<p>Dalla linea di comando di wis2box possiamo ingerire il file di dati di esempio <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> in un dataset specifico come segue:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:core.surface-based-observations.synop
 </code></pre></div>
 <p>Assicurati di sostituire l'opzione <code>metadata-id</code> con l'identificatore corretto per il tuo dataset.</p>
-<p>Controlla la dashboard Grafana per vedere se i dati sono stati inseriti correttamente. Se vedi AVVISI o ERRORI, prova a correggerli e ripeti l'esercizio con il comando <code>wis2box data ingest</code>.</p>
-<h2 id="visualizzazione-delle-intestazioni-gts-nella-notifica-wis2">Visualizzazione delle intestazioni GTS nella Notifica WIS2</h2>
-<p>Vai su MQTT Explorer e controlla il Messaggio di Notifica WIS2 per i dati che hai appena inserito.</p>
+<p>Controlla la dashboard di Grafana per vedere se i dati sono stati ingeriti correttamente. Se vedi dei WARNING o degli ERRORI, cerca di risolverli e ripeti il comando <code>wis2box data ingest</code>.</p>
+<h2 id="visualizzazione-delle-intestazioni-gts-nelle-notifiche-wis2">Visualizzazione delle intestazioni GTS nelle Notifiche WIS2</h2>
+<p>Vai su MQTT Explorer e controlla il Messaggio di Notifica WIS2 per i dati che hai appena ingerito.</p>
 <p>Il Messaggio di Notifica WIS2 dovrebbe contenere le intestazioni GTS che hai fornito nel file <code>gts_headers_mapping.csv</code>.</p>
 <h2 id="conclusione">Conclusione</h2>
 <div class="admonition success">
 <p class="admonition-title">Congratulazioni!</p>
-<p>In questa sessione pratica, hai imparato a:
+<p>In questa sessione pratica, hai imparato come:
   - aggiungere intestazioni GTS alle tue notifiche WIS2
-  - verificare che le intestazioni GTS siano disponibili tramite la tua installazione wis2box</p>
+  - verificare che le intestazioni GTS siano disponibili tramite la tua installazione di wis2box</p>
 </div>
 
 

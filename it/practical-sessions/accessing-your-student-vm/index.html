@@ -26,7 +26,7 @@
     
     
       
-        <title>Accesso alla VM dello studente - WIS2 in a box training</title>
+        <title>Accesso alla tua VM studente - WIS2 in a box training</title>
       
     
     
@@ -110,7 +110,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#accesso-alla-vm-dello-studente" class="md-skip">
+        <a href="#accesso-alla-tua-vm-studente" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -145,7 +145,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accesso alla VM dello studente
+              Accesso alla tua VM studente
             
           </span>
         </div>
@@ -469,18 +469,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#connessione-alla-vm-studente-sulla-rete-di-formazione-locale" class="md-nav__link">
+  <a href="#connettiti-alla-tua-vm-studente-sulla-rete-di-formazione-locale" class="md-nav__link">
     <span class="md-ellipsis">
-      Connessione alla VM studente sulla rete di formazione locale
+      Connettiti alla tua VM studente sulla rete di formazione locale
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifica-delle-versioni-del-software" class="md-nav__link">
+  <a href="#verifica-le-versioni-del-software" class="md-nav__link">
     <span class="md-ellipsis">
-      Verifica delle versioni del software
+      Verifica le versioni del software
     </span>
   </a>
   
@@ -986,18 +986,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#connessione-alla-vm-studente-sulla-rete-di-formazione-locale" class="md-nav__link">
+  <a href="#connettiti-alla-tua-vm-studente-sulla-rete-di-formazione-locale" class="md-nav__link">
     <span class="md-ellipsis">
-      Connessione alla VM studente sulla rete di formazione locale
+      Connettiti alla tua VM studente sulla rete di formazione locale
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifica-delle-versioni-del-software" class="md-nav__link">
+  <a href="#verifica-le-versioni-del-software" class="md-nav__link">
     <span class="md-ellipsis">
-      Verifica delle versioni del software
+      Verifica le versioni del software
     </span>
   </a>
   
@@ -1037,18 +1037,18 @@
 
 
 
-<h1 id="accesso-alla-vm-dello-studente">Accesso alla VM dello studente</h1>
+<h1 id="accesso-alla-tua-vm-studente">Accesso alla tua VM studente</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Obiettivi formativi</p>
+<p class="admonition-title">Risultati dell'apprendimento</p>
 <p>Al termine di questa sessione pratica, sarai in grado di:</p>
 <ul>
 <li>accedere alla tua VM studente tramite SSH e WinSCP</li>
 <li>verificare che il software necessario per gli esercizi pratici sia installato</li>
-<li>verificare di avere accesso ai materiali degli esercizi per questa formazione sulla tua VM studente locale</li>
+<li>verificare di avere accesso ai materiali degli esercizi per questo training sulla tua VM studente locale</li>
 </ul>
 </div>
 <h2 id="introduzione">Introduzione</h2>
-<p>Come parte delle sessioni di formazione wis2box eseguite localmente, puoi accedere alla tua VM studente personale sulla rete di formazione locale denominata "WIS2-training".</p>
+<p>Come parte delle sessioni di formazione wis2box locali, puoi accedere alla tua VM studente personale sulla rete di formazione locale denominata "WIS2-training".</p>
 <p>La tua VM studente ha il seguente software preinstallato:</p>
 <ul>
 <li>Ubuntu 22.0.4.3 LTS <a href="https://releases.ubuntu.com/jammy/ubuntu-22.04.3-live-server-amd64.iso">ubuntu-22.04.3-live-server-amd64.iso</a></li>
@@ -1061,18 +1061,18 @@
 <p class="admonition-title">Note</p>
 <p>Se desideri eseguire questa formazione al di fuori di una sessione di formazione locale, puoi fornire la tua istanza utilizzando qualsiasi provider cloud, ad esempio:</p>
 <ul>
-<li>GCP (Google Cloud Platform) VM instance <code>e2-medium</code></li>
-<li>AWS (Amazon Web Services) ec2-instance <code>t3a.medium</code></li>
+<li>GCP (Google Cloud Platform) istanza VM <code>e2-medium</code></li>
+<li>AWS (Amazon Web Services) istanza ec2 <code>t3a.medium</code></li>
 <li>Azure (Microsoft) Azure Virtual Machine <code>standard_b2s</code></li>
 </ul>
 <p>Seleziona Ubuntu Server 22.0.4 LTS come sistema operativo.</p>
 <p>Dopo aver creato la tua VM assicurati di aver installato python, docker e docker compose, come descritto in <a href="https://docs.wis2box.wis.wmo.int/en/latest/user/getting-started.html#software-dependencies">wis2box-software-dependencies</a>.</p>
-<p>L'archivio delle release per wis2box utilizzato in questa formazione può essere scaricato come segue:</p>
+<p>L'archivio di rilascio per wis2box utilizzato in questo training può essere scaricato come segue:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/World-Meteorological-Organization/wis2box-release/releases/download/1.0.0/wis2box-setup.zip
 unzip<span class="w"> </span>wis2box-setup.zip
 </code></pre></div>
 <p>Puoi sempre trovare l'ultimo archivio 'wis2box-setup' su <a href="https://github.com/World-Meteorological-Organization/wis2box-release/releases">https://github.com/World-Meteorological-Organization/wis2box/releases</a>.</p>
-<p>Il materiale degli esercizi utilizzato in questa formazione può essere scaricato come segue:</p>
+<p>I materiali degli esercizi utilizzati in questo training possono essere scaricati come segue:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://training.wis2box.wis.wmo.int/exercise-materials.zip
 unzip<span class="w"> </span>exercise-materials.zip
 </code></pre></div>
@@ -1080,31 +1080,31 @@ unzip<span class="w"> </span>exercise-materials.zip
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
 pip3<span class="w"> </span>install<span class="w"> </span><span class="nv">pywiscat</span><span class="o">==</span><span class="m">0</span>.2.2
 </code></pre></div>
-<p>Se stai utilizzando la VM studente fornita durante le sessioni di formazione WIS2 locali, il software richiesto sarà già installato.</p>
+<p>Se stai utilizzando la VM studente fornita durante le sessioni di formazione WIS2 locali, il software necessario sarà già installato.</p>
 </div>
-<h2 id="connessione-alla-vm-studente-sulla-rete-di-formazione-locale">Connessione alla VM studente sulla rete di formazione locale</h2>
-<p>Connetti il tuo PC alla rete Wi-Fi locale trasmessa nella sala durante la formazione WIS2 secondo le istruzioni fornite dal formatore.</p>
-<p>Usa un client SSH per connetterti alla tua VM studente utilizzando quanto segue:</p>
+<h2 id="connettiti-alla-tua-vm-studente-sulla-rete-di-formazione-locale">Connettiti alla tua VM studente sulla rete di formazione locale</h2>
+<p>Collega il tuo PC alla rete Wi-Fi trasmessa nella sala durante la formazione WIS2 seguendo le istruzioni fornite dal formatore.</p>
+<p>Utilizza un client SSH per connetterti alla tua VM studente utilizzando i seguenti dati:</p>
 <ul>
 <li><strong>Host: (fornito durante la formazione in presenza)</strong></li>
 <li><strong>Porta: 22</strong></li>
-<li><strong>Nome utente: (fornito durante la formazione in presenza)</strong></li>
-<li><strong>Password: (fornita durante la formazione in presenza)</strong></li>
+<li><strong>Username: (fornito durante la formazione in presenza)</strong></li>
+<li><strong>Password: (fornito durante la formazione in presenza)</strong></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Contatta un formatore se non sei sicuro dell'hostname/nome utente o hai problemi di connessione.</p>
+<p>Contatta un formatore se non sei sicuro del nome host/username o se hai problemi di connessione.</p>
 </div>
-<p>Una volta connesso, modifica la tua password per assicurarti che altri non possano accedere alla tua VM:</p>
+<p>Una volta connesso, cambia la tua password per garantire che altri non possano accedere alla tua VM:</p>
 <div class="highlight"><pre><span></span><code>limper@student-vm:~$<span class="w"> </span>passwd
-Changing<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>testuser.
-Current<span class="w"> </span>password:
-New<span class="w"> </span>password:
-Retype<span class="w"> </span>new<span class="w"> </span>password:
-passwd:<span class="w"> </span>password<span class="w"> </span>updated<span class="w"> </span>successfully
+Cambio<span class="w"> </span>password<span class="w"> </span>per<span class="w"> </span>testuser.
+Password<span class="w"> </span>attuale:
+Nuova<span class="w"> </span>password:
+Ridigita<span class="w"> </span>la<span class="w"> </span>nuova<span class="w"> </span>password:
+passwd:<span class="w"> </span>password<span class="w"> </span>aggiornata<span class="w"> </span>con<span class="w"> </span>successo
 </code></pre></div>
-<h2 id="verifica-delle-versioni-del-software">Verifica delle versioni del software</h2>
-<p>Per poter eseguire wis2box, la VM studente dovrebbe avere Python, Docker e Docker Compose preinstallati.</p>
+<h2 id="verifica-le-versioni-del-software">Verifica le versioni del software</h2>
+<p>Per poter eseguire wis2box, la VM studente dovrebbe avere Python, Docker e Docker Compose preinstallati. </p>
 <p>Verifica la versione di Python:
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
 </code></pre></div>
@@ -1123,30 +1123,30 @@ restituisce:
 restituisce:
 <div class="highlight"><pre><span></span><code><span class="go">Docker Compose version v2.21.0</span>
 </code></pre></div></p>
-<p>Per assicurarti che il tuo utente possa eseguire i comandi Docker, il tuo utente è stato aggiunto al gruppo <code>docker</code>.</p>
-<p>Per verificare che il tuo utente possa eseguire docker hello-world, esegui il seguente comando:
+<p>Per garantire che il tuo utente possa eseguire i comandi Docker, il tuo utente è stato aggiunto al gruppo <code>docker</code>. </p>
+<p>Per testare che il tuo utente possa eseguire docker hello-world, esegui il seguente comando:
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>hello-world
 </code></pre></div></p>
-<p>Questo dovrebbe scaricare l'immagine hello-world ed eseguire un container che stampa un messaggio.</p>
-<p>Verifica di vedere quanto segue nell'output:</p>
+<p>Questo dovrebbe scaricare l'immagine hello-world ed eseguire un container che stampa un messaggio. </p>
+<p>Verifica di vedere il seguente output:</p>
 <div class="highlight"><pre><span></span><code><span class="go">...</span>
 <span class="go">Hello from Docker!</span>
 <span class="go">This message shows that your installation appears to be working correctly.</span>
 <span class="go">...</span>
 </code></pre></div>
 <h2 id="ispeziona-i-materiali-degli-esercizi">Ispeziona i materiali degli esercizi</h2>
-<p>Ispeziona il contenuto della tua directory home; questi sono i materiali utilizzati durante la formazione e le sessioni pratiche.</p>
+<p>Ispeziona i contenuti della tua directory home; questi sono i materiali utilizzati come parte della formazione e delle sessioni pratiche.</p>
 <p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>~/
 </code></pre></div>
 restituisce:
 <div class="highlight"><pre><span></span><code><span class="go">exercise-materials  wis2box</span>
 </code></pre></div></p>
-<p>Se hai WinSCP installato sul tuo PC locale, puoi utilizzarlo per connetterti alla tua VM studente e ispezionare il contenuto della tua directory home e scaricare o caricare file tra la tua VM e il tuo PC locale.</p>
-<p>WinSCP non è necessario per la formazione, ma può essere utile se vuoi modificare i file sulla tua VM utilizzando un editor di testo sul tuo PC locale.</p>
-<p>Ecco come puoi connetterti alla tua VM studente utilizzando WinSCP:</p>
-<p>Apri WinSCP e fai clic su "New Site". Puoi creare una nuova connessione SCP alla tua VM come segue:</p>
+<p>Se hai WinSCP installato sul tuo PC locale, puoi usarlo per connetterti alla tua VM studente e ispezionare i contenuti della tua directory home e scaricare o caricare file tra la tua VM e il tuo PC locale. </p>
+<p>WinSCP non è necessario per la formazione, ma può essere utile se desideri modificare i file sulla tua VM utilizzando un editor di testo sul tuo PC locale.</p>
+<p>Ecco come puoi connetterti alla tua VM studente usando WinSCP:</p>
+<p>Apri WinSCP e clicca su "Nuovo sito". Puoi creare una nuova connessione SCP alla tua VM come segue:</p>
 <p><img alt="winscp-student-vm-scp.png" src="../../assets/img/winscp-student-vm-scp.png" width="400"></p>
-<p>Fai clic su 'Save' e poi su 'Login' per connetterti alla tua VM.</p>
+<p>Clicca su 'Salva' e poi su 'Login' per connetterti alla tua VM.</p>
 <p>E dovresti essere in grado di vedere il seguente contenuto:</p>
 <p><img alt="winscp-student-vm-exercise-materials.png" src="../../assets/img/winscp-student-vm-exercise-materials.png" width="600"></p>
 <h2 id="conclusione">Conclusione</h2>
@@ -1156,7 +1156,7 @@ restituisce:
 <ul>
 <li>accedere alla tua VM studente tramite SSH e WinSCP</li>
 <li>verificare che il software necessario per gli esercizi pratici sia installato</li>
-<li>verificare di avere accesso ai materiali degli esercizi per questa formazione sulla tua VM studente locale</li>
+<li>verificare di avere accesso ai materiali degli esercizi per questo training sulla tua VM studente locale</li>
 </ul>
 </div>
 

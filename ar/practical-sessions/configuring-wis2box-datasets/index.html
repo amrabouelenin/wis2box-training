@@ -522,6 +522,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wis2box-webapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      إنشاء مجموعة بيانات جديدة في wis2box-webapp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      إنشاء بيانات استكشافية
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      تكوين تعيينات البيانات
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -977,6 +1004,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wis2box-webapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      إنشاء مجموعة بيانات جديدة في wis2box-webapp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      إنشاء بيانات استكشافية
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      تكوين تعيينات البيانات
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -995,51 +1049,93 @@
 
 <h1 id="wis2box">تكوين مجموعات البيانات في wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">مخرجات التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p class="admonition-title">نتائج التعلم</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
 <li>إنشاء مجموعة بيانات جديدة</li>
-<li>إنشاء البيانات الوصفية للاكتشاف لمجموعة البيانات</li>
-<li>تكوين تعيينات البيانات لمجموعة البيانات</li>
-<li>نشر إخطار WIS2 مع سجل WCMP2</li>
-<li>تحديث وإعادة نشر مجموعة البياناتك</li>
+<li>إنشاء بيانات استكشافية لمجموعة بيانات</li>
+<li>تكوين تعيينات البيانات لمجموعة بيانات</li>
+<li>نشر إشعار WIS2 مع سجل WCMP2</li>
+<li>تحديث مجموعة البيانات الخاصة بك وإعادة نشرها</li>
 </ul>
 </div>
 <h2 id="_1">مقدمة</h2>
-<p>يستخدم wis2box مجموعات البيانات المرتبطة بالبيانات الوصفية للاكتشاف وتعيينات البيانات.</p>
-<p>تُستخدم البيانات الوصفية للاكتشاف لإنشاء سجل WCMP2 (WMO Core Metadata Profile 2) الذي يتم مشاركته باستخدام إخطار WIS2 يتم نشره على wis2box-broker الخاص بك.</p>
-<p>تُستخدم تعيينات البيانات لربط مكون إضافي للبيانات ببياناتك المدخلة، مما يسمح بتحويل بياناتك قبل نشرها باستخدام إخطار WIS2.</p>
-<p>ستقودك هذه الجلسة خلال إنشاء مجموعة بيانات جديدة، وإنشاء البيانات الوصفية للاكتشاف، وتكوين تعيينات البيانات. ستقوم بفحص مجموعة بياناتك في wis2box-api ومراجعة إخطار WIS2 للبيانات الوصفية الخاصة بك.</p>
+<p>wis2box يستخدم مجموعات البيانات المرتبطة ببيانات الاستكشاف وتعيينات البيانات.</p>
+<p>تُستخدم بيانات الاستكشاف لإنشاء سجل WCMP2 (WMO Core Metadata Profile 2) يتم مشاركته باستخدام إشعار WIS2 الذي يتم نشره على وسيط wis2box الخاص بك.</p>
+<p>تُستخدم تعيينات البيانات لربط مكون إضافي للبيانات ببيانات الإدخال الخاصة بك، مما يسمح بتحويل بياناتك قبل نشرها باستخدام إشعار WIS2.</p>
+<p>سوف تمر هذه الجلسة بإنشاء مجموعة بيانات جديدة، وإنشاء بيانات استكشافية، وتكوين تعيينات البيانات. ستفحص مجموعة البيانات الخاصة بك في wis2box-api وتراجع إشعار WIS2 لبياناتك الاستكشافية.</p>
 <h2 id="_2">التحضير</h2>
-<p>اتصل بالوسيط الخاص بك باستخدام MQTT Explorer.</p>
-<p>بدلاً من استخدام بيانات اعتماد الوسيط الداخلي الخاص بك، استخدم بيانات الاعتماد العامة <code>everyone/everyone</code>:</p>
+<p>قم بالاتصال بوسيطك باستخدام MQTT Explorer.</p>
+<p>بدلاً من استخدام بيانات اعتماد الوسيط الداخلية الخاصة بك، استخدم بيانات الاعتماد العامة <code>everyone/everyone</code>:</p>
 <p><img alt="MQTT Explorer: Connect to broker" src="../../assets/img/mqtt-explorer-wis2box-broker-everyone-everyone.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>لن تحتاج أبداً إلى مشاركة بيانات اعتماد الوسيط الداخلي الخاص بك مع المستخدمين الخارجيين. المستخدم 'everyone' هو مستخدم عام لتمكين مشاركة إخطارات WIS2.</p>
-<p>بيانات اعتماد <code>everyone/everyone</code> لديها حق الوصول للقراءة فقط على الموضوع 'origin/a/wis2/#'. هذا هو الموضوع حيث يتم نشر إخطارات WIS2. يمكن للوسيط العالمي الاشتراك بهذه البيانات العامة لتلقي الإخطارات.</p>
-<p>لن يرى المستخدم 'everyone' المواضيع الداخلية أو يتمكن من نشر الرسائل.</p>
+<p>لا تحتاج أبدًا إلى مشاركة بيانات اعتماد الوسيط الداخلي الخاص بك مع المستخدمين الخارجيين. المستخدم 'everyone' هو مستخدم عام لتمكين مشاركة إشعارات WIS2.</p>
+<p>بيانات الاعتماد <code>everyone/everyone</code> لها حق الوصول للقراءة فقط على الموضوع 'origin/a/wis2/#'. هذا هو الموضوع الذي يتم نشر إشعارات WIS2 عليه. يمكن للوسيط العالمي الاشتراك بهذه البيانات العامة لتلقي الإشعارات.</p>
+<p>المستخدم 'everyone' لن يرى المواضيع الداخلية أو يكون قادرًا على نشر الرسائل.</p>
 </div>
-<p>افتح متصفحاً وافتح صفحة على <code>http://YOUR-HOST/wis2box-webapp</code>. تأكد من أنك مسجل الدخول ويمكنك الوصول إلى صفحة 'محرر مجموعة البيانات'.</p>
-<p>راجع قسم <a href="/practical-sessions/initializing-wis2box">تهيئة wis2box</a> إذا كنت بحاجة إلى تذكر كيفية الاتصال بالوسيط أو الوصول إلى wis2box-webapp.</p>
+<p>افتح متصفحًا وافتح صفحة إلى <code>http://YOUR-HOST/wis2box-webapp</code>. تأكد من أنك قد سجلت الدخول ويمكنك الوصول إلى صفحة 'محرر مجموعة البيانات'.</p>
+<p>راجع القسم على <a href="/practical-sessions/initializing-wis2box">تهيئة wis2box</a> إذا كنت بحاجة إلى تذكر كيفية الاتصال بالوسيط أو الوصول إلى wis2box-webapp.</p>
 <h2 id="processeswis2box">إنشاء رمز تفويض لـ processes/wis2box</h2>
-<p>ستحتاج إلى رمز تفويض لنقطة النهاية 'processes/wis2box' لنشر مجموعة بياناتك.</p>
-<p>لإنشاء رمز تفويض، قم بالوصول إلى VM التدريبي الخاص بك عبر SSH واستخدم الأوامر التالية لتسجيل الدخول إلى حاوية wis2box-management:</p>
+<p>ستحتاج إلى رمز تفويض لنقطة النهاية 'processes/wis2box' لنشر مجموعة البيانات الخاصة بك.</p>
+<p>لإنشاء رمز تفويض، قم بالوصول إلى جهاز الـ VM التدريبي الخاص بك عبر SSH واستخدم الأوامر التالية لتسجيل الدخول إلى حاوية wis2box-management:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>ثم قم بتشغيل الأمر التالي لإنشاء رمز تفويض مولد عشوائياً لنقطة النهاية 'processes/wis2box':</p>
+<p>ثم قم بتشغيل الأمر التالي لإنشاء رمز تفويض عشوائي لنقطة النهاية 'processes/wis2box':</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--path<span class="w"> </span>processes/wis2box
 </code></pre></div>
-<p>يمكنك أيضاً إنشاء رمز بقيمة محددة عن طريق توفير الرمز كوسيط للأمر:</p>
+<p>يمكنك أيضًا إنشاء رمز بقيمة محددة من خلال تقديم الرمز كوسيط للأمر:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--path<span class="w"> </span>processes/wis2box<span class="w"> </span>MyS3cretToken
 </code></pre></div>
-<p>تأكد من نسخ قيمة الرمز وتخزينها على جهازك المحلي، حيث ستحتاج إليها لاحقاً.</p>
-<p>بمجرد حصولك على الرمز، يمكنك الخروج من حاوية wis2box-management:</p>
+<p>تأكد من نسخ قيمة الرمز وتخزينها على جهازك المحلي، حيث ستحتاج إليها لاحقًا.</p>
+<p>بمجرد حصولك على الرمز الخاص بك، يمكنك الخروج من حاوية wis2box-management:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<p>[يتبع باقي الترجمة...]</p>
-<p>[ملاحظة: لقد ترجمت جزءاً من النص للتوضيح. هل تريد مني المتابعة بترجمة باقي النص؟]</p>
+<h2 id="wis2box-webapp">إنشاء مجموعة بيانات جديدة في wis2box-webapp</h2>
+<p>انتقل إلى صفحة 'محرر مجموعة البيانات' في wis2box-webapp الخاص بمثيل wis2box الخاص بك بالانتقال إلى <code>http://YOUR-HOST/wis2box-webapp</code> واختيار 'محرر مجموعة البيانات' من القائمة على الجانب الأيسر.</p>
+<p>في صفحة 'محرر مجموعة البيانات'، ضمن علامة التبويب 'مجموعات البيانات'، انقر على "إنشاء جديد ...":</p>
+<p><img alt="Create New Dataset" src="../../assets/img/wis2box-create-new-dataset.png" width="800"></p>
+<p>سيظهر نافذة منبثقة، تطلب منك تقديم:</p>
+<ul>
+<li><strong>Centre ID</strong> : هذا هو اختصار الوكالة (بأحرف صغيرة وبدون مسافات)، كما حددته عضوية WMO، التي تحدد مركز البيانات المسؤول عن نشر البيانات.</li>
+<li><strong>Data Type</strong>: نوع البيانات التي تقوم بإنشاء بيانات تعريفية لها. يمكنك الاختيار بين استخدام قالب محدد مسبقًا أو تحديد 'أخرى'. إذا تم تحديد 'أخرى'، سيتعين ملء المزيد من الحقول يدويًا.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Centre ID</p>
+<p>يجب أن يبدأ معرف المركز الخاص بك بـ TLD لبلدك، يليه شرطة (<code>-</code>) واسم مختصر لمنظمتك (على سبيل المثال <code>fr-meteofrance</code>). يجب أن يكون معرف المركز بأحرف صغيرة ويستخدم الأحرف الأبجدية الرقمية فقط. تعرض القائمة المنسدلة جميع معرفات المراكز المسجلة حاليًا على WIS2 بالإضافة إلى أي معرف مركز قمت بإنشائه بالفعل في wis2box.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">قوالب نوع البيانات</p>
+<p>يتيح لك حقل <em>Data Type</em> اختيار من قائمة القوالب المتاحة في محرر مجموعة البيانات wis2box-webapp. سيقوم القالب بملء النموذج مسبقًا بالقيم الافتراضية المقترحة المناسبة لنوع البيانات. يتضمن ذلك العنوان المقترح والكلمات الرئيسية للبيانات التعريفية ومكونات البيانات المعدة مسبقًا. سيتم تثبيت الموضوع على الموضوع الافتراضي لنوع البيانات.</p>
+<p>لغرض التدريب، سنستخدم نوع البيانات <em>weather/surface-based-observations/synop</em> الذي يتضمن مكونات إضافية للبيانات تضمن تحويل البيانات إلى تنسيق BUFR قبل نشرها.</p>
+<p>إذا كنت ترغب في نشر تنبيهات CAP باستخدام wis2box، استخدم القالب <em>weather/advisories-warnings</em>. يتضمن هذا القالب مكونًا إضافيًا للبيانات يتحقق من أن البيانات المدخلة هي تنبيه CAP صالح قبل النشر. لإنشاء تنبيهات CAP ونشرها عبر wis2box، يمكنك استخدام <a href="https://github.com/wmo-raf/cap-composer">CAP Composer</a>.</p>
+</div>
+<p>يرجى اختيار معرف مركز مناسب لمنظمتك.</p>
+<p>لـ <strong>Data Type</strong>، حدد <strong>weather/surface-based-observations/synop</strong>:</p>
+<p><img alt="Create New Dataset Form: Initial information" src="../../assets/img/wis2box-create-new-dataset-form-initial.png" width="450"></p>
+<p>انقر <em>continue to form</em> للمتابعة، سيتم الآن تقديمك إلى <strong>نموذج محرر مجموعة البيانات</strong>.</p>
+<p>بما أنك حددت نوع البيانات <strong>weather/surface-based-observations/synop</strong>، سيتم ملء النموذج مسبقًا ببعض القيم الأولية المتعلقة بهذا النوع من البيانات.</p>
+<h2 id="_3">إنشاء بيانات استكشافية</h2>
+<p>يتيح لك نموذج محرر مجموعة البيانات تقديم بيانات الاستكشاف لمجموعة البيانات الخاصة بك التي ستستخدمها حاوية wis2box-management لنشر سجل WCMP2.</p>
+<p>بما أنك حددت نوع البيانات 'weather/surface-based-observations/synop'، سيتم ملء النموذج مسبقًا ببعض القيم الافتراضية.</p>
+<p>يرجى التأكد من استبدال 'Local ID' المولد تلقائيًا بالاسم الوصفي لمجموعة البيانات الخاصة بك، على سبيل المثال 'synop-dataset-wis2training':</p>
+<p><img alt="Metadata Editor: title, description, keywords" src="../../assets/img/wis2box-metadata-editor-part1.png" width="800"></p>
+<p>راجع العنوان والكلمات الرئيسية، وقم بتحديثها حسب الضرورة، وقدم وصفًا لمجموعة البيانات الخاصة بك.</p>
+<p>لاحظ أن هناك خيارات لتغيير 'سياسة بيانات WMO' من 'أساسية' إلى 'موصى بها' أو لتعديل معرف البيانات التعريفية الافتراضي الخاص بك، يرجى الاحتفاظ بسياسة البيانات كـ 'أساسية' واستخدام معرف البيانات التعريفية الافتراضي.</p>
+<p>بعد ذلك، راجع القسم الذي يحدد 'الخصائص الزمنية' و'الخصائص المكانية' الخاصة بك. يمكنك ضبط المربع الحدودي عن طريق تحديث حقول 'خط العرض الشمالي'، 'خط العرض الجنوبي'، 'خط الطول الشرقي'، و'خط الطول الغربي':</p>
+<p><img alt="Metadata Editor: temporal properties, spatial properties" src="../../assets/img/wis2box-metadata-editor-part2.png" width="800"></p>
+<p>بعد ذلك، املأ القسم الذي يحدد 'معلومات الاتصال بمزود البيانات':</p>
+<p><img alt="Metadata Editor: contact information" src="../../assets/img/wis2box-metadata-editor-part3.png" width="800"></p>
+<p>أخيرًا، املأ القسم الذي يحدد 'معلومات جودة البيانات':</p>
+<p>بمجرد الانتهاء من ملء جميع الأقسام، انقر على 'VALIDATE FORM' وتحقق من النموذج بحثًا عن أي أخطاء:</p>
+<p><img alt="Metadata Editor: validation" src="../../assets/img/wis2box-metadata-validation-error.png" width="800"></p>
+<p>إذا كانت هناك أي أخطاء، قم بتصحيحها وانقر على 'VALIDATE FORM' مرة أخرى.</p>
+<p>تأكد من عدم وجود أخطاء وأنك تحصل على إشعار منبثق يشير إلى أن نموذجك قد تم التحقق من صحته:</p>
+<p><img alt="Metadata Editor: validation success" src="../../assets/img/wis2box-metadata-validation-success.png" width="800"></p>
+<p>بعد ذلك، قبل إرسال مجموعة البيانات الخاصة بك، راجع تعيينات البيانات لمجموعة البيانات الخاصة بك.</p>
+<h2 id="_4">تكوين تعيينات البيانات</h2>
+<p>بما أنك استخدمت قالبًا لإنشاء مجموعة البي</p>
 
 
 

@@ -618,7 +618,7 @@
         <li class="md-nav__item">
   <a href="#criando-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando gts_headers_mapping.csv
+      criando gts_headers_mapping.csv
     </span>
   </a>
   
@@ -999,7 +999,7 @@
         <li class="md-nav__item">
   <a href="#criando-gts_headers_mappingcsv" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando gts_headers_mapping.csv
+      criando gts_headers_mapping.csv
     </span>
   </a>
   
@@ -1059,17 +1059,17 @@
 
 <h1 id="adicionando-cabecalhos-gts-as-notificacoes-wis2">Adicionando cabeçalhos GTS às notificações WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objetivos de aprendizagem</p>
+<p class="admonition-title">Resultados de aprendizado</p>
 <p>Ao final desta sessão prática, você será capaz de:</p>
 <ul>
-<li>configurar um mapeamento entre nome do arquivo e cabeçalhos GTS</li>
+<li>configurar um mapeamento entre nome de arquivo e cabeçalhos GTS</li>
 <li>ingerir dados com um nome de arquivo que corresponda aos cabeçalhos GTS</li>
 <li>visualizar os cabeçalhos GTS nas notificações WIS2</li>
 </ul>
 </div>
 <h2 id="introducao">Introdução</h2>
-<p>Os Membros da WMO que desejam interromper sua transmissão de dados no GTS durante a fase de transição para o WIS2 precisarão adicionar cabeçalhos GTS às suas notificações WIS2. Esses cabeçalhos permitem que o gateway WIS2 para GTS encaminhe os dados para a rede GTS.</p>
-<p>Isso permite que os Membros que migraram para usar um WIS2 Node para publicação de dados desativem seu sistema MSS e garantam que seus dados ainda estejam disponíveis para os Membros que ainda não migraram para o WIS2.</p>
+<p>Membros da OMM que desejam interromper sua transmissão de dados no GTS durante a fase de transição para o WIS2 precisarão adicionar cabeçalhos GTS às suas notificações WIS2. Esses cabeçalhos permitem que o gateway de WIS2 para GTS encaminhe os dados para a rede GTS.</p>
+<p>Isso permite que os membros que migraram para usar um nó WIS2 para publicação de dados desativem seu sistema MSS e garantam que seus dados ainda estejam disponíveis para membros que ainda não migraram para o WIS2.</p>
 <p>A propriedade GTS na Mensagem de Notificação WIS2 precisa ser adicionada como uma propriedade adicional à Mensagem de Notificação WIS2. A propriedade GTS é um objeto JSON que contém os cabeçalhos GTS necessários para que os dados sejam encaminhados para a rede GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1078,49 +1078,49 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>No wis2box, você pode adicionar isso automaticamente às Notificações WIS2 fornecendo um arquivo adicional chamado <code>gts_headers_mapping.csv</code> que contém as informações necessárias para mapear os cabeçalhos GTS para os nomes dos arquivos recebidos.</p>
-<p>Este arquivo deve ser colocado no diretório definido por <code>WIS2BOX_HOST_DATADIR</code> no seu <code>wis2box.env</code> e deve ter as seguintes colunas:</p>
+<p>Dentro do wis2box, você pode adicionar isso às Notificações WIS2 automaticamente, fornecendo um arquivo adicional chamado <code>gts_headers_mapping.csv</code> que contém as informações necessárias para mapear os cabeçalhos GTS para os nomes de arquivos recebidos.</p>
+<p>Este arquivo deve ser colocado no diretório definido por <code>WIS2BOX_HOST_DATADIR</code> em seu <code>wis2box.env</code> e deve ter as seguintes colunas:</p>
 <ul>
 <li><code>string_in_filepath</code>: uma string que faz parte do nome do arquivo que será usada para corresponder aos cabeçalhos GTS</li>
 <li><code>TTAAii</code>: o cabeçalho TTAAii a ser adicionado à notificação WIS2</li>
 <li><code>CCCC</code>: o cabeçalho CCCC a ser adicionado à notificação WIS2</li>
 </ul>
 <h2 id="preparacao">Preparação</h2>
-<p>Certifique-se de ter acesso SSH à sua VM de estudante e que sua instância wis2box esteja em execução.</p>
-<p>Certifique-se de estar conectado ao broker MQTT da sua instância wis2box usando o MQTT Explorer. Você pode usar as credenciais públicas <code>everyone/everyone</code> para se conectar ao broker.</p>
-<p>Certifique-se de ter um navegador web aberto com o painel Grafana para sua instância acessando <code>http://YOUR-HOST:3000</code></p>
-<h2 id="criando-gts_headers_mappingcsv">Criando <code>gts_headers_mapping.csv</code></h2>
-<p>Para adicionar cabeçalhos GTS às suas notificações WIS2, é necessário um arquivo CSV que mapeie os cabeçalhos GTS para os nomes dos arquivos recebidos.</p>
-<p>O arquivo CSV deve ser nomeado (exatamente) <code>gts_headers_mapping.csv</code> e deve ser colocado no diretório definido por <code>WIS2BOX_HOST_DATADIR</code> no seu <code>wis2box.env</code>.</p>
+<p>Certifique-se de ter acesso SSH à sua VM de estudante e que sua instância wis2box esteja funcionando.</p>
+<p>Certifique-se de que você está conectado ao broker MQTT de sua instância wis2box usando o MQTT Explorer. Você pode usar as credenciais públicas <code>everyone/everyone</code> para se conectar ao broker.</p>
+<p>Certifique-se de ter um navegador web aberto com o painel do Grafana para sua instância acessando <code>http://YOUR-HOST:3000</code></p>
+<h2 id="criando-gts_headers_mappingcsv">criando <code>gts_headers_mapping.csv</code></h2>
+<p>Para adicionar cabeçalhos GTS às suas notificações WIS2, é necessário um arquivo CSV que mapeie cabeçalhos GTS para nomes de arquivos recebidos.</p>
+<p>O arquivo CSV deve ser nomeado (exatamente) <code>gts_headers_mapping.csv</code> e deve ser colocado no diretório definido por <code>WIS2BOX_HOST_DATADIR</code> em seu <code>wis2box.env</code>. </p>
 <h2 id="fornecendo-um-arquivo-gts_headers_mappingcsv">Fornecendo um arquivo <code>gts_headers_mapping.csv</code></h2>
-<p>Copie o arquivo <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> para sua instância wis2box e coloque-o no diretório definido por <code>WIS2BOX_HOST_DATADIR</code> no seu <code>wis2box.env</code>.</p>
+<p>Copie o arquivo <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> para sua instância wis2box e coloque-o no diretório definido por <code>WIS2BOX_HOST_DATADIR</code> em seu <code>wis2box.env</code>.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/gts_headers_mapping.csv<span class="w"> </span>~/wis2box-data
 </code></pre></div>
 <p>Em seguida, reinicie o contêiner wis2box-management para aplicar as alterações:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-management
 </code></pre></div>
 <h2 id="ingerindo-dados-com-cabecalhos-gts">Ingerindo dados com cabeçalhos GTS</h2>
-<p>Copie o arquivo <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> para o diretório definido por <code>WIS2BOX_HOST_DATADIR</code> no seu <code>wis2box.env</code>:</p>
+<p>Copie o arquivo <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> para o diretório definido por <code>WIS2BOX_HOST_DATADIR</code> em seu <code>wis2box.env</code>:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>~/wis2box-data
 </code></pre></div>
 <p>Em seguida, faça login no contêiner <strong>wis2box-management</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Na linha de comando do wis2box, podemos ingerir o arquivo de dados de exemplo <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> em um conjunto de dados específico da seguinte forma:</p>
+<p>A partir da linha de comando do wis2box, podemos ingerir o arquivo de dados de exemplo <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> em um conjunto de dados específico da seguinte forma:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:core.surface-based-observations.synop
 </code></pre></div>
-<p>Certifique-se de substituir a opção <code>metadata-id</code> pelo identificador correto do seu conjunto de dados.</p>
-<p>Verifique o painel Grafana para ver se os dados foram ingeridos corretamente. Se você vir algum AVISO ou ERRO, tente corrigi-los e repita o exercício com o comando <code>wis2box data ingest</code>.</p>
+<p>Certifique-se de substituir a opção <code>metadata-id</code> pelo identificador correto para seu conjunto de dados.</p>
+<p>Verifique o painel do Grafana para ver se os dados foram ingeridos corretamente. Se você vir algum AVISO ou ERRO, tente corrigi-los e repita o comando <code>wis2box data ingest</code>.</p>
 <h2 id="visualizando-os-cabecalhos-gts-na-notificacao-wis2">Visualizando os cabeçalhos GTS na Notificação WIS2</h2>
 <p>Vá para o MQTT Explorer e verifique a Mensagem de Notificação WIS2 para os dados que você acabou de ingerir.</p>
 <p>A Mensagem de Notificação WIS2 deve conter os cabeçalhos GTS que você forneceu no arquivo <code>gts_headers_mapping.csv</code>.</p>
 <h2 id="conclusao">Conclusão</h2>
 <div class="admonition success">
 <p class="admonition-title">Parabéns!</p>
-<p>Nesta sessão prática, você aprendeu como:
+<p>Nesta sessão prática, você aprendeu a:
   - adicionar cabeçalhos GTS às suas notificações WIS2
-  - verificar se os cabeçalhos GTS estão disponíveis através da sua instalação wis2box</p>
+  - verificar se os cabeçalhos GTS estão disponíveis através de sua instalação wis2box</p>
 </div>
 
 

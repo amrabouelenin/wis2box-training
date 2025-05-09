@@ -497,7 +497,7 @@
           <li class="md-nav__item">
   <a href="#webapp-storage-broker" class="md-nav__link">
     <span class="md-ellipsis">
-      Пароли для WEBAPP, STORAGE и BROKER
+      Пароли WEBAPP, STORAGE и BROKER
     </span>
   </a>
   
@@ -527,18 +527,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-wis2box" class="md-nav__link">
+  <a href="#wis2box-api" class="md-nav__link">
     <span class="md-ellipsis">
-      API wis2box
+      wis2box API
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-wis2box" class="md-nav__link">
+  <a href="#wis2box-webapp" class="md-nav__link">
     <span class="md-ellipsis">
-      Веб-приложение wis2box
+      wis2box webapp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box-broker" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box-broker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Заключение
     </span>
   </a>
   
@@ -1034,7 +1052,7 @@
           <li class="md-nav__item">
   <a href="#webapp-storage-broker" class="md-nav__link">
     <span class="md-ellipsis">
-      Пароли для WEBAPP, STORAGE и BROKER
+      Пароли WEBAPP, STORAGE и BROKER
     </span>
   </a>
   
@@ -1064,18 +1082,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-wis2box" class="md-nav__link">
+  <a href="#wis2box-api" class="md-nav__link">
     <span class="md-ellipsis">
-      API wis2box
+      wis2box API
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-wis2box" class="md-nav__link">
+  <a href="#wis2box-webapp" class="md-nav__link">
     <span class="md-ellipsis">
-      Веб-приложение wis2box
+      wis2box webapp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box-broker" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box-broker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Заключение
     </span>
   </a>
   
@@ -1099,20 +1135,20 @@
 
 <h1 id="wis2box">Инициализация wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Результаты обучения</p>
-<p>По завершении этого практического занятия вы сможете:</p>
+<p class="admonition-title">Учебные результаты</p>
+<p>К концу этой практической сессии вы сможете:</p>
 <ul>
 <li>запустить скрипт <code>wis2box-create-config.py</code> для создания начальной конфигурации</li>
 <li>запустить wis2box и проверить статус его компонентов</li>
-<li>просматривать содержимое <strong>wis2box-api</strong></li>
+<li>просмотреть содержимое <strong>wis2box-api</strong></li>
 <li>получить доступ к <strong>wis2box-webapp</strong></li>
-<li>подключиться к локальному <strong>wis2box-broker</strong> используя MQTT Explorer</li>
+<li>подключиться к локальному <strong>wis2box-broker</strong> с использованием MQTT Explorer</li>
 </ul>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Текущие учебные материалы основаны на wis2box-release 1.0.0.</p>
-<p>Смотрите <a href="../accessing-your-student-vm/">accessing-your-student-vm</a> для получения инструкций по загрузке и установке программного стека wis2box, если вы проходите это обучение вне локальной учебной сессии.</p>
+<p>Текущие учебные материалы основаны на версии wis2box-release 1.0.0.</p>
+<p>См. <a href="../accessing-your-student-vm/">accessing-your-student-vm</a> для инструкций по загрузке и установке программного стека wis2box, если вы проводите эту тренировку вне локальной учебной сессии.</p>
 </div>
 <h2 id="_1">Подготовка</h2>
 <p>Войдите в вашу назначенную виртуальную машину с вашим именем пользователя и паролем и убедитесь, что вы находитесь в директории <code>wis2box</code>:</p>
@@ -1122,17 +1158,17 @@
 <p>Для начальной конфигурации wis2box требуется:</p>
 <ul>
 <li>файл окружения <code>wis2box.env</code>, содержащий параметры конфигурации</li>
-<li>директория на хост-машине для совместного использования между хост-машиной и контейнерами wis2box, определяемая переменной окружения <code>WIS2BOX_HOST_DATADIR</code></li>
+<li>директория на хост-машине для обмена между хост-машиной и контейнерами wis2box, определенная переменной окружения <code>WIS2BOX_HOST_DATADIR</code></li>
 </ul>
 <p>Скрипт <code>wis2box-create-config.py</code> можно использовать для создания начальной конфигурации вашего wis2box.</p>
-<p>Он задаст вам ряд вопросов, чтобы помочь настроить вашу конфигурацию.</p>
-<p>После завершения работы скрипта вы сможете просмотреть и обновить конфигурационные файлы.</p>
+<p>Он задаст вам ряд вопросов для настройки вашей конфигурации.</p>
+<p>Вы сможете просмотреть и обновить файлы конфигурации после завершения работы скрипта.</p>
 <p>Запустите скрипт следующим образом:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-create-config.py
 </code></pre></div>
 <h3 id="wis2box-host-data">Директория wis2box-host-data</h3>
-<p>Скрипт попросит вас ввести директорию, которая будет использоваться для переменной окружения <code>WIS2BOX_HOST_DATADIR</code>.</p>
-<p>Обратите внимание, что необходимо указать полный путь к этой директории.</p>
+<p>Скрипт попросит вас ввести директорию для переменной окружения <code>WIS2BOX_HOST_DATADIR</code>.</p>
+<p>Обратите внимание, что вам нужно определить полный путь к этой директории.</p>
 <p>Например, если ваше имя пользователя <code>username</code>, полный путь к директории будет <code>/home/username/wis2box-data</code>:</p>
 <div class="highlight"><pre><span></span><code>username@student-vm-username:~/wis2box$ python3 wis2box-create-config.py
 Please enter the directory to be used for WIS2BOX_HOST_DATADIR:
@@ -1144,7 +1180,7 @@ y
 The directory /home/username/wis2box-data has been created.
 </code></pre></div>
 <h3 id="url-wis2box">URL wis2box</h3>
-<p>Далее вас попросят ввести URL для вашего wis2box. Это URL, который будет использоваться для доступа к веб-приложению, API и пользовательскому интерфейсу wis2box.</p>
+<p>Далее вас попросят ввести URL для вашего wis2box. Это URL, который будет использоваться для доступа к веб-приложению, API и UI wis2box.</p>
 <p>Пожалуйста, используйте <code>http://&lt;your-hostname-or-ip&gt;</code> в качестве URL.</p>
 <div class="highlight"><pre><span></span><code>Please enter the URL of the wis2box:
  For local testing the URL is http://localhost
@@ -1154,39 +1190,39 @@ The URL of the wis2box will be set to:
   http://username.wis2.training
 Is this correct? (y/n/exit)
 </code></pre></div>
-<h3 id="webapp-storage-broker">Пароли для WEBAPP, STORAGE и BROKER</h3>
-<p>При запросе <code>WIS2BOX_WEBAPP_PASSWORD</code>, <code>WIS2BOX_STORAGE_PASSWORD</code>, <code>WIS2BOX_BROKER_PASSWORD</code> вы можете использовать опцию генерации случайных паролей или задать свои собственные.</p>
+<h3 id="webapp-storage-broker">Пароли WEBAPP, STORAGE и BROKER</h3>
+<p>Вы можете использовать опцию генерации случайного пароля, когда будете запрашивать <code>WIS2BOX_WEBAPP_PASSWORD</code>, <code>WIS2BOX_STORAGE_PASSWORD</code>, <code>WIS2BOX_BROKER_PASSWORD</code> и определить свой собственный.</p>
 <p>Не беспокойтесь о запоминании этих паролей, они будут сохранены в файле <code>wis2box.env</code> в вашей директории wis2box.</p>
 <h3 id="wis2boxenv">Просмотр <code>wis2box.env</code></h3>
-<p>После завершения работы скрипта проверьте содержимое файла <code>wis2box.env</code> в текущей директории:</p>
+<p>После завершения работы скриптов проверьте содержимое файла <code>wis2box.env</code> в вашей текущей директории:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/wis2box/wis2box.env
 </code></pre></div>
 <p>Или проверьте содержимое файла через WinSCP.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Какое значение WISBOX_BASEMAP_URL в файле wis2box.env?</p>
+<p>Каково значение WISBOX_BASEMAP_URL в файле wis2box.env?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Значение по умолчанию для WIS2BOX_BASEMAP_URL - <code>https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</code>.</p>
-<p>Этот URL ссылается на тайловый сервер OpenStreetMap. Если вы хотите использовать другого провайдера карт, вы можете изменить этот URL на другой тайловый сервер.</p>
+<p>Значение по умолчанию для WIS2BOX_BASEMAP_URL — <code>https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</code>.</p>
+<p>Этот URL ссылается на сервер тайлов OpenStreetMap. Если вы хотите использовать другого поставщика карт, вы можете изменить этот URL, чтобы он указывал на другой сервер тайлов.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Какое значение переменной окружения WIS2BOX_STORAGE_DATA_RETENTION_DAYS в файле wis2box.env?</p>
+<p>Каково значение переменной окружения WIS2BOX_STORAGE_DATA_RETENTION_DAYS в файле wis2box.env?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Значение по умолчанию для WIS2BOX_STORAGE_DATA_RETENTION_DAYS составляет 30 дней. Вы можете изменить это значение на другое количество дней по желанию.</p>
-<p>Контейнер wis2box-management запускает cronjob ежедневно для удаления данных старше количества дней, определенного WIS2BOX_STORAGE_DATA_RETENTION_DAYS, из бакета <code>wis2box-public</code> и бэкенда API:</p>
+<p>Значение по умолчанию для WIS2BOX_STORAGE_DATA_RETENTION_DAYS составляет 30 дней. Вы можете изменить это значение на другое количество дней, если хотите.</p>
+<p>Контейнер wis2box-management ежедневно запускает cronjob для удаления данных, старше определенного количества дней, определенного переменной WIS2BOX_STORAGE_DATA_RETENTION_DAYS, из корзины <code>wis2box-public</code> и бэкенда API:</p>
 <div class="highlight"><pre><span></span><code>0 0 * * * su wis2box -c &quot;wis2box data clean --days=$WIS2BOX_STORAGE_DATA_RETENTION_DAYS&quot;
 </code></pre></div>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Файл <code>wis2box.env</code> содержит переменные окружения, определяющие конфигурацию вашего wis2box. Для получения дополнительной информации обратитесь к <a href="https://docs.wis2box.wis.wmo.int/en/latest/reference/configuration.html">wis2box-documentation</a>.</p>
-<p>Не редактируйте файл <code>wis2box.env</code>, если вы не уверены в вносимых изменениях. Неправильные изменения могут привести к прекращению работы вашего wis2box.</p>
-<p>Не делитесь содержимым вашего файла <code>wis2box.env</code> ни с кем, так как он содержит конфиденциальную информацию, такую как пароли.</p>
+<p>Файл <code>wis2box.env</code> содержит переменные окружения, определяющие конфигурацию вашего wis2box. Для получения дополнительной информации см. <a href="https://docs.wis2box.wis.wmo.int/en/latest/reference/configuration.html">wis2box-documentation</a>.</p>
+<p>Не редактируйте файл <code>wis2box.env</code>, если вы не уверены в вносимых изменениях. Неправильные изменения могут привести к тому, что ваш wis2box перестанет работать.</p>
+<p>Не делитесь содержимым вашего файла <code>wis2box.env</code> с кем-либо, так как он содержит конфиденциальную информацию, такую как пароли.</p>
 </div>
 <h2 id="wis2box_1">Запуск wis2box</h2>
 <p>Убедитесь, что вы находитесь в директории, содержащей файлы определения программного стека wis2box:</p>
@@ -1200,34 +1236,34 @@ Is this correct? (y/n/exit)
 Current version=Undefined, latest version=1.0.0
 Would you like to update ? (y/n/exit)
 </code></pre></div>
-<p>Выберите <code>y</code>, и скрипт создаст файл <code>docker-compose.images-1.0.0.yml</code>, загрузит необходимые Docker-образы и запустит сервисы.</p>
+<p>Выберите <code>y</code> и скрипт создаст файл <code>docker-compose.images-1.0.0.yml</code>, загрузит необходимые образы Docker и запустит сервисы.</p>
 <p>Загрузка образов может занять некоторое время в зависимости от скорости вашего интернет-соединения. Этот шаг требуется только при первом запуске wis2box.</p>
 <p>Проверьте статус следующей командой:</p>
 <div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py status
 </code></pre></div>
-<p>Повторяйте эту команду, пока все сервисы не будут запущены и работающими.</p>
+<p>Повторяйте эту команду, пока все сервисы не будут запущены и работают.</p>
 <div class="admonition note">
 <p class="admonition-title">wis2box и Docker</p>
-<p>wis2box работает как набор Docker-контейнеров, управляемых docker-compose.</p>
-<p>Сервисы определены в различных файлах <code>docker-compose*.yml</code>, которые можно найти в директории <code>~/wis2box/</code>.</p>
-<p>Python-скрипт <code>wis2box-ctl.py</code> используется для выполнения базовых команд Docker Compose, которые управляют сервисами wis2box.</p>
-<p>Вам не нужно знать детали Docker-контейнеров для запуска программного стека wis2box, но вы можете изучить файлы <code>docker-compose*.yml</code>, чтобы увидеть, как определены сервисы. Если вы хотите узнать больше о Docker, вы можете найти дополнительную информацию в <a href="https://docs.docker.com/">документации Docker</a>.</p>
+<p>wis2box работает как набор контейнеров Docker, управляемых docker-compose.</p>
+<p>Сервисы определены в различных <code>docker-compose*.yml</code>, которые можно найти в директории <code>~/wis2box/</code>.</p>
+<p>Python-скрипт <code>wis2box-ctl.py</code> используется для выполнения команд Docker Compose, которые управляют сервисами wis2box.</p>
+<p>Вам не нужно знать детали контейнеров Docker для работы с программным стеком wis2box, но вы можете изучить файлы <code>docker-compose*.yml</code>, чтобы увидеть, как определены сервисы. Если вы заинтересованы в изучении Docker, вы можете найти дополнительную информацию в <a href="https://docs.docker.com/">Docker documentation</a>.</p>
 </div>
 <p>Для входа в контейнер wis2box-management используйте следующую команду:</p>
 <div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py login
 </code></pre></div>
-<p>Внутри контейнера wis2box-management вы можете выполнять различные команды для управления вашим wis2box, например:</p>
+<p>Внутри контейнера wis2box-management вы можете выполнить различные команды для управления вашим wis2box, такие как:</p>
 <ul>
 <li><code>wis2box auth add-token --path processes/wis2box</code> : для создания токена авторизации для конечной точки <code>processes/wis2box</code></li>
-<li><code>wis2box data clean --days=&lt;number-of-days&gt;</code> : для очистки данных старше определенного количества дней из бакета <code>wis2box-public</code></li>
+<li><code>wis2box data clean --days=&lt;number-of-days&gt;</code> : для очистки данных, старше определенного количества дней, из корзины <code>wis2box-public</code></li>
 </ul>
 <p>Для выхода из контейнера и возврата на хост-машину используйте следующую команду:</p>
 <div class="highlight"><pre><span></span><code>exit
 </code></pre></div>
-<p>Выполните следующую команду, чтобы увидеть docker-контейнеры, работающие на вашей хост-машине:</p>
+<p>Выполните следующую команду, чтобы увидеть запущенные на вашей хост-машине контейнеры Docker:</p>
 <div class="highlight"><pre><span></span><code>docker ps
 </code></pre></div>
-<p>Вы должны увидеть следующие работающие контейнеры:</p>
+<p>Вы должны увидеть следующие запущенные контейнеры:</p>
 <ul>
 <li>wis2box-management</li>
 <li>wis2box-api</li>
@@ -1244,8 +1280,8 @@ Would you like to update ? (y/n/exit)
 <li>grafana</li>
 <li>loki</li>
 </ul>
-<p>Эти контейнеры являются частью программного стека wis2box и предоставляют различные сервисы, необходимые для работы wis2box.</p>
-<p>Выполните следующую команду, чтобы увидеть docker-тома, работающие на вашей хост-машине:</p>
+<p>Эти контейнеры являются частью программного стека wis2box и обеспечивают различные сервисы, необходимые для работы wis2box.</p>
+<p>Выполните следующую команду, чтобы увидеть запущенные на вашей хост-машине тома Docker:</p>
 <div class="highlight"><pre><span></span><code>docker volume ls
 </code></pre></div>
 <p>Вы должны увидеть следующие тома:</p>
@@ -1260,24 +1296,24 @@ Would you like to update ? (y/n/exit)
 </ul>
 <p>А также некоторые анонимные тома, используемые различными контейнерами.</p>
 <p>Тома, начинающиеся с <code>wis2box_project_</code>, используются для хранения постоянных данных для различных сервисов в программном стеке wis2box.</p>
-<h2 id="api-wis2box">API wis2box</h2>
-<p>wis2box содержит API (интерфейс программирования приложений), который обеспечивает доступ к данным и процессам для интерактивной визуализации, преобразования данных и публикации.</p>
+<h2 id="wis2box-api">wis2box API</h2>
+<p>wis2box содержит API (интерфейс программирования приложений), который предоставляет доступ к данным и процессы для интерактивной визуализации, трансформации данных и публикации.</p>
 <p>Откройте новую вкладку и перейдите на страницу <code>http://YOUR-HOST/oapi</code>.</p>
 <p><img alt="wis2box-api.png" src="../../assets/img/wis2box-api.png" width="800"></p>
-<p>Это главная страница API wis2box (работающего через контейнер <strong>wis2box-api</strong>).</p>
+<p>Это главная страница API wis2box (работает через контейнер <strong>wis2box-api</strong>).</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Какие коллекции сейчас доступны?</p>
+<p>Какие коллекции в настоящее время доступны?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Чтобы просмотреть коллекции, доступные через API, нажмите <code>View the collections in this service</code>:</p>
+<p>Чтобы просмотреть коллекции, в настоящее время доступные через API, нажмите <code>View the collections in this service</code>:</p>
 <p><img alt="wis2box-api-collections.png" src="../../assets/img/wis2box-api-collections.png" width="600"></p>
-<p>Доступны следующие коллекции:</p>
+<p>В настоящее время доступны следующие коллекции:</p>
 <ul>
-<li>Stations</li>
-<li>Data notifications</li>
-<li>Discovery metadata</li>
+<li>Станции</li>
+<li>Уведомления о данных</li>
+<li>Метаданные обнаружения</li>
 </ul>
 </details>
 <div class="admonition question">
@@ -1286,24 +1322,65 @@ Would you like to update ? (y/n/exit)
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Нажмите на "Data notifications", затем нажмите на <code>Browse through the items of "Data Notifications"</code>. </p>
-<p>Вы заметите, что на странице написано "No items", так как уведомления о данных еще не публиковались.</p>
+<p>Нажмите на "Уведомления о данных", затем нажмите <code>Browse through the items of "Data Notifications"</code>.</p>
+<p>Вы заметите, что на странице написано "Нет элементов", так как уведомления о данных еще не были опубликованы.</p>
 </details>
-<h2 id="-wis2box">Веб-приложение wis2box</h2>
-<p>Откройте веб-браузер и перейдите на страницу <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
-<p>Вы увидите всплывающее окно, запрашивающее ваше имя пользователя и пароль. Используйте имя пользователя по умолчанию <code>wis2box-user</code> и <code>WIS2BOX_WEBAPP_PASSWORD</code>, определенный в файле <code>wis2box.env</code>, и нажмите "Sign in":</p>
+<h2 id="wis2box-webapp">wis2box webapp</h2>
+<p>Откройте веб-браузер и посетите страницу <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
+<p>Вы увидите всплывающее окно с запросом вашего имени пользователя и пароля. Используйте имя пользователя по умолчанию <code>wis2box-user</code> и <code>WIS2BOX_WEBAPP_PASSWORD</code>, определенный в файле <code>wis2box.env</code>, и нажмите "Войти":</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Проверьте ваш wis2box.env для значения WIS2BOX_WEBAPP_PASSWORD. Вы можете использовать следующую команду для проверки значения этой переменной окружения:</p>
+<p>Проверьте ваш wis2box.env на предмет значения вашего WIS2BOX_WEBAPP_PASSWORD. Вы можете использовать следующую команду, чтобы проверить значение этой переменной окружения:</p>
 <div class="highlight"><pre><span></span><code>cat ~/wis2box/wis2box.env | grep WIS2BOX_WEBAPP_PASSWORD
 </code></pre></div>
 </div>
-<p>После входа в систему переместите мышь к меню слева, чтобы увидеть доступные опции в веб-приложении wis2box:</p>
+<p>После входа в систему переместите курсор мыши в меню слева, чтобы увидеть доступные опции в веб-приложении wis2box:</p>
 <p><img alt="wis2box-webapp-menu.png" src="../../assets/img/wis2box-webapp-menu.png" width="400"></p>
-<p>Это веб-приложение wis2box, позволяющее взаимодействовать с вашим wis2box:</p>
+<p>Это веб-приложение wis2box позволяет вам взаимодействовать с вашим wis2box:</p>
 <ul>
-<li>создавать и</li>
+<li>создавать и управлять наборами данных</li>
+<li>обновлять/просматривать метаданные вашей станции</li>
+<li>загружать ручные наблюдения с использованием формы FM-12 synop</li>
+<li>мониторить уведомления, опубликованные на вашем wis2box-broker</li>
 </ul>
+<p>Мы будем использовать это веб-приложение в последующих сессиях.</p>
+<h2 id="wis2box-broker">wis2box-broker</h2>
+<p>Откройте MQTT Explorer на вашем компьютере и подготовьте новое подключение для подключения к вашему брокеру (работает через контейнер <strong>wis2box-broker</strong>).</p>
+<p>Нажмите <code>+</code>, чтобы добавить новое подключение:</p>
+<p><img alt="mqtt-explorer-new-connection.png" src="../../assets/img/mqtt-explorer-new-connection.png" width="300"></p>
+<p>Вы можете нажать кнопку 'ADVANCED' и убедиться, что у вас есть подписки на следующие темы:</p>
+<ul>
+<li><code>#</code></li>
+<li><code>$SYS/#</code></li>
+</ul>
+<p><img alt="mqtt-explorer-topics.png" src="../../assets/img/mqtt-explorer-topics.png" width="550"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Тема <code>#</code> является подпиской с шаблоном, которая подписывается на все темы, публикуемые на брокере.</p>
+<p>Сообщения, публикуемые под темой <code>$SYS</code>, являются системными сообщениями, публикуемыми самой службой mosquitto.</p>
+</div>
+<p>Используйте следующие данные для подключения, убедившись, что вы заменили значение <code>&lt;your-host&gt;</code> на ваше имя хоста и <code>&lt;WIS2BOX_BROKER_PASSWORD&gt;</code> на значение из вашего файла <code>wis2box.env</code>:</p>
+<ul>
+<li><strong>Протокол: mqtt://</strong></li>
+<li><strong>Хост: <code>&lt;your-host&gt;</code></strong></li>
+<li><strong>Порт: 1883</strong></li>
+<li><strong>Имя пользователя: wis2box</strong></li>
+<li>**Пароль: `&lt;WIS2</li>
+</ul>
+<p>Как только вы подключитесь, убедитесь, что статистика внутреннего mosquitto публикуется вашим брокером в теме <code>$SYS</code>:</p>
+<p><img alt="mqtt-explorer-sys-topic.png" src="../../assets/img/mqtt-explorer-sys-topic.png" width="400"></p>
+<p>Оставьте MQTT Explorer открытым, так как мы будем использовать его для мониторинга сообщений, публикуемых на брокере.</p>
+<h2 id="_3">Заключение</h2>
+<div class="admonition success">
+<p class="admonition-title">Поздравляем!</p>
+<p>В этом практическом занятии вы научились:</p>
+<ul>
+<li>запускать скрипт <code>wis2box-create-config.py</code> для создания начальной конфигурации</li>
+<li>запускать wis2box и проверять статус его компонентов</li>
+<li>получать доступ к wis2box-webapp и wis2box-API в браузере</li>
+<li>подключаться к MQTT брокеру на вашей учебной VM с использованием MQTT Explorer</li>
+</ul>
+</div>
 
 
 

@@ -654,6 +654,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة رمز وصول إلى مجموعة البيانات
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      نشر بعض البيانات إلى مجموعة البيانات
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة رمز الوصول إلى رؤوس HTTP للوصول إلى مجموعة البيانات
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      الختام
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -977,6 +1013,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة رمز وصول إلى مجموعة البيانات
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      نشر بعض البيانات إلى مجموعة البيانات
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة رمز الوصول إلى رؤوس HTTP للوصول إلى مجموعة البيانات
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      الختام
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -996,37 +1068,81 @@
 <h1 id="_1">إعداد مجموعة بيانات موصى بها مع التحكم في الوصول</h1>
 <div class="admonition abstract">
 <p class="admonition-title">نتائج التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
 <li>إنشاء مجموعة بيانات جديدة بسياسة بيانات 'موصى بها'</li>
-<li>إضافة رمز وصول لمجموعة البيانات</li>
-<li>التحقق من عدم إمكانية الوصول إلى مجموعة البيانات بدون رمز الوصول</li>
-<li>إضافة رمز الوصول إلى ترويسات HTTP للوصول إلى مجموعة البيانات</li>
+<li>إضافة رمز وصول إلى مجموعة البيانات</li>
+<li>التحقق من أنه لا يمكن الوصول إلى مجموعة البيانات بدون رمز الوصول</li>
+<li>إضافة رمز الوصول إلى رؤوس HTTP للوصول إلى مجموعة البيانات</li>
 </ul>
 </div>
 <h2 id="_2">مقدمة</h2>
-<p>يمكن اختيارياً تكوين مجموعات البيانات التي لا تعتبر مجموعات بيانات 'أساسية' في WMO مع سياسة التحكم في الوصول. توفر wis2box آلية لإضافة رمز وصول إلى مجموعة البيانات مما سيمنع المستخدمين من تنزيل البيانات ما لم يقدموا رمز الوصول في ترويسات HTTP.</p>
+<p>يمكن تكوين مجموعات البيانات التي لا تعتبر 'أساسية' في WMO اختياريًا مع سياسة التحكم في الوصول. يوفر wis2box آلية لإضافة رمز وصول إلى مجموعة بيانات والتي ستمنع المستخدمين من تنزيل البيانات ما لم يقدموا رمز الوصول في رؤوس HTTP.</p>
 <h2 id="_3">التحضير</h2>
-<p>تأكد من أن لديك وصول SSH إلى الخادم الافتراضي الخاص بك وأن نظام wis2box يعمل بشكل صحيح.</p>
-<p>تأكد من أنك متصل بوسيط MQTT الخاص بنظام wis2box باستخدام MQTT Explorer. يمكنك استخدام بيانات الاعتماد العامة <code>everyone/everyone</code> للاتصال بالوسيط.</p>
-<p>تأكد من أن لديك متصفح ويب مفتوح مع wis2box-webapp لنظامك من خلال الذهاب إلى <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
+<p>تأكد من أن لديك وصول SSH إلى VM الطالب الخاص بك وأن نموذج wis2box الخاص بك قيد التشغيل.</p>
+<p>تأكد من أنك متصل بوسيط MQTT لنموذج wis2box الخاص بك باستخدام MQTT Explorer. يمكنك استخدام بيانات الاعتماد العامة <code>everyone/everyone</code> للاتصال بالوسيط.</p>
+<p>تأكد من أن لديك متصفح ويب مفتوح مع wis2box-webapp لنموذجك بالانتقال إلى <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
 <h2 id="_4">إنشاء مجموعة بيانات جديدة بسياسة بيانات 'موصى بها'</h2>
-<p>انتقل إلى صفحة 'محرر مجموعة البيانات' في wis2box-webapp وأنشئ مجموعة بيانات جديدة. اختر Data Type = 'weather/surface-weather-observations/synop'.</p>
+<p>انتقل إلى صفحة 'محرر مجموعة البيانات' في wis2box-webapp وأنشئ مجموعة بيانات جديدة. حدد نوع البيانات = 'weather/surface-weather-observations/synop'.</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-template.png" width="800"></p>
-<p>بالنسبة لـ "Centre ID"، استخدم نفس المعرف الذي استخدمته في الجلسات العملية السابقة.</p>
+<p>لـ "Centre ID"، استخدم نفس الذي استخدمته في الجلسات العملية السابقة.</p>
 <p>انقر على 'CONTINUE To FORM' للمتابعة.</p>
-<p>في محرر مجموعة البيانات، اضبط سياسة البيانات على 'recommended' (لاحظ أن تغيير سياسة البيانات سيحدث 'التسلسل الهرمي للموضوع').
-استبدل 'Local ID' المُنشأ تلقائياً باسم وصفي لمجموعة البيانات، مثل 'recommended-data-with-access-control':</p>
+<p>في محرر مجموعة البيانات، حدد سياسة البيانات على 'موصى بها' (لاحظ أن تغيير سياسة البيانات سيحدث تحديثًا لـ 'التسلسل الهرمي للموضوع').
+استبدل 'Local ID' المولد تلقائيًا بالاسم الوصفي لمجموعة البيانات، على سبيل المثال، 'recommended-data-with-access-control':</p>
 <p><img alt="create-dataset-recommended" src="../../assets/img/create-dataset-recommended.png" width="800"></p>
-<p>[باقي الترجمة تتبع نفس النمط مع الحفاظ على جميع المصطلحات التقنية والأوامر البرمجية كما هي]</p>
+<p>واصل تعبئة الحقول المطلوبة للخصائص المكانية ومعلومات الاتصال، و'تحقق من النموذج' للبحث عن أي أخطاء.</p>
+<p>أخيرًا، قدم مجموعة البيانات، باستخدام رمز المصادقة المُنشأ مسبقًا، وتحقق من أن مجموعة البيانات الجديدة قد تم إنشاؤها في wis2box-webapp.</p>
+<p>تحقق من MQTT-explorer لمعرفة أنك تتلقى رسالة إشعار WIS2 تعلن عن سجل بيانات الاكتشاف الجديد على الموضوع <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
+<h2 id="_5">إضافة رمز وصول إلى مجموعة البيانات</h2>
+<p>قم بتسجيل الدخول إلى حاوية wis2box-management،</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
+python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
+</code></pre></div>
+<p>من سطر الأوامر داخل الحاوية، يمكنك تأمين مجموعة بيانات باستخدام الأمر <code>wis2box auth add-token</code>، باستخدام العلم <code>--metadata-id</code> لتحديد معرف البيانات الوصفية لمجموعة البيانات ورمز الوصول كوسيط.</p>
+<p>على سبيل المثال، لإضافة رمز الوصول <code>S3cr3tT0k3n</code> إلى مجموعة البيانات بمعرف البيانات الوصفية <code>urn:wmo:md:not-my-centre:core.surface-based-observations.synop</code>:</p>
+<div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop<span class="w"> </span>S3cr3tT0k3n
+</code></pre></div>
+<p>اخرج من حاوية wis2box-management:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span>
+</code></pre></div>
+<h2 id="_6">نشر بعض البيانات إلى مجموعة البيانات</h2>
+<p>انسخ الملف <code>exercise-materials/access-control-exercises/aws-example.csv</code> إلى الدليل المحدد بواسطة <code>WIS2BOX_HOST_DATADIR</code> في <code>wis2box.env</code>:</p>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/access-control-exercises/aws-example.csv<span class="w"> </span>~/wis2box-data
+</code></pre></div>
+<p>ثم استخدم WinSCP أو محرر سطر الأوامر لتعديل الملف <code>aws-example.csv</code> وتحديث معرفات محطات WIGOS في البيانات المدخلة لتتطابق مع المحطات التي لديك في نموذج wis2box الخاص بك.</p>
+<p>بعد ذلك، انتقل إلى محرر المحطات في wis2box-webapp. لكل محطة استخدمتها في <code>aws-example.csv</code>، قم بتحديث حقل 'الموضوع' ليتطابق مع 'الموضوع' لمجموعة البيانات التي أنشأتها في التمرين السابق.</p>
+<p>سترتبط هذه المحطة الآن بموضوعين، واحد لمجموعة البيانات 'الأساسية' وواحد لمجموعة البيانات 'الموصى بها':</p>
+<p><img alt="edit-stations-add-topics" src="../../assets/img/edit-stations-add-topics.png" width="600"></p>
+<p>ستحتاج إلى استخدام رمزك لـ <code>collections/stations</code> لحفظ بيانات المحطة المحدثة.</p>
+<p>بعد ذلك، قم بتسجيل الدخول إلى حاوية wis2box-management:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
+python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
+</code></pre></div>
+<p>من سطر أوامر wis2box يمكننا استيعاب ملف البيانات النموذجي <code>aws-example.csv</code> في مجموعة بيانات محددة على النحو التالي:</p>
+<div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/aws-example.csv<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:reco.surface-based-observations.synop
+</code></pre></div>
+<p>تأكد من تقديم معرف البيانات الوصفية الصحيح لمجموعة البيانات الخاصة بك و<strong>تحقق من أنك تتلقى إشعارات بيانات WIS2 في MQTT Explorer</strong>، على الموضوع <code>origin/a/wis2/&lt;your-centre-id&gt;/data/recommended/surface-based-observations/synop</code>.</p>
+<p>تحقق من الرابط القياسي في رسالة إشعار WIS2 وانسخ/الصق الرابط في المتصفح لمحاولة تنزيل البيانات.</p>
+<p>يجب أن ترى خطأ 403 Forbidden.</p>
+<h2 id="http">إضافة رمز الوصول إلى رؤوس HTTP للوصول إلى مجموعة البيانات</h2>
+<p>لإثبات أن رمز الوصول مطلوب للوصول إلى مجموعة البيانات، سنعيد إنتاج الخطأ الذي رأيته في المتصفح باستخدام وظيفة سطر الأوامر <code>wget</code>.</p>
+<p>من سطر الأوامر في VM الطالب الخاص بك، استخدم أمر <code>wget</code> مع الرابط القياسي الذي نسخته من رسالة إشعار WIS2.</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>&lt;canonical-link&gt;
+</code></pre></div>
+<p>يجب أن ترى أن طلب HTTP يعود بـ <em>401 Unauthorized</em> وأن البيانات لم يتم تنزيلها.</p>
+<p>الآن أضف رمز الوصول إلى رؤوس HTTP للوصول إلى مجموعة البيانات.</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>--header<span class="o">=</span><span class="s2">&quot;Authorization: Bearer S3cr3tT0k3n&quot;</span><span class="w"> </span>&lt;canonical-link&gt;
+</code></pre></div>
+<p>الآن يجب أن يتم تنزيل البيانات بنجاح.</p>
+<h2 id="_7">الختام</h2>
 <div class="admonition success">
 <p class="admonition-title">تهانينا!</p>
 <p>في هذه الجلسة العملية، تعلمت كيفية:</p>
 <ul>
 <li>إنشاء مجموعة بيانات جديدة بسياسة بيانات 'موصى بها'</li>
-<li>إضافة رمز وصول لمجموعة البيانات</li>
-<li>التحقق من عدم إمكانية الوصول إلى مجموعة البيانات بدون رمز الوصول</li>
-<li>إضافة رمز الوصول إلى ترويسات HTTP للوصول إلى مجموعة البيانات</li>
+<li>إضافة رمز وصول إلى مجموعة البيانات</li>
+<li>التحقق من أنه لا يمكن الوصول إلى مجموعة البيانات بدون رمز الوصول</li>
+<li>إضافة رمز الوصول إلى رؤوس HTTP للوصول إلى مجموعة البيانات</li>
 </ul>
 </div>
 

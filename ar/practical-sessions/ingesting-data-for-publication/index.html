@@ -555,6 +555,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="التحضير">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      إعداد البيانات النموذجية
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة المحطة الاختبارية
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      اختبار إدخال البيانات من سطر الأوامر
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minio" class="md-nav__link">
+    <span class="md-ellipsis">
+      تحميل البيانات باستخدام واجهة الويب MinIO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      رفع البيانات باستخدام سكربت بايثون
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      الخاتمة
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -957,6 +1017,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="التحضير">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      إعداد البيانات النموذجية
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة المحطة الاختبارية
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      اختبار إدخال البيانات من سطر الأوامر
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minio" class="md-nav__link">
+    <span class="md-ellipsis">
+      تحميل البيانات باستخدام واجهة الويب MinIO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      رفع البيانات باستخدام سكربت بايثون
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      الخاتمة
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -977,29 +1097,180 @@
 
 <h1 id="_1">إدخال البيانات للنشر</h1>
 <div class="admonition abstract">
-<p class="admonition-title">مخرجات التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p class="admonition-title">نتائج التعلم</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>تفعيل سير عمل wis2box عن طريق رفع البيانات إلى MinIO باستخدام سطر الأوامر، أو واجهة MinIO الرسومية، أو SFTP، أو سكريبت Python.</li>
-<li>الوصول إلى لوحة معلومات Grafana لمراقبة حالة إدخال البيانات وعرض سجلات نظام wis2box الخاص بك.</li>
-<li>عرض إشعارات بيانات WIS2 المنشورة بواسطة نظام wis2box الخاص بك باستخدام MQTT Explorer.</li>
+<li>تشغيل سير عمل wis2box عن طريق تحميل البيانات إلى MinIO باستخدام سطر الأوامر، واجهة الويب MinIO، SFTP، أو سكريبت Python.</li>
+<li>الوصول إلى لوحة تحكم Grafana لمراقبة حالة إدخال البيانات وعرض سجلات نسختك من wis2box.</li>
+<li>عرض إشعارات بيانات WIS2 التي نشرتها نسختك من wis2box باستخدام MQTT Explorer.</li>
 </ul>
 </div>
 <h2 id="_2">مقدمة</h2>
-<p>في WIS2، يتم مشاركة البيانات في الوقت الفعلي باستخدام إشعارات بيانات WIS2 التي تحتوي على رابط "قانوني" يمكن من خلاله تنزيل البيانات.</p>
-<p>لتفعيل سير عمل البيانات في WIS2 Node باستخدام برنامج wis2box، يجب رفع البيانات إلى مجلد <strong>wis2box-incoming</strong> في <strong>MinIO</strong>، مما يبدأ سير عمل wis2box. تؤدي هذه العملية إلى نشر البيانات عبر إشعار بيانات WIS2. اعتماداً على تعيينات البيانات المكونة في نظام wis2box الخاص بك، قد يتم تحويل البيانات إلى تنسيق BUFR قبل نشرها.</p>
-<p>في هذا التمرين، سنستخدم ملفات بيانات نموذجية لتفعيل سير عمل wis2box و<strong>نشر إشعارات بيانات WIS2</strong> لمجموعة البيانات التي قمت بتكوينها في الجلسة العملية السابقة.</p>
-<p>خلال التمرين، سنراقب حالة إدخال البيانات باستخدام <strong>لوحة معلومات Grafana</strong> و<strong>MQTT Explorer</strong>. تستخدم لوحة معلومات Grafana البيانات من Prometheus وLoki لعرض حالة نظام wis2box الخاص بك، بينما يتيح MQTT Explorer رؤية إشعارات بيانات WIS2 المنشورة بواسطة نظام wis2box الخاص بك.</p>
-<p>لاحظ أن wis2box سيقوم بتحويل البيانات النموذجية إلى تنسيق BUFR قبل نشرها إلى وسيط MQTT، وفقاً لتعيينات البيانات المكونة مسبقاً في مجموعة بياناتك. في هذا التمرين، سنركز على الطرق المختلفة لرفع البيانات إلى نظام wis2box الخاص بك والتحقق من نجاح الإدخال والنشر. سيتم تناول تحويل البيانات لاحقاً في الجلسة العملية <a href="../data-conversion-tools">أدوات تحويل البيانات</a>.</p>
+<p>في WIS2، يتم مشاركة البيانات في الوقت الفعلي باستخدام إشعارات بيانات WIS2 التي تحتوي على رابط "قياسي" يمكن من خلاله تنزيل البيانات.</p>
+<p>لتشغيل سير عمل البيانات في عقدة WIS2 باستخدام برنامج wis2box، يجب تحميل البيانات إلى الدلو <strong>wis2box-incoming</strong> في <strong>MinIO</strong>، والذي يبدأ سير عمل wis2box. يؤدي هذا الإجراء إلى نشر البيانات عبر إشعار بيانات WIS2. اعتمادًا على تعيينات البيانات المكونة في نسختك من wis2box، قد يتم تحويل البيانات إلى تنسيق BUFR قبل نشرها.</p>
+<p>في هذا التمرين، سنستخدم ملفات بيانات عينة لتشغيل سير عمل wis2box و<strong>نشر إشعارات بيانات WIS2</strong> لمجموعة البيانات التي قمت بتكوينها في الجلسة العملية السابقة.</p>
+<p>خلال التمرين، سنراقب حالة إدخال البيانات باستخدام <strong>لوحة تحكم Grafana</strong> و<strong>MQTT Explorer</strong>. تستخدم لوحة تحكم Grafana البيانات من Prometheus و Loki لعرض حالة wis2box الخاصة بك، بينما يتيح لك MQTT Explorer رؤية إشعارات بيانات WIS2 التي نشرتها نسختك من wis2box.</p>
+<p>لاحظ أن wis2box سيحول البيانات النموذجية إلى تنسيق BUFR قبل نشرها إلى وسيط MQTT، وفقًا لتعيينات البيانات المسبقة الإعداد في مجموعة البيانات الخاصة بك. في هذا التمرين، سنركز على الطرق المختلفة لتحميل البيانات إلى نسختك من wis2box والتحقق من الإدخال والنشر الناجحين. سيتم تغطية تحويل البيانات لاحقًا في جلسة عملية <a href="../data-conversion-tools">أدوات تحويل البيانات</a>.</p>
 <h2 id="_3">التحضير</h2>
-<p>يستخدم هذا القسم مجموعة البيانات "surface-based-observations/synop" التي تم إنشاؤها سابقاً في الجلسة العملية <a href="/practical-sessions/configuring-wis2box-datasets">تكوين مجموعات البيانات في wis2box</a>. كما يتطلب معرفة بتكوين المحطات في <strong>wis2box-webapp</strong>، كما هو موضح في الجلسة العملية <a href="/practical-sessions/configuring-station-metadata">تكوين بيانات تعريف المحطات</a>.</p>
-<p>تأكد من قدرتك على تسجيل الدخول إلى الخادم الافتراضي الخاص بك باستخدام عميل SSH (مثل PuTTY).</p>
-<p>تأكد من أن wis2box يعمل:</p>
+<p>تستخدم هذه القسم مجموعة البيانات لـ "surface-based-observations/synop" التي تم إنشاؤها مسبقًا في جلسة عملية <a href="../configuring-wis2box-datasets">تكوين مجموعات البيانات في wis2box</a>. كما يتطلب معرفة بتكوين المحطات في <strong>wis2box-webapp</strong>، كما هو موضح في جلسة عملية <a href="../configuring-station-metadata">تكوين بيانات المحطة</a>.</p>
+<p>تأكد من أنك تستطيع تسجيل الدخول إلى جهاز الطالب الافتراضي باستخدام عميل SSH الخاص بك (مثل PuTTY).</p>
+<p>تأكد من أن wis2box قيد التشغيل:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box/
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>start
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>status
 </code></pre></div>
-<p>[يستمر النص مع الحفاظ على نفس التنسيق والمصطلحات التقنية...]</p>
+<p>تأكد من أن MQTT Explorer قيد التشغيل ومتصل بنسختك باستخدام بيانات الاعتماد العامة <code>everyone/everyone</code> مع اشتراك في الموضوع <code>origin/a/wis2/#</code>.</p>
+<p>تأكد من أن لديك متصفح ويب مفتوح مع لوحة تحكم Grafana لنسختك عن طريق التنقل إلى <code>http://YOUR-HOST:3000</code>.</p>
+<h3 id="_4">إعداد البيانات النموذجية</h3>
+<p>انسخ الدليل <code>exercise-materials/data-ingest-exercises</code> إلى الدليل الذي حددته كـ <code>WIS2BOX_HOST_DATADIR</code> في ملف <code>wis2box.env</code> الخاص بك:</p>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>-r<span class="w"> </span>~/exercise-materials/data-ingest-exercises<span class="w"> </span>~/wis2box-data/
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>يتم تركيب <code>WIS2BOX_HOST_DATADIR</code> كـ <code>/data/wis2box/</code> داخل حاوية wis2box-management بواسطة ملف <code>docker-compose.yml</code> المضمن في دليل <code>wis2box</code>.</p>
+<p>هذا يتيح لك مشاركة البيانات بين الخادم والحاوية.</p>
+</div>
+<h3 id="_5">إضافة المحطة الاختبارية</h3>
+<p>أضف المحطة بمعرف WIGOS <code>0-20000-0-64400</code> إلى نسختك من wis2box باستخدام محرر المحطات في wis2box-webapp.</p>
+<p>استرجع المحطة من OSCAR:</p>
+<p><img alt="oscar-station" src="../../assets/img/webapp-test-station-oscar-search.png" width="600"></p>
+<p>أضف المحطة إلى مجموعات البيانات التي أنشأتها للنشر على "../surface-based-observations/synop" واحفظ التغييرات باستخدام رمز المصادقة الخاص بك:</p>
+<p><img alt="webapp-test-station" src="../../assets/img/webapp-test-station-save.png" width="800"></p>
+<p>لاحظ أنه يمكنك إزالة هذه المحطة من مجموعة البيانات الخاصة بك بعد الجلسة العملية.</p>
+<h2 id="_6">اختبار إدخال البيانات من سطر الأوامر</h2>
+<p>في هذا التمرين، سنستخدم الأمر <code>wis2box data ingest</code> لتحميل البيانات إلى MinIO.</p>
+<p>تأكد من أنك في دليل <code>wis2box</code> وقم بتسجيل الدخول إلى حاوية <strong>wis2box-management</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
+python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
+</code></pre></div>
+<p>تحقق من توفر البيانات النموذجية التالية في الدليل <code>/data/wis2box/</code> داخل حاوية <strong>wis2box-management</strong>:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lh<span class="w"> </span>/data/wis2box/data-ingest-exercises/synop_202412030900.txt
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">إدخال البيانات باستخدام <code>wis2box data ingest</code></p>
+<p>نفذ الأمر التالي لإدخال ملف البيانات النموذجي إلى نسختك من wis2box:</p>
+<div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/data-ingest-exercises/synop_202412030900.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:synop-test
+</code></pre></div>
+<p>هل تم إدخال البيانات بنجاح؟ إذا لم يكن كذلك، ما هو رسالة الخطأ، وكيف يمكنك إصلاحها؟</p>
+</div>
+<details class="success">
+<summary>انقر للكشف عن الإجابة</summary>
+<p>لم يتم إدخال البيانات بنجاح. يجب أن ترى ما يلي:</p>
+<div class="highlight"><pre><span></span><code>Error:<span class="w"> </span><span class="nv">metadata_id</span><span class="o">=</span>urn:wmo:md:not-my-centre:synop-test<span class="w"> </span>not<span class="w"> </span>found<span class="w"> </span><span class="k">in</span><span class="w"> </span>data<span class="w"> </span>mappings
+</code></pre></div>
+<p>تشير رسالة الخطأ إلى أن المعرف الوصفي الذي قدمته لا يتطابق مع أي من مجموعات البيانات التي قمت بتكوينها في نسختك من wis2box.</p>
+<p>قدم المعرف الوصفي الصحيح الذي يتطابق مع مجموعة البيانات التي أنشأتها في الجلسة العملية السابقة وكرر أمر إدخال البيانات حتى ترى الإخراج التالي:</p>
+<div class="highlight"><pre><span></span><code>Processing<span class="w"> </span>/data/wis2box/data-ingest-exercises/synop_202412030900.txt
+Done
+</code></pre></div>
+</details>
+<p>انتقل إلى واجهة MinIO في متصفحك وتحقق مما إذا كان الملف <code>synop_202412030900.txt</code> قد تم تحميله إلى دلو <code>wis2box-incoming</code>. يجب أن ترى دليلًا جديدًا باسم مجموعة البيانات التي قدمتها في خيار <code>--metadata-id</code>، وداخل هذا الدليل، ستجد الملف <code>synop_202412030900.txt</code>:</p>
+<p><img alt="minio-wis2box-incoming-dataset-folder" src="../../assets/img/minio-data-ingest-test-data.png" width="800"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>قام الأمر <code>wis2box data ingest</code> بتحميل الملف إلى دلو <code>wis2box-incoming</code> في MinIO في دليل باسم المعرف الوصفي الذي قدمته.</p>
+</div>
+<p>انتقل إلى لوحة تحكم Grafana في متصفحك وتحقق من حالة إدخال البيانات.</p>
+<div class="admonition question">
+<p class="admonition-title">تحقق من حالة إدخال البيانات على Grafana</p>
+<p>انتقل إلى لوحة تحكم Grafana على <strong>http://your-host:3000</strong> وتحقق من حالة إدخال البيانات في متصفحك.</p>
+<p>كيف يمكنك معرفة ما إذا تم إدخال البيانات ونشرها بنجاح؟</p>
+</div>
+<details class="success">
+<summary>انقر للكشف عن الإجابة</summary>
+<p>إذا تم إدخال البيانات بنجاح، يجب أن ترى ما يلي:</p>
+<p><img alt="grafana_data_ingest" src="../../assets/img/grafana_data-ingest-test.png" width="400">  </p>
+<p>إذا لم تر ذلك، يرجى التحقق من رسائل التحذير أو الخطأ المعروضة في أسفل لوحة التحكم ومحاولة حلها.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">تحقق من وسيط MQTT لإشعارات WIS2</p>
+<p>انتقل إلى MQTT Explorer وتحقق مما إذا كان بإمكانك رؤية رسالة إشعار WIS2 للبيانات التي أدخلتها للتو.</p>
+<p>كم عدد إشعارات بيانات WIS2 التي نشرتها نسختك من wis2box؟</p>
+<p>كيف يمكنك الوصول إلى محتوى البيانات المنشورة؟</p>
+</div>
+<details class="success">
+<summary>انقر للكشف عن الإجابة</summary>
+<p>يجب أن ترى إشعار بيانات WIS2 واحد تم نشره بواسطة wis2box الخاصة بك.</p>
+<p>للوصول إلى محتوى البيانات المنشورة، يمكنك توسيع هيكل الموضوع لرؤية المستويات المختلفة للرسالة حتى تصل إلى المستوى الأخير ومراجعة محتوى الرسالة.</p>
+<p>يحتوي محتوى الرسالة على قسم "روابط" مع مفتاح "rel" بقيمة "canonical" ومفتاح "href" برابط URL لتنزيل البيانات. سيكون تنسيق الرابط URL على النحو التالي <code>http://YOUR-HOST/data/...</code>. </p>
+<p>لاحظ أن تنسيق البيانات هو BUFR، وستحتاج إلى محلل BUFR لعرض محتوى البيانات. تنسيق BUFR هو تنسيق ثنائي يستخدمه الخدمات الجوية لتبادل البيانات. قامت الإضافات البيانية داخل wis2box بتحويل البيانات إلى BUFR قبل نشرها.</p>
+</details>
+<p>بعد إكمال هذا التمرين، اخرج من حاوية <strong>wis2box-management</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span>
+</code></pre></div>
+<h2 id="minio">تحميل البيانات باستخدام واجهة الويب MinIO</h2>
+<p>في التمارين السابقة، قمت بتحميل البيانات المتوفرة على مضيف wis2box إلى MinIO باستخدام الأمر <code>wis2box data ingest</code>. </p>
+<p>التالي، سنستخدم واجهة الويب MinIO، التي تتيح لك تنزيل وتحميل البيانات إلى MinIO باستخدام متصفح ويب.</p>
+<div class="admonition question">
+<p class="admonition-title">إعادة تحميل البيانات باستخدام واجهة الويب MinIO</p>
+<p>انتقل إلى واجهة الويب MinIO في متصفحك وتصفح إلى دلو <code>wis2box-incoming</code>. سترى الملف <code>synop_202412030900.txt</code> الذي قمت بتحميله في التمارين السابقة.</p>
+<p>انقر على الملف، وستتاح لك خيار تنزيله:</p>
+<p><img alt="minio-wis2box-incoming-dataset-folder" src="../../assets/img/minio-download.png" width="800"></p>
+<p>يمكنك تنزيل</p>
+</div>
+<p>إذا استخدمت مسارًا خاطئًا، سترى رسالة خطأ في السجلات.</p>
+<h2 id="_7">رفع البيانات باستخدام سكربت بايثون</h2>
+<p>في هذا التمرين، سنستخدم عميل بايثون لـ MinIO لنسخ البيانات إلى MinIO.</p>
+<p>يوفر MinIO عميل بايثون، يمكن تثبيته كما يلي:</p>
+<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
+</code></pre></div>
+<p>على جهاز الطالب الافتراضي، سيكون حزمة 'minio' لبايثون مثبتة بالفعل.</p>
+<p>في دليل <code>exercise-materials/data-ingest-exercises</code>، ستجد سكربت مثال <code>copy_file_to_incoming.py</code> الذي يمكن استخدامه لنسخ الملفات إلى MinIO.</p>
+<p>حاول تشغيل السكربت لنسخ ملف البيانات النموذجي <code>synop_202501030900.txt</code> إلى دلو <code>wis2box-incoming</code> في MinIO كما يلي:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box-data/data-ingest-exercises
+python3<span class="w"> </span>copy_file_to_incoming.py<span class="w"> </span>synop_202501030900.txt
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ستحصل على خطأ لأن السكربت لم يتم تكوينه للوصول إلى نقطة نهاية MinIO على wis2box الخاص بك بعد.</p>
+</div>
+<p>يحتاج السكربت إلى معرفة نقطة النهاية الصحيحة للوصول إلى MinIO على wis2box الخاص بك. إذا كان wis2box يعمل على مضيفك، فإن نقطة نهاية MinIO متاحة على <code>http://YOUR-HOST:9000</code>. يحتاج السكربت أيضًا إلى تحديث بكلمة مرور التخزين الخاصة بك والمسار في دلو MinIO لتخزين البيانات.</p>
+<div class="admonition question">
+<p class="admonition-title">تحديث السكربت وإدخال البيانات CSV</p>
+<p>قم بتعديل السكربت <code>copy_file_to_incoming.py</code> لمعالجة الأخطاء، باستخدام إحدى الطرق التالية:
+- من سطر الأوامر: استخدم محرر النصوص <code>nano</code> أو <code>vim</code> لتعديل السكربت.
+- باستخدام WinSCP: ابدأ اتصالًا جديدًا باستخدام بروتوكول الملف <code>SCP</code> ونفس بيانات الاعتماد كعميل SSH الخاص بك. انتقل إلى الدليل <code>wis2box-data/data-ingest-exercises</code> وعدل <code>copy_file_to_incoming.py</code> باستخدام محرر النصوص المدمج.</p>
+<p>تأكد من أنك:</p>
+<ul>
+<li>حددت نقطة نهاية MinIO الصحيحة لمضيفك.</li>
+<li>قدمت كلمة المرور الصحيحة لتخزينك في MinIO.</li>
+<li>قدمت المسار الصحيح في دلو MinIO لتخزين البيانات.</li>
+</ul>
+<p>أعد تشغيل السكربت لإدخال ملف البيانات النموذجي <code>synop_202501030900.txt</code> إلى MinIO:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>~/wis2box-data/<span class="w"> </span>~/wis2box-data/synop_202501030900.txt
+</code></pre></div>
+<p>تأكد من حل الأخطاء.</p>
+</div>
+<p>بمجرد أن تتمكن من تشغيل السكربت بنجاح، سترى رسالة تشير إلى أن الملف تم نسخه إلى MinIO، ويجب أن ترى إشعارات البيانات التي نشرتها wis2box في MQTT Explorer.</p>
+<p>يمكنك أيضًا التحقق من لوحة تحكم Grafana لمعرفة ما إذا تم إدخال البيانات ونشرها بنجاح.</p>
+<p>الآن بعد أن بدأ السكربت في العمل، يمكنك محاولة نسخ ملفات أخرى إلى MinIO باستخدام نفس السكربت.</p>
+<div class="admonition question">
+<p class="admonition-title">إدخال البيانات الثنائية بتنسيق BUFR</p>
+<p>قم بتشغيل الأمر التالي لنسخ ملف البيانات الثنائية <code>bufr-example.bin</code> إلى دلو <code>wis2box-incoming</code> في MinIO:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>copy_file_to_incoming.py<span class="w"> </span>bufr-example.bin
+</code></pre></div>
+</div>
+<p>تحقق من لوحة تحكم Grafana وMQTT Explorer لمعرفة ما إذا تم إدخال البيانات الاختبارية ونشرها بنجاح. إذا رأيت أي أخطاء، حاول حلها.</p>
+<div class="admonition question">
+<p class="admonition-title">التحقق من إدخال البيانات</p>
+<p>كم عدد الرسائل التي تم نشرها إلى وسيط MQTT لهذه العينة من البيانات؟</p>
+</div>
+<details class="success">
+<summary>انقر لكشف الإجابة</summary>
+<p>سترى أخطاء مُبلغ عنها في Grafana حيث أن المحطات في ملف BUFR لم تُعرف في قائمة المحطات لـ wis2box الخاص بك.</p>
+<p>إذا تم تعريف جميع المحطات المستخدمة في ملف BUFR في wis2box الخاص بك، يجب أن ترى 10 رسائل نُشرت إلى وسيط MQTT. كل إشعار يتوافق مع بيانات لمحطة واحدة لطابع زمني واحد للملاحظة.</p>
+<p>الإضافة <code>wis2box.data.bufr4.ObservationDataBUFR</code> تقسم ملف BUFR إلى رسائل BUFR فردية وتنشر رسالة واحدة لكل محطة وطابع زمني للملاحظة.</p>
+</details>
+<h2 id="_8">الخاتمة</h2>
+<div class="admonition success">
+<p class="admonition-title">تهانينا!</p>
+<p>في هذه الجلسة العملية، تعلمت كيفية:</p>
+<ul>
+<li>تشغيل سير عمل wis2box عن طريق رفع البيانات إلى MinIO باستخدام طرق مختلفة.</li>
+<li>تصحيح الأخطاء الشائعة في عملية إدخال البيانات باستخدام لوحة تحكم Grafana وسجلات wis2box الخاصة بك.</li>
+<li>مراقبة إشعارات بيانات WIS2 التي نشرتها wis2box الخاصة بك في لوحة تحكم Grafana وMQTT Explorer.</li>
+</ul>
+</div>
 
 
 

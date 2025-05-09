@@ -26,7 +26,7 @@
     
     
       
-        <title>ورقة غش لينكس - WIS2 in a box training</title>
+        <title>دليل Linux المختصر - WIS2 in a box training</title>
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#linux" class="md-skip">
           انتقل إلى المحتوى
         </a>
       
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ورقة غش لينكس
+              دليل Linux المختصر
             
           </span>
         </div>
@@ -745,7 +745,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       نظرة عامة
     </span>
@@ -764,16 +764,16 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      التنقل في الدلائل
+      التنقل بين المجلدات
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الملفات
     </span>
@@ -782,7 +782,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       ربط الأوامر معاً باستخدام الأنابيب
     </span>
@@ -975,7 +975,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       نظرة عامة
     </span>
@@ -994,16 +994,16 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      التنقل في الدلائل
+      التنقل بين المجلدات
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       إدارة الملفات
     </span>
@@ -1012,7 +1012,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       ربط الأوامر معاً باستخدام الأنابيب
     </span>
@@ -1041,53 +1041,52 @@
 
 
 
-<h1 id="_1">ورقة غش لينكس</h1>
-<h2 id="_2">نظرة عامة</h2>
-<p>المفاهيم الأساسية للعمل في نظام التشغيل لينكس هي <strong>الملفات</strong> و<strong>المجلدات</strong> (الدلائل) المنظمة في
-هيكل شجري ضمن <strong>بيئة</strong>.</p>
-<p>بمجرد تسجيل الدخول إلى نظام لينكس، تعمل في <strong>واجهة الأوامر</strong> حيث يمكنك العمل على الملفات والمجلدات،
-من خلال تنفيذ الأوامر المثبتة على النظام. واجهة الأوامر Bash هي واجهة شائعة ومنتشرة والتي
-عادة ما توجد في أنظمة لينكس.</p>
+<h1 id="linux">دليل Linux المختصر</h1>
+<h2 id="_1">نظرة عامة</h2>
+<p>المفاهيم الأساسية للعمل في نظام التشغيل Linux هي <strong>الملفات</strong> و<strong>المجلدات</strong> المنظمة في
+هيكل شجري داخل <strong>البيئة</strong>.</p>
+<p>بمجرد تسجيل الدخول إلى نظام Linux، تعمل داخل <strong>الواجهة البرمجية</strong> حيث يمكنك التعامل مع الملفات والمجلدات،
+من خلال تنفيذ الأوامر المثبتة على النظام. واجهة Bash هي واجهة شائعة ومنتشرة عادةً في أنظمة Linux.</p>
 <h2 id="bash">Bash</h2>
-<h3 id="_3">التنقل في الدلائل</h3>
+<h3 id="_2">التنقل بين المجلدات</h3>
 <ul>
-<li>الدخول إلى دليل مطلق:</li>
+<li>الدخول إلى مجلد مطلق:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/dir1/dir2
 </code></pre></div>
 <ul>
-<li>الدخول إلى دليل نسبي:</li>
+<li>الدخول إلى مجلد نسبي:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>./somedir
 </code></pre></div>
 <ul>
-<li>الانتقال للدليل الأعلى:</li>
+<li>الانتقال للمجلد الأعلى:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
 <ul>
-<li>الانتقال للدليلين الأعلى:</li>
+<li>الانتقال لمجلدين للأعلى:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>../..
 </code></pre></div>
 <ul>
-<li>الانتقال إلى دليل "المنزل" الخاص بك:</li>
+<li>الانتقال إلى مجلد "المنزل" الخاص بك:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>-
 </code></pre></div>
-<h3 id="_4">إدارة الملفات</h3>
+<h3 id="_3">إدارة الملفات</h3>
 <ul>
-<li>إدراج الملفات في الدليل الحالي:</li>
+<li>عرض الملفات في المجلد الحالي:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls
 </code></pre></div>
 <ul>
-<li>إدراج الملفات في الدليل الحالي بمزيد من التفاصيل:</li>
+<li>عرض الملفات في المجلد الحالي بمزيد من التفاصيل:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l
 </code></pre></div>
 <ul>
-<li>إدراج جذر نظام الملفات:</li>
+<li>عرض جذر نظام الملفات:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>/
 </code></pre></div>
@@ -1112,7 +1111,7 @@
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>file1<span class="w"> </span>file2
 </code></pre></div>
 <ul>
-<li>البدائل: العمل على أنماط الملفات:</li>
+<li>البدائل: التعامل مع أنماط الملفات:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>fil*<span class="w">  </span><span class="c1"># يطابق file1 و file2</span>
 </code></pre></div>
@@ -1132,17 +1131,17 @@
 <div class="highlight"><pre><span></span><code>rm<span class="w"> </span>newfile
 </code></pre></div>
 <ul>
-<li>حذف كل الملفات بنفس امتداد الملف:</li>
+<li>حذف جميع الملفات بنفس امتداد الملف:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>rm<span class="w"> </span>*.dat
 </code></pre></div>
 <ul>
-<li>إنشاء دليل</li>
+<li>إنشاء مجلد</li>
 </ul>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>dir1
 </code></pre></div>
-<h3 id="_5">ربط الأوامر معاً باستخدام الأنابيب</h3>
-<p>تسمح الأنابيب للمستخدم بإرسال ناتج أمر إلى أمر آخر باستخدام رمز الأنبوب <code>|</code>:</p>
+<h3 id="_4">ربط الأوامر معاً باستخدام الأنابيب</h3>
+<p>تسمح الأنابيب للمستخدم بإرسال ناتج أمر إلى آخر باستخدام رمز الأنبوب <code>|</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hi&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/hi/bye/&#39;</span>
 </code></pre></div>
 <ul>
@@ -1156,7 +1155,7 @@
 cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>fish
 </code></pre></div>
 <ul>
-<li>تجاهل الحالة:</li>
+<li>تجاهل حالة الأحرف:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-i<span class="w"> </span>FISH<span class="w"> </span>test-file.txt
 </code></pre></div>
@@ -1176,16 +1175,16 @@ cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">
 <div class="highlight"><pre><span></span><code>wc<span class="w"> </span>-l<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
-<li>عرض الناتج شاشة بشاشة:</li>
+<li>عرض الناتج شاشة تلو الأخرى:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>more<span class="w"> </span>test-file.txt
 </code></pre></div>
-<p>...مع التحكم:</p>
+<p>...مع التحكمات:</p>
 <ul>
-<li>التمرير لأسفل سطرًا بسطر: <em>enter</em></li>
+<li>التمرير لأسفل سطراً بسطر: <em>enter</em></li>
 <li>الانتقال إلى الصفحة التالية: <em>space bar</em></li>
 <li>
-<p>العودة صفحة واحدة: <em>b</em></p>
+<p>العودة لصفحة واحدة للخلف: <em>b</em></p>
 </li>
 <li>
 <p>عرض أول 3 أسطر من الملف:</p>
@@ -1194,7 +1193,7 @@ cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">
 <div class="highlight"><pre><span></span><code>head<span class="w"> </span>-3<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
-<li>عرض آخر 2 سطر من الملف:</li>
+<li>عرض آخر سطرين من الملف:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-2<span class="w"> </span>test-file.txt
 </code></pre></div>

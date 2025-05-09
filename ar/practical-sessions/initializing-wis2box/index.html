@@ -493,9 +493,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wis2box-host-data" class="md-nav__link">
+  <a href="#wis2box-host" class="md-nav__link">
     <span class="md-ellipsis">
-      مجلد wis2box-host-data
+      دليل بيانات wis2box-host
     </span>
   </a>
   
@@ -513,7 +513,7 @@
           <li class="md-nav__item">
   <a href="#webapp-storage-broker" class="md-nav__link">
     <span class="md-ellipsis">
-      كلمات مرور WEBAPP و STORAGE و BROKER
+      كلمات مرور WEBAPP، STORAGE و BROKER
     </span>
   </a>
   
@@ -530,6 +530,33 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      بدء تشغيل wis2box
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      واجهة برمجة تطبيقات wis2box
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      الخلاصة
+    </span>
+  </a>
   
 </li>
       
@@ -1003,9 +1030,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wis2box-host-data" class="md-nav__link">
+  <a href="#wis2box-host" class="md-nav__link">
     <span class="md-ellipsis">
-      مجلد wis2box-host-data
+      دليل بيانات wis2box-host
     </span>
   </a>
   
@@ -1023,7 +1050,7 @@
           <li class="md-nav__item">
   <a href="#webapp-storage-broker" class="md-nav__link">
     <span class="md-ellipsis">
-      كلمات مرور WEBAPP و STORAGE و BROKER
+      كلمات مرور WEBAPP، STORAGE و BROKER
     </span>
   </a>
   
@@ -1040,6 +1067,33 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      بدء تشغيل wis2box
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      واجهة برمجة تطبيقات wis2box
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      الخلاصة
+    </span>
+  </a>
   
 </li>
       
@@ -1061,10 +1115,10 @@
 
 <h1 id="wis2box">تهيئة wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">مخرجات التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p class="admonition-title">نتائج التعلم</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>تشغيل برنامج <code>wis2box-create-config.py</code> لإنشاء التكوين الأولي</li>
+<li>تشغيل السكربت <code>wis2box-create-config.py</code> لإنشاء التكوين الأولي</li>
 <li>بدء تشغيل wis2box والتحقق من حالة مكوناته</li>
 <li>عرض محتويات <strong>wis2box-api</strong></li>
 <li>الوصول إلى <strong>wis2box-webapp</strong></li>
@@ -1073,29 +1127,29 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>تستند المواد التدريبية الحالية على wis2box-release 1.0.0.</p>
-<p>راجع <a href="../accessing-your-student-vm/">accessing-your-student-vm</a> للحصول على تعليمات حول كيفية تنزيل وتثبيت حزمة برامج wis2box إذا كنت تقوم بهذا التدريب خارج جلسة تدريب محلية.</p>
+<p>المواد التدريبية الحالية مبنية على إصدار wis2box-release 1.0.0.</p>
+<p>انظر <a href="../accessing-your-student-vm/">accessing-your-student-vm</a> للحصول على تعليمات حول كيفية تنزيل وتثبيت حزمة برامج wis2box إذا كنت تقوم بتشغيل هذا التدريب خارج جلسة تدريب محلية.</p>
 </div>
 <h2 id="_1">التحضير</h2>
-<p>قم بتسجيل الدخول إلى الجهاز الافتراضي المخصص لك باستخدام اسم المستخدم وكلمة المرور وتأكد من أنك في مجلد <code>wis2box</code>:</p>
+<p>قم بتسجيل الدخول إلى الجهاز الافتراضي المخصص لك باستخدام اسم المستخدم وكلمة المرور الخاصة بك وتأكد من أنك في دليل <code>wis2box</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 </code></pre></div>
 <h2 id="_2">إنشاء التكوين الأولي</h2>
-<p>يتطلب التكوين الأولي لـ wis2box:</p>
+<p>التكوين الأولي لـ wis2box يتطلب:</p>
 <ul>
 <li>ملف بيئة <code>wis2box.env</code> يحتوي على معلمات التكوين</li>
-<li>مجلد على الجهاز المضيف للمشاركة بين الجهاز المضيف وحاويات wis2box محدد بواسطة متغير البيئة <code>WIS2BOX_HOST_DATADIR</code></li>
+<li>دليل على جهاز المضيف للمشاركة بين جهاز المضيف وحاويات wis2box المحددة بواسطة متغير البيئة <code>WIS2BOX_HOST_DATADIR</code></li>
 </ul>
-<p>يمكن استخدام برنامج <code>wis2box-create-config.py</code> لإنشاء التكوين الأولي لـ wis2box الخاص بك.</p>
-<p>سيطرح عليك مجموعة من الأسئلة للمساعدة في إعداد التكوين الخاص بك.</p>
-<p>ستتمكن من مراجعة وتحديث ملفات التكوين بعد اكتمال البرنامج.</p>
-<p>قم بتشغيل البرنامج كما يلي:</p>
+<p>يمكن استخدام السكربت <code>wis2box-create-config.py</code> لإنشاء التكوين الأولي لـ wis2box.</p>
+<p>سيطرح عليك مجموعة من الأسئلة لمساعدتك في إعداد التكوين الخاص بك.</p>
+<p>سيكون بإمكانك مراجعة وتحديث ملفات التكوين بعد اكتمال السكربت.</p>
+<p>قم بتشغيل السكربت على النحو التالي:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-create-config.py
 </code></pre></div>
-<h3 id="wis2box-host-data">مجلد wis2box-host-data</h3>
-<p>سيطلب منك البرنامج إدخال المجلد المراد استخدامه لمتغير البيئة <code>WIS2BOX_HOST_DATADIR</code>.</p>
-<p>لاحظ أنك تحتاج إلى تحديد المسار الكامل لهذا المجلد.</p>
-<p>على سبيل المثال، إذا كان اسم المستخدم الخاص بك هو <code>username</code>، فإن المسار الكامل للمجلد هو <code>/home/username/wis2box-data</code>:</p>
+<h3 id="wis2box-host">دليل بيانات wis2box-host</h3>
+<p>سيطلب منك السكربت إدخال الدليل الذي سيتم استخدامه لمتغير البيئة <code>WIS2BOX_HOST_DATADIR</code>.</p>
+<p>لاحظ أنه يجب تحديد المسار الكامل لهذا الدليل.</p>
+<p>على سبيل المثال، إذا كان اسم المستخدم الخاص بك هو <code>username</code>، فإن المسار الكامل للدليل هو <code>/home/username/wis2box-data</code>:</p>
 <div class="highlight"><pre><span></span><code>username@student-vm-username:~/wis2box$ python3 wis2box-create-config.py
 Please enter the directory to be used for WIS2BOX_HOST_DATADIR:
 /home/username/wis2box-data
@@ -1106,8 +1160,8 @@ y
 The directory /home/username/wis2box-data has been created.
 </code></pre></div>
 <h3 id="url-wis2box">عنوان URL لـ wis2box</h3>
-<p>بعد ذلك، سيُطلب منك إدخال عنوان URL لـ wis2box الخاص بك. هذا هو عنوان URL الذي سيتم استخدامه للوصول إلى تطبيق wis2box وواجهة برمجة التطبيقات وواجهة المستخدم.</p>
-<p>الرجاء استخدام <code>http://&lt;your-hostname-or-ip&gt;</code> كعنوان URL.</p>
+<p>بعد ذلك، سيُطلب منك إدخال عنوان URL لـ wis2box. هذا هو العنوان URL الذي سيتم استخدامه للوصول إلى تطبيق الويب wis2box وواجهة برمجة التطبيقات وواجهة المستخدم.</p>
+<p>يرجى استخدام <code>http://&lt;your-hostname-or-ip&gt;</code> كعنوان URL.</p>
 <div class="highlight"><pre><span></span><code>Please enter the URL of the wis2box:
  For local testing the URL is http://localhost
  To enable remote access, the URL should point to the public IP address or domain name of the server hosting the wis2box.
@@ -1116,11 +1170,11 @@ The URL of the wis2box will be set to:
   http://username.wis2.training
 Is this correct? (y/n/exit)
 </code></pre></div>
-<h3 id="webapp-storage-broker">كلمات مرور WEBAPP و STORAGE و BROKER</h3>
-<p>يمكنك استخدام خيار توليد كلمة مرور عشوائية عند المطالبة بـ <code>WIS2BOX_WEBAPP_PASSWORD</code> و <code>WIS2BOX_STORAGE_PASSWORD</code> و <code>WIS2BOX_BROKER_PASSWORD</code> وتحديد كلمات المرور الخاصة بك.</p>
-<p>لا تقلق بشأن تذكر كلمات المرور هذه، سيتم تخزينها في ملف <code>wis2box.env</code> في مجلد wis2box الخاص بك.</p>
+<h3 id="webapp-storage-broker">كلمات مرور WEBAPP، STORAGE و BROKER</h3>
+<p>يمكنك استخدام خيار إنشاء كلمة مرور عشوائية عندما يُطلب منك <code>WIS2BOX_WEBAPP_PASSWORD</code>، <code>WIS2BOX_STORAGE_PASSWORD</code>، <code>WIS2BOX_BROKER_PASSWORD</code> وتحديد كلمة المرور الخاصة بك.</p>
+<p>لا داعي للقلق بشأن تذكر هذه الكلمات، سيتم تخزينها في ملف <code>wis2box.env</code> في دليل wis2box الخاص بك.</p>
 <h3 id="wis2boxenv">مراجعة <code>wis2box.env</code></h3>
-<p>بمجرد اكتمال البرنامج، تحقق من محتويات ملف <code>wis2box.env</code> في المجلد الحالي:</p>
+<p>بمجرد اكتمال السكربتات، تحقق من محتويات ملف <code>wis2box.env</code> في دليلك الحالي:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/wis2box/wis2box.env
 </code></pre></div>
 <p>أو تحقق من محتوى الملف عبر WinSCP.</p>
@@ -1131,7 +1185,7 @@ Is this correct? (y/n/exit)
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
 <p>القيمة الافتراضية لـ WIS2BOX_BASEMAP_URL هي <code>https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</code>.</p>
-<p>يشير عنوان URL هذا إلى خادم بلاط OpenStreetMap. إذا كنت تريد استخدام مزود خرائط مختلف، يمكنك تغيير عنوان URL هذا ليشير إلى خادم بلاط مختلف.</p>
+<p>يشير هذا العنوان إلى خادم البلاط OpenStreetMap. إذا كنت ترغب في استخدام مزود خرائط مختلف، يمكنك تغيير هذا العنوان ليشير إلى خادم بلاط مختلف.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1139,12 +1193,130 @@ Is this correct? (y/n/exit)
 </div>
 <details class="success">
 <summary>انقر لكشف الإجابة</summary>
-<p>القيمة الافتراضية لـ WIS2BOX_STORAGE_DATA_RETENTION_DAYS هي 30 يوماً. يمكنك تغيير هذه القيمة إلى عدد مختلف من الأيام إذا رغبت في ذلك.</p>
-<p>تقوم حاوية wis2box-management بتشغيل مهمة cron يومياً لإزالة البيانات الأقدم من عدد الأيام المحدد بواسطة WIS2BOX_STORAGE_DATA_RETENTION_DAYS من دلو <code>wis2box-public</code> وواجهة برمجة التطبيقات الخلفية:</p>
+<p>القيمة الافتراضية لـ WIS2BOX_STORAGE_DATA_RETENTION_DAYS هي 30 يومًا. يمكنك تغيير هذه القيمة إلى عدد مختلف من الأيام إذا كنت ترغب في ذلك.</p>
+<p>تقوم حاوية wis2box-management بتشغيل وظيفة cron يوميًا لإزالة البيانات الأقدم من عدد الأيام المحدد بواسطة WIS2BOX_STORAGE_DATA_RETENTION_DAYS من دلو <code>wis2box-public</code> وواجهة برمجة التطبيقات الخلفية:</p>
 <div class="highlight"><pre><span></span><code>0 0 * * * su wis2box -c &quot;wis2box data clean --days=$WIS2BOX_STORAGE_DATA_RETENTION_DAYS&quot;
 </code></pre></div>
 </details>
-<p>[يتبع الترجمة للجزء المتبقي...]</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>يحتوي ملف <code>wis2box.env</code> على متغيرات البيئة التي تحدد تكوين wis2box الخاص بك. لمزيد من المعلومات، راجع <a href="https://docs.wis2box.wis.wmo.int/en/latest/reference/configuration.html">wis2box-documentation</a>.</p>
+<p>لا تقم بتعديل ملف <code>wis2box.env</code> إلا إذا كنت متأكدًا من التغييرات التي تقوم بها. قد تؤدي التغييرات غير الصحيحة إلى توقف wis2box عن العمل.</p>
+<p>لا تشارك محتويات ملف <code>wis2box.env</code> الخاص بك مع أي شخص، حيث يحتوي على معلومات حساسة مثل كلمات المرور.</p>
+</div>
+<h2 id="wis2box_1">بدء تشغيل wis2box</h2>
+<p>تأكد من أنك في الدليل الذي يحتوي على ملفات تعريف حزمة برامج wis2box:</p>
+<div class="highlight"><pre><span></span><code>cd ~/wis2box
+</code></pre></div>
+<p>ابدأ تشغيل wis2box بالأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py start
+</code></pre></div>
+<p>عند تشغيل هذا الأمر لأول مرة، سترى الإخراج التالي:</p>
+<div class="highlight"><pre><span></span><code>No docker-compose.images-*.yml files found, creating one
+Current version=Undefined, latest version=1.0.0
+Would you like to update ? (y/n/exit)
+</code></pre></div>
+<p>اختر <code>y</code> وسيقوم السكربت بإنشاء الملف <code>docker-compose.images-1.0.0.yml</code>، وتنزيل الصور Docker المطلوبة وبدء الخدمات.</p>
+<p>قد يستغرق تنزيل الصور بعض الوقت اعتمادًا على سرعة اتصالك بالإنترنت. هذه الخطوة مطلوبة فقط في المرة الأولى التي تبدأ فيها wis2box.</p>
+<p>تفقد الحالة بالأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py status
+</code></pre></div>
+<p>كرر هذا الأمر حتى تكون جميع الخدمات قيد التشغيل والعمل.</p>
+<div class="admonition note">
+<p class="admonition-title">wis2box و Docker</p>
+<p>يعمل wis2box كمجموعة من حاويات Docker التي يديرها docker-compose.</p>
+<p>تُعرف الخدمات في ملفات <code>docker-compose*.yml</code> المختلفة التي يمكن العثور عليها في دليل <code>~/wis2box/</code>.</p>
+<p>يُستخدم السكربت البرمجي <code>wis2box-ctl.py</code> لتشغيل أوامر Docker Compose الأساسية التي تتحكم في خدمات wis2box.</p>
+<p>لا تحتاج إلى معرفة تفاصيل حاويات Docker لتشغيل حزمة برامج wis2box، ولكن يمكنك فحص ملفات <code>docker-compose*.yml</code> لرؤية كيفية تعريف الخدمات. إذا كنت مهتمًا بمعرفة المزيد عن Docker، يمكنك العثور على مزيد من المعلومات في <a href="https://docs.docker.com/">Docker documentation</a>.</p>
+</div>
+<p>لتسجيل الدخول إلى حاوية wis2box-management، استخدم الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py login
+</code></pre></div>
+<p>داخل حاوية wis2box-management، يمكنك تشغيل أوامر مختلفة لإدارة wis2box الخاص بك، مثل:</p>
+<ul>
+<li><code>wis2box auth add-token --path processes/wis2box</code> : لإنشاء رمز تفويض لنقطة النهاية <code>processes/wis2box</code></li>
+<li><code>wis2box data clean --days=&lt;number-of-days&gt;</code> : لتنظيف البيانات الأقدم من عدد معين من الأيام من دلو <code>wis2box-public</code></li>
+</ul>
+<p>للخروج من الحاوية والعودة إلى جهاز المضيف، استخدم الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>exit
+</code></pre></div>
+<p>قم بتشغيل الأمر التالي لرؤية حاويات docker التي تعمل على جهاز المضيف الخاص بك:</p>
+<div class="highlight"><pre><span></span><code>docker ps
+</code></pre></div>
+<p>يجب أن ترى الحاويات التالية قيد التشغيل:</p>
+<ul>
+<li>wis2box-management</li>
+<li>wis2box-api</li>
+<li>wis2box-minio</li>
+<li>wis2box-webapp</li>
+<li>wis2box-auth</li>
+<li>wis2box-ui</li>
+<li>wis2downloader</li>
+<li>elasticsearch</li>
+<li>elasticsearch-exporter</li>
+<li>nginx</li>
+<li>mosquitto</li>
+<li>prometheus</li>
+<li>grafana</li>
+<li>loki</li>
+</ul>
+<p>هذه الحاويات جزء من حزمة برامج wis2box وتوفر الخدمات المختلفة المطلوبة لتشغيل wis2box.</p>
+<p>قم بتشغيل الأمر التالي لرؤية أحجام docker التي تعمل على جهاز المضيف الخاص بك:</p>
+<div class="highlight"><pre><span></span><code>docker volume ls
+</code></pre></div>
+<p>يجب أن ترى الأحجام التالية:</p>
+<ul>
+<li>wis2box_project_auth-data</li>
+<li>wis2box_project_es-data</li>
+<li>wis2box_project_htpasswd</li>
+<li>wis2box_project_minio-data</li>
+<li>wis2box_project_prometheus-data</li>
+<li>wis2box_project_loki-data</li>
+<li>wis2box_project_mosquitto-config</li>
+</ul>
+<p>بالإضافة إلى بعض الأحجام المجهولة التي تستخدمها الحاويات المختلفة.</p>
+<p>تُستخدم الأحجام التي تبدأ بـ <code>wis2box_project_</code> لتخزين البيانات المستمرة للخدمات المختلفة في حزمة برامج wis2box.</p>
+<h2 id="wis2box_2">واجهة برمجة تطبيقات wis2box</h2>
+<p>تحتوي wis2box على واجهة برمجة تطبيقات (API) توفر الوصول إلى البيانات والعمليات للتصور التفاعلي وتحويل البيانات والنشر.</p>
+<p>افتح علامة تبويب جديدة وانتقل إلى الصفحة <code>http://YOUR-HOST/oapi</code>.</p>
+<p><img alt="wis2box-api.png" src="../../assets/img/wis2box-api.png" width="800"></p>
+<p>هذه هي صفحة البداية لواجهة برمجة تطبيقات wis2box (تعمل عبر حاوية <strong>wis2box-api</strong>).</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>ما هي المجموعات المتاحة حاليًا؟</p>
+</div>
+<details class="success">
+<summary>انقر لكشف الإجابة</summary>
+<p>لعرض المجموعات المتاحة حاليًا من خلال الواجهة، انقر على <code>View the collections in this service</code>:</p>
+<p><img alt="wis2box-api-collections.png" src="../../assets/img/wis2box-api-collections.png" width="600"></p>
+<p>المجموعات المتاحة حاليًا هي:</p>
+<ul>
+<li>المحطات</li>
+<li>إشعارات البيانات</li>
+<li>بيانات الاكتشاف</li>
+</ul>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>كم عدد إشعارات البيانات التي تم نشرها؟</p>
+</div>
+<details class="success">
+<summary>انقر لكشف الإجابة</summary>
+</details>
+<p>بمجرد أن تكون متصلاً، تحقق من أن إحصائيات mosquitto الداخلية يتم نشرها بواسطة الوسيط الخاص بك تحت موضوع <code>$SYS</code>:</p>
+<p><img alt="mqtt-explorer-sys-topic.png" src="../../assets/img/mqtt-explorer-sys-topic.png" width="400"></p>
+<p>احتفظ بـ MQTT Explorer مفتوحًا، حيث سنستخدمه لمراقبة الرسائل المنشورة على الوسيط.</p>
+<h2 id="_3">الخلاصة</h2>
+<div class="admonition success">
+<p class="admonition-title">تهانينا!</p>
+<p>في هذه الجلسة العملية، تعلمت كيفية:</p>
+<ul>
+<li>تشغيل السكربت <code>wis2box-create-config.py</code> لإنشاء التكوين الأولي</li>
+<li>بدء تشغيل wis2box والتحقق من حالة مكوناته</li>
+<li>الوصول إلى wis2box-webapp و wis2box-API في المتصفح</li>
+<li>الاتصال بوسيط MQTT على VM الطالب الخاص بك باستخدام MQTT Explorer</li>
+</ul>
+</div>
 
 
 

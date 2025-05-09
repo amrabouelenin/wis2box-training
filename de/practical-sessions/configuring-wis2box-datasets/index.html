@@ -26,7 +26,7 @@
     
     
       
-        <title>Konfiguration von Datensätzen in wis2box - WIS2 in a box training</title>
+        <title>Konfigurieren von Datensätzen in wis2box - WIS2 in a box training</title>
       
     
     
@@ -114,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#konfiguration-von-datensatzen-in-wis2box" class="md-skip">
+        <a href="#konfigurieren-von-datensatzen-in-wis2box" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -149,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Konfiguration von Datensätzen in wis2box
+              Konfigurieren von Datensätzen in wis2box
             
           </span>
         </div>
@@ -544,36 +544,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erstellen-von-erkennungsmetadaten" class="md-nav__link">
+  <a href="#erstellen-von-entdeckungsmetadaten" class="md-nav__link">
     <span class="md-ellipsis">
-      Erstellen von Erkennungsmetadaten
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#konfigurieren-von-datenzuordnungen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Konfigurieren von Datenzuordnungen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#einreichen-ihres-datensatzes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Einreichen Ihres Datensatzes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uberprufen-der-wis2-benachrichtigung-fur-ihre-erkennungsmetadaten" class="md-nav__link">
-    <span class="md-ellipsis">
-      Überprüfen der WIS2-Benachrichtigung für Ihre Erkennungsmetadaten
+      Erstellen von Entdeckungsmetadaten
     </span>
   </a>
   
@@ -1044,36 +1017,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erstellen-von-erkennungsmetadaten" class="md-nav__link">
+  <a href="#erstellen-von-entdeckungsmetadaten" class="md-nav__link">
     <span class="md-ellipsis">
-      Erstellen von Erkennungsmetadaten
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#konfigurieren-von-datenzuordnungen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Konfigurieren von Datenzuordnungen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#einreichen-ihres-datensatzes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Einreichen Ihres Datensatzes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uberprufen-der-wis2-benachrichtigung-fur-ihre-erkennungsmetadaten" class="md-nav__link">
-    <span class="md-ellipsis">
-      Überprüfen der WIS2-Benachrichtigung für Ihre Erkennungsmetadaten
+      Erstellen von Entdeckungsmetadaten
     </span>
   </a>
   
@@ -1095,38 +1041,38 @@
 
 
 
-<h1 id="konfiguration-von-datensatzen-in-wis2box">Konfiguration von Datensätzen in wis2box</h1>
+<h1 id="konfigurieren-von-datensatzen-in-wis2box">Konfigurieren von Datensätzen in wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Lernziele</p>
-<p>Nach Abschluss dieser praktischen Einheit werden Sie in der Lage sein:</p>
+<p class="admonition-title">Lernergebnisse</p>
+<p>Am Ende dieser praktischen Sitzung werden Sie in der Lage sein:</p>
 <ul>
 <li>einen neuen Datensatz zu erstellen</li>
-<li>Erkennungsmetadaten für einen Datensatz zu erstellen</li>
+<li>Entdeckungsmetadaten für einen Datensatz zu erstellen</li>
 <li>Datenzuordnungen für einen Datensatz zu konfigurieren</li>
 <li>eine WIS2-Benachrichtigung mit einem WCMP2-Datensatz zu veröffentlichen</li>
-<li>Ihren Datensatz zu aktualisieren und neu zu veröffentlichen</li>
+<li>Ihren Datensatz zu aktualisieren und erneut zu veröffentlichen</li>
 </ul>
 </div>
 <h2 id="einfuhrung">Einführung</h2>
-<p>wis2box verwendet Datensätze, die mit Erkennungsmetadaten und Datenzuordnungen verknüpft sind.</p>
-<p>Erkennungsmetadaten werden verwendet, um einen WCMP2 (WMO Core Metadata Profile 2) Datensatz zu erstellen, der über eine WIS2-Benachrichtigung auf Ihrem wis2box-broker veröffentlicht wird.</p>
-<p>Die Datenzuordnungen werden verwendet, um ein Daten-Plugin mit Ihren Eingabedaten zu verknüpfen, wodurch Ihre Daten vor der Veröffentlichung über die WIS2-Benachrichtigung transformiert werden können.</p>
-<p>Diese Einheit führt Sie durch die Erstellung eines neuen Datensatzes, die Erstellung von Erkennungsmetadaten und die Konfiguration von Datenzuordnungen. Sie werden Ihren Datensatz in der wis2box-api überprüfen und die WIS2-Benachrichtigung für Ihre Erkennungsmetadaten durchsehen.</p>
+<p>wis2box verwendet Datensätze, die mit Entdeckungsmetadaten und Datenzuordnungen verknüpft sind.</p>
+<p>Entdeckungsmetadaten werden verwendet, um einen WCMP2 (WMO Core Metadata Profile 2) Datensatz zu erstellen, der über eine WIS2-Benachrichtigung veröffentlicht wird, die auf Ihrem wis2box-broker publiziert wird.</p>
+<p>Die Datenzuordnungen werden verwendet, um ein Daten-Plugin mit Ihren Eingabedaten zu verknüpfen, sodass Ihre Daten vor der Veröffentlichung über die WIS2-Benachrichtigung transformiert werden können.</p>
+<p>Diese Sitzung führt Sie durch das Erstellen eines neuen Datensatzes, das Erstellen von Entdeckungsmetadaten und das Konfigurieren von Datenzuordnungen. Sie werden Ihren Datensatz in der wis2box-api überprüfen und die WIS2-Benachrichtigung für Ihre Entdeckungsmetadaten überprüfen.</p>
 <h2 id="vorbereitung">Vorbereitung</h2>
 <p>Verbinden Sie sich mit Ihrem Broker über MQTT Explorer.</p>
-<p>Verwenden Sie anstelle Ihrer internen Broker-Anmeldedaten die öffentlichen Anmeldedaten <code>everyone/everyone</code>:</p>
+<p>Verwenden Sie anstelle Ihrer internen Broker-Anmeldeinformationen die öffentlichen Anmeldeinformationen <code>everyone/everyone</code>:</p>
 <p><img alt="MQTT Explorer: Connect to broker" src="../../assets/img/mqtt-explorer-wis2box-broker-everyone-everyone.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Sie müssen die Anmeldedaten Ihres internen Brokers nie mit externen Benutzern teilen. Der 'everyone'-Benutzer ist ein öffentlicher Benutzer, der das Teilen von WIS2-Benachrichtigungen ermöglicht.</p>
-<p>Die Anmeldedaten <code>everyone/everyone</code> haben nur Lesezugriff auf das Thema 'origin/a/wis2/#'. Dies ist das Thema, unter dem die WIS2-Benachrichtigungen veröffentlicht werden. Der Global Broker kann sich mit diesen öffentlichen Anmeldedaten anmelden, um die Benachrichtigungen zu empfangen.</p>
-<p>Der 'everyone'-Benutzer sieht keine internen Themen und kann keine Nachrichten veröffentlichen.</p>
+<p>Sie müssen niemals die Anmeldeinformationen Ihres internen Brokers mit externen Benutzern teilen. Der Benutzer 'everyone' ist ein öffentlicher Benutzer, um das Teilen von WIS2-Benachrichtigungen zu ermöglichen.</p>
+<p>Die Anmeldeinformationen <code>everyone/everyone</code> haben nur Lesezugriff auf das Thema 'origin/a/wis2/#'. Dies ist das Thema, auf dem die WIS2-Benachrichtigungen veröffentlicht werden. Der Global Broker kann sich mit diesen öffentlichen Anmeldeinformationen anmelden, um die Benachrichtigungen zu erhalten.</p>
+<p>Der Benutzer 'everyone' wird keine internen Themen sehen oder Nachrichten veröffentlichen können.</p>
 </div>
-<p>Öffnen Sie einen Browser und rufen Sie die Seite <code>http://YOUR-HOST/wis2box-webapp</code> auf. Stellen Sie sicher, dass Sie angemeldet sind und auf die Seite 'dataset editor' zugreifen können.</p>
-<p>Schauen Sie im Abschnitt <a href="/practical-sessions/initializing-wis2box">Initialisierung von wis2box</a> nach, wenn Sie sich nicht mehr erinnern können, wie Sie sich mit dem Broker verbinden oder auf die wis2box-webapp zugreifen.</p>
+<p>Öffnen Sie einen Browser und gehen Sie zu <code>http://YOUR-HOST/wis2box-webapp</code>. Stellen Sie sicher, dass Sie angemeldet sind und auf die Seite 'dataset editor' zugreifen können.</p>
+<p>Sehen Sie sich den Abschnitt über <a href="/practical-sessions/initializing-wis2box">Initializing wis2box</a> an, wenn Sie sich daran erinnern müssen, wie Sie sich mit dem Broker verbinden oder auf die wis2box-webapp zugreifen können.</p>
 <h2 id="erstellen-eines-autorisierungstokens-fur-processeswis2box">Erstellen eines Autorisierungstokens für processes/wis2box</h2>
 <p>Sie benötigen ein Autorisierungstoken für den Endpunkt 'processes/wis2box', um Ihren Datensatz zu veröffentlichen.</p>
-<p>Um ein Autorisierungstoken zu erstellen, greifen Sie über SSH auf Ihre Training-VM zu und verwenden Sie die folgenden Befehle, um sich beim wis2box-management Container anzumelden:</p>
+<p>Um ein Autorisierungstoken zu erstellen, greifen Sie über SSH auf Ihre Trainings-VM zu und verwenden Sie die folgenden Befehle, um sich im wis2box-management-Container anzumelden:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
@@ -1136,83 +1082,51 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <p>Sie können auch ein Token mit einem spezifischen Wert erstellen, indem Sie das Token als Argument für den Befehl angeben:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--path<span class="w"> </span>processes/wis2box<span class="w"> </span>MyS3cretToken
 </code></pre></div>
-<p>Kopieren Sie den Token-Wert und speichern Sie ihn auf Ihrem lokalen Computer, da Sie ihn später benötigen werden.</p>
-<p>Sobald Sie Ihr Token haben, können Sie den wis2box-management Container verlassen:</p>
+<p>Stellen Sie sicher, dass Sie den Tokenwert kopieren und auf Ihrem lokalen Rechner speichern, da Sie ihn später benötigen werden.</p>
+<p>Sobald Sie Ihr Token haben, können Sie den wis2box-management-Container verlassen:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
 <h2 id="erstellen-eines-neuen-datensatzes-in-der-wis2box-webapp">Erstellen eines neuen Datensatzes in der wis2box-webapp</h2>
-<p>Navigieren Sie zur Seite 'dataset editor' in der wis2box-webapp Ihrer wis2box-Instanz, indem Sie zu <code>http://YOUR-HOST/wis2box-webapp</code> gehen und 'dataset editor' aus dem Menü auf der linken Seite auswählen.</p>
-<p>Klicken Sie auf der Seite 'dataset editor' unter dem Tab 'Datasets' auf "Create New ...":</p>
+<p>Navigieren Sie auf der Seite 'dataset editor' in der wis2box-webapp Ihrer wis2box-Instanz zu <code>http://YOUR-HOST/wis2box-webapp</code> und wählen Sie 'dataset editor' aus dem Menü auf der linken Seite.</p>
+<p>Auf der Seite 'dataset editor' klicken Sie unter dem Tab 'Datasets' auf "Create New ...":</p>
 <p><img alt="Create New Dataset" src="../../assets/img/wis2box-create-new-dataset.png" width="800"></p>
-<p>Ein Pop-up-Fenster erscheint und fordert Sie auf, Folgendes anzugeben:</p>
+<p>Es erscheint ein Popup-Fenster, in dem Sie Folgendes angeben müssen:</p>
 <ul>
-<li><strong>Centre ID</strong>: Dies ist das Behördenkürzel (in Kleinbuchstaben und ohne Leerzeichen), wie vom WMO-Mitglied festgelegt, das das für die Veröffentlichung der Daten verantwortliche Datenzentrum identifiziert.</li>
-<li><strong>Data Type</strong>: Die Art der Daten, für die Sie Metadaten erstellen. Sie können zwischen der Verwendung einer vordefinierten Vorlage oder der Auswahl von 'other' wählen. Wenn 'other' ausgewählt wird, müssen mehr Felder manuell ausgefüllt werden.</li>
+<li><strong>Centre ID</strong> : dies ist das Akronym der Agentur (in Kleinbuchstaben und ohne Leerzeichen), wie es vom WMO-Mitglied angegeben wurde, das das Datenzentrum identifiziert, das für die Veröffentlichung der Daten verantwortlich ist.</li>
+<li><strong>Data Type</strong>: Der Datentyp, für den Sie Metadaten erstellen. Sie können zwischen der Verwendung einer vordefinierten Vorlage oder der Auswahl von 'other' wählen. Wenn 'other' ausgewählt wird, müssen weitere Felder manuell ausgefüllt werden.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Centre ID</p>
-<p>Ihre Centre-ID sollte mit der TLD Ihres Landes beginnen, gefolgt von einem Bindestrich (<code>-</code>) und einem abgekürzten Namen Ihrer Organisation (zum Beispiel <code>fr-meteofrance</code>). Die Centre-ID muss in Kleinbuchstaben sein und nur alphanumerische Zeichen verwenden. Die Dropdown-Liste zeigt alle derzeit bei WIS2 registrierten Centre-IDs sowie alle Centre-IDs, die Sie bereits in wis2box erstellt haben.</p>
+<p>Ihre Centre-ID sollte mit der TLD Ihres Landes beginnen, gefolgt von einem Bindestrich (<code>-</code>) und einem abgekürzten Namen Ihrer Organisation (zum Beispiel <code>de-dwd</code>). Die Centre-ID muss in Kleinbuchstaben sein und darf nur alphanumerische Zeichen verwenden. Die Dropdown-Liste zeigt alle derzeit auf WIS2 registrierten Centre-IDs sowie jede Centre-ID, die Sie bereits in wis2box erstellt haben.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Data Type Templates</p>
-<p>Das Feld <em>Data Type</em> ermöglicht die Auswahl aus einer Liste von verfügbaren Vorlagen im wis2box-webapp Dataset Editor. Eine Vorlage füllt das Formular mit vorgeschlagenen Standardwerten vor, die für den Datentyp geeignet sind. Dies umfasst vorgeschlagene Titel und Schlüsselwörter für die Metadaten sowie vorkonfigurierte Daten-Plugins. Das Thema wird auf das Standardthema für den Datentyp festgelegt.</p>
-<p>Für das Training verwenden wir den Datentyp <em>weather/surface-based-observations/synop</em>, der Daten-Plugins enthält, die sicherstellen, dass die Daten vor der Veröffentlichung in das BUFR-Format umgewandelt werden.</p>
-<p>Wenn Sie CAP-Warnungen über wis2box veröffentlichen möchten, verwenden Sie die Vorlage <em>weather/advisories-warnings</em>. Diese Vorlage enthält ein Daten-Plugin, das überprüft, ob die Eingabedaten eine gültige CAP-Warnung sind, bevor sie veröffentlicht werden. Um CAP-Warnungen zu erstellen und über wis2box zu veröffentlichen, können Sie <a href="https://github.com/wmo-raf/cap-composer">CAP Composer</a> verwenden.</p>
+<p>Das Feld <em>Data Type</em> ermöglicht es Ihnen, aus einer Liste von Vorlagen in der wis2box-webapp dataset editor zu wählen. Eine Vorlage füllt das Formular mit vorgeschlagenen Standardwerten für den Datentyp aus. Dies umfasst vorgeschlagene Titel und Schlüsselwörter für die Metadaten und vorkonfigurierte Daten-Plugins. Das Thema wird auf das Standardthema für den Datentyp festgelegt.</p>
+<p>Zu Trainingszwecken verwenden wir den Datentyp <em>weather/surface-based-observations/synop</em>, der Daten-Plugins enthält, die sicherstellen, dass die Daten vor der Veröffentlichung in das BUFR-Format umgewandelt werden.</p>
+<p>Wenn Sie CAP-Warnungen mit wis2box veröffentlichen möchten, verwenden Sie die Vorlage <em>weather/advisories-warnings</em>. Diese Vorlage enthält ein Daten-Plugin, das überprüft, ob die Eingabedaten eine gültige CAP-Warnung sind, bevor sie veröffentlicht werden. Um CAP-Warnungen zu erstellen und über wis2box zu veröffentlichen, können Sie <a href="https://github.com/wmo-raf/cap-composer">CAP Composer</a> verwenden.</p>
 </div>
-<p>Bitte wählen Sie eine für Ihre Organisation passende Centre-ID.</p>
-<p>Wählen Sie für <strong>Data Type</strong> die Option <strong>weather/surface-based-observations/synop</strong>:</p>
+<p>Bitte wählen Sie eine Centre-ID, die für Ihre Organisation geeignet ist.</p>
+<p>Für <strong>Data Type</strong> wählen Sie <strong>weather/surface-based-observations/synop</strong>:</p>
 <p><img alt="Create New Dataset Form: Initial information" src="../../assets/img/wis2box-create-new-dataset-form-initial.png" width="450"></p>
-<p>Klicken Sie auf <em>continue to form</em>, um fortzufahren. Sie sehen nun das <strong>Dataset Editor Form</strong>.</p>
+<p>Klicken Sie auf <em>continue to form</em>, um fortzufahren. Ihnen wird nun das <strong>Dataset Editor Form</strong> präsentiert.</p>
 <p>Da Sie den Datentyp <strong>weather/surface-based-observations/synop</strong> ausgewählt haben, wird das Formular mit einigen Anfangswerten für diesen Datentyp vorausgefüllt.</p>
-<h2 id="erstellen-von-erkennungsmetadaten">Erstellen von Erkennungsmetadaten</h2>
-<p>Mit dem Dataset Editor Form können Sie die Erkennungsmetadaten für Ihren Datensatz bereitstellen, die der wis2box-management Container zur Veröffentlichung eines WCMP2-Datensatzes verwendet.</p>
+<h2 id="erstellen-von-entdeckungsmetadaten">Erstellen von Entdeckungsmetadaten</h2>
+<p>Das Dataset Editor Form ermöglicht es Ihnen, die Entdeckungsmetadaten für Ihren Datensatz bereitzustellen, die der wis2box-management-Container verwenden wird, um einen WCMP2-Datensatz zu veröffentlichen.</p>
 <p>Da Sie den Datentyp 'weather/surface-based-observations/synop' ausgewählt haben, wird das Formular mit einigen Standardwerten vorausgefüllt.</p>
-<p>Bitte ersetzen Sie die automatisch generierte 'Local ID' durch einen beschreibenden Namen für Ihren Datensatz, z.B. 'synop-dataset-wis2training':</p>
+<p>Bitte stellen Sie sicher, dass Sie die automatisch generierte 'Local ID' durch einen beschreibenden Namen für Ihren Datensatz ersetzen, z. B. 'synop-dataset-wis2training':</p>
 <p><img alt="Metadata Editor: title, description, keywords" src="../../assets/img/wis2box-metadata-editor-part1.png" width="800"></p>
-<p>Überprüfen Sie den Titel und die Schlüsselwörter, aktualisieren Sie sie bei Bedarf und geben Sie eine Beschreibung für Ihren Datensatz ein.</p>
-<p>Beachten Sie, dass es Optionen gibt, die 'WMO Data Policy' von 'core' auf 'recommended' zu ändern oder Ihre Standard-Metadaten-ID zu modifizieren. Bitte behalten Sie die Data-Policy als 'core' bei und verwenden Sie die Standard-Metadaten-ID.</p>
-<p>Überprüfen Sie als Nächstes den Abschnitt, der Ihre 'Temporal Properties' und 'Spatial Properties' definiert. Sie können den Begrenzungsrahmen anpassen, indem Sie die Felder 'North Latitude', 'South Latitude', 'East Longitude' und 'West Longitude' aktualisieren:</p>
+<p>Überprüfen Sie den Titel und die Schlüsselwörter und aktualisieren Sie sie bei Bedarf und geben Sie eine Beschreibung für Ihren Datensatz an.</p>
+<p>Beachten Sie, dass es Optionen gibt, die 'WMO Data Policy' von 'core' auf 'recommended' zu ändern oder Ihren Standard-Metadata Identifier zu ändern. Bitte behalten Sie die Datenrichtlinie als 'core' bei und verwenden Sie den Standard-Metadata Identifier.</p>
+<p>Überprüfen Sie als Nächstes den Abschnitt, der Ihre 'Temporal Properties' und 'Spatial Properties' definiert. Sie können das Begrenzungsrechteck anpassen, indem Sie die Felder 'North Latitude', 'South Latitude', 'East Longitude' und 'West Longitude' aktualisieren:</p>
 <p><img alt="Metadata Editor: temporal properties, spatial properties" src="../../assets/img/wis2box-metadata-editor-part2.png" width="800"></p>
-<p>Füllen Sie als Nächstes den Abschnitt 'Contact Information of the Data Provider' aus:</p>
+<p>Füllen Sie als Nächstes den Abschnitt aus, der die 'Contact Information of the Data Provider' definiert:</p>
 <p><img alt="Metadata Editor: contact information" src="../../assets/img/wis2box-metadata-editor-part3.png" width="800"></p>
-<p>Füllen Sie schließlich den Abschnitt 'Data Quality Information' aus:</p>
-<p>Wenn Sie alle Abschnitte ausgefüllt haben, klicken Sie auf 'VALIDATE FORM' und überprüfen Sie das Formular auf Fehler:</p>
+<p>Füllen Sie schließlich den Abschnitt aus, der die 'Data Quality Information' definiert:</p>
+<p>Sobald Sie alle Abschnitte ausgefüllt haben, klicken Sie auf 'VALIDATE FORM' und überprüfen Sie das Formular auf Fehler:</p>
 <p><img alt="Metadata Editor: validation" src="../../assets/img/wis2box-metadata-validation-error.png" width="800"></p>
-<p>Wenn Fehler auftreten, korrigieren Sie diese und klicken Sie erneut auf 'VALIDATE FORM'.</p>
-<p>Stellen Sie sicher, dass keine Fehler mehr vorhanden sind und Sie eine Pop-up-Meldung erhalten, die bestätigt, dass Ihr Formular validiert wurde:</p>
-<p><img alt="Metadata Editor: validation success" src="../../assets/img/wis2box-metadata-validation-success.png" width="800"></p>
-<p>Überprüfen Sie als Nächstes, bevor Sie Ihren Datensatz einreichen, die Datenzuordnungen für Ihren Datensatz.</p>
-<h2 id="konfigurieren-von-datenzuordnungen">Konfigurieren von Datenzuordnungen</h2>
-<p>Da Sie eine Vorlage zur Erstellung Ihres Datensatzes verwendet haben, wurden die Datensatzzuordnungen mit den Standard-Plugins für den Datentyp 'weather/surface-based-observations/synop' vorausgefüllt. Daten-Plugins werden in der wis2box verwendet, um Daten vor der Veröffentlichung über die WIS2-Benachrichtigung zu transformieren.</p>
-<p><img alt="Data Mappings: update plugin" src="../../assets/img/wis2box-data-mappings.png" width="800"></p>
-<p>Beachten Sie, dass Sie auf die Schaltfläche "update" klicken können, um Einstellungen für das Plugin wie Dateierweiterung und Dateimuster zu ändern. Sie können die Standardeinstellungen vorerst beibehalten. In einer späteren Sitzung werden Sie mehr über BUFR und die Transformation von Daten in das BUFR-Format lernen.</p>
-<h2 id="einreichen-ihres-datensatzes">Einreichen Ihres Datensatzes</h2>
-<p>Abschließend können Sie auf 'submit' klicken, um Ihren Datensatz zu veröffentlichen.</p>
-<p>Sie benötigen das Autorisierungstoken für 'processes/wis2box', das Sie zuvor erstellt haben. Wenn Sie dies noch nicht getan haben, können Sie ein neues Token erstellen, indem Sie den Anweisungen im Vorbereitungsabschnitt folgen.</p>
-<p>Überprüfen Sie, ob Sie nach dem Einreichen Ihres Datensatzes die folgende Meldung erhalten, die anzeigt, dass der Datensatz erfolgreich eingereicht wurde:</p>
-<p><img alt="Submit Dataset Success" src="../../assets/img/wis2box-submit-dataset-success.png" width="400"></p>
-<p>Nachdem Sie auf 'OK' geklickt haben, werden Sie zur Startseite des Dataset Editors weitergeleitet. Wenn Sie jetzt auf den Tab 'Dataset' klicken, sollten Sie Ihren neuen Datensatz aufgelistet sehen:</p>
-<p><img alt="Dataset Editor: new dataset" src="../../assets/img/wis2box-dataset-editor-new-dataset.png" width="800"></p>
-<h2 id="uberprufen-der-wis2-benachrichtigung-fur-ihre-erkennungsmetadaten">Überprüfen der WIS2-Benachrichtigung für Ihre Erkennungsmetadaten</h2>
-<p>Gehen Sie zu MQTT Explorer. Wenn Sie mit dem Broker verbunden waren, sollten Sie eine neue WIS2-Benachrichtigung sehen, die unter dem Thema <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code> veröffentlicht wurde:</p>
-<p><img alt="MQTT Explorer: WIS2 notification" src="../../assets/img/mqtt-explorer-wis2-notification-metadata.png" width="800"></p>
-<p>Überprüfen Sie den Inhalt der WIS2-Benachrichtigung, die Sie veröffentlicht haben. Sie sollten ein JSON mit einer Struktur sehen, die dem WIS Notification Message (WNM) Format entspricht.</p>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Unter welchem Thema wird die WIS2-Benachrichtigung veröffentlicht?</p>
-</div>
-<details class="success">
-<summary>Klicken Sie hier für die Antwort</summary>
-<p>Die WIS2-Benachrichtigung wird unter dem Thema <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code> veröffentlicht.</p>
-</details>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Versuchen Sie, den Titel, die Beschreibung und die Schlüsselwörter, die Sie in den Erkennungsmetadaten angegeben haben, in der WIS2-Benachrichtigung zu finden. Können Sie sie finden?</p>
-</div>
-<details class="success">
-<summary>Klicken Sie hier für die Antwort</summary>
-<p>**Der Titel, die Beschreibung und die Schlüsselwörter,</p>
-</details>
+<p>Wenn Fehler vorhanden sind, korrigieren Sie diese und klicken Sie erneut auf 'VALIDATE FORM'.</p>
+<p>Stellen Sie sicher, dass Sie keine Fehler haben und dass Sie eine Popup-Meldung erhalten, die bestätigt, dass Ihr Formular validiert wurde:</p>
+<p>&lt;img alt="Metadata Editor: validation success"</p>
 
 
 

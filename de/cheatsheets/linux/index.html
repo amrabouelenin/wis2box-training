@@ -26,7 +26,7 @@
     
     
       
-        <title>Linux Spickzettel - WIS2 in a box training</title>
+        <title>Linux cheatsheet - WIS2 in a box training</title>
       
     
     
@@ -114,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux-spickzettel" class="md-skip">
+        <a href="#linux-cheatsheet" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -149,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux Spickzettel
+              Linux cheatsheet
             
           </span>
         </div>
@@ -1053,10 +1053,10 @@
 
 
 
-<h1 id="linux-spickzettel">Linux Spickzettel</h1>
+<h1 id="linux-cheatsheet">Linux cheatsheet</h1>
 <h2 id="ubersicht">Übersicht</h2>
 <p>Die grundlegenden Konzepte der Arbeit in einem Linux-Betriebssystem sind <strong>Dateien</strong> und <strong>Verzeichnisse</strong> (Ordner), die in einer Baumstruktur innerhalb einer <strong>Umgebung</strong> organisiert sind.</p>
-<p>Sobald Sie sich in ein Linux-System einloggen, arbeiten Sie in einer <strong>Shell</strong>, in der Sie Dateien und Verzeichnisse bearbeiten können, indem Sie Befehle ausführen, die auf dem System installiert sind. Die Bash-Shell ist eine häufige und beliebte Shell, die typischerweise auf Linux-Systemen zu finden ist.</p>
+<p>Sobald Sie sich in einem Linux-System anmelden, arbeiten Sie in einer <strong>Shell</strong>, in der Sie Dateien und Verzeichnisse bearbeiten können, indem Sie Befehle ausführen, die auf dem System installiert sind. Die Bash-Shell ist eine häufige und beliebte Shell, die typischerweise auf Linux-Systemen zu finden ist.</p>
 <h2 id="bash">Bash</h2>
 <h3 id="verzeichnisnavigation">Verzeichnisnavigation</h3>
 <ul>
@@ -1086,17 +1086,17 @@
 </code></pre></div>
 <h3 id="dateiverwaltung">Dateiverwaltung</h3>
 <ul>
-<li>Auflisten der Dateien im aktuellen Verzeichnis:</li>
+<li>Auflisten von Dateien im aktuellen Verzeichnis:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls
 </code></pre></div>
 <ul>
-<li>Detailliertes Auflisten der Dateien im aktuellen Verzeichnis:</li>
+<li>Detailliertes Auflisten von Dateien im aktuellen Verzeichnis:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l
 </code></pre></div>
 <ul>
-<li>Auflisten der Wurzel des Dateisystems:</li>
+<li>Auflisten des Wurzelverzeichnisses des Dateisystems:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>/
 </code></pre></div>
@@ -1151,7 +1151,7 @@
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>dir1
 </code></pre></div>
 <h3 id="befehle-mit-pipes-verketten">Befehle mit Pipes verketten</h3>
-<p>Pipes erlauben es einem Benutzer, die Ausgabe eines Befehls an einen anderen zu senden, indem das Pipe-Symbol <code>|</code> verwendet wird:</p>
+<p>Pipes ermöglichen es einem Benutzer, die Ausgabe eines Befehls an einen anderen zu senden, indem das Pipe-Symbol <code>|</code> verwendet wird:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hi&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/hi/bye/&#39;</span>
 </code></pre></div>
 <ul>
@@ -1170,7 +1170,7 @@ cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">
 <div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-i<span class="w"> </span>FISH<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
-<li>Zählen von passenden Zeilen:</li>
+<li>Zählen von übereinstimmenden Zeilen:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-c<span class="w"> </span>fish<span class="w"> </span>test-file.txt
 </code></pre></div>
@@ -1191,7 +1191,7 @@ cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">
 </code></pre></div>
 <p>...mit Steuerungen:</p>
 <ul>
-<li>Zeile für Zeile nach unten scrollen: <em>Enter</em></li>
+<li>Zeile für Zeile nach unten scrollen: <em>enter</em></li>
 <li>Zur nächsten Seite gehen: <em>Leertaste</em></li>
 <li>
 <p>Eine Seite zurückgehen: <em>b</em></p>

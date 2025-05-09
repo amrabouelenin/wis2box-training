@@ -474,15 +474,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      الخاتمة
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1022,15 +1013,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      الخاتمة
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1052,14 +1034,14 @@
 <p class="admonition-title">نتائج التعلم</p>
 <p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>الاتصال بـ WIS2 Global Broker باستخدام MQTT Explorer</li>
+<li>الاتصال بـ Global Broker الخاص بـ WIS2 باستخدام MQTT Explorer</li>
 <li>مراجعة هيكل موضوع WIS2</li>
-<li>مراجعة هيكل رسالة الإشعار في WIS2</li>
+<li>مراجعة هيكل رسالة الإشعارات في WIS2</li>
 </ul>
 </div>
 <h2 id="_1">مقدمة</h2>
-<p>يستخدم WIS2 بروتوكول MQTT للإعلان عن توفر بيانات الطقس/المناخ/المياه. يشترك WIS2 Global Broker في جميع عقد WIS2 في الشبكة ويعيد نشر الرسائل التي يتلقاها. يشترك الـ Global Cache في الـ Global Broker، يقوم بتنزيل البيانات في الرسالة ثم يعيد نشر الرسالة على موضوع <code>cache</code> برابط URL جديد. ينشر الـ Global Discovery Catalogue بيانات الاكتشاف من الـ Broker ويوفر واجهة برمجة تطبيقات للبحث.</p>
-<p>هذا مثال على هيكل رسالة الإشعار في WIS2 لرسالة تم استلامها على الموضوع <code>origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop</code>: </p>
+<p>يستخدم WIS2 بروتوكول MQTT للإعلان عن توفر بيانات الطقس/المناخ/المياه. يشترك Global Broker الخاص بـ WIS2 في جميع WIS2 Nodes في الشبكة ويعيد نشر الرسائل التي يتلقاها. يشترك Global Cache في Global Broker، يقوم بتنزيل البيانات في الرسالة ثم يعيد نشر الرسالة على موضوع <code>cache</code> برابط URL جديد. ينشر Global Discovery Catalogue بيانات الاكتشاف من الوسيط ويوفر واجهة برمجة تطبيقات للبحث.</p>
+<p>هذا مثال على هيكل رسالة الإشعارات في WIS2 لرسالة تم استلامها على الموضوع <code>origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop</code>:   </p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;59f9b013-c4b3-410a-a52d-fff18f3f1b47&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
@@ -1097,12 +1079,12 @@
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>في هذه الجلسة العملية ستتعلم كيفية استخدام أداة MQTT Explorer لإعداد اتصال عميل MQTT بـ WIS2 Global Broker وستكون قادرًا على عرض رسائل الإشعار في WIS2.</p>
-<p>أداة MQTT Explorer مفيدة لاستعراض ومراجعة هيكل الموضوع لوسيط MQTT معين لمراجعة البيانات المنشورة.</p>
+<p>في هذه الجلسة العملية ستتعلم كيفية استخدام أداة MQTT Explorer لإعداد اتصال عميل MQTT بـ Global Broker الخاص بـ WIS2 وستكون قادرًا على عرض رسائل الإشعارات في WIS2.</p>
+<p>MQTT Explorer هي أداة مفيدة لتصفح ومراجعة هيكل الموضوع لوسيط MQTT معين لمراجعة البيانات التي يتم نشرها.</p>
 <p>لاحظ أن MQTT يستخدم بشكل أساسي للتواصل "من آلة إلى آلة"؛ مما يعني أنه عادةً ما يكون هناك عميل يقوم بتحليل الرسائل تلقائيًا عند استلامها. للعمل مع MQTT برمجيًا (على سبيل المثال، في Python)، يمكنك استخدام مكتبات عميل MQTT مثل <a href="https://pypi.org/project/paho-mqtt">paho-mqtt</a> للاتصال بوسيط MQTT ومعالجة الرسائل الواردة. توجد العديد من برامج عميل وخادم MQTT، اعتمادًا على متطلباتك وبيئتك التقنية.</p>
 <h2 id="mqtt-explorer-global-broker">استخدام MQTT Explorer للاتصال بـ Global Broker</h2>
-<p>لعرض الرسائل المنشورة بواسطة WIS2 Global Broker يمكنك استخدام "MQTT Explorer" الذي يمكن تنزيله من <a href="https://mqtt-explorer.com">موقع MQTT Explorer</a>.</p>
-<p>افتح MQTT Explorer وأضف اتصالًا جديدًا بـ Global Broker المستضاف بواسطة MeteoFrance باستخدام التفاصيل التالية:</p>
+<p>لعرض الرسائل التي ينشرها Global Broker الخاص بـ WIS2، يمكنك استخدام "MQTT Explorer" الذي يمكن تنزيله من <a href="https://mqtt-explorer.com">موقع MQTT Explorer</a>.</p>
+<p>افتح MQTT Explorer وأضف اتصالًا جديدًا بـ Global Broker المستضاف من قبل MeteoFrance باستخدام التفاصيل التالية:</p>
 <ul>
 <li>host: globalbroker.meteo.fr</li>
 <li>port: 8883</li>
@@ -1117,39 +1099,39 @@
 <p><img alt="mqtt-explorer-global-broker-advanced" src="../../assets/img/mqtt-explorer-global-broker-sub-origin.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>عند إعداد اشتراكات MQTT، يمكنك استخدام البدائل التالية:</p>
+<p>عند إعداد اشتراكات MQTT، يمكنك استخدام العلامات البديلة التالية:</p>
 <ul>
-<li><strong>بديل مستوى واحد (+)</strong>: يستبدل بديل المستوى الواحد مستوى موضوع واحد</li>
-<li><strong>بديل متعدد المستويات (#)</strong>: يستبدل بديل متعدد المستويات مستويات موضوع متعددة</li>
+<li><strong>علامة بديلة لمستوى واحد (+)</strong>: تحل العلامة البديلة لمستوى واحد محل مستوى موضوع واحد</li>
+<li><strong>علامة بديلة متعددة المستويات (#)</strong>: تحل العلامة البديلة متعددة المستويات محل مستويات موضوع متعددة</li>
 </ul>
 <p>في هذه الحالة، سيشترك <code>origin/a/wis2/#</code> في جميع المواضيع تحت موضوع <code>origin/a/wis2</code>.</p>
 </div>
 <p>انقر على 'BACK'، ثم 'SAVE' لحفظ تفاصيل الاتصال والاشتراك. ثم انقر على 'CONNECT':</p>
 <p>يجب أن تبدأ الرسائل في الظهور في جلسة MQTT Explorer الخاصة بك على النحو التالي:</p>
 <p><img alt="mqtt-explorer-global-broker-topics" src="../../assets/img/mqtt-explorer-global-broker-msg-origin.png" width="800"></p>
-<p>أنت الآن جاهز لبدء استكشاف مواضيع وهيكل الرسالة في WIS2.</p>
+<p>أنت الآن جاهز لبدء استكشاف مواضيع وهيكل الرسائل في WIS2.</p>
 <h2 id="1-wis2">التمرين 1: مراجعة هيكل موضوع WIS2</h2>
-<p>استخدم MQTT لاستعراض هيكل الموضوع تحت مواضيع <code>origin</code>.</p>
+<p>استخدم MQTT لتصفح هيكل الموضوع تحت مواضيع <code>origin</code>.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>كيف يمكننا التمييز بين مركز WIS الذي نشر البيانات؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
+<summary>انقر للكشف عن الإجابة</summary>
 <p>يمكنك النقر على نافذة الجانب الأيسر في MQTT Explorer لتوسيع هيكل الموضوع.</p>
 <p>يمكننا التمييز بين مركز WIS الذي نشر البيانات من خلال النظر إلى المستوى الرابع من هيكل الموضوع. على سبيل المثال، يخبرنا الموضوع التالي:</p>
 <p><code>origin/a/wis2/br-inmet/data/core/weather/surface-based-observations/synop</code></p>
-<p>أن البيانات تم نشرها بواسطة مركز WIS بمعرف المركز <code>br-inmet</code>، وهو معرف المركز لـ Instituto Nacional de Meteorologia - INMET، البرازيل.</p>
+<p>أن البيانات تم نشرها بواسطة مركز WIS مع معرف المركز <code>br-inmet</code>، وهو معرف المركز لـ Instituto Nacional de Meteorologia - INMET، البرازيل.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>كيف يمكننا التمييز بين الرسائل التي نشرها مراكز WIS التي تستضيف بوابة GTS-to-WIS2 والرسائل التي نشرها مراكز WIS التي تستضيف عقدة WIS2؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
+<summary>انقر للكشف عن الإجابة</summary>
 <p>يمكننا التمييز بين الرسائل القادمة من بوابة GTS-to-WIS2 من خلال النظر إلى معرف المركز في هيكل الموضوع. على سبيل المثال، يخبرنا الموضوع التالي:</p>
 <p><code>origin/a/wis2/de-dwd-gts-to-wis2/data/core/I/S/A/I/01/sbbr</code></p>
-<p>أن البيانات تم نشرها بواسطة بوابة GTS-to-WIS2 المستضافة بواسطة Deutscher Wetterdienst (DWD)، ألمانيا. بوابة GTS-to-WIS2 هي نوع خاص من الناشرين للبيانات ينشر البيانات من نظام الاتصالات العالمي (GTS) إلى WIS2. يتكون هيكل الموضوع من رؤوس TTAAii CCCC لرسائل GTS.</p>
+<p>أن البيانات تم نشرها بواسطة بوابة GTS-to-WIS2 المستضافة من قبل Deutscher Wetterdienst (DWD)، ألمانيا. بوابة GTS-to-WIS2 هي نوع خاص من الناشرين للبيانات ينشر البيانات من نظام الاتصالات العالمي (GTS) إلى WIS2. يتكون هيكل الموضوع من رؤوس TTAAii CCCC لرسائل GTS.</p>
 </details>
 <h2 id="2-wis2">التمرين 2: مراجعة هيكل رسالة WIS2</h2>
 <p>قم بقطع الاتصال من MQTT Explorer وقم بتحديث الأقسام 'Advanced' لتغيير الاشتراك إلى التالي:</p>
@@ -1160,16 +1142,16 @@
 <p><img alt="mqtt-explorer-global-broker-topics-exercise2" src="../../assets/img/mqtt-explorer-global-broker-sub-origin-cache-synop.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>يُستخدم البديل <code>+</code> للاشتراك في جميع مراكز WIS.</p>
+<p>يتم استخدام العلامة البديلة <code>+</code> للاشتراك في جميع مراكز WIS.</p>
 </div>
-<p>أعد الاتصال بـ Global Broker وانتظر ظهور الرسائل.</p>
+<p>أعد الاتصال بـ Global Broker وانتظر حتى تظهر الرسائل.</p>
 <p>يمكنك عرض محتوى رسالة WIS2 في قسم "Value" على الجانب الأيمن. حاول توسيع هيكل الموضوع لرؤية المستويات المختلفة للرسالة حتى تصل إلى المستوى الأخير ومراجعة محتوى الرسالة لإحدى الرسائل.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>كيف يمكننا تحديد الطابع الزمني الذي تم فيه نشر البيانات؟ وكيف يمكننا تحديد الطابع الزمني الذي تم فيه جمع البيانات؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
+<summary>انقر للكشف عن الإجابة</summary>
 <p>الطابع الزمني الذي تم فيه نشر البيانات موجود في قسم <code>properties</code> من الرسالة بمفتاح <code>pubtime</code>.</p>
 <p>الطابع الزمني الذي تم فيه جمع البيانات موجود في قسم <code>properties</code> من الرسالة بمفتاح <code>datetime</code>.</p>
 <p><img alt="mqtt-explorer-global-broker-msg-properties" src="../../assets/img/mqtt-explorer-global-broker-msg-properties.png" width="800"></p>
@@ -1179,26 +1161,23 @@
 <p>كيف يمكننا تنزيل البيانات من الرابط URL الموجود في الرسالة؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
-<p>الرابط URL موجود في قسم <code>links</code> بـ <code>rel="canonical"</code> ويُعرف بمفتاح <code>href</code>.</p>
+<summary>انقر للكشف عن الإجابة</summary>
+<p>الرابط URL موجود في قسم <code>links</code> بـ <code>rel="canonical"</code> ومحدد بمفتاح <code>href</code>.</p>
 <p>يمكنك نسخ الرابط URL ولصقه في متصفح ويب لتنزيل البيانات.</p>
 </details>
 <h2 id="3-origin-cache">التمرين 3: مراجعة الفرق بين مواضيع 'origin' و 'cache'</h2>
 <p>تأكد من أنك لا تزال متصلاً بـ Global Broker باستخدام اشتراكات الموضوع <code>origin/a/wis2/+/data/core/weather/surface-based-observations/synop</code> و <code>cache/a/wis2/+/data/core/weather/surface-based-observations/synop</code> كما هو موضح في التمرين 2.</p>
-<p>حاول تحديد رسالة لنفس معرف المركز المنشورة على كل من مواضيع <code>origin</code> و <code>cache</code>.</p>
+<p>حاول تحديد رسالة لنفس معرف المركز المنشورة على كلا الموضوعين <code>origin</code> و <code>cache</code>.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>ما الفرق بين الرسائل المنشورة على مواضيع <code>origin</code> و <code>cache</code>؟</p>
 </div>
 <details class="success">
-<summary>انقر لكشف الإجابة</summary>
-<p>الرسائل المنشورة على مواضيع <code>origin</code> هي الرسائل الأصلية التي يعيد الـ Global Broker نشرها من عقد WIS2 في الشبكة.</p>
-<p>الرسائل المنشورة على مواضيع <code>cache</code> هي الرسائل التي تم تنزيل البيانات فيها بواسطة الـ Global Cache. إذا تحققت من محتوى الرسالة من الموضوع الذي يبدأ بـ <code>cache</code>، سترى أن الرابط 'canonical' قد تم تحديثه إلى رابط URL جديد.</p>
-<p>هناك العديد من الـ Global Caches في شبكة WIS2، لذا ستتلقى رسالة واحدة من كل Global Cache قام بتنزيل الرسالة.</p>
-<p>الـ Global Cache سيقوم فقط بتنزيل وإعادة نشر الرسائل التي تم نشرها على هيكل الموضوع <code>../data/core/...</code>.</p>
+<summary>انقر للكشف عن الإجابة</summary>
+<p>الرسائل المنشورة على مواضيع <code>origin</code> هي الرسائل الأصلية التي يعيد Global Broker نشرها من WIS2 Nodes في الشبكة. </p>
+<p>الرسائل المنشورة على مواضيع <code>cache</code> هي الرسائل التي تم تنزيل البيانات فيها بواسطة Global Cache. إذا قمت بفحص محتوى الرسالة من الموضوع الذي يبدأ بـ <code>cache</code>، سترى أن الرابط 'canonical' قد تم تحديثه إلى رابط URL جديد.</p>
+<p>هناك العديد من Global Caches في شبكة WIS2، لذا ستتلقى رسالة واحدة من كل Global Cache قام بتنزيل الرسالة.</p>
 </details>
-<h2 id="_2">الخاتمة</h2>
-<p>!!! success "تهان</p>
 
 
 

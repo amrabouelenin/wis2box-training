@@ -22,7 +22,7 @@
     
     
       
-        <title>Запрос данных через API wis2box - WIS2 in a box training</title>
+        <title>Запрос данных с использованием wis2box API - WIS2 in a box training</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-wis2box" class="md-skip">
+        <a href="#wis2box-api" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Запрос данных через API wis2box
+              Запрос данных с использованием wis2box API
             
           </span>
         </div>
@@ -881,7 +881,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Проверка коллекций
+      Изучение коллекций
     </span>
   </a>
   
@@ -890,7 +890,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Проверка станций
+      Изучение станций
     </span>
   </a>
   
@@ -899,7 +899,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Проверка наблюдений
+      Изучение наблюдений
     </span>
   </a>
   
@@ -930,101 +930,101 @@
 
 
 
-<h1 id="api-wis2box">Запрос данных через API wis2box</h1>
+<h1 id="wis2box-api">Запрос данных с использованием wis2box API</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Результаты обучения</p>
-<p>По завершении этого практического занятия вы сможете:</p>
+<p class="admonition-title">Учебные результаты</p>
+<p>К концу этого практического занятия вы сможете:</p>
 <ul>
-<li>использовать API wis2box для запроса и фильтрации ваших станций</li>
-<li>использовать API wis2box для запроса и фильтрации ваших данных</li>
+<li>использовать wis2box API для запроса и фильтрации ваших станций</li>
+<li>использовать wis2box API для запроса и фильтрации ваших данных</li>
 </ul>
 </div>
 <h2 id="_1">Введение</h2>
-<p>API wis2box обеспечивает доступ к поиску и запросу данных, загруженных в wis2box, в машиночитаемом формате. API основан на стандарте OGC API - Features и реализован с использованием <a href="https://pygeoapi.io">pygeoapi</a>.</p>
-<p>API wis2box предоставляет доступ к следующим коллекциям:</p>
+<p>wis2box API предоставляет доступ к обнаружению и запросу данных в машиночитаемом виде, которые были загружены в wis2box. API основан на стандарте OGC API - Features и реализован с использованием <a href="https://pygeoapi.io">pygeoapi</a>.</p>
+<p>wis2box API предоставляет доступ к следующим коллекциям:</p>
 <ul>
 <li>Станции</li>
 <li>Метаданные обнаружения</li>
 <li>Уведомления о данных</li>
-<li>плюс одна коллекция на каждый настроенный набор данных, которая хранит вывод из bufr2geojson (плагин <code>bufr2geojson</code> должен быть включен в конфигурации сопоставления данных для заполнения элементов в коллекции набора данных).</li>
+<li>плюс одна коллекция на каждый настроенный набор данных, которая хранит результаты работы bufr2geojson (плагин <code>bufr2geojson</code> должен быть включен в конфигурации сопоставления данных для заполнения элементов в коллекции набора данных).</li>
 </ul>
-<p>В этом практическом занятии вы научитесь использовать API данных для просмотра и запроса данных, загруженных в wis2box.</p>
+<p>На этом практическом занятии вы научитесь использовать API данных для просмотра и запроса данных, загруженных в wis2box.</p>
 <h2 id="_2">Подготовка</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Перейдите на главную страницу API wis2box в вашем веб-браузере:</p>
+<p>Перейдите на главную страницу wis2box API в вашем веб-браузере:</p>
 <p><code>http://YOUR-HOST/oapi</code></p>
 </div>
 <p><img alt="wis2box-api-landing-page" src="../../assets/img/wis2box-api-landing-page.png" width="600"></p>
-<h2 id="_3">Проверка коллекций</h2>
-<p>На главной странице нажмите на ссылку 'Collections'.</p>
+<h2 id="_3">Изучение коллекций</h2>
+<p>С главной страницы кликните по ссылке 'Collections'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Сколько коллекций наборов данных вы видите на результирующей странице? Как вы думаете, что представляет каждая коллекция?</p>
+<p>Сколько коллекций наборов данных вы видите на результатирующей странице? Что, по вашему мнению, представляет каждая коллекция?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Должно отображаться 4 коллекции, включая "Stations", "Discovery metadata" и "Data notifications"</p>
+<p>Должно быть отображено 4 коллекции, включая "Stations", "Discovery metadata" и "Data notifications"</p>
 </details>
-<h2 id="_4">Проверка станций</h2>
-<p>На главной странице нажмите на ссылку 'Collections', затем нажмите на ссылку 'Stations'.</p>
+<h2 id="_4">Изучение станций</h2>
+<p>С главной страницы кликните по ссылке 'Collections', затем кликните по ссылке 'Stations'.</p>
 <p><img alt="wis2box-api-collections-stations" src="../../assets/img/wis2box-api-collections-stations.png" width="600"></p>
-<p>Нажмите на ссылку 'Browse', затем на ссылку 'json'.</p>
+<p>Кликните по ссылке 'Browse', затем кликните по ссылке 'json'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Сколько станций возвращается? Сравните это число со списком станций в <code>http://YOUR-HOST/wis2box-webapp/station</code></p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Количество станций из API должно быть равно количеству станций, которые вы видите в веб-приложении wis2box.</p>
+<p>Количество станций из API должно быть равно количеству станций, которые вы видите в wis2box webapp.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем запросить одну станцию (например, <code>Balaka</code>)?</p>
+<p>Как можно запросить одну станцию (например, <code>Balaka</code>)?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Запросите API с помощью <code>http://YOUR-HOST/oapi/collections/stations/items?q=Balaka</code>.</p>
+<p>Запросите API с <code>http://YOUR-HOST/oapi/collections/stations/items?q=Balaka</code>.</p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Приведенный выше пример основан на тестовых данных Малави. Попробуйте протестировать станции, которые вы загрузили в рамках предыдущих упражнений.</p>
+<p>Приведенный выше пример основан на тестовых данных Малави. Попробуйте тестировать на станциях, которые вы загрузили в рамках предыдущих упражнений.</p>
 </div>
-<h2 id="_5">Проверка наблюдений</h2>
+<h2 id="_5">Изучение наблюдений</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Приведенный выше пример основан на тестовых данных Малави. Попробуйте протестировать наблюдения, которые вы загрузили в рамках упражнений.</p>
+<p>Приведенный выше пример основан на тестовых данных Малави. Попробуйте тестировать на наблюдениях, которые вы загрузили в рамках упражнений.</p>
 </div>
-<p>На главной странице нажмите на ссылку 'Collections', затем нажмите на ссылку 'Surface weather observations from Malawi'.</p>
+<p>С главной страницы кликните по ссылке 'Collections', затем кликните по ссылке 'Surface weather observations from Malawi'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs" src="../../assets/img/wis2box-api-collections-malawi-obs.png" width="600"></p>
-<p>Нажмите на ссылку 'Queryables'.</p>
+<p>Кликните по ссылке 'Queryables'.</p>
 <p><img alt="wis2box-api-collections-malawi-obs-queryables" src="../../assets/img/wis2box-api-collections-malawi-obs-queryables.png" width="600"></p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Какой параметр запроса следует использовать для фильтрации по идентификатору станции?</p>
+<p>Какой параметр запроса будет использоваться для фильтрации по идентификатору станции?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
 <p>Правильный параметр запроса - <code>wigos_station_identifer</code>.</p>
 </details>
-<p>Вернитесь на предыдущую страницу (т.е. <code>http://YOUR-HOST/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
-<p>Нажмите на ссылку 'Browse'.</p>
+<p>Перейдите на предыдущую страницу (т.е. <code>http://YOUR-HOST/oapi/collections/urn:wmo:md:mwi:mwi_met_centre:surface-weather-observations</code>)</p>
+<p>Кликните по ссылке 'Browse'.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем визуализировать ответ JSON?</p>
+<p>Как можно визуализировать ответ JSON?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Нажав на ссылку 'JSON' в правом верхнем углу страницы или добавив <code>f=json</code> к запросу API в веб-браузере.</p>
+<p>Нажав на ссылку 'JSON' в верхней правой части страницы, или добавив <code>f=json</code> к запросу API в веб-браузере.</p>
 </details>
-<p>Проверьте JSON-ответ наблюдений.</p>
+<p>Изучите ответ JSON наблюдений.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>Сколько записей возвращается?</p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем ограничить ответ 3 наблюдениями?</p>
+<p>Как можно ограничить ответ тремя наблюдениями?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
@@ -1032,15 +1032,15 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем отсортировать ответ по последним наблюдениям?</p>
+<p>Как можно отсортировать ответ по последним наблюдениям?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Добавьте <code>sortby=-resultTime</code> к запросу API (обратите внимание на знак <code>-</code> для обозначения убывающего порядка сортировки). Для сортировки по самым ранним наблюдениям обновите запрос, включив <code>sortby=resultTime</code>.</p>
+<p>Добавьте <code>sortby=-resultTime</code> к запросу API (обратите внимание на знак <code>-</code>, обозначающий порядок сортировки по убыванию). Для сортировки по самым ранним наблюдениям обновите запрос, включив <code>sortby=resultTime</code>.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем отфильтровать наблюдения по одной станции?</p>
+<p>Как можно фильтровать наблюдения по одной станции?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
@@ -1048,7 +1048,7 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем получить наблюдения в формате CSV?</p>
+<p>Как можно получить наблюдения в формате CSV?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
@@ -1056,19 +1056,19 @@
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Как мы можем показать одно наблюдение (id)?</p>
+<p>Как можно показать одно наблюдение (id)?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Используя идентификатор объекта из запроса API к наблюдениям, запросите API по адресу <code>http://YOUR-HOST/oapi/collections/{collectionId}/items/{featureId}</code>, где <code>{collectionId}</code> - это название вашей коллекции наблюдений, а <code>{itemId}</code> - идентификатор интересующего вас отдельного наблюдения.</p>
+<p>Используя идентификатор объекта из запроса API к наблюдениям, запросите API для <code>http://YOUR-HOST/oapi/collections/{collectionId}/items/{featureId}</code>, где <code>{collectionId}</code> - это имя вашей коллекции наблюдений, а <code>{itemId}</code> - идентификатор интересующего вас одного наблюдения.</p>
 </details>
 <h2 id="_6">Заключение</h2>
 <div class="admonition success">
 <p class="admonition-title">Поздравляем!</p>
-<p>В этом практическом занятии вы научились:</p>
+<p>На этом практическом занятии вы научились:</p>
 <ul>
-<li>использовать API wis2box для запроса и фильтрации ваших станций</li>
-<li>использовать API wis2box для запроса и фильтрации ваших данных</li>
+<li>использовать wis2box API для запроса и фильтрации ваших станций</li>
+<li>использовать wis2box API для запроса и фильтрации ваших данных</li>
 </ul>
 </div>
 

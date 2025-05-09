@@ -790,9 +790,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#concatenazione-di-comandi-con-le-pipe" class="md-nav__link">
+  <a href="#concatenare-comandi-insieme-con-i-pipe" class="md-nav__link">
     <span class="md-ellipsis">
-      Concatenazione di comandi con le pipe
+      Concatenare comandi insieme con i pipe
     </span>
   </a>
   
@@ -1020,9 +1020,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#concatenazione-di-comandi-con-le-pipe" class="md-nav__link">
+  <a href="#concatenare-comandi-insieme-con-i-pipe" class="md-nav__link">
     <span class="md-ellipsis">
-      Concatenazione di comandi con le pipe
+      Concatenare comandi insieme con i pipe
     </span>
   </a>
   
@@ -1054,7 +1054,7 @@
 <p>I concetti di base del lavoro in un sistema operativo Linux sono <strong>file</strong> e <strong>directory</strong> (cartelle) organizzati in
 una struttura ad albero all'interno di un <strong>ambiente</strong>.</p>
 <p>Una volta effettuato l'accesso a un sistema Linux, si lavora in una <strong>shell</strong> in cui è possibile gestire file e directory,
-eseguendo comandi installati sul sistema. La shell Bash è una shell comune e popolare che
+eseguendo comandi che sono installati sul sistema. La shell Bash è una shell comune e popolare che
 si trova tipicamente sui sistemi Linux.</p>
 <h2 id="bash">Bash</h2>
 <h3 id="navigazione-nelle-directory">Navigazione nelle directory</h3>
@@ -1090,7 +1090,7 @@ si trova tipicamente sui sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>ls
 </code></pre></div>
 <ul>
-<li>Elenca i file nella directory corrente con maggiori dettagli:</li>
+<li>Elenca i file nella directory corrente con più dettagli:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l
 </code></pre></div>
@@ -1107,7 +1107,7 @@ si trova tipicamente sui sistemi Linux.</p>
 <ul>
 <li>Crea un file dal comando <code>echo</code>:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ciao&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hi there&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Visualizza il contenuto di un file:</li>
@@ -1130,7 +1130,7 @@ si trova tipicamente sui sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>file1<span class="w"> </span>file2<span class="w"> </span>&gt;<span class="w"> </span>newfile
 </code></pre></div>
 <ul>
-<li>Aggiungi un altro file a <code>newfile</code>:</li>
+<li>Aggiungi un altro file a <code>newfile</code></li>
 </ul>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>file3<span class="w"> </span>&gt;&gt;<span class="w"> </span>newfile
 </code></pre></div>
@@ -1145,38 +1145,38 @@ si trova tipicamente sui sistemi Linux.</p>
 <div class="highlight"><pre><span></span><code>rm<span class="w"> </span>*.dat
 </code></pre></div>
 <ul>
-<li>Crea una directory:</li>
+<li>Crea una directory</li>
 </ul>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>dir1
 </code></pre></div>
-<h3 id="concatenazione-di-comandi-con-le-pipe">Concatenazione di comandi con le pipe</h3>
-<p>Le pipe permettono di inviare l'output di un comando a un altro utilizzando il simbolo della pipe <code>|</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ciao&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/ciao/addio/&#39;</span>
+<h3 id="concatenare-comandi-insieme-con-i-pipe">Concatenare comandi insieme con i pipe</h3>
+<p>I pipe permettono a un utente di inviare l'output di un comando a un altro utilizzando il simbolo del pipe <code>|</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hi&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/hi/bye/&#39;</span>
 </code></pre></div>
 <ul>
 <li>Filtrare gli output dei comandi usando grep:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;id,titolo&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;1,uccelli&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;2,pesci&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;3,gatti&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;id,title&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>test-file.txt
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;1,birds&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;2,fish&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;3,cats&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>test-file.txt
 
-cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>pesci
+cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>fish
 </code></pre></div>
 <ul>
 <li>Ignorare il maiuscolo/minuscolo:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-i<span class="w"> </span>PESCI<span class="w"> </span>test-file.txt
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-i<span class="w"> </span>FISH<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Contare le righe corrispondenti:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-c<span class="w"> </span>pesci<span class="w"> </span>test-file.txt
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-c<span class="w"> </span>fish<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Restituire output che non contengono la parola chiave:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-v<span class="w"> </span>uccelli<span class="w"> </span>test-file.txt
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-v<span class="w"> </span>birds<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
 <li>Contare il numero di righe in <code>test-file.txt</code>:</li>
@@ -1190,19 +1190,19 @@ cat<span class="w"> </span>test-file.txt<span class="w"> </span><span class="p">
 </code></pre></div>
 <p>...con controlli:</p>
 <ul>
-<li>Scorri verso il basso riga per riga: <em>invio</em></li>
-<li>Vai alla pagina successiva: <em>barra spaziatrice</em></li>
+<li>Scorrere verso il basso riga per riga: <em>enter</em></li>
+<li>Passare alla pagina successiva: <em>barra spaziatrice</em></li>
 <li>
-<p>Torna indietro di una pagina: <em>b</em></p>
+<p>Tornare indietro di una pagina: <em>b</em></p>
 </li>
 <li>
-<p>Visualizza le prime 3 righe del file:</p>
+<p>Visualizzare le prime 3 righe del file:</p>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code>head<span class="w"> </span>-3<span class="w"> </span>test-file.txt
 </code></pre></div>
 <ul>
-<li>Visualizza le ultime 2 righe del file:</li>
+<li>Visualizzare le ultime 2 righe del file:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-2<span class="w"> </span>test-file.txt
 </code></pre></div>

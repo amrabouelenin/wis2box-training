@@ -26,7 +26,7 @@
     
     
       
-        <title>Поиск наборов данных в Глобальном каталоге обнаружения WIS2 - WIS2 in a box training</title>
+        <title>Обнаружение наборов данных из Глобального каталога открытия WIS2 - WIS2 in a box training</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Поиск наборов данных в Глобальном каталоге обнаружения WIS2
+              Обнаружение наборов данных из Глобального каталога открытия WIS2
             
           </span>
         </div>
@@ -1013,90 +1013,90 @@
 
 
 
-<h1 id="wis2">Поиск наборов данных в Глобальном каталоге обнаружения WIS2</h1>
+<h1 id="wis2">Обнаружение наборов данных из Глобального каталога открытия WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Результаты обучения!</p>
-<p>По окончании этого практического занятия вы сможете:</p>
+<p class="admonition-title">Учебные результаты!</p>
+<p>К концу этой практической сессии вы сможете:</p>
 <ul>
-<li>использовать pywiscat для поиска наборов данных в Global Discovery Catalogue (GDC)</li>
+<li>использовать pywiscat для поиска наборов данных из Глобального каталога открытия (GDC)</li>
 </ul>
 </div>
 <h2 id="_1">Введение</h2>
-<p>В этом занятии вы научитесь искать данные в WIS2 Global Discovery Catalogue (GDC).</p>
-<p>На данный момент доступны следующие GDC:</p>
+<p>На этом занятии вы научитесь обнаруживать данные из Глобального каталога открытия WIS2 (GDC).</p>
+<p>В настоящее время доступны следующие GDC:</p>
 <ul>
 <li>Environment and Climate Change Canada, Meteorological Service of Canada: <a href="https://wis2-gdc.weather.gc.ca">https://wis2-gdc.weather.gc.ca</a></li>
 <li>China Meteorological Administration: <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
 <li>Deutscher Wetterdienst: <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
 </ul>
-<p>Во время локальных учебных сессий настраивается локальный GDC, чтобы участники могли запрашивать метаданные, опубликованные из их экземпляров wis2box. В этом случае тренеры предоставят URL локального GDC.</p>
+<p>Во время локальных учебных сессий настраивается локальный GDC, чтобы участники могли запрашивать GDC о метаданных, которые они опубликовали из своих экземпляров wis2box. В этом случае тренеры предоставят URL к локальному GDC.</p>
 <h2 id="_2">Подготовка</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Перед началом войдите в свою учебную виртуальную машину.</p>
+<p>Перед началом пожалуйста войдите в свою учебную VM.</p>
 </div>
 <h2 id="pywiscat">Установка pywiscat</h2>
-<p>Используйте установщик пакетов Python <code>pip3</code> для установки pywiscat на вашу виртуальную машину:
+<p>Используйте установщик пакетов Python <code>pip3</code> для установки pywiscat на вашей VM:
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>pywiscat
 </code></pre></div></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Если вы столкнулись со следующей ошибкой:</p>
+<p>Если вы столкнетесь со следующей ошибкой:</p>
 <div class="highlight"><pre><span></span><code>WARNING: The script pywiscat is installed in &#39;/home/username/.local/bin&#39; which is not on PATH.
 Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 </code></pre></div>
-<p>Выполните следующую команду:</p>
+<p>Тогда выполните следующую команду:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/home/<span class="nv">$USER</span>/.local/bin
 </code></pre></div>
-<p>...где <code>$USER</code> - это ваше имя пользователя на виртуальной машине.</p>
+<p>...где <code>$USER</code> это ваше имя пользователя на вашей VM.</p>
 </div>
-<p>Проверьте успешность установки:</p>
+<p>Проверьте, что установка прошла успешно:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>--version
 </code></pre></div>
 <h2 id="pywiscat_1">Поиск данных с помощью pywiscat</h2>
-<p>По умолчанию pywiscat подключается к Global Discovery Catalogue Канады. Давайте настроим pywiscat для запросов к учебному GDC, установив переменную окружения <code>PYWISCAT_GDC_URL</code>:</p>
+<p>По умолчанию pywiscat подключается к Глобальному каталогу открытия Канады. Давайте настроим pywiscat для запроса к учебному GDC, установив переменную среды <code>PYWISCAT_GDC_URL</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PYWISCAT_GDC_URL</span><span class="o">=</span>http://gdc.wis2.training:5002
 </code></pre></div>
-<p>Давайте используем <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> для запросов к GDC, настроенному в рамках обучения.</p>
+<p>Давайте используем <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> для запроса к GDC, настроенному как часть обучения.</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>--help
 </code></pre></div>
-<p>Теперь выполним поиск всех записей в GDC:</p>
+<p>Теперь ищем в GDC все записи:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Сколько записей возвращается при поиске?</p>
+<p>Сколько записей возвращается из поиска?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Количество записей зависит от GDC, к которому вы обращаетесь. При использовании локального учебного GDC вы должны увидеть, что количество записей равно количеству наборов данных, загруженных в GDC во время других практических занятий.</p>
+<p>Количество записей зависит от GDC, который вы запрашиваете. При использовании локального учебного GDC вы должны увидеть, что количество записей равно количеству наборов данных, которые были внесены в GDC во время других практических сессий.</p>
 </details>
-<p>Давайте попробуем выполнить поиск в GDC по ключевому слову:</p>
+<p>Давайте попробуем запросить GDC с ключевым словом:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>-q<span class="w"> </span>observations
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Какова политика доступа к данным в результатах?</p>
+<p>Какова политика данных результатов?</p>
 </div>
 <details class="success">
 <summary>Нажмите, чтобы увидеть ответ</summary>
-<p>Все возвращаемые данные должны иметь пометку "core"</p>
+<p>Все возвращенные данные должны указывать на "основные" данные</p>
 </details>
 <p>Попробуйте дополнительные запросы с <code>-q</code></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Флаг <code>-q</code> поддерживает следующий синтаксис:</p>
+<p>Флаг <code>-q</code> позволяет использовать следующий синтаксис:</p>
 <ul>
 <li><code>-q synop</code>: найти все записи со словом "synop"</li>
 <li><code>-q temp</code>: найти все записи со словом "temp"</li>
 <li><code>-q "observations AND oman"</code>: найти все записи со словами "observations" и "oman"</li>
-<li><code>-q "observations NOT oman"</code>: найти все записи, содержащие слово "observations", но не содержащие слово "oman"</li>
-<li><code>-q "synop OR temp"</code>: найти все записи со словами "synop" или "temp"</li>
+<li><code>-q "observations NOT oman"</code>: найти все записи, содержащие слово "observations", но не "oman"</li>
+<li><code>-q "synop OR temp"</code>: найти все записи с "synop" или "temp"</li>
 <li><code>-q "obs*"</code>: нечеткий поиск</li>
 </ul>
 <p>При поиске терминов с пробелами заключайте их в двойные кавычки.</p>
 </div>
-<p>Давайте получим более подробную информацию о конкретном результате поиска, который нас интересует:</p>
+<p>Давайте получим больше деталей о конкретном результате поиска, который нас интересует:</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>get<span class="w"> </span>&lt;id&gt;
 </code></pre></div>
 <div class="admonition tip">
@@ -1106,9 +1106,9 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 <h2 id="_3">Заключение</h2>
 <div class="admonition success">
 <p class="admonition-title">Поздравляем!</p>
-<p>В этом практическом занятии вы научились:</p>
+<p>На этой практической сессии вы научились:</p>
 <ul>
-<li>использовать pywiscat для поиска наборов данных в WIS2 Global Discovery Catalogue</li>
+<li>использовать pywiscat для обнаружения наборов данных из Глобального каталога открытия WIS2</li>
 </ul>
 </div>
 

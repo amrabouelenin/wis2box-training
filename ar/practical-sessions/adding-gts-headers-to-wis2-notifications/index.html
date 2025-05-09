@@ -26,7 +26,7 @@
     
     
       
-        <title>إضافة ترويسات GTS إلى إشعارات WIS2 - WIS2 in a box training</title>
+        <title>إضافة رؤوس GTS إلى إشعارات WIS2 - WIS2 in a box training</title>
       
     
     
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              إضافة ترويسات GTS إلى إشعارات WIS2
+              إضافة رؤوس GTS إلى إشعارات WIS2
             
           </span>
         </div>
@@ -644,7 +644,7 @@
         <li class="md-nav__item">
   <a href="#gts" class="md-nav__link">
     <span class="md-ellipsis">
-      إدخال البيانات مع ترويسات GTS
+      إدخال البيانات مع رؤوس GTS
     </span>
   </a>
   
@@ -653,7 +653,7 @@
         <li class="md-nav__item">
   <a href="#gts-wis2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      عرض ترويسات GTS في إشعار WIS2
+      عرض رؤوس GTS في إشعار WIS2
     </span>
   </a>
   
@@ -662,7 +662,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      الخاتمة
+      خاتمة
     </span>
   </a>
   
@@ -1025,7 +1025,7 @@
         <li class="md-nav__item">
   <a href="#gts" class="md-nav__link">
     <span class="md-ellipsis">
-      إدخال البيانات مع ترويسات GTS
+      إدخال البيانات مع رؤوس GTS
     </span>
   </a>
   
@@ -1034,7 +1034,7 @@
         <li class="md-nav__item">
   <a href="#gts-wis2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      عرض ترويسات GTS في إشعار WIS2
+      عرض رؤوس GTS في إشعار WIS2
     </span>
   </a>
   
@@ -1043,7 +1043,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      الخاتمة
+      خاتمة
     </span>
   </a>
   
@@ -1065,20 +1065,20 @@
 
 
 
-<h1 id="gts-wis2">إضافة ترويسات GTS إلى إشعارات WIS2</h1>
+<h1 id="gts-wis2">إضافة رؤوس GTS إلى إشعارات WIS2</h1>
 <div class="admonition abstract">
 <p class="admonition-title">نتائج التعلم</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
-<li>تكوين تخطيط بين اسم الملف وترويسات GTS</li>
-<li>إدخال البيانات باسم ملف يتطابق مع ترويسات GTS</li>
-<li>عرض ترويسات GTS في إشعارات WIS2</li>
+<li>تكوين تعيين بين اسم الملف ورؤوس GTS</li>
+<li>إدخال البيانات بأسماء ملفات تتطابق مع رؤوس GTS</li>
+<li>عرض رؤوس GTS في إشعارات WIS2</li>
 </ul>
 </div>
 <h2 id="_1">مقدمة</h2>
-<p>سيحتاج أعضاء المنظمة العالمية للأرصاد الجوية الراغبين في إيقاف نقل بياناتهم على GTS خلال مرحلة الانتقال إلى WIS2 إلى إضافة ترويسات GTS إلى إشعارات WIS2 الخاصة بهم. تمكن هذه الترويسات بوابة WIS2 إلى GTS من إعادة توجيه البيانات إلى شبكة GTS.</p>
-<p>هذا يسمح للأعضاء الذين انتقلوا إلى استخدام عقدة WIS2 لنشر البيانات بتعطيل نظام MSS الخاص بهم وضمان أن بياناتهم لا تزال متاحة للأعضاء الذين لم ينتقلوا بعد إلى WIS2.</p>
-<p>يجب إضافة خاصية GTS في رسالة إشعار WIS2 كخاصية إضافية لرسالة إشعار WIS2. خاصية GTS هي كائن JSON يحتوي على ترويسات GTS المطلوبة لإعادة توجيه البيانات إلى شبكة GTS.</p>
+<p>الأعضاء في المنظمة العالمية للأرصاد الجوية الراغبين في إيقاف نقل بياناتهم على GTS خلال مرحلة الانتقال إلى WIS2 سيحتاجون إلى إضافة رؤوس GTS إلى إشعاراتهم WIS2. تمكن هذه الرؤوس بوابة WIS2 إلى GTS من توجيه البيانات إلى شبكة GTS.</p>
+<p>هذا يسمح للأعضاء الذين انتقلوا إلى استخدام عقدة WIS2 لنشر البيانات بتعطيل نظام MSS الخاص بهم وضمان توفر بياناتهم للأعضاء الذين لم ينتقلوا بعد إلى WIS2.</p>
+<p>يجب إضافة خاصية GTS في رسالة إشعار WIS2 كخاصية إضافية إلى رسالة إشعار WIS2. خاصية GTS هي كائن JSON يحتوي على رؤوس GTS المطلوبة لتوجيه البيانات إلى شبكة GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;ttaaii&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FTAE31&quot;</span><span class="p">,</span>
@@ -1086,20 +1086,20 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>داخل wis2box يمكنك إضافة هذا إلى إشعارات WIS2 تلقائياً عن طريق توفير ملف إضافي يسمى <code>gts_headers_mapping.csv</code> يحتوي على المعلومات المطلوبة لتخطيط ترويسات GTS إلى أسماء الملفات الواردة.</p>
+<p>ضمن wis2box يمكنك إضافة هذا إلى إشعارات WIS2 تلقائيًا عن طريق توفير ملف إضافي يسمى <code>gts_headers_mapping.csv</code> يحتوي على المعلومات المطلوبة لتعيين رؤوس GTS إلى أسماء الملفات الواردة.</p>
 <p>يجب وضع هذا الملف في الدليل المحدد بواسطة <code>WIS2BOX_HOST_DATADIR</code> في ملف <code>wis2box.env</code> الخاص بك ويجب أن يحتوي على الأعمدة التالية:</p>
 <ul>
-<li><code>string_in_filepath</code>: سلسلة تشكل جزءاً من اسم الملف سيتم استخدامها لمطابقة ترويسات GTS</li>
-<li><code>TTAAii</code>: ترويسة TTAAii التي سيتم إضافتها إلى إشعار WIS2</li>
-<li><code>CCCC</code>: ترويسة CCCC التي سيتم إضافتها إلى إشعار WIS2</li>
+<li><code>string_in_filepath</code>: سلسلة تكون جزءًا من اسم الملف الذي سيتم استخدامه لمطابقة رؤوس GTS</li>
+<li><code>TTAAii</code>: رأس TTAAii الذي سيتم إضافته إلى إشعار WIS2</li>
+<li><code>CCCC</code>: رأس CCCC الذي سيتم إضافته إلى إشعار WIS2</li>
 </ul>
 <h2 id="_2">التحضير</h2>
-<p>تأكد من أن لديك وصول SSH إلى VM الخاص بك وأن نسخة wis2box الخاصة بك تعمل.</p>
+<p>تأكد من أن لديك وصول SSH إلى VM الطالب الخاص بك وأن نسخة wis2box الخاصة بك قيد التشغيل.</p>
 <p>تأكد من أنك متصل بوسيط MQTT الخاص بنسخة wis2box باستخدام MQTT Explorer. يمكنك استخدام بيانات الاعتماد العامة <code>everyone/everyone</code> للاتصال بالوسيط.</p>
-<p>تأكد من أن لديك متصفح ويب مفتوح مع لوحة معلومات Grafana لنسختك عن طريق الذهاب إلى <code>http://YOUR-HOST:3000</code></p>
+<p>تأكد من أن لديك متصفح ويب مفتوحًا مع لوحة تحكم Grafana لنسختك بالانتقال إلى <code>http://YOUR-HOST:3000</code></p>
 <h2 id="gts_headers_mappingcsv">إنشاء <code>gts_headers_mapping.csv</code></h2>
-<p>لإضافة ترويسات GTS إلى إشعارات WIS2 الخاصة بك، مطلوب ملف CSV يخطط ترويسات GTS إلى أسماء الملفات الواردة.</p>
-<p>يجب تسمية ملف CSV (بالضبط) <code>gts_headers_mapping.csv</code> ويجب وضعه في الدليل المحدد بواسطة <code>WIS2BOX_HOST_DATADIR</code> في ملف <code>wis2box.env</code> الخاص بك.</p>
+<p>لإضافة رؤوس GTS إلى إشعارات WIS2 الخاصة بك، مطلوب ملف CSV يعين رؤوس GTS إلى أسماء الملفات الواردة.</p>
+<p>يجب تسمية الملف (بالضبط) <code>gts_headers_mapping.csv</code> ويجب وضعه في الدليل المحدد بواسطة <code>WIS2BOX_HOST_DATADIR</code> في ملف <code>wis2box.env</code> الخاص بك.</p>
 <h2 id="gts_headers_mappingcsv_1">توفير ملف <code>gts_headers_mapping.csv</code></h2>
 <p>انسخ الملف <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> إلى نسخة wis2box الخاصة بك وضعه في الدليل المحدد بواسطة <code>WIS2BOX_HOST_DATADIR</code> في ملف <code>wis2box.env</code> الخاص بك.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/gts_headers_mapping.csv<span class="w"> </span>~/wis2box-data
@@ -1107,7 +1107,7 @@
 <p>ثم أعد تشغيل حاوية wis2box-management لتطبيق التغييرات:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-management
 </code></pre></div>
-<h2 id="gts">إدخال البيانات مع ترويسات GTS</h2>
+<h2 id="gts">إدخال البيانات مع رؤوس GTS</h2>
 <p>انسخ الملف <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> إلى الدليل المحدد بواسطة <code>WIS2BOX_HOST_DATADIR</code> في ملف <code>wis2box.env</code> الخاص بك:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>~/wis2box-data
 </code></pre></div>
@@ -1119,16 +1119,16 @@ python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:core.surface-based-observations.synop
 </code></pre></div>
 <p>تأكد من استبدال خيار <code>metadata-id</code> بالمعرف الصحيح لمجموعة البيانات الخاصة بك.</p>
-<p>تحقق من لوحة معلومات Grafana لمعرفة ما إذا تم إدخال البيانات بشكل صحيح. إذا رأيت أي تحذيرات أو أخطاء، حاول إصلاحها وكرر التمرين باستخدام أمر <code>wis2box data ingest</code>.</p>
-<h2 id="gts-wis2_1">عرض ترويسات GTS في إشعار WIS2</h2>
-<p>انتقل إلى MQTT Explorer وتحقق من رسالة إشعار WIS2 للبيانات التي قمت بإدخالها للتو.</p>
-<p>يجب أن تحتوي رسالة إشعار WIS2 على ترويسات GTS التي قدمتها في ملف <code>gts_headers_mapping.csv</code>.</p>
-<h2 id="_3">الخاتمة</h2>
+<p>تحقق من لوحة تحكم Grafana لمعرفة ما إذا تم إدخال البيانات بشكل صحيح. إذا رأيت أي تحذيرات أو أخطاء، حاول إصلاحها وكرر تمرين الأمر <code>wis2box data ingest</code>.</p>
+<h2 id="gts-wis2_1">عرض رؤوس GTS في إشعار WIS2</h2>
+<p>انتقل إلى MQTT Explorer وتحقق من رسالة إشعار WIS2 للبيانات التي أدخلتها للتو.</p>
+<p>يجب أن تحتوي رسالة إشعار WIS2 على رؤوس GTS التي قدمتها في ملف <code>gts_headers_mapping.csv</code>.</p>
+<h2 id="_3">خاتمة</h2>
 <div class="admonition success">
 <p class="admonition-title">تهانينا!</p>
 <p>في هذه الجلسة العملية، تعلمت كيفية:
-  - إضافة ترويسات GTS إلى إشعارات WIS2 الخاصة بك
-  - التحقق من أن ترويسات GTS متاحة عبر تثبيت wis2box الخاص بك</p>
+  - إضافة رؤوس GTS إلى إشعارات WIS2 الخاصة بك
+  - التحقق من توفر رؤوس GTS عبر تثبيت wis2box الخاص بك</p>
 </div>
 
 

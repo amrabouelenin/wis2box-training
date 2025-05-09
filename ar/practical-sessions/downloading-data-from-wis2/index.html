@@ -670,7 +670,76 @@
         <li class="md-nav__item">
   <a href="#wis2downloader-grafana" class="md-nav__link">
     <span class="md-ellipsis">
-      عرض لوحة معلومات wis2downloader في Grafana
+      عرض لوحة تحكم wis2downloader في Grafana
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2downloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      مراجعة تكوين wis2downloader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2downloader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة اشتراكات إلى wis2downloader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      عرض البيانات المُنزلة
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2downloader_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      إزالة الاشتراكات من wis2downloader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      تنزيل وفك تشفير البيانات لمسار إعصار استوائي
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="تنزيل وفك تشفير البيانات لمسار إعصار استوائي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wis2training-broker" class="md-nav__link">
+    <span class="md-ellipsis">
+      الاشتراك في wis2training-broker وإعداد اشتراك جديد
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      الخاتمة
     </span>
   </a>
   
@@ -971,7 +1040,76 @@
         <li class="md-nav__item">
   <a href="#wis2downloader-grafana" class="md-nav__link">
     <span class="md-ellipsis">
-      عرض لوحة معلومات wis2downloader في Grafana
+      عرض لوحة تحكم wis2downloader في Grafana
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2downloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      مراجعة تكوين wis2downloader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2downloader_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      إضافة اشتراكات إلى wis2downloader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      عرض البيانات المُنزلة
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2downloader_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      إزالة الاشتراكات من wis2downloader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      تنزيل وفك تشفير البيانات لمسار إعصار استوائي
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="تنزيل وفك تشفير البيانات لمسار إعصار استوائي">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wis2training-broker" class="md-nav__link">
+    <span class="md-ellipsis">
+      الاشتراك في wis2training-broker وإعداد اشتراك جديد
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      الخاتمة
     </span>
   </a>
   
@@ -995,40 +1133,176 @@
 
 <h1 id="wis2">تنزيل وفك تشفير البيانات من WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">مخرجات التعلم!</p>
-<p>بنهاية هذه الجلسة العملية، ستكون قادراً على:</p>
+<p class="admonition-title">نتائج التعلم!</p>
+<p>بنهاية هذه الجلسة العملية، ستكون قادرًا على:</p>
 <ul>
 <li>استخدام "wis2downloader" للاشتراك في إشعارات بيانات WIS2 وتنزيل البيانات إلى نظامك المحلي</li>
-<li>عرض حالة التنزيلات في لوحة معلومات Grafana</li>
-<li>فك تشفير بعض البيانات المنزلة باستخدام حاوية "decode-bufr-jupyter"</li>
+<li>عرض حالة التنزيلات في لوحة تحكم Grafana</li>
+<li>فك تشفير بعض البيانات المُنزلة باستخدام حاوية "decode-bufr-jupyter"</li>
 </ul>
 </div>
 <h2 id="_1">مقدمة</h2>
-<p>في هذه الجلسة ستتعلم كيفية إعداد اشتراك في WIS2 Broker وتنزيل البيانات تلقائياً إلى نظامك المحلي باستخدام خدمة "wis2downloader" المضمنة في wis2box.</p>
+<p>في هذه الجلسة ستتعلم كيفية إعداد اشتراك لـ WIS2 Broker وتنزيل البيانات تلقائيًا إلى نظامك المحلي باستخدام خدمة "wis2downloader" المضمنة في wis2box.</p>
 <div class="admonition note">
 <p class="admonition-title">حول wis2downloader</p>
-<p>يتوفر wis2downloader أيضاً كخدمة مستقلة يمكن تشغيلها على نظام مختلف عن النظام الذي ينشر إشعارات WIS2. راجع <a href="https://pypi.org/project/wis2downloader/">wis2downloader</a> للمزيد من المعلومات حول استخدام wis2downloader كخدمة مستقلة.</p>
+<p>يتوفر wis2downloader أيضًا كخدمة مستقلة يمكن تشغيلها على نظام مختلف عن النظام الذي ينشر إشعارات WIS2. راجع <a href="https://pypi.org/project/wis2downloader/">wis2downloader</a> لمزيد من المعلومات حول استخدام wis2downloader كخدمة مستقلة.</p>
 <p>إذا كنت ترغب في تطوير خدمتك الخاصة للاشتراك في إشعارات WIS2 وتنزيل البيانات، يمكنك استخدام <a href="https://github.com/World-Meteorological-Organization/wis2downloader">شفرة المصدر wis2downloader</a> كمرجع.</p>
 </div>
-<div class="admonition أدوات أخرى للوصول إلى بيانات wis2">
-<p class="admonition-title">أدوات</p>
-<p>يمكن استخدام الأدوات التالية أيضاً لاكتشاف والوصول إلى بيانات من WIS2:</p>
+<div class="admonition other tools for accessing wis2 data">
+<p class="admonition-title">Other</p>
+<p>يمكن استخدام الأدوات التالية أيضًا لاكتشاف والوصول إلى بيانات من WIS2:</p>
 <ul>
-<li><a href="https://github.com/wmo-im/pywiscat">pywiscat</a> يوفر إمكانية البحث في WIS2 Global Discovery Catalogue لدعم إعداد التقارير وتحليل كتالوج WIS2 وبيانات التعريف المرتبطة به</li>
-<li><a href="https://github.com/World-Meteorological-Organization/pywis-pubsub">pywis-pubsub</a> يوفر إمكانية الاشتراك وتنزيل بيانات WMO من خدمات بنية WIS2 التحتية</li>
+<li><a href="https://github.com/wmo-im/pywiscat">pywiscat</a> يوفر قدرة البحث فوق WIS2 Global Discovery Catalogue لدعم التقارير وتحليل كتالوج WIS2 وبيانات الاكتشاف المرتبطة به</li>
+<li><a href="https://github.com/World-Meteorological-Organization/pywis-pubsub">pywis-pubsub</a> يوفر قدرة الاشتراك وتنزيل بيانات WMO من خدمات بنية WIS2</li>
 </ul>
 </div>
 <h2 id="_2">التحضير</h2>
-<p>قبل البدء، يرجى تسجيل الدخول إلى جهازك الافتراضي والتأكد من أن نسخة wis2box الخاصة بك تعمل.</p>
-<h2 id="wis2downloader-grafana">عرض لوحة معلومات wis2downloader في Grafana</h2>
-<p>افتح متصفح الويب وانتقل إلى لوحة معلومات Grafana لنسخة wis2box الخاصة بك عن طريق الذهاب إلى <code>http://YOUR-HOST:3000</code>.</p>
-<p>انقر على لوحات المعلومات في القائمة اليسرى، ثم حدد <strong>لوحة معلومات wis2downloader</strong>.</p>
-<p>يجب أن ترى لوحة المعلومات التالية:</p>
-<p><img alt="لوحة معلومات wis2downloader" src="../../assets/img/wis2downloader-dashboard.png" /></p>
-<p>تعتمد لوحة المعلومات هذه على المقاييس التي ينشرها خدمة wis2downloader وستظهر لك حالة التنزيلات الجارية حالياً.</p>
-<p>في الزاوية العلوية اليسرى يمكنك رؤية الاشتراكات النشطة حالياً.</p>
-<p>احتفظ بلوحة المعلومات هذه مفتوحة حيث ستستخدمها لمراقبة تقدم التنزيل في التمرين التالي.</p>
-<p>[يستمر المحتوى المترجم بنفس النمط مع الحفاظ على جميع العناصر التنسيقية والمصطلحات المحددة]</p>
+<p>قبل البدء، يرجى تسجيل الدخول إلى VM الطالب الخاص بك وتأكد من أن نسخة wis2box الخاصة بك قيد التشغيل.</p>
+<h2 id="wis2downloader-grafana">عرض لوحة تحكم wis2downloader في Grafana</h2>
+<p>افتح متصفح ويب وانتقل إلى لوحة تحكم Grafana لنسخة wis2box الخاصة بك بالانتقال إلى <code>http://YOUR-HOST:3000</code>.</p>
+<p>انقر على لوحات التحكم في القائمة اليسرى، ثم حدد <strong>لوحة تحكم wis2downloader</strong>.</p>
+<p>يجب أن ترى اللوحة التالية:</p>
+<p><img alt="لوحة تحكم wis2downloader" src="../../assets/img/wis2downloader-dashboard.png" /></p>
+<p>تعتمد هذه اللوحة على المقاييس التي نشرتها خدمة wis2downloader وستعرض لك حالة التنزيلات الجارية حاليًا.</p>
+<p>في الزاوية العلوية اليسرى، يمكنك رؤية الاشتراكات النشطة حاليًا.</p>
+<p>احتفظ بهذه اللوحة مفتوحة حيث ستستخدمها لمراقبة تقدم التنزيل في التمرين التالي.</p>
+<h2 id="wis2downloader">مراجعة تكوين wis2downloader</h2>
+<p>يمكن تكوين خدمة wis2downloader التي بدأتها مجموعة wis2box باستخدام المتغيرات البيئية المحددة في ملف wis2box.env الخاص بك.</p>
+<p>تستخدم المتغيرات البيئية التالية بواسطة wis2downloader:</p>
+<pre><code>- DOWNLOAD_BROKER_HOST: اسم المضيف لوسيط MQTT الذي سيتم الاتصال به. القيمة الافتراضية هي globalbroker.meteo.fr
+- DOWNLOAD_BROKER_PORT: منفذ وسيط MQTT الذي سيتم الاتصال به. القيمة الافتراضية هي 443 (HTTPS لواجهات الويب)
+- DOWNLOAD_BROKER_USERNAME: اسم المستخدم للاتصال بوسيط MQTT. القيمة الافتراضية هي everyone
+- DOWNLOAD_BROKER_PASSWORD: كلمة المرور للاتصال بوسيط MQTT. القيمة الافتراضية هي everyone
+- DOWNLOAD_BROKER_TRANSPORT: واجهات الويب أو tcp، آلية النقل المستخدمة للاتصال بوسيط MQTT. القيمة الافتراضية هي واجهات الويب
+- DOWNLOAD_RETENTION_PERIOD_HOURS: فترة الاحتفاظ بالساعات للبيانات المُنزلة. القيمة الافتراضية هي 24
+- DOWNLOAD_WORKERS: عدد عمال التنزيل المستخدمين. القيمة الافتراضية هي 8. يحدد عدد التنزيلات المتوازية.
+- DOWNLOAD_MIN_FREE_SPACE_GB: الحد الأدنى للمساحة الحرة بالجيجابايت للحفاظ عليها في الحجم الذي يستضيف التنزيلات. القيمة الافتراضية هي 1.
+</code></pre>
+<p>لمراجعة التكوين الحالي لـ wis2downloader، يمكنك استخدام الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/wis2box/wis2box.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>DOWNLOAD
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">مراجعة تكوين wis2downloader</p>
+<p>ما هو وسيط MQTT الافتراضي الذي يتصل به wis2downloader؟</p>
+<p>ما هي فترة الاحتفاظ الافتراضية للبيانات المُنزلة؟</p>
+</div>
+<details class="success">
+<summary>انقر للكشف عن الإجابة</summary>
+<p>وسيط MQTT الافتراضي الذي يتصل به wis2downloader هو <code>globalbroker.meteo.fr</code>.</p>
+<p>فترة الاحتفاظ الافتراضية للبيانات المُنزلة هي 24 ساعة.</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">تحديث تكوين wis2downloader</p>
+<p>لتحديث تكوين wis2downloader، يمكنك تعديل ملف wis2box.env. لتطبيق التغييرات، يمكنك إعادة تشغيل الأمر البدء لمجموعة wis2box:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>start
+</code></pre></div>
+<p>وسترى خدمة wis2downloader تعيد التشغيل بالتكوين الجديد.</p>
+</div>
+<p>يمكنك الاحتفاظ بالتكوين الافتراضي لغرض هذا التمرين.</p>
+<h2 id="wis2downloader_1">إضافة اشتراكات إلى wis2downloader</h2>
+<p>داخل حاوية <strong>wis2downloader</strong>، يمكنك استخدام سطر الأوامر لإدراج الاشتراكات وإضافتها وحذفها.</p>
+<p>لتسجيل الدخول إلى حاوية <strong>wis2downloader</strong>، استخدم الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2downloader
+</code></pre></div>
+<p>ثم استخدم الأمر التالي لإدراج الاشتراكات النشطة حاليًا:</p>
+<div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>list-subscriptions
+</code></pre></div>
+<p>يعيد هذا الأمر قائمة فارغة نظرًا لعدم وجود اشتراكات نشطة حاليًا.</p>
+<p>لغرض هذا التمرين، سنشترك في الموضوع التالي <code>cache/a/wis2/de-dwd-gts-to-wis2/#</code>، للاشتراك في البيانات التي نشرها بوابة GTS-to-WIS2 المستضافة من DWD وإشعارات التنزيل من Global Cache.</p>
+<p>لإضافة هذا الاشتراك، استخدم الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>add-subscription<span class="w"> </span>--topic<span class="w"> </span>cache/a/wis2/de-dwd-gts-to-wis2/#
+</code></pre></div>
+<p>ثم اخرج من حاوية <strong>wis2downloader</strong> بكتابة <code>exit</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span>
+</code></pre></div>
+<p>تحقق من لوحة تحكم wis2downloader في Grafana لرؤية الاشتراك الجديد المضاف. انتظر بضع دقائق ويجب أن ترى التنزيلات الأولى تبدأ. انتقل إلى التمرين التالي بمجرد تأكيد بدء التنزيلات.</p>
+<h2 id="_3">عرض البيانات المُنزلة</h2>
+<p>تقوم خدمة wis2downloader في مجموعة wis2box بتنزيل البيانات في دليل 'downloads' في الدليل الذي حددته كـ WIS2BOX_HOST_DATADIR في ملف wis2box.env الخاص بك. لعرض محتويات دليل التنزيلات، يمكنك استخدام الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-R<span class="w"> </span>~/wis2box-data/downloads
+</code></pre></div>
+<p>لاحظ أن البيانات المُنزلة مخزنة في دلائل باسم الموضوع الذي نُشرت عليه إشعارات WIS2.</p>
+<h2 id="wis2downloader_2">إزالة الاشتراكات من wis2downloader</h2>
+<p>بعد ذلك، سجل الدخول مرة أخرى إلى حاوية wis2downloader:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2downloader
+</code></pre></div>
+<p>وأزل الاشتراك الذي قمت به من wis2downloader، باستخدام الأمر التالي:</p>
+<div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>remove-subscription<span class="w"> </span>--topic<span class="w"> </span>cache/a/wis2/de-dwd-gts-to-wis2/#
+</code></pre></div>
+<p>واخرج من حاوية wis2downloader بكتابة <code>exit</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span>
+</code></pre></div>
+<p>تحقق من لوحة تحكم wis2downloader في Grafana لرؤية الاشتراك المزال. يجب أن ترى التنزيلات تتوقف.</p>
+<h2 id="_4">تنزيل وفك تشفير البيانات لمسار إعصار استوائي</h2>
+<p>في هذا التمرين، ستشترك في WIS2 Training Broker الذي ينشر بيانات تدريبية كمثال. ستقوم بإعداد اشتراك لتنزيل البيانات لمسار إعصار استوائي. ثم ستقوم بفك تشفير البيانات المُنزلة باستخدام حاوية "decode-bufr-jupyter".</p>
+<h3 id="wis2training-broker">الاشتراك في wis2training-broker وإعداد اشتراك جديد</h3>
+<p>هذا يوضح كيفية الاشتراك في وسيط ليس الوسيط الافتراضي وسيسمح لك بتنزيل بعض البيانات التي نشرها WIS2 Training Broker.</p>
+<p>عدل ملف wis2box.env وغير DOWNLOAD_BROKER_HOST إلى <code>wis2training-broker.wis2dev.io</code>، غير DOWNLOAD_BROKER_PORT إلى <code>1883</code> وغير DOWNLOAD_BROKER_TRANSPORT إلى <code>tcp</code>:</p>
+<div class="highlight"><pre><span></span><code># إعدادات التنزيل
+DOWNLOAD_BROKER_HOST=wis2training-broker.wis2dev.io
+DOWNLOAD_BROKER_PORT=1883
+DOWNLOAD_BROKER_USERNAME=everyone
+DOWNLOAD_BROKER_PASSWORD=everyone
+# آلية نقل التنزيل (tcp أو واجهات الويب)
+DOWNLOAD_BROKER_TRANSPORT=tcp
+</code></pre></div>
+<p>ثم قم بتشغيل الأمر 'start' مرة أخرى لتطبيق التغييرات:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>start
+</code></pre></div>
+<p>تحقق من سجلات wis2downloader لمعرفة ما إذا كان الاتصال بالوسيط الجديد ناجحًا:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>logs<span class="w"> </span>wis2downloader
+</code></pre></div>
+<p>يجب أن ترى رسالة السجل التالية:</p>
+<div class="highlight"><pre><span></span><code>...
+INFO - Connecting...
+INFO - Host: wis2training-broker.wis2dev.io, port: 1883
+INFO - Connected successfully
+</code></pre></div>
+<p>الآن سنقوم بإعداد اشتراك جديد لتنزيل بيانات مسار الإعصار من WIS2 Training Broker.</p>
+<p>سجل الدخول إلى حاوية <strong>wis2downloader</strong>:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login<span class="w"> </span>wis2downloader
+</code></pre></div>
+<p>ونفذ الأمر التالي (انسخ والصق هذا لتجنب الأخطاء):</p>
+<div class="highlight"><pre><span></span><code>wis2downloader<span class="w"> </span>add-subscription<span class="w"> </span>--topic<span class="w"> </span>origin/a/wis2/int-wis2-training/data/core/weather/prediction/forecast/medium-range/probabilistic/trajectory
+</code></pre></div>
+<p>اخرج من حاوية <strong>wis2downloader</strong> بكتابة <code>exit</code>.</p>
+<p>انتظر حتى ترى التنزيلات تبدأ في لوحة تحكم wis2downloader في Grafana.</p>
+<div class="admonition note">
+<p class="admonition-title">تنزيل البيانات من WIS2 Training Broker</p>
+<p>WIS2 Training Broker هو وسيط اختبار يُستخدم لأغراض التدريب وقد لا ينشر البيانات طوال الوقت.</p>
+<p>خلال جلسات التدريب الشخصية، سيضمن المدرب المحلي أن WIS2 Training Broker سينشر البيانات لك لتنزيلها.</p>
+<p>إذا كنت تقوم بهذا التمرين خارج جلسة تدريب، قد لا</p>
+</div>
+<p>اقرأ التعليمات في الدفتر وشغّل الخلايا لفك تشفير البيانات المحملة لمسارات الأعاصير المدارية. قم بتشغيل كل خلية بالنقر على الخلية ثم النقر على زر التشغيل في شريط الأدوات أو بالضغط على <code>Shift+Enter</code>.</p>
+<p>في النهاية يجب أن ترى رسمًا بيانيًا لاحتمالية الإصابة لمسارات الأعاصير المدارية:</p>
+<p><img alt="مسارات الأعاصير المدارية" src="../../assets/img/tropical-cyclone-track-map.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>تعرض النتيجة احتمالية التنبؤ بمسار العاصفة المدارية ضمن 200 كم. كيف يمكنك تحديث الدفتر لعرض احتمالية التنبؤ بمسار العاصفة المدارية ضمن 300 كم؟</p>
+</div>
+<details class="success">
+<summary>انقر لكشف الإجابة</summary>
+<p>لتحديث الدفتر لعرض احتمالية التنبؤ بمسار العاصفة المدارية ضمن مسافة مختلفة، يمكنك تحديث متغير <code>distance_threshold</code> في الكتلة البرمجية التي تحسب احتمالية الإصابة.</p>
+<p>لعرض احتمالية التنبؤ بمسار العاصفة المدارية ضمن 300 كم، </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># تعيين حد المسافة (بالأمتار)</span>
+<span class="n">distance_threshold</span> <span class="o">=</span> <span class="mi">300000</span>  <span class="c1"># 300 كم بالأمتار</span>
+</code></pre></div>
+<p>ثم أعد تشغيل الخلايا في الدفتر لرؤية الرسم البياني المحدث.</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">فك تشفير بيانات BUFR</p>
+<p>التمرين الذي قمت به للتو قدم مثالًا محددًا عن كيفية فك تشفير بيانات BUFR باستخدام مكتبة ecCodes. قد تتطلب أنواع البيانات المختلفة خطوات فك تشفير مختلفة وقد تحتاج إلى الرجوع إلى التوثيق الخاص بنوع البيانات الذي تعمل معه.</p>
+<p>لمزيد من المعلومات يرجى الرجوع إلى <a href="https://confluence.ecmwf.int/display/ECC">توثيق ecCodes</a>.</p>
+</div>
+<h2 id="_5">الخاتمة</h2>
+<div class="admonition success">
+<p class="admonition-title">تهانينا!</p>
+<p>في هذه الجلسة العملية، تعلمت كيفية:</p>
+<ul>
+<li>استخدام 'wis2downloader' للاشتراك في WIS2 Broker وتحميل البيانات إلى نظامك المحلي</li>
+<li>مشاهدة حالة التحميلات في لوحة تحكم Grafana</li>
+<li>فك تشفير بعض البيانات المحملة باستخدام حاوية 'decode-bufr-jupyter'</li>
+</ul>
+</div>
 
 
 
