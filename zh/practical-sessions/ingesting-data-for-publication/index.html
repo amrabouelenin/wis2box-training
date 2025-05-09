@@ -1132,7 +1132,7 @@
 <p>要在WIS2 Node中使用wis2box软件触发数据工作流，必须将数据上传到<strong>MinIO</strong>中的<strong>wis2box-incoming</strong>桶，这将启动wis2box工作流。此过程将通过WIS2数据通知发布数据。根据您的wis2box实例中配置的数据映射，数据可能在发布前转换为BUFR格式。</p>
 <p>在本练习中，我们将使用示例数据文件触发wis2box工作流并<strong>发布WIS2数据通知</strong>，用于您在上一个实践课程中配置的数据集。</p>
 <p>在练习过程中，我们将使用<strong>Grafana仪表板</strong>和<strong>MQTT Explorer</strong>监控数据摄入的状态。Grafana仪表板使用来自Prometheus和Loki的数据显示您的wis2box的状态，而MQTT Explorer允许您查看您的wis2box实例发布的WIS2数据通知。</p>
-<p>请注意，wis2box将在发布到MQTT代理之前将示例数据转换为BUFR格式，这是根据您的数据集中预配置的数据映射进行的。对于本练习，我们将重点关注上传数据到您的wis2box实例的不同方法，并验证成功的摄入和发布。数据转换将在<a href="../data-conversion-tools">数据转换工具</a>实践课程中后续讨论。</p>
+<p>请注意，wis2box将在发布到MQTT代理之前将示例数据转换为BUFR格式，这是根据您的数据集中预配置的数据映射进行的。对于本练习，我们将重点关注上传数据到您的wis2box实例的不同方法，并验证成功的摄入和发布。数据转换将在<a href="./data-conversion-tools">数据转换工具</a>实践课程中后续讨论。</p>
 <h2 id="_3">准备</h2>
 <p>本节使用在<a href="/practical-sessions/configuring-wis2box-datasets">配置wis2box数据集</a>实践课程中之前创建的“地面观测/synop”数据集。它还需要配置<strong>wis2box-webapp</strong>中的站点的知识，如<a href="/practical-sessions/configuring-station-metadata">配置站点元数据</a>实践课程中所述。</p>
 <p>确保您可以使用SSH客户端（例如PuTTY）登录到您的学生VM。</p>
