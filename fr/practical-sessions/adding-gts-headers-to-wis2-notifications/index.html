@@ -638,9 +638,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ingestion-de-donnees-avec-des-en-tetes-gts" class="md-nav__link">
+  <a href="#ingestion-de-donnees-avec-en-tetes-gts" class="md-nav__link">
     <span class="md-ellipsis">
-      Ingestion de données avec des en-têtes GTS
+      Ingestion de données avec en-têtes GTS
     </span>
   </a>
   
@@ -649,7 +649,7 @@
         <li class="md-nav__item">
   <a href="#visualisation-des-en-tetes-gts-dans-la-notification-wis2" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualisation des en-têtes GTS dans la notification WIS2
+      Visualisation des en-têtes GTS dans la Notification WIS2
     </span>
   </a>
   
@@ -1019,9 +1019,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ingestion-de-donnees-avec-des-en-tetes-gts" class="md-nav__link">
+  <a href="#ingestion-de-donnees-avec-en-tetes-gts" class="md-nav__link">
     <span class="md-ellipsis">
-      Ingestion de données avec des en-têtes GTS
+      Ingestion de données avec en-têtes GTS
     </span>
   </a>
   
@@ -1030,7 +1030,7 @@
         <li class="md-nav__item">
   <a href="#visualisation-des-en-tetes-gts-dans-la-notification-wis2" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualisation des en-têtes GTS dans la notification WIS2
+      Visualisation des en-têtes GTS dans la Notification WIS2
     </span>
   </a>
   
@@ -1063,18 +1063,18 @@
 
 <h1 id="ajout-den-tetes-gts-aux-notifications-wis2">Ajout d'en-têtes GTS aux notifications WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objectifs d'apprentissage</p>
+<p class="admonition-title">Résultats d'apprentissage</p>
 <p>À la fin de cette session pratique, vous serez capable de :</p>
 <ul>
 <li>configurer une correspondance entre le nom de fichier et les en-têtes GTS</li>
-<li>ingérer des données avec un nom de fichier correspondant aux en-têtes GTS</li>
+<li>ingérer des données avec un nom de fichier qui correspond aux en-têtes GTS</li>
 <li>visualiser les en-têtes GTS dans les notifications WIS2</li>
 </ul>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>Les Membres de l'OMM souhaitant arrêter leur transmission de données sur le GTS pendant la phase de transition vers WIS2 devront ajouter des en-têtes GTS à leurs notifications WIS2. Ces en-têtes permettent à la passerelle WIS2 vers GTS de transmettre les données au réseau GTS.</p>
-<p>Cela permet aux Membres ayant migré vers l'utilisation d'un nœud WIS2 pour la publication de données de désactiver leur système MSS tout en s'assurant que leurs données restent disponibles pour les Membres n'ayant pas encore migré vers WIS2.</p>
-<p>La propriété GTS dans le Message de Notification WIS2 doit être ajoutée comme propriété supplémentaire au Message de Notification WIS2. La propriété GTS est un objet JSON qui contient les en-têtes GTS nécessaires pour que les données soient transmises au réseau GTS.</p>
+<p>Les membres de l'OMM souhaitant arrêter leur transmission de données sur le GTS pendant la phase de transition vers WIS2 devront ajouter des en-têtes GTS à leurs notifications WIS2. Ces en-têtes permettent au passerelle WIS2 vers GTS de transférer les données vers le réseau GTS.</p>
+<p>Cela permet aux membres ayant migré vers l'utilisation d'un nœud WIS2 pour la publication de données de désactiver leur système MSS et de s'assurer que leurs données sont toujours disponibles pour les membres n'ayant pas encore migré vers WIS2.</p>
+<p>La propriété GTS dans le Message de Notification WIS2 doit être ajoutée comme une propriété supplémentaire au Message de Notification WIS2. La propriété GTS est un objet JSON qui contient les en-têtes GTS nécessaires pour que les données soient transférées vers le réseau GTS.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;gts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;ttaaii&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FTAE31&quot;</span><span class="p">,</span>
@@ -1082,42 +1082,42 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Dans wis2box, vous pouvez ajouter cela automatiquement aux notifications WIS2 en fournissant un fichier supplémentaire nommé <code>gts_headers_mapping.csv</code> qui contient les informations nécessaires pour faire correspondre les en-têtes GTS aux noms de fichiers entrants.</p>
+<p>Au sein de wis2box, vous pouvez ajouter cela automatiquement aux Notifications WIS2 en fournissant un fichier supplémentaire nommé <code>gts_headers_mapping.csv</code> qui contient les informations nécessaires pour mapper les en-têtes GTS aux noms de fichiers entrants.</p>
 <p>Ce fichier doit être placé dans le répertoire défini par <code>WIS2BOX_HOST_DATADIR</code> dans votre <code>wis2box.env</code> et doit avoir les colonnes suivantes :</p>
 <ul>
-<li><code>string_in_filepath</code> : une chaîne qui fait partie du nom de fichier qui sera utilisée pour faire correspondre les en-têtes GTS</li>
+<li><code>string_in_filepath</code> : une chaîne qui fait partie du nom de fichier qui sera utilisée pour correspondre aux en-têtes GTS</li>
 <li><code>TTAAii</code> : l'en-tête TTAAii à ajouter à la notification WIS2</li>
 <li><code>CCCC</code> : l'en-tête CCCC à ajouter à la notification WIS2</li>
 </ul>
 <h2 id="preparation">Préparation</h2>
-<p>Assurez-vous d'avoir un accès SSH à votre VM étudiant et que votre instance wis2box est en cours d'exécution.</p>
-<p>Assurez-vous d'être connecté au broker MQTT de votre instance wis2box en utilisant MQTT Explorer. Vous pouvez utiliser les identifiants publics <code>everyone/everyone</code> pour vous connecter au broker.</p>
-<p>Assurez-vous d'avoir un navigateur web ouvert avec le tableau de bord Grafana de votre instance en allant sur <code>http://YOUR-HOST:3000</code></p>
+<p>Assurez-vous d'avoir un accès SSH à votre VM étudiante et que votre instance wis2box est opérationnelle.</p>
+<p>Assurez-vous que vous êtes connecté au broker MQTT de votre instance wis2box en utilisant MQTT Explorer. Vous pouvez utiliser les identifiants publics <code>everyone/everyone</code> pour vous connecter au broker.</p>
+<p>Assurez-vous d'avoir un navigateur web ouvert avec le tableau de bord Grafana pour votre instance en allant à <code>http://YOUR-HOST:3000</code></p>
 <h2 id="creation-de-gts_headers_mappingcsv">Création de <code>gts_headers_mapping.csv</code></h2>
-<p>Pour ajouter des en-têtes GTS à vos notifications WIS2, un fichier CSV est nécessaire pour faire correspondre les en-têtes GTS aux noms de fichiers entrants.</p>
-<p>Le fichier CSV doit être nommé (exactement) <code>gts_headers_mapping.csv</code> et doit être placé dans le répertoire défini par <code>WIS2BOX_HOST_DATADIR</code> dans votre <code>wis2box.env</code>.</p>
+<p>Pour ajouter des en-têtes GTS à vos notifications WIS2, un fichier CSV est requis qui mappe les en-têtes GTS aux noms de fichiers entrants.</p>
+<p>Le fichier CSV doit être nommé (exactement) <code>gts_headers_mapping.csv</code> et doit être placé dans le répertoire défini par <code>WIS2BOX_HOST_DATADIR</code> dans votre <code>wis2box.env</code>. </p>
 <h2 id="fourniture-dun-fichier-gts_headers_mappingcsv">Fourniture d'un fichier <code>gts_headers_mapping.csv</code></h2>
-<p>Copiez le fichier <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> vers votre instance wis2box et placez-le dans le répertoire défini par <code>WIS2BOX_HOST_DATADIR</code> dans votre <code>wis2box.env</code>.</p>
+<p>Copiez le fichier <code>exercise-materials/gts-headers-exercises/gts_headers_mapping.csv</code> sur votre instance wis2box et placez-le dans le répertoire défini par <code>WIS2BOX_HOST_DATADIR</code> dans votre <code>wis2box.env</code>.</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/gts_headers_mapping.csv<span class="w"> </span>~/wis2box-data
 </code></pre></div>
-<p>Puis redémarrez le conteneur wis2box-management pour appliquer les changements :</p>
+<p>Ensuite, redémarrez le conteneur wis2box-management pour appliquer les modifications :</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>wis2box-management
 </code></pre></div>
-<h2 id="ingestion-de-donnees-avec-des-en-tetes-gts">Ingestion de données avec des en-têtes GTS</h2>
+<h2 id="ingestion-de-donnees-avec-en-tetes-gts">Ingestion de données avec en-têtes GTS</h2>
 <p>Copiez le fichier <code>exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> dans le répertoire défini par <code>WIS2BOX_HOST_DATADIR</code> dans votre <code>wis2box.env</code> :</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>~/exercise-materials/gts-headers-exercises/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>~/wis2box-data
 </code></pre></div>
-<p>Puis connectez-vous au conteneur <strong>wis2box-management</strong> :</p>
+<p>Ensuite, connectez-vous au conteneur <strong>wis2box-management</strong> :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Depuis la ligne de commande wis2box, nous pouvons ingérer le fichier de données exemple <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> dans un jeu de données spécifique comme suit :</p>
+<p>Depuis la ligne de commande wis2box, nous pouvons ingérer le fichier de données d'exemple <code>A_SMRO01YRBK171200_C_EDZW_20240717120502.txt</code> dans un ensemble de données spécifique comme suit :</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/A_SMRO01YRBK171200_C_EDZW_20240717120502.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:core.surface-based-observations.synop
 </code></pre></div>
-<p>Assurez-vous de remplacer l'option <code>metadata-id</code> avec l'identifiant correct pour votre jeu de données.</p>
-<p>Vérifiez le tableau de bord Grafana pour voir si les données ont été correctement ingérées. Si vous voyez des AVERTISSEMENTS ou des ERREURS, essayez de les corriger et répétez l'exercice avec la commande <code>wis2box data ingest</code>.</p>
-<h2 id="visualisation-des-en-tetes-gts-dans-la-notification-wis2">Visualisation des en-têtes GTS dans la notification WIS2</h2>
-<p>Allez dans MQTT Explorer et vérifiez le Message de Notification WIS2 pour les données que vous venez d'ingérer.</p>
+<p>Assurez-vous de remplacer l'option <code>metadata-id</code> par l'identifiant correct pour votre ensemble de données.</p>
+<p>Vérifiez le tableau de bord Grafana pour voir si les données ont été correctement ingérées. Si vous voyez des AVERTISSEMENTS ou des ERREURS, essayez de les résoudre et répétez la commande <code>wis2box data ingest</code>.</p>
+<h2 id="visualisation-des-en-tetes-gts-dans-la-notification-wis2">Visualisation des en-têtes GTS dans la Notification WIS2</h2>
+<p>Allez à MQTT Explorer et vérifiez le Message de Notification WIS2 pour les données que vous venez d'ingérer.</p>
 <p>Le Message de Notification WIS2 devrait contenir les en-têtes GTS que vous avez fournis dans le fichier <code>gts_headers_mapping.csv</code>.</p>
 <h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">

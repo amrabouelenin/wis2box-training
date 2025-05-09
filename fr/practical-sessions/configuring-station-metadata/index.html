@@ -541,18 +541,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifier-vos-metadonnees-de-station" class="md-nav__link">
+  <a href="#reviser-vos-metadonnees-de-station" class="md-nav__link">
     <span class="md-ellipsis">
-      Vérifier vos métadonnées de station
+      Réviser vos métadonnées de station
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chargement-en-masse-des-metadonnees-de-station" class="md-nav__link">
+  <a href="#telechargement-en-masse-des-metadonnees-de-station" class="md-nav__link">
     <span class="md-ellipsis">
-      Chargement en masse des métadonnées de station
+      Téléchargement en masse des métadonnées de station
     </span>
   </a>
   
@@ -1001,18 +1001,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifier-vos-metadonnees-de-station" class="md-nav__link">
+  <a href="#reviser-vos-metadonnees-de-station" class="md-nav__link">
     <span class="md-ellipsis">
-      Vérifier vos métadonnées de station
+      Réviser vos métadonnées de station
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chargement-en-masse-des-metadonnees-de-station" class="md-nav__link">
+  <a href="#telechargement-en-masse-des-metadonnees-de-station" class="md-nav__link">
     <span class="md-ellipsis">
-      Chargement en masse des métadonnées de station
+      Téléchargement en masse des métadonnées de station
     </span>
   </a>
   
@@ -1045,72 +1045,72 @@
 
 <h1 id="configuration-des-metadonnees-des-stations">Configuration des métadonnées des stations</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objectifs d'apprentissage</p>
+<p class="admonition-title">Résultats d'apprentissage</p>
 <p>À la fin de cette session pratique, vous serez capable de :</p>
 <ul>
-<li>créer un jeton d'autorisation pour le point d'accès <code>collections/stations</code></li>
+<li>créer un jeton d'autorisation pour l'endpoint <code>collections/stations</code></li>
 <li>ajouter des métadonnées de station à wis2box</li>
-<li>mettre à jour/supprimer les métadonnées des stations en utilisant le <strong>wis2box-webapp</strong></li>
+<li>mettre à jour/supprimer des métadonnées de station en utilisant le <strong>wis2box-webapp</strong></li>
 </ul>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>Pour le partage international des données entre les Membres de l'OMM, il est important d'avoir une compréhension commune des stations qui produisent les données. Le Système mondial intégré des systèmes d'observation de l'OMM (WIGOS) fournit un cadre pour l'intégration des systèmes d'observation et des systèmes de gestion des données. L'<strong>Identifiant de Station WIGOS (WSI)</strong> est utilisé comme référence unique de la station qui a produit un ensemble spécifique de données d'observation.</p>
-<p>wis2box dispose d'une collection de métadonnées de stations qui est utilisée pour décrire les stations produisant les données d'observation et qui doit être récupérée depuis <strong>OSCAR/Surface</strong>. Les métadonnées des stations dans wis2box sont utilisées par les outils de transformation BUFR pour vérifier que les données d'entrée contiennent un Identifiant de Station WIGOS (WSI) valide et pour fournir une correspondance entre le WSI et les métadonnées de la station.</p>
+<p>Pour partager des données à l'international entre les membres de l'OMM, il est important de comprendre les stations qui produisent les données. Le Système mondial d'observation intégré de l'OMM (WIGOS) fournit un cadre pour l'intégration des systèmes d'observation et des systèmes de gestion des données. L'<strong>Identifiant de Station WIGOS (WSI)</strong> est utilisé comme référence unique de la station qui a produit un ensemble spécifique de données d'observation.</p>
+<p>wis2box possède une collection de métadonnées de station qui est utilisée pour décrire les stations produisant les données d'observation et doit être récupérée depuis <strong>OSCAR/Surface</strong>. Les métadonnées de station dans wis2box sont utilisées par les outils de transformation BUFR pour vérifier que les données entrantes contiennent un Identifiant de Station WIGOS (WSI) valide et pour fournir une correspondance entre le WSI et les métadonnées de la station.</p>
 <h2 id="creer-un-jeton-dautorisation-pour-collectionsstations">Créer un jeton d'autorisation pour collections/stations</h2>
-<p>Pour modifier les stations via le <strong>wis2box-webapp</strong>, vous devrez d'abord créer un jeton d'autorisation.</p>
-<p>Connectez-vous à votre VM étudiant et assurez-vous d'être dans le répertoire <code>wis2box</code> :</p>
+<p>Pour éditer des stations via le <strong>wis2box-webapp</strong>, vous devrez d'abord créer un jeton d'autorisation.</p>
+<p>Connectez-vous à votre VM étudiant et assurez-vous que vous êtes dans le répertoire <code>wis2box</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 </code></pre></div>
-<p>Puis connectez-vous au conteneur <strong>wis2box-management</strong> avec la commande suivante :</p>
+<p>Ensuite, connectez-vous au conteneur <strong>wis2box-management</strong> avec la commande suivante :</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Dans le conteneur <strong>wis2box-management</strong>, vous pouvez créer un jeton d'autorisation pour un point d'accès spécifique en utilisant la commande : <code>wis2box auth add-token --path &lt;my-endpoint&gt;</code>.</p>
-<p>Par exemple, pour utiliser un jeton généré automatiquement aléatoire pour le point d'accès <code>collections/stations</code> :</p>
+<p>Dans le conteneur <strong>wis2box-management</strong>, vous pouvez créer un jeton d'autorisation pour un endpoint spécifique en utilisant la commande : <code>wis2box auth add-token --path &lt;my-endpoint&gt;</code>.</p>
+<p>Par exemple, pour utiliser un jeton généré automatiquement aléatoire pour l'endpoint <code>collections/stations</code> :</p>
 <div class="highlight"><pre><span></span><code>wis2box auth add-token --path collections/stations
 </code></pre></div>
-<p>La sortie ressemblera à ceci :</p>
+<p>Le résultat sera le suivant :</p>
 <div class="highlight"><pre><span></span><code>Continue with token: 7ca20386a131f0de384e6ffa288eb1ae385364b3694e47e3b451598c82e899d1 [y/N]? y
 Token successfully created
 </code></pre></div>
-<p>Ou, si vous souhaitez définir votre propre jeton pour le point d'accès <code>collections/stations</code>, vous pouvez utiliser l'exemple suivant :</p>
+<p>Ou, si vous souhaitez définir votre propre jeton pour l'endpoint <code>collections/stations</code>, vous pouvez utiliser l'exemple suivant :</p>
 <div class="highlight"><pre><span></span><code>wis2box auth add-token --path collections/stations DataIsMagic
 </code></pre></div>
-<p>Sortie :</p>
+<p>Résultat :</p>
 <div class="highlight"><pre><span></span><code>Continue with token: DataIsMagic [y/N]? y
 Token successfully created
 </code></pre></div>
-<p>Veuillez créer un jeton d'autorisation pour le point d'accès <code>collections/stations</code> en suivant les instructions ci-dessus.</p>
+<p>Veuillez créer un jeton d'autorisation pour l'endpoint <code>collections/stations</code> en utilisant les instructions ci-dessus.</p>
 <h2 id="ajouter-des-metadonnees-de-station-en-utilisant-le-wis2box-webapp">Ajouter des métadonnées de station en utilisant le <strong>wis2box-webapp</strong></h2>
-<p>Le <strong>wis2box-webapp</strong> fournit une interface graphique pour éditer les métadonnées des stations.</p>
-<p>Ouvrez le <strong>wis2box-webapp</strong> dans votre navigateur en accédant à <code>http://YOUR-HOST/wis2box-webapp</code>, et sélectionnez stations :</p>
+<p>Le <strong>wis2box-webapp</strong> fournit une interface utilisateur graphique pour éditer les métadonnées des stations.</p>
+<p>Ouvrez le <strong>wis2box-webapp</strong> dans votre navigateur en naviguant vers <code>http://YOUR-HOST/wis2box-webapp</code>, et sélectionnez les stations :</p>
 <p><img alt="wis2box-webapp-select-stations" src="../../assets/img/wis2box-webapp-select-stations.png" width="250"></p>
-<p>Lorsque vous cliquez sur "add new station", on vous demande de fournir l'identifiant de station WIGOS pour la station que vous souhaitez ajouter :</p>
+<p>Lorsque vous cliquez sur 'ajouter une nouvelle station', il vous est demandé de fournir l'identifiant de station WIGOS pour la station que vous souhaitez ajouter :</p>
 <p><img alt="wis2box-webapp-import-station-from-oscar" src="../../assets/img/wis2box-webapp-import-station-from-oscar.png" width="800"></p>
 <div class="admonition note">
-<p class="admonition-title">Ajouter les métadonnées pour 3 stations ou plus</p>
-<p>Veuillez ajouter trois stations ou plus à la collection de métadonnées de stations de votre wis2box.</p>
-<p>Utilisez si possible des stations de votre pays, en particulier si vous avez apporté vos propres données.</p>
+<p class="admonition-title">Ajouter des métadonnées de station pour 3 stations ou plus</p>
+<p>Veuillez ajouter trois stations ou plus à la collection de métadonnées de station de votre wis2box. </p>
+<p>Veuillez utiliser des stations de votre pays si possible, surtout si vous avez apporté vos propres données.</p>
 <p>Si votre pays n'a pas de stations dans OSCAR/Surface, vous pouvez utiliser les stations suivantes pour cet exercice :</p>
 <ul>
 <li>0-20000-0-91334</li>
-<li>0-20000-0-96323 (notez l'altitude manquante dans OSCAR)</li>
-<li>0-20000-0-96749 (notez l'altitude manquante dans OSCAR)</li>
+<li>0-20000-0-96323 (notez l'absence d'élévation de la station dans OSCAR)</li>
+<li>0-20000-0-96749 (notez l'absence d'élévation de la station dans OSCAR)</li>
 </ul>
 </div>
-<p>Lorsque vous cliquez sur rechercher, les données de la station sont récupérées depuis OSCAR/Surface, notez que cela peut prendre quelques secondes.</p>
-<p>Examinez les données renvoyées par OSCAR/Surface et ajoutez les données manquantes si nécessaire. Sélectionnez un sujet pour la station et fournissez votre jeton d'autorisation pour le point d'accès <code>collections/stations</code> puis cliquez sur 'save' :</p>
+<p>Lorsque vous cliquez sur rechercher, les données de la station sont récupérées depuis OSCAR/Surface, veuillez noter que cela peut prendre quelques secondes.</p>
+<p>Examinez les données renvoyées par OSCAR/Surface et ajoutez les données manquantes si nécessaire. Sélectionnez un sujet pour la station et fournissez votre jeton d'autorisation pour l'endpoint <code>collections/stations</code> et cliquez sur 'enregistrer' :</p>
 <p><img alt="wis2box-webapp-create-station-save" src="../../assets/img/wis2box-webapp-create-station-save.png" width="800"></p>
 <p><img alt="wis2box-webapp-create-station-success" src="../../assets/img/wis2box-webapp-create-station-success.png" width="500"></p>
-<p>Retournez à la liste des stations et vous verrez la station que vous avez ajoutée :</p>
+<p>Revenez à la liste des stations et vous verrez la station que vous avez ajoutée :</p>
 <p><img alt="wis2box-webapp-stations-with-one-station" src="../../assets/img/wis2box-webapp-stations-with-one-station.png" width="800"></p>
 <p>Répétez ce processus jusqu'à ce que vous ayez configuré au moins 3 stations.</p>
 <div class="admonition tip">
-<p class="admonition-title">Dériver les informations d'altitude manquantes</p>
-<p>Si l'altitude de votre station est manquante, il existe des services en ligne pour rechercher l'altitude à partir de données d'élévation ouvertes. Un exemple est l'<a href="https://www.opentopodata.org">API Open Topo Data</a>.</p>
-<p>Par exemple, pour obtenir l'altitude à la latitude -6.15558 et longitude 106.84204, vous pouvez copier-coller l'URL suivante dans un nouvel onglet du navigateur :</p>
+<p class="admonition-title">Dérivation des informations d'élévation manquantes</p>
+<p>Si l'élévation de votre station est manquante, il existe des services en ligne pour aider à rechercher l'élévation en utilisant des données d'élévation ouvertes. Un tel exemple est l'<a href="https://www.opentopodata.org">API Open Topo Data</a>.</p>
+<p>Par exemple, pour obtenir l'élévation à la latitude -6.15558 et à la longitude 106.84204, vous pouvez copier-coller l'URL suivante dans un nouvel onglet de navigateur :</p>
 <div class="highlight"><pre><span></span><code>https://api.opentopodata.org/v1/aster30m?locations=-6.15558,106.84204
 </code></pre></div>
-<p>Sortie :</p>
+<p>Résultat :</p>
 <div class="highlight"><pre><span></span><code>{
   &quot;results&quot;: [
     {
@@ -1126,36 +1126,36 @@ Token successfully created
 }
 </code></pre></div>
 </div>
-<h2 id="verifier-vos-metadonnees-de-station">Vérifier vos métadonnées de station</h2>
-<p>Les métadonnées des stations sont stockées dans le backend de wis2box et rendues disponibles via le <strong>wis2box-api</strong>.</p>
-<p>Si vous ouvrez un navigateur et accédez à <code>http://YOUR-HOST/oapi/collections/stations/items</code>, vous verrez les métadonnées des stations que vous avez ajoutées :</p>
+<h2 id="reviser-vos-metadonnees-de-station">Réviser vos métadonnées de station</h2>
+<p>Les métadonnées de station sont stockées dans le backend de wis2box et sont disponibles via le <strong>wis2box-api</strong>. </p>
+<p>Si vous ouvrez un navigateur et naviguez vers <code>http://YOUR-HOST/oapi/collections/stations/items</code> vous verrez les métadonnées de station que vous avez ajoutées :</p>
 <p><img alt="wis2box-api-stations" src="../../assets/img/wis2box-api-stations.png" width="800"></p>
 <div class="admonition note">
-<p class="admonition-title">Vérifier vos métadonnées de station</p>
-<p>Vérifiez que les stations que vous avez ajoutées sont associées à votre jeu de données en visitant <code>http://YOUR-HOST/oapi/collections/stations/items</code> dans votre navigateur.</p>
+<p class="admonition-title">Révisez vos métadonnées de station</p>
+<p>Vérifiez que les stations que vous avez ajoutées sont associées à votre ensemble de données en visitant <code>http://YOUR-HOST/oapi/collections/stations/items</code> dans votre navigateur.</p>
 </div>
-<p>Vous avez également la possibilité de visualiser/mettre à jour/supprimer la station dans le <strong>wis2box-webapp</strong>. Notez que vous devez fournir votre jeton d'autorisation pour le point d'accès <code>collections/stations</code> pour mettre à jour/supprimer la station.</p>
+<p>Vous avez également la possibilité de voir/mettre à jour/supprimer la station dans le <strong>wis2box-webapp</strong>. Notez que vous devez fournir votre jeton d'autorisation pour l'endpoint <code>collections/stations</code> pour mettre à jour/supprimer la station.</p>
 <div class="admonition note">
-<p class="admonition-title">Mettre à jour/supprimer les métadonnées de station</p>
-<p>Essayez de mettre à jour/supprimer les métadonnées d'une des stations que vous avez ajoutées en utilisant le <strong>wis2box-webapp</strong>.</p>
+<p class="admonition-title">Mettre à jour/supprimer des métadonnées de station</p>
+<p>Essayez de voir si vous pouvez mettre à jour/supprimer les métadonnées de station pour l'une des stations que vous avez ajoutées en utilisant le <strong>wis2box-webapp</strong>.</p>
 </div>
-<h2 id="chargement-en-masse-des-metadonnees-de-station">Chargement en masse des métadonnées de station</h2>
-<p>Notez que wis2box a également la capacité d'effectuer un chargement "en masse" des métadonnées de station à partir d'un fichier CSV en utilisant la ligne de commande dans le conteneur <strong>wis2box-management</strong>.</p>
+<h2 id="telechargement-en-masse-des-metadonnees-de-station">Téléchargement en masse des métadonnées de station</h2>
+<p>Notez que wis2box a également la capacité de charger en masse des métadonnées de station à partir d'un fichier CSV en utilisant la ligne de commande dans le conteneur <strong>wis2box-management</strong>.</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 wis2box<span class="w"> </span>metadata<span class="w"> </span>station<span class="w"> </span>publish-collection<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/metadata/station/station_list.csv<span class="w"> </span>-th<span class="w"> </span>origin/a/wis2/centre-id/weather/surface-based-observations/synop
 </code></pre></div>
-<p>Cela vous permet de télécharger un grand nombre de stations en une seule fois et de les associer à un sujet spécifique.</p>
-<p>Vous pouvez créer le fichier CSV en utilisant Excel ou un éditeur de texte, puis le télécharger vers wis2box-host-datadir pour le rendre disponible au conteneur <strong>wis2box-management</strong> dans le répertoire <code>/data/wis2box/</code>.</p>
-<p>Après avoir effectué un chargement en masse des stations, il est recommandé de vérifier les stations dans le <strong>wis2box-webapp</strong> pour s'assurer que les données ont été correctement téléchargées.</p>
-<p>Consultez la <a href="https://docs.wis2box.wis.wmo.int">documentation officielle de wis2box</a> pour plus d'informations sur l'utilisation de cette fonctionnalité.</p>
+<p>Cela vous permet de télécharger un grand nombre de stations à la fois et de les associer à un sujet spécifique.</p>
+<p>Vous pouvez créer le fichier CSV en utilisant Excel ou un éditeur de texte, puis le télécharger dans wis2box-host-datadir pour le rendre disponible au conteneur <strong>wis2box-management</strong> dans le répertoire <code>/data/wis2box/</code>.</p>
+<p>Après avoir effectué un téléchargement en masse de stations, il est recommandé de réviser les stations dans le <strong>wis2box-webapp</strong> pour vous assurer que les données ont été téléchargées correctement.</p>
+<p>Consultez la <a href="https://docs.wis2box.wis.wmo.int">documentation officielle de wis2box</a> pour plus d'informations sur comment utiliser cette fonctionnalité.</p>
 <h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">
 <p class="admonition-title">Félicitations !</p>
 <p>Dans cette session pratique, vous avez appris à :</p>
 <ul>
-<li>créer un jeton d'autorisation pour le point d'accès <code>collections/stations</code> à utiliser avec le <strong>wis2box-webapp</strong></li>
+<li>créer un jeton d'autorisation pour l'endpoint <code>collections/stations</code> à utiliser avec le <strong>wis2box-webapp</strong></li>
 <li>ajouter des métadonnées de station à wis2box en utilisant le <strong>wis2box-webapp</strong></li>
-<li>visualiser/mettre à jour/supprimer les métadonnées des stations en utilisant le <strong>wis2box-webapp</strong></li>
+<li>voir/mettre à jour/supprimer des métadonnées de station en utilisant le <strong>wis2box-webapp</strong></li>
 </ul>
 </div>
 

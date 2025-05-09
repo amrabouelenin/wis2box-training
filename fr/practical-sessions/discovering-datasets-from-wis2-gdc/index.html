@@ -26,7 +26,7 @@
     
     
       
-        <title>Découverte des jeux de données depuis le WIS2 Global Discovery Catalogue - WIS2 in a box training</title>
+        <title>Découverte de jeux de données depuis le Catalogue de Découverte Global WIS2 - WIS2 in a box training</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#decouverte-des-jeux-de-donnees-depuis-le-wis2-global-discovery-catalogue" class="md-skip">
+        <a href="#decouverte-de-jeux-de-donnees-depuis-le-catalogue-de-decouverte-global-wis2" class="md-skip">
           Aller au contenu
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Découverte des jeux de données depuis le WIS2 Global Discovery Catalogue
+              Découverte de jeux de données depuis le Catalogue de Découverte Global WIS2
             
           </span>
         </div>
@@ -695,9 +695,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#recherche-de-donnees-avec-pywiscat" class="md-nav__link">
+  <a href="#trouver-des-donnees-avec-pywiscat" class="md-nav__link">
     <span class="md-ellipsis">
-      Recherche de données avec pywiscat
+      Trouver des données avec pywiscat
     </span>
   </a>
   
@@ -992,9 +992,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#recherche-de-donnees-avec-pywiscat" class="md-nav__link">
+  <a href="#trouver-des-donnees-avec-pywiscat" class="md-nav__link">
     <span class="md-ellipsis">
-      Recherche de données avec pywiscat
+      Trouver des données avec pywiscat
     </span>
   </a>
   
@@ -1025,30 +1025,30 @@
 
 
 
-<h1 id="decouverte-des-jeux-de-donnees-depuis-le-wis2-global-discovery-catalogue">Découverte des jeux de données depuis le WIS2 Global Discovery Catalogue</h1>
+<h1 id="decouverte-de-jeux-de-donnees-depuis-le-catalogue-de-decouverte-global-wis2">Découverte de jeux de données depuis le Catalogue de Découverte Global WIS2</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Objectifs d'apprentissage!</p>
+<p class="admonition-title">Résultats d'apprentissage !</p>
 <p>À la fin de cette session pratique, vous serez capable de :</p>
 <ul>
-<li>utiliser pywiscat pour découvrir des jeux de données depuis le Global Discovery Catalogue (GDC)</li>
+<li>utiliser pywiscat pour découvrir des jeux de données depuis le Catalogue de Découverte Global (GDC)</li>
 </ul>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>Dans cette session, vous apprendrez à découvrir des données depuis le WIS2 Global Discovery Catalogue (GDC).</p>
+<p>Dans cette session, vous apprendrez à découvrir des données depuis le Catalogue de Découverte Global WIS2 (GDC).</p>
 <p>Actuellement, les GDC suivants sont disponibles :</p>
 <ul>
-<li>Environment and Climate Change Canada, Meteorological Service of Canada : <a href="https://wis2-gdc.weather.gc.ca">https://wis2-gdc.weather.gc.ca</a></li>
-<li>China Meteorological Administration : <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
-<li>Deutscher Wetterdienst : <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
+<li>Environnement et Changement Climatique Canada, Service Météorologique du Canada : <a href="https://wis2-gdc.weather.gc.ca">https://wis2-gdc.weather.gc.ca</a></li>
+<li>Administration Météorologique de Chine : <a href="https://gdc.wis.cma.cn">https://gdc.wis.cma.cn</a></li>
+<li>Service Météorologique Allemand : <a href="https://wis2.dwd.de/gdc">https://wis2.dwd.de/gdc</a></li>
 </ul>
-<p>Pendant les sessions de formation locales, un GDC local est configuré pour permettre aux participants d'interroger le GDC pour les métadonnées qu'ils ont publiées depuis leurs instances wis2box. Dans ce cas, les formateurs fourniront l'URL du GDC local.</p>
+<p>Lors des sessions de formation locales, un GDC local est mis en place pour permettre aux participants de consulter le GDC pour les métadonnées qu'ils ont publiées depuis leurs instances wis2box. Dans ce cas, les formateurs fourniront l'URL du GDC local.</p>
 <h2 id="preparation">Préparation</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Avant de commencer, veuillez vous connecter à votre machine virtuelle étudiante.</p>
+<p>Avant de commencer, veuillez vous connecter à votre VM étudiant.</p>
 </div>
 <h2 id="installation-de-pywiscat">Installation de pywiscat</h2>
-<p>Utilisez l'installateur de paquets Python <code>pip3</code> pour installer pywiscat sur votre machine virtuelle :
+<p>Utilisez l'installateur de paquets Python <code>pip3</code> pour installer pywiscat sur votre VM :
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>pywiscat
 </code></pre></div></p>
 <div class="admonition note">
@@ -1057,31 +1057,31 @@
 <div class="highlight"><pre><span></span><code>WARNING: The script pywiscat is installed in &#39;/home/username/.local/bin&#39; which is not on PATH.
 Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 </code></pre></div>
-<p>Exécutez alors la commande suivante :</p>
+<p>Alors exécutez la commande suivante :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/home/<span class="nv">$USER</span>/.local/bin
 </code></pre></div>
-<p>...où <code>$USER</code> est votre nom d'utilisateur sur votre machine virtuelle.</p>
+<p>...où <code>$USER</code> est votre nom d'utilisateur sur votre VM.</p>
 </div>
-<p>Vérifiez que l'installation a réussi :</p>
+<p>Vérifiez que l'installation a été réussie :</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>--version
 </code></pre></div>
-<h2 id="recherche-de-donnees-avec-pywiscat">Recherche de données avec pywiscat</h2>
-<p>Par défaut, pywiscat se connecte au Global Discovery Catalogue du Canada. Configurons pywiscat pour interroger le GDC de formation en définissant la variable d'environnement <code>PYWISCAT_GDC_URL</code> :</p>
+<h2 id="trouver-des-donnees-avec-pywiscat">Trouver des données avec pywiscat</h2>
+<p>Par défaut, pywiscat se connecte au Catalogue de Découverte Global du Canada. Configurons pywiscat pour interroger le GDC de formation en définissant la variable d'environnement <code>PYWISCAT_GDC_URL</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PYWISCAT_GDC_URL</span><span class="o">=</span>http://gdc.wis2.training:5002
 </code></pre></div>
 <p>Utilisons <a href="https://github.com/wmo-im/pywiscat">pywiscat</a> pour interroger le GDC configuré dans le cadre de la formation.</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>--help
 </code></pre></div>
-<p>Maintenant, recherchez tous les enregistrements dans le GDC :</p>
+<p>Recherchez maintenant dans le GDC tous les enregistrements :</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Combien d'enregistrements sont retournés par la recherche ?</p>
+<p>Combien d'enregistrements sont retournés de la recherche ?</p>
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>Le nombre d'enregistrements dépend du GDC que vous interrogez. En utilisant le GDC local de formation, vous devriez voir que le nombre d'enregistrements est égal au nombre de jeux de données qui ont été ingérés dans le GDC pendant les autres sessions pratiques.</p>
+<p>Le nombre d'enregistrements dépend du GDC que vous interrogez. Lors de l'utilisation du GDC de formation local, vous devriez voir que le nombre d'enregistrements est égal au nombre de jeux de données qui ont été ingérés dans le GDC lors des autres sessions pratiques.</p>
 </details>
 <p>Essayons d'interroger le GDC avec un mot-clé :</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>search<span class="w"> </span>-q<span class="w"> </span>observations
@@ -1092,21 +1092,21 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 </div>
 <details class="success">
 <summary>Cliquez pour révéler la réponse</summary>
-<p>Toutes les données retournées devraient spécifier des données "core"</p>
+<p>Toutes les données retournées doivent spécifier des données "core"</p>
 </details>
-<p>Essayez d'autres requêtes avec <code>-q</code></p>
+<p>Essayez des requêtes supplémentaires avec <code>-q</code></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Le drapeau <code>-q</code> permet la syntaxe suivante :</p>
 <ul>
-<li><code>-q synop</code> : trouve tous les enregistrements contenant le mot "synop"</li>
-<li><code>-q temp</code> : trouve tous les enregistrements contenant le mot "temp"</li>
-<li><code>-q "observations AND oman"</code> : trouve tous les enregistrements contenant les mots "observations" et "oman"</li>
+<li><code>-q synop</code> : trouve tous les enregistrements avec le mot "synop"</li>
+<li><code>-q temp</code> : trouve tous les enregistrements avec le mot "temp"</li>
+<li><code>-q "observations AND oman"</code> : trouve tous les enregistrements avec les mots "observations" et "oman"</li>
 <li><code>-q "observations NOT oman"</code> : trouve tous les enregistrements contenant le mot "observations" mais pas le mot "oman"</li>
-<li><code>-q "synop OR temp"</code> : trouve tous les enregistrements contenant "synop" ou "temp"</li>
-<li><code>-q "obs*"</code> : recherche approximative</li>
+<li><code>-q "synop OR temp"</code> : trouve tous les enregistrements avec "synop" ou "temp"</li>
+<li><code>-q "obs*"</code> : recherche floue</li>
 </ul>
-<p>Pour rechercher des termes contenant des espaces, entourez-les de guillemets doubles.</p>
+<p>Lors de la recherche de termes avec des espaces, les encadrer de guillemets doubles.</p>
 </div>
 <p>Obtenons plus de détails sur un résultat de recherche spécifique qui nous intéresse :</p>
 <div class="highlight"><pre><span></span><code>pywiscat<span class="w"> </span>get<span class="w"> </span>&lt;id&gt;
@@ -1117,10 +1117,10 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 </div>
 <h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">
-<p class="admonition-title">Félicitations!</p>
+<p class="admonition-title">Félicitations !</p>
 <p>Dans cette session pratique, vous avez appris à :</p>
 <ul>
-<li>utiliser pywiscat pour découvrir des jeux de données depuis le WIS2 Global Discovery Catalogue</li>
+<li>utiliser pywiscat pour découvrir des jeux de données depuis le Catalogue de Découverte Global WIS2</li>
 </ul>
 </div>
 
