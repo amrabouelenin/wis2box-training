@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>http://wi2box-training.new-track.net/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -16,7 +16,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -30,7 +30,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -44,7 +44,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -58,7 +58,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -72,7 +72,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -86,7 +86,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -100,7 +100,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -114,7 +114,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -128,7 +128,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -142,7 +142,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -156,7 +156,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -170,7 +170,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -184,7 +184,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -198,7 +198,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -212,7 +212,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -226,7 +226,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -240,7 +240,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -254,7 +254,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="http://wi2box-training.new-track.net/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -268,7 +268,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -282,7 +282,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -296,7 +296,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -310,7 +310,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -324,7 +324,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -338,7 +338,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -352,7 +352,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -366,7 +366,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -380,7 +380,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -394,7 +394,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -408,7 +408,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -422,7 +422,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -436,7 +436,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -450,7 +450,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -464,7 +464,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -478,7 +478,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -492,7 +492,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -506,7 +506,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -520,7 +520,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -534,85 +534,67 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -626,7 +608,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -640,7 +622,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -654,7 +636,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -668,7 +650,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -682,7 +664,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -696,7 +678,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -710,7 +692,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -724,7 +706,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -738,7 +720,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -752,7 +734,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -766,7 +748,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -780,7 +762,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -794,7 +776,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -808,7 +790,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -822,7 +804,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -836,7 +818,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -850,7 +832,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -864,7 +846,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -878,85 +860,67 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -970,7 +934,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -984,7 +948,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -998,7 +962,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -1012,7 +976,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -1026,7 +990,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -1040,7 +1004,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -1054,7 +1018,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -1068,7 +1032,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -1082,7 +1046,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -1096,7 +1060,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -1110,7 +1074,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -1124,7 +1088,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -1138,7 +1102,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -1152,7 +1116,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -1166,7 +1130,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -1180,7 +1144,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -1194,7 +1158,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -1208,7 +1172,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/pt/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -1221,86 +1185,8 @@
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
     </url>
     <url>
-        <loc>http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
-    </url>
-    <url>
         <loc>http://wi2box-training.new-track.net/zh/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -1314,7 +1200,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -1328,7 +1214,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -1342,7 +1228,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -1356,7 +1242,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -1370,7 +1256,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -1384,7 +1270,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -1398,7 +1284,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -1412,7 +1298,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -1426,7 +1312,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -1440,7 +1326,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -1454,7 +1340,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -1468,7 +1354,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -1482,7 +1368,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -1496,7 +1382,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -1510,7 +1396,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -1524,7 +1410,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -1538,7 +1424,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -1552,7 +1438,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -1566,85 +1452,67 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -1658,7 +1526,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -1672,7 +1540,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -1686,7 +1554,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -1700,7 +1568,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -1714,7 +1582,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -1728,7 +1596,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -1742,7 +1610,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -1756,7 +1624,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -1770,7 +1638,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -1784,7 +1652,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -1798,7 +1666,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -1812,7 +1680,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -1826,7 +1694,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -1840,7 +1708,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -1854,7 +1722,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -1868,7 +1736,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -1882,7 +1750,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -1896,7 +1764,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -1910,85 +1778,67 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/"/>
@@ -2002,7 +1852,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/cheatsheets/docker/"/>
@@ -2016,7 +1866,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/cheatsheets/linux/"/>
@@ -2030,7 +1880,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/cheatsheets/wis2box/"/>
@@ -2044,7 +1894,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/csv2bufr-templates/aws-template/"/>
@@ -2058,7 +1908,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/csv2bufr-templates/daycli-template/"/>
@@ -2072,7 +1922,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/accessing-your-student-vm/"/>
@@ -2086,7 +1936,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -2100,33 +1950,27 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/configuring-station-metadata/"/>
@@ -2140,7 +1984,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/configuring-wis2box-datasets/"/>
@@ -2154,7 +1998,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -2168,46 +2012,37 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/csv2bufr-templates/"/>
@@ -2221,7 +2056,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/data-conversion-tools/"/>
@@ -2235,7 +2070,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/datasets-with-access-control/"/>
@@ -2249,7 +2084,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -2263,7 +2098,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/downloading-data-from-wis2/"/>
@@ -2277,7 +2112,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/ingesting-data-for-publication/"/>
@@ -2291,7 +2126,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/initializing-wis2box/"/>
@@ -2305,20 +2140,17 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -2332,7 +2164,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -2346,7 +2178,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -2360,7 +2192,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -2374,7 +2206,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -2388,7 +2220,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -2402,7 +2234,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -2416,7 +2248,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -2430,7 +2262,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -2443,34 +2275,8 @@
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
     </url>
     <url>
-        <loc>http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
-    </url>
-    <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -2484,7 +2290,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -2498,7 +2304,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -2511,47 +2317,8 @@
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/connecting-to-wis2-over-mqtt/"/>
     </url>
     <url>
-        <loc>http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
-    </url>
-    <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -2565,7 +2332,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -2579,7 +2346,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -2593,7 +2360,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -2607,7 +2374,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -2621,7 +2388,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -2635,7 +2402,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -2648,21 +2415,8 @@
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/initializing-wis2box/"/>
     </url>
     <url>
-        <loc>http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
-    </url>
-    <url>
         <loc>http://wi2box-training.new-track.net/de/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -2676,7 +2430,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/"/>
@@ -2690,7 +2444,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/cheatsheets/docker/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/cheatsheets/docker/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/docker/"/>
@@ -2704,7 +2458,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/cheatsheets/linux/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/cheatsheets/linux/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/linux/"/>
@@ -2718,7 +2472,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/cheatsheets/wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/cheatsheets/wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/cheatsheets/wis2box/"/>
@@ -2732,7 +2486,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/csv2bufr-templates/aws-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/csv2bufr-templates/aws-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/aws-template/"/>
@@ -2746,7 +2500,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/csv2bufr-templates/daycli-template/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/csv2bufr-templates/daycli-template/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/csv2bufr-templates/daycli-template/"/>
@@ -2760,7 +2514,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/accessing-your-student-vm/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/accessing-your-student-vm/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/accessing-your-student-vm/"/>
@@ -2774,7 +2528,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/adding-gts-headers-to-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/adding-gts-headers-to-wis2-notifications/"/>
@@ -2788,7 +2542,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/configuring-station-metadata/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/configuring-station-metadata/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-station-metadata/"/>
@@ -2802,7 +2556,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/configuring-wis2box-datasets/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/configuring-wis2box-datasets/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/configuring-wis2box-datasets/"/>
@@ -2816,7 +2570,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/connecting-to-wis2-over-mqtt/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/connecting-to-wis2-over-mqtt/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/connecting-to-wis2-over-mqtt/"/>
@@ -2830,7 +2584,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/csv2bufr-templates/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/csv2bufr-templates/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/csv2bufr-templates/"/>
@@ -2844,7 +2598,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/data-conversion-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/data-conversion-tools/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/data-conversion-tools/"/>
@@ -2858,7 +2612,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/datasets-with-access-control/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/datasets-with-access-control/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/datasets-with-access-control/"/>
@@ -2872,7 +2626,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/discovering-datasets-from-wis2-gdc/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/discovering-datasets-from-wis2-gdc/"/>
@@ -2886,7 +2640,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/downloading-data-from-wis2/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/downloading-data-from-wis2/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/downloading-data-from-wis2/"/>
@@ -2900,7 +2654,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/ingesting-data-for-publication/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/ingesting-data-for-publication/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/ingesting-data-for-publication/"/>
@@ -2914,7 +2668,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/initializing-wis2box/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/initializing-wis2box/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/initializing-wis2box/"/>
@@ -2928,7 +2682,7 @@
     </url>
     <url>
         <loc>http://wi2box-training.new-track.net/it/practical-sessions/querying-data-using-the-wis2box-api/</loc>
-        <lastmod>2025-05-26</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/querying-data-using-the-wis2box-api/"/>
@@ -2939,83 +2693,5 @@
         <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/querying-data-using-the-wis2box-api/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/querying-data-using-the-wis2box-api/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/automating-data-ingestion/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/automating-data-ingestion/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/bufr-command-line-tools/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/bufr-command-line-tools/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-csv-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-csv-data-to-bufr/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr-form/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr-form/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/converting-synop-data-to-bufr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/converting-synop-data-to-bufr/"/>
-    </url>
-    <url>
-        <loc>http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/</loc>
-        <lastmod>2025-05-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="http://wi2box-training.new-track.net/it/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="ar" href="http://wi2box-training.new-track.net/ar/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="http://wi2box-training.new-track.net/de/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="http://wi2box-training.new-track.net/es/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="http://wi2box-training.new-track.net/fr/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="http://wi2box-training.new-track.net/pt/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="http://wi2box-training.new-track.net/ru/practical-sessions/monitoring-wis2-notifications/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="http://wi2box-training.new-track.net/zh/practical-sessions/monitoring-wis2-notifications/"/>
     </url>
 </urlset>

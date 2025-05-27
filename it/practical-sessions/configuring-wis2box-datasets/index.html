@@ -26,7 +26,7 @@
     
     
       
-        <title>Configurazione dei dataset in wis2box - WIS2 in a box training</title>
+        <title>Configuring datasets in wis2box - WIS2 in a box training</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configurazione-dei-dataset-in-wis2box" class="md-skip">
+        <a href="#configuring-datasets-in-wis2box" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configurazione dei dataset in wis2box
+              Configuring datasets in wis2box
             
           </span>
         </div>
@@ -295,6 +295,478 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Practical sessions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Practical sessions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connecting to WIS2 over MQTT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accessing-your-student-vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessing your student VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initializing-wis2box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Initializing wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Configuring datasets in wis2box
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring datasets in wis2box
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-authorization-token-for-processeswis2box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an authorization token for processes/wis2box
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-dataset-in-the-wis2box-webapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a new dataset in the wis2box-webapp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-discovery-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating discovery metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-data-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring data mappings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submitting-your-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submitting your dataset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reviewing-the-wis2-notification-for-your-discovery-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reviewing the WIS2-notification for your discovery metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-station-metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring station metadata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ingesting-data-for-publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ingesting Data for Publication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-conversion-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Conversion Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csv2bufr-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSV-to-BUFR mapping templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding GTS headers to WIS2 notifications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets-with-access-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up a recommended dataset with access control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downloading-data-from-wis2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Downloading and decoding data from WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Discovering datasets from the WIS2 Global Discovery Catalogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -314,15 +786,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Fogli di riferimento
+    cheatsheets
     
   </span>
   
@@ -330,10 +802,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Fogli di riferimento
+            cheatsheets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -434,15 +906,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Modelli csv2bufr
+    csv2bufr-templates
     
   </span>
   
@@ -450,10 +922,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Modelli csv2bufr
+            csv2bufr-templates
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -469,7 +941,7 @@
   
   
   <span class="md-ellipsis">
-    Modello AWS
+    AWS Template
     
   </span>
   
@@ -492,479 +964,7 @@
   
   
   <span class="md-ellipsis">
-    Template DAYCLI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Sessioni pratiche
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Sessioni pratiche
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Connessione a WIS2 tramite MQTT
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../accessing-your-student-vm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Accesso alla tua VM studente
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../initializing-wis2box/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Inizializzazione di wis2box
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Configurazione dei dataset in wis2box
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurazione dei dataset in wis2box
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Indice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Indice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduzione" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduzione
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparazione" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preparazione
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crea-un-token-di-autorizzazione-per-processeswis2box" class="md-nav__link">
-    <span class="md-ellipsis">
-      Crea un token di autorizzazione per processes/wis2box
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creazione-di-un-nuovo-dataset-nellwis2box-webapp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creazione di un nuovo dataset nell'wis2box-webapp
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creazione-di-metadati-di-scoperta" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creazione di metadati di scoperta
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configurazione-delle-mappature-dei-dati" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurazione delle mappature dei dati
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#invio-del-tuo-dataset" class="md-nav__link">
-    <span class="md-ellipsis">
-      Invio del tuo dataset
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#revisione-della-notifica-wis2-per-i-tuoi-metadati-di-scoperta" class="md-nav__link">
-    <span class="md-ellipsis">
-      Revisione della notifica WIS2 per i tuoi metadati di scoperta
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusione" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusione
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-station-metadata/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurazione dei metadati delle stazioni
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ingesting-data-for-publication/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ingestione dei Dati per la Pubblicazione
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../data-conversion-tools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Strumenti di Conversione dei Dati
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../csv2bufr-templates/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Modelli di mappatura da CSV a BUFR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Aggiunta di intestazioni GTS alle notifiche WIS2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datasets-with-access-control/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurazione di un dataset consigliato con controllo degli accessi
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../downloading-data-from-wis2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Scaricare e decodificare dati da WIS2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Scoperta di dataset dal Catalogo Globale di Scoperta WIS2
+    DAYCLI Template
     
   </span>
   
@@ -1009,81 +1009,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduzione" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduzione
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#preparazione" class="md-nav__link">
+  <a href="#preparation" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparazione
+      Preparation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#crea-un-token-di-autorizzazione-per-processeswis2box" class="md-nav__link">
+  <a href="#create-an-authorization-token-for-processeswis2box" class="md-nav__link">
     <span class="md-ellipsis">
-      Crea un token di autorizzazione per processes/wis2box
+      Create an authorization token for processes/wis2box
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creazione-di-un-nuovo-dataset-nellwis2box-webapp" class="md-nav__link">
+  <a href="#creating-a-new-dataset-in-the-wis2box-webapp" class="md-nav__link">
     <span class="md-ellipsis">
-      Creazione di un nuovo dataset nell'wis2box-webapp
+      Creating a new dataset in the wis2box-webapp
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creazione-di-metadati-di-scoperta" class="md-nav__link">
+  <a href="#creating-discovery-metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      Creazione di metadati di scoperta
+      Creating discovery metadata
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configurazione-delle-mappature-dei-dati" class="md-nav__link">
+  <a href="#configuring-data-mappings" class="md-nav__link">
     <span class="md-ellipsis">
-      Configurazione delle mappature dei dati
+      Configuring data mappings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#invio-del-tuo-dataset" class="md-nav__link">
+  <a href="#submitting-your-dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      Invio del tuo dataset
+      Submitting your dataset
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#revisione-della-notifica-wis2-per-i-tuoi-metadati-di-scoperta" class="md-nav__link">
+  <a href="#reviewing-the-wis2-notification-for-your-discovery-metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      Revisione della notifica WIS2 per i tuoi metadati di scoperta
+      Reviewing the WIS2-notification for your discovery metadata
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusione" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusione
+      Conclusion
     </span>
   </a>
   
@@ -1105,139 +1105,139 @@
 
 
 
-<h1 id="configurazione-dei-dataset-in-wis2box">Configurazione dei dataset in wis2box</h1>
+<h1 id="configuring-datasets-in-wis2box">Configuring datasets in wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Risultati di apprendimento</p>
-<p>Al termine di questa sessione pratica, sarai in grado di:</p>
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this practical session, you will be able to:</p>
 <ul>
-<li>creare un nuovo dataset</li>
-<li>creare metadati di scoperta per un dataset</li>
-<li>configurare le mappature dei dati per un dataset</li>
-<li>pubblicare una notifica WIS2 con un record WCMP2</li>
-<li>aggiornare e ripubblicare il tuo dataset</li>
+<li>create a new dataset</li>
+<li>create discovery metadata for a dataset</li>
+<li>configure data mappings for a dataset</li>
+<li>publish a WIS2 notification with a WCMP2 record</li>
+<li>update and re-publish your dataset</li>
 </ul>
 </div>
-<h2 id="introduzione">Introduzione</h2>
-<p>wis2box utilizza dataset associati a metadati di scoperta e mappature dei dati.</p>
-<p>I metadati di scoperta sono utilizzati per creare un record WCMP2 (WMO Core Metadata Profile 2) che viene condiviso tramite una notifica WIS2 pubblicata sul tuo wis2box-broker.</p>
-<p>Le mappature dei dati sono utilizzate per associare un plugin di dati ai tuoi dati di input, consentendo la trasformazione dei dati prima della loro pubblicazione tramite la notifica WIS2.</p>
-<p>Questa sessione ti guiderà nella creazione di un nuovo dataset, nella creazione di metadati di scoperta e nella configurazione delle mappature dei dati. Esaminerai il tuo dataset nell'wis2box-api e rivedrai la notifica WIS2 per i tuoi metadati di scoperta.</p>
-<h2 id="preparazione">Preparazione</h2>
-<p>Connettiti al tuo broker utilizzando MQTT Explorer. </p>
-<p>Invece di utilizzare le credenziali interne del tuo broker, usa le credenziali pubbliche <code>everyone/everyone</code>:</p>
+<h2 id="introduction">Introduction</h2>
+<p>wis2box uses datasets that are associated with discovery metadata and data mappings.</p>
+<p>Discovery metadata is used to create a WCMP2 (WMO Core Metadata Profile 2) record that is shared using a WIS2 notification published on your wis2box-broker.</p>
+<p>The data mappings are used to associate a data plugin to your input data, allowing your data to be transformed prior to being published using the WIS2 notification.</p>
+<p>This session will walk you through creating a new dataset, creating discovery metadata, and configuring data mappings. You will inspect your dataset in the wis2box-api and review the WIS2 notification for your discovery metadata.</p>
+<h2 id="preparation">Preparation</h2>
+<p>Connect to your broker using MQTT Explorer. </p>
+<p>Instead of using your internal broker credentials, use the public credentials <code>everyone/everyone</code>:</p>
 <p><img alt="MQTT Explorer: Connect to broker" src="/../assets/img/mqtt-explorer-wis2box-broker-everyone-everyone.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Non è mai necessario condividere le credenziali del tuo broker interno con utenti esterni. L'utente 'everyone' è un utente pubblico per consentire la condivisione delle notifiche WIS2.</p>
-<p>Le credenziali <code>everyone/everyone</code> hanno accesso in sola lettura sul topic 'origin/a/wis2/#'. Questo è il topic dove vengono pubblicate le notifiche WIS2. Il Global Broker può iscriversi con queste credenziali pubbliche per ricevere le notifiche.</p>
-<p>L'utente 'everyone' non vedrà i topic interni o sarà in grado di pubblicare messaggi.</p>
+<p>You never need to share the credentials of your internal broker with external users. The 'everyone' user is a public user to enable sharing of WIS2 notifications.</p>
+<p>The <code>everyone/everyone</code> credentials has read-only access on the topic 'origin/a/wis2/#'. This is the topic where the WIS2 notifications are published. The Global Broker can subscribe with these public credentials to receive the notifications.</p>
+<p>The 'everyone' user will not see internal topics or be able to publish messages.</p>
 </div>
-<p>Apri un browser e apri una pagina a <code>http://YOUR-HOST/wis2box-webapp</code>. Assicurati di essere loggato e di poter accedere alla pagina 'editor dei dataset'.</p>
-<p>Consulta la sezione su <a href="../initializing-wis2box/">Inizializzazione di wis2box</a> se hai bisogno di ricordare come connetterti al broker o accedere a wis2box-webapp.</p>
-<h2 id="crea-un-token-di-autorizzazione-per-processeswis2box">Crea un token di autorizzazione per processes/wis2box</h2>
-<p>Avrai bisogno di un token di autorizzazione per l'endpoint 'processes/wis2box' per pubblicare il tuo dataset. </p>
-<p>Per creare un token di autorizzazione, accedi alla tua VM di formazione tramite SSH e usa i seguenti comandi per effettuare il login nel contenitore wis2box-management:</p>
+<p>Open a browser and open a page to <code>http://YOUR-HOST/wis2box-webapp</code>. Make sure you are logged in and can access the 'dataset editor' page.</p>
+<p>See the section on <a href="../initializing-wis2box/">Initializing wis2box</a> if you need to remember how to connect to the broker or access the wis2box-webapp.</p>
+<h2 id="create-an-authorization-token-for-processeswis2box">Create an authorization token for processes/wis2box</h2>
+<p>You will need an authorization token for the 'processes/wis2box' endpoint to publish your dataset. </p>
+<p>To create an authorization token, access your training VM over SSH and use the following commands to login to the wis2box-management container:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Quindi esegui il seguente comando per creare un token di autorizzazione generato casualmente per l'endpoint 'processes/wis2box':</p>
+<p>Then run the following command to create a randomly generated authorization token for the 'processes/wis2box' endpoint:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--path<span class="w"> </span>processes/wis2box
 </code></pre></div>
-<p>Puoi anche creare un token con un valore specifico fornendo il token come argomento al comando:</p>
+<p>You can also create a token with a specific value by providing the token as an argument to the command:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>auth<span class="w"> </span>add-token<span class="w"> </span>--path<span class="w"> </span>processes/wis2box<span class="w"> </span>MyS3cretToken
 </code></pre></div>
-<p>Assicurati di copiare il valore del token e di conservarlo sul tuo computer locale, poiché ti servirà più tardi.</p>
-<p>Una volta ottenuto il tuo token, puoi uscire dal contenitore wis2box-management:</p>
+<p>Make sure to copy the token value and store it on your local machine, as you will need it later.</p>
+<p>Once you have your token, you can exit the wis2box-management container:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<h2 id="creazione-di-un-nuovo-dataset-nellwis2box-webapp">Creazione di un nuovo dataset nell'wis2box-webapp</h2>
-<p>Naviga alla pagina 'editor dei dataset' nell'wis2box-webapp della tua istanza wis2box andando a <code>http://YOUR-HOST/wis2box-webapp</code> e selezionando 'editor dei dataset' dal menu sul lato sinistro.</p>
-<p>Nella pagina 'editor dei dataset', sotto la scheda 'Datasets', clicca su "Crea nuovo ...":</p>
+<h2 id="creating-a-new-dataset-in-the-wis2box-webapp">Creating a new dataset in the wis2box-webapp</h2>
+<p>Navigate to the 'dataset editor' page in the wis2box-webapp of your wis2box instance by going to <code>http://YOUR-HOST/wis2box-webapp</code> and selecting 'dataset editor' from the menu on the left hand side.</p>
+<p>On the 'dataset editor' page, under the 'Datasets' tab, click on "Create New ...":</p>
 <p><img alt="Create New Dataset" src="/../assets/img/wis2box-create-new-dataset.png" width="800"></p>
-<p>Apparirà una finestra pop-up, chiedendoti di fornire:</p>
+<p>A pop-up window will appear, asking you to provide:</p>
 <ul>
-<li><strong>Centre ID</strong> : questo è l'acronimo dell'agenzia (in minuscolo e senza spazi), come specificato dal Membro WMO, che identifica il centro dati responsabile della pubblicazione dei dati.</li>
-<li><strong>Data Type</strong>: Il tipo di dati per cui stai creando metadati. Puoi scegliere tra l'utilizzo di un template predefinito o selezionare 'altro'. Se selezioni 'altro', sarà necessario compilare manualmente più campi.</li>
+<li><strong>Centre ID</strong> : this is the agency acronym (in lower case and no spaces), as specified by the WMO Member, that identifies the data centre responsible for publishing the data.</li>
+<li><strong>Data Type</strong>: The type of data you are creating metadata for. You can choose between using a predefined template or selecting 'other'.  If 'other' is selected, more fields will have to be manually filled. </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Centre ID</p>
-<p>Il tuo centre-id dovrebbe iniziare con il TLD del tuo paese, seguito da un trattino (<code>-</code>) e un nome abbreviato della tua organizzazione (ad esempio <code>it-meteoitalia</code>). Il centre-id deve essere in minuscolo e utilizzare solo caratteri alfanumerici. L'elenco a discesa mostra tutti i centre-id attualmente registrati su WIS2 così come qualsiasi centre-id che hai già creato in wis2box.</p>
+<p>Your centre-id should start with the TLD of your country, followed by a dash (<code>-</code>) and an abbreviated name of your organization (for example <code>fr-meteofrance</code>). The centre-id must be lowercase and use alphanumeric characters only. The dropdown list shows all currently registered centre-ids on WIS2 as well as any centre-id you have already created in wis2box.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Data Type Templates</p>
-<p>Il campo <em>Data Type</em> ti permette di selezionare da un elenco di template disponibili nell'editor dei dataset di wis2box-webapp. Un template pre-compila il modulo con valori predefiniti suggeriti appropriati per il tipo di dati. Questo include titolo e parole chiave suggeriti per i metadati e plugin di dati preconfigurati. Il topic sarà fissato al topic predefinito per il tipo di dati.</p>
-<p>Ai fini della formazione utilizzeremo il tipo di dati <em>weather/surface-based-observations/synop</em> che include plugin di dati che assicurano che i dati vengano trasformati in formato BUFR prima della pubblicazione.</p>
-<p>Se vuoi pubblicare avvisi CAP utilizzando wis2box, usa il template <em>weather/advisories-warnings</em>. Questo template include un plugin di dati che verifica che i dati di input siano un avviso CAP valido prima della pubblicazione. Per creare avvisi CAP e pubblicarli tramite wis2box puoi usare <a href="https://github.com/wmo-raf/cap-composer">CAP Composer</a>.</p>
+<p>The <em>Data Type</em> field allows you to select from a list of templates available in the wis2box-webapp dataset editor. A template will pre-populate the form with suggested default values appropriate for the data type. This includes suggested title and keywords for the metadata and pre-configured data plugins. The topic will be fixed to the default topic for the data type.</p>
+<p>For the purpose of the training we will use the <em>weather/surface-based-observations/synop</em> data type which includes data plugins that ensure the data is transformed into BUFR format before being published.</p>
+<p>If you want to publish CAP alerts using wis2box, use the template <em>weather/advisories-warnings</em>. This template includes a data plugin that verifies the input data is a valid CAP alert before publishing. To create CAP alerts and publish them via wis2box you can use the <a href="https://github.com/World-Meteorological-Organization/cap-composer">WMO CAP Composer</a> or forward the CAP XML from your own system into the wis2box-incoming bucket.</p>
 </div>
-<p>Scegli un centre-id appropriato per la tua organizzazione.</p>
-<p>Per <strong>Data Type</strong>, seleziona <strong>weather/surface-based-observations/synop</strong>:</p>
+<p>Please choose a centre-id appropriate for your organization.</p>
+<p>For <strong>Data Type</strong>, select <strong>weather/surface-based-observations/synop</strong>:</p>
 <p><img alt="Create New Dataset Form: Initial information" src="/../assets/img/wis2box-create-new-dataset-form-initial.png" width="450"></p>
-<p>Clicca <em>continua al modulo</em> per procedere, ora ti verrà presentato il <strong>Modulo Editor dei Dataset</strong>.</p>
-<p>Dato che hai selezionato il tipo di dati <strong>weather/surface-based-observations/synop</strong>, il modulo sarà precompilato con alcuni valori iniziali relativi a questo tipo di dati.</p>
-<h2 id="creazione-di-metadati-di-scoperta">Creazione di metadati di scoperta</h2>
-<p>Il Modulo Editor dei Dataset ti permette di fornire i Metadati di Scoperta per il tuo dataset che il contenitore wis2box-management utilizzerà per pubblicare un record WCMP2.</p>
-<p>Dato che hai selezionato il tipo di dati 'weather/surface-based-observations/synop', il modulo sarà precompilato con alcuni valori predefiniti.</p>
-<p>Assicurati di sostituire l'ID locale auto-generato con un nome descrittivo per il tuo dataset, ad esempio 'synop-dataset-wis2training':</p>
+<p>Click <em>continue to form</em> to proceed, you will now be presented with the <strong>Dataset Editor Form</strong>.</p>
+<p>Since you selected the <strong>weather/surface-based-observations/synop</strong> data type, the form will be pre-populated with some initial values related to this data type.</p>
+<h2 id="creating-discovery-metadata">Creating discovery metadata</h2>
+<p>The Dataset Editor Form allows you to provide the Discovery Metadata for your dataset that the wis2box-management container will use to publish a WCMP2 record.</p>
+<p>Since you have selected the 'weather/surface-based-observations/synop' data type, the form will be pre-populated with some default values.</p>
+<p>Please make sure to replace the auto-generated 'Local ID' with a descriptive name for your dataset, e.g. 'synop-dataset-wis2training':</p>
 <p><img alt="Metadata Editor: title, description, keywords" src="/../assets/img/wis2box-metadata-editor-part1.png" width="800"></p>
-<p>Rivedi il titolo e le parole chiave, e aggiornali se necessario, e fornisci una descrizione per il tuo dataset.</p>
-<p>Nota che ci sono opzioni per cambiare la 'Politica sui Dati WMO' da 'core' a 'raccomandata' o per modificare il tuo Identificatore di Metadati predefinito, per favore mantieni la politica sui dati come 'core' e usa l'Identificatore di Metadati predefinito.</p>
-<p>Successivamente, rivedi la sezione che definisce le tue 'Proprietà Temporali' e 'Proprietà Spaziali'. Puoi regolare il riquadro di delimitazione aggiornando i campi 'Latitudine Nord', 'Latitudine Sud', 'Longitudine Est' e 'Longitudine Ovest':</p>
+<p>Review the title and keywords, and update them as necessary, and provide a description for your dataset.</p>
+<p>Note there are options to change the 'WMO Data Policy' from 'core' to 'recommended' or to modify your default Metadata Identifier, please keep data-policy as 'core' and use the default Metadata Identifier.</p>
+<p>Next, review the section defining your 'Temporal Properties' and 'Spatial Properties'. You can adjust the bounding box by updating the 'North Latitude', 'South Latitude', 'East Longitude', and 'West Longitude' fields:</p>
 <p><img alt="Metadata Editor: temporal properties, spatial properties" src="/../assets/img/wis2box-metadata-editor-part2.png" width="800"></p>
-<p>Successivamente, compila la sezione che definisce le 'Informazioni di Contatto del Fornitore di Dati':</p>
+<p>Next, fill out the section defining the 'Contact Information of the Data Provider':</p>
 <p><img alt="Metadata Editor: contact information" src="/../assets/img/wis2box-metadata-editor-part3.png" width="800"></p>
-<p>Infine, compila la sezione che definisce le 'Informazioni sulla Qualità dei Dati':</p>
-<p>Una volta completate tutte le sezioni, clicca su 'VALIDA MODULO' e controlla il modulo per eventuali errori:</p>
+<p>Finally, fill out the section defining the 'Data Quality Information':</p>
+<p>Once you are done filling out all the sections, click 'VALIDATE FORM' and check the form for any errors:</p>
 <p><img alt="Metadata Editor: validation" src="/../assets/img/wis2box-metadata-validation-error.png" width="800"></p>
-<p>Se ci sono errori, correggili e clicca su 'VALIDA MODULO' di nuovo.</p>
-<p>Assicurati di non avere errori e che ricevi una notifica pop-up che indica che il tuo modulo è stato validato:</p>
+<p>If there are any errors, correct them and click 'VALIDATE FORM' again.</p>
+<p>Making sure you have no errors and that you get a pop-up indication your form has been validated:</p>
 <p><img alt="Metadata Editor: validation success" src="/../assets/img/wis2box-metadata-validation-success.png" width="800"></p>
-<p>Successivamente, prima di inviare il tuo dataset, rivedi le mappature dei dati per il tuo dataset.</p>
-<h2 id="configurazione-delle-mappature-dei-dati">Configurazione delle mappature dei dati</h2>
-<p>Dato che hai utilizzato un template per creare il tuo dataset, le mappature dei dati sono state precompilate con i plugin predefiniti per il tipo di dati 'weather/surface-based-observations/synop'. I plugin di dati sono utilizzati in wis2box per trasformare i dati prima che vengano pubblicati tramite la notifica WIS2.</p>
+<p>Next, before submitting your dataset, review the data mappings for your dataset.</p>
+<h2 id="configuring-data-mappings">Configuring data mappings</h2>
+<p>Since you used a template to create your dataset, the dataset mappings have been pre-populated with the defaults plugins for the 'weather/surface-based-observations/synop' data type. Data plugins are used in the wis2box to transform data before it is published using the WIS2 notification.</p>
 <p><img alt="Data Mappings: update plugin" src="/../assets/img/wis2box-data-mappings.png" width="800"></p>
-<p>Nota che puoi cliccare sul pulsante "aggiorna" per cambiare le impostazioni del plugin come l'estensione del file e il modello di file, puoi lasciare le impostazioni predefinite per ora. In una sessione successiva, imparerai di più sul formato BUFR e sulla trasformazione dei dati in formato BUFR.</p>
-<h2 id="invio-del-tuo-dataset">Invio del tuo dataset</h2>
-<p>Infine, puoi cliccare su 'invia' per pubblicare il tuo dataset. </p>
-<p>Dovrai fornire il token di autorizzazione per 'processes/wis2box' che hai creato in precedenza. Se non l'hai ancora fatto, puoi creare un nuovo token seguendo le istruzioni nella sezione di preparazione.</p>
-<p>Controlla di ricevere il seguente messaggio dopo aver inviato il tuo dataset, indicando che il dataset è stato inviato con successo:</p>
+<p>Note that you can click on the "update"-button to change settings for the plugin such as file-extension and the file-pattern, you can leave the default settings for now. In a later session, you will learn more about BUFR and the transformation of data into BUFR format.</p>
+<h2 id="submitting-your-dataset">Submitting your dataset</h2>
+<p>Finally, you can click 'submit' to publish your dataset. </p>
+<p>You will need to provide the authorization token for 'processes/wis2box' that you created earlier. If you have not done so, you can create a new token by following the instructions in the preparation section.</p>
+<p>Check that you get the following message after submitting your dataset, indicating that the dataset was successfully submitted:</p>
 <p><img alt="Submit Dataset Success" src="/../assets/img/wis2box-submit-dataset-success.png" width="400"></p>
-<p>Dopo aver cliccato su 'OK', verrai reindirizzato alla home page dell'Editor dei Dataset. Ora, se clicchi sulla scheda 'Dataset', dovresti vedere il tuo nuovo dataset elencato:</p>
+<p>After you click 'OK', you are redirected to the Dataset Editor home page. Now if you click on the 'Dataset' tab, you should see your new dataset listed:</p>
 <p><img alt="Dataset Editor: new dataset" src="/../assets/img/wis2box-dataset-editor-new-dataset.png" width="800"></p>
-<h2 id="revisione-della-notifica-wis2-per-i-tuoi-metadati-di-scoperta">Revisione della notifica WIS2 per i tuoi metadati di scoperta</h2>
-<p>Vai su MQTT Explorer, se eri connesso al broker, dovresti vedere una nuova notifica WIS2 pubblicata sul topic <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>:</p>
+<h2 id="reviewing-the-wis2-notification-for-your-discovery-metadata">Reviewing the WIS2-notification for your discovery metadata</h2>
+<p>Go to MQTT Explorer, if you were connected to the broker, you should see a new WIS2 notification published on the topic <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>:</p>
 <p><img alt="MQTT Explorer: WIS2 notification" src="/../assets/img/mqtt-explorer-wis2-notification-metadata.png" width="800"></p>
-<p>Esamina il contenuto della notifica WIS2 che hai pubblicato. Dovresti vedere un JSON con una struttura corrispondente al formato del Messaggio di Notifica WIS (WNM).</p>
+<p>Inspect the content of the WIS2 notification you published. You should see a JSON with a structure corresponding to the WIS Notification Message (WNM) format.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Su quale topic viene pubblicata la notifica WIS2?</p>
+<p>On what topic is the WIS2 notification published?</p>
 </div>
 <details class="success">
-<summary>Clicca per rivelare la risposta</summary>
-<p>La notifica WIS2 viene pubblicata sul topic <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
+<summary>Click to reveal answer</summary>
+<p>The WIS2 notification is published on the topic <code>origin/a/wis2/&lt;your-centre-id&gt;/metadata</code>.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Prova a trovare il titolo, la descrizione e le parole chiave che hai fornito nei metadati di scoperta nella notifica WIS2. Riesci a trovarli?</p>
+<p>Try to find the title, description and keywords you provided in the discovery metadata in the WIS2 notification.  Can you find them?</p>
 </div>
 <details class="success">
-<summary>Clicca per rivelare la risposta</summary>
-<p><strong>Il titolo, la descrizione e le parole chiave che hai fornito nei metadati di scoperta non sono presenti nel payload della notifica WIS2!</strong> </p>
-<p>Invece, cerca il link canonico nella sezione "links" nella notifica WIS2:</p>
+<summary>Click to reveal answer</summary>
+<p><strong>The title, description, and keywords you provided in the discovery metadata are not present in the WIS2 notification payload!</strong> </p>
+<p>Instead, try to look for the canonical link  in the "links"-section in the WIS2 notification:</p>
 <p><img alt="WIS2 notification for metadata, links sections" src="/../assets/img/wis2-notification-metadata-links.png" width="800"></p>
-<p><strong>La notifica WIS2 contiene un link canonico al record WCMP2 che è stato pubblicato.</strong> </p>
-<p>Copia-incolla questo link canonico nel tuo browser per accedere al record WCMP2, a seconda delle impostazioni del tuo browser, potresti essere invitato a scaricare il file o potrebbe essere visualizzato direttamente nel tuo browser.</p>
-<p>Troverai il titolo, la descrizione e le parole chiave che hai fornito all'interno del record WCMP2.</p>
+<p><strong>The WIS2 notification contains a canonical link to the WCMP2 record that was published.</strong> </p>
+<p>Copy-paste this canonical link into your browser to access the WCMP2 record, depending on your browser settings, you may be prompted to download the file or it may be displayed directly in your browser.</p>
+<p>You will find the title, description, and keywords your provided inside the WCMP2 record.</p>
 </details>
-<h2 id="conclusione">Conclusione</h2>
+<h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">
-<p class="admonition-title">Congratulazioni!</p>
-<p>In questa sessione pratica, hai imparato come:</p>
+<p class="admonition-title">Congratulations!</p>
+<p>In this practical session, you learned how to:</p>
 <ul>
-<li>creare un nuovo dataset</li>
-<li>definire i tuoi metadati di scoperta</li>
-<li>rivedere le tue mappature dei dati</li>
-<li>pubblicare metadati di scoperta</li>
-<li>rivedere la notifica WIS2 per i tuoi metadati di scoperta</li>
+<li>create a new dataset</li>
+<li>define your discovery metadata</li>
+<li>review your data mappings</li>
+<li>publish discovery metadata</li>
+<li>review the WIS2 notification for your discovery metadata</li>
 </ul>
 </div>
 

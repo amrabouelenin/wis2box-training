@@ -26,7 +26,7 @@
     
     
       
-        <title>Ingestione dei Dati per la Pubblicazione - WIS2 in a box training</title>
+        <title>Ingesting Data for Publication - WIS2 in a box training</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ingestione-dei-dati-per-la-pubblicazione" class="md-skip">
+        <a href="#ingesting-data-for-publication" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ingestione dei Dati per la Pubblicazione
+              Ingesting Data for Publication
             
           </span>
         </div>
@@ -295,6 +295,484 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Practical sessions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Practical sessions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connecting to WIS2 over MQTT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accessing-your-student-vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessing your student VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initializing-wis2box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Initializing wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring datasets in wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-station-metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring station metadata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ingesting Data for Publication
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ingesting Data for Publication
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-example-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare Example Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-test-station" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add the Test Station
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-data-ingestion-from-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Data Ingestion from the Command Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uploading-data-using-the-minio-web-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uploading Data Using the MinIO Web Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uploading-data-using-sftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uploading Data Using SFTP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uploading-data-using-a-python-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uploading Data Using a Python Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-conversion-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Conversion Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csv2bufr-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSV-to-BUFR mapping templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding GTS headers to WIS2 notifications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets-with-access-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up a recommended dataset with access control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downloading-data-from-wis2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Downloading and decoding data from WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Discovering datasets from the WIS2 Global Discovery Catalogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -314,15 +792,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Fogli di riferimento
+    cheatsheets
     
   </span>
   
@@ -330,10 +808,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Fogli di riferimento
+            cheatsheets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -434,15 +912,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Modelli csv2bufr
+    csv2bufr-templates
     
   </span>
   
@@ -450,10 +928,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Modelli csv2bufr
+            csv2bufr-templates
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -469,7 +947,7 @@
   
   
   <span class="md-ellipsis">
-    Modello AWS
+    AWS Template
     
   </span>
   
@@ -492,485 +970,7 @@
   
   
   <span class="md-ellipsis">
-    Template DAYCLI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Sessioni pratiche
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Sessioni pratiche
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Connessione a WIS2 tramite MQTT
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../accessing-your-student-vm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Accesso alla tua VM studente
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../initializing-wis2box/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Inizializzazione di wis2box
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurazione dei dataset in wis2box
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-station-metadata/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurazione dei metadati delle stazioni
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Ingestione dei Dati per la Pubblicazione
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ingestione dei Dati per la Pubblicazione
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Indice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Indice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduzione" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduzione
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparazione" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preparazione
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparazione">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prepara-i-dati-di-esempio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prepara i Dati di Esempio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aggiungi-la-stazione-di-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aggiungi la Stazione di Test
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-dellingestione-dei-dati-dalla-riga-di-comando" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test dell'Ingestione dei Dati dalla Riga di Comando
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#caricamento-dei-dati-utilizzando-linterfaccia-web-di-minio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Caricamento dei Dati Utilizzando l'Interfaccia Web di MinIO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#caricamento-dei-dati-utilizzando-sftp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Caricamento dei Dati Utilizzando SFTP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#caricamento-dei-dati-utilizzando-uno-script-python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Caricamento dei Dati Utilizzando uno Script Python
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusione" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusione
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../data-conversion-tools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Strumenti di Conversione dei Dati
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../csv2bufr-templates/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Modelli di mappatura da CSV a BUFR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Aggiunta di intestazioni GTS alle notifiche WIS2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datasets-with-access-control/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurazione di un dataset consigliato con controllo degli accessi
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../downloading-data-from-wis2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Scaricare e decodificare dati da WIS2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Scoperta di dataset dal Catalogo Globale di Scoperta WIS2
+    DAYCLI Template
     
   </span>
   
@@ -1015,37 +1015,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduzione" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduzione
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#preparazione" class="md-nav__link">
+  <a href="#preparation" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparazione
+      Preparation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Preparazione">
+    <nav class="md-nav" aria-label="Preparation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prepara-i-dati-di-esempio" class="md-nav__link">
+  <a href="#prepare-example-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Prepara i Dati di Esempio
+      Prepare Example Data
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#aggiungi-la-stazione-di-test" class="md-nav__link">
+  <a href="#add-the-test-station" class="md-nav__link">
     <span class="md-ellipsis">
-      Aggiungi la Stazione di Test
+      Add the Test Station
     </span>
   </a>
   
@@ -1057,45 +1057,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-dellingestione-dei-dati-dalla-riga-di-comando" class="md-nav__link">
+  <a href="#testing-data-ingestion-from-the-command-line" class="md-nav__link">
     <span class="md-ellipsis">
-      Test dell'Ingestione dei Dati dalla Riga di Comando
+      Testing Data Ingestion from the Command Line
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#caricamento-dei-dati-utilizzando-linterfaccia-web-di-minio" class="md-nav__link">
+  <a href="#uploading-data-using-the-minio-web-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Caricamento dei Dati Utilizzando l'Interfaccia Web di MinIO
+      Uploading Data Using the MinIO Web Interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#caricamento-dei-dati-utilizzando-sftp" class="md-nav__link">
+  <a href="#uploading-data-using-sftp" class="md-nav__link">
     <span class="md-ellipsis">
-      Caricamento dei Dati Utilizzando SFTP
+      Uploading Data Using SFTP
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#caricamento-dei-dati-utilizzando-uno-script-python" class="md-nav__link">
+  <a href="#uploading-data-using-a-python-script" class="md-nav__link">
     <span class="md-ellipsis">
-      Caricamento dei Dati Utilizzando uno Script Python
+      Uploading Data Using a Python Script
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusione" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusione
+      Conclusion
     </span>
   </a>
   
@@ -1117,223 +1117,223 @@
 
 
 
-<h1 id="ingestione-dei-dati-per-la-pubblicazione">Ingestione dei dati per la pubblicazione</h1>
+<h1 id="ingesting-data-for-publication">Ingesting data for publication</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Risultati dell'apprendimento</p>
-<p>Al termine di questa sessione pratica, sarai in grado di:</p>
+<p class="admonition-title">Learning Outcomes</p>
+<p>By the end of this practical session, you will be able to:</p>
 <ul>
-<li>Attivare il flusso di lavoro wis2box caricando dati su MinIO tramite la riga di comando, l'interfaccia web di MinIO, SFTP o uno script Python.</li>
-<li>Accedere al dashboard di Grafana per monitorare lo stato dell'ingestione dei dati e visualizzare i log della tua istanza wis2box.</li>
-<li>Visualizzare le notifiche dei dati WIS2 pubblicate dalla tua wis2box utilizzando MQTT Explorer.</li>
+<li>Trigger the wis2box workflow by uploading data to MinIO using the command line, the MinIO web interface, SFTP, or a Python script.</li>
+<li>Access the Grafana dashboard to monitor the status of data ingestion and view logs of your wis2box instance.</li>
+<li>View WIS2 data notifications published by your wis2box using MQTT Explorer.</li>
 </ul>
 </div>
-<h2 id="introduzione">Introduzione</h2>
-<p>In WIS2, i dati vengono condivisi in tempo reale utilizzando notifiche di dati WIS2 che contengono un link "canonico" da cui i dati possono essere scaricati.</p>
-<p>Per attivare il flusso di lavoro dei dati in un WIS2 Node utilizzando il software wis2box, i dati devono essere caricati nel bucket <strong>wis2box-incoming</strong> in <strong>MinIO</strong>, che avvia il flusso di lavoro wis2box. Questo processo porta alla pubblicazione dei dati tramite una notifica di dati WIS2. A seconda delle mappature dei dati configurate nella tua istanza wis2box, i dati possono essere trasformati in formato BUFR prima di essere pubblicati.</p>
-<p>In questo esercizio, utilizzeremo file di dati di esempio per attivare il flusso di lavoro wis2box e <strong>pubblicare notifiche di dati WIS2</strong> per il dataset che hai configurato nella sessione pratica precedente.</p>
-<p>Durante l'esercizio, monitoreremo lo stato dell'ingestione dei dati utilizzando il <strong>dashboard di Grafana</strong> e <strong>MQTT Explorer</strong>. Il dashboard di Grafana utilizza dati da Prometheus e Loki per visualizzare lo stato del tuo wis2box, mentre MQTT Explorer ti permette di vedere le notifiche di dati WIS2 pubblicate dalla tua istanza wis2box.</p>
-<p>Nota che wis2box trasformerà i dati di esempio in formato BUFR prima di pubblicarli sul broker MQTT, come preconfigurato nelle mappature dei dati del tuo dataset. Per questo esercizio, ci concentreremo sui diversi metodi per caricare dati sulla tua istanza wis2box e verificare l'ingestione e la pubblicazione con successo. La trasformazione dei dati sarà trattata più avanti nella sessione pratica <a href="./data-conversion-tools">Strumenti di Conversione dei Dati</a>.</p>
-<h2 id="preparazione">Preparazione</h2>
-<p>Questa sezione utilizza il dataset per "surface-based-observations/synop" precedentemente creato nella sessione pratica <a href="./configuring-wis2box-datasets">Configurazione dei Dataset in wis2box</a>. È inoltre necessaria la conoscenza della configurazione delle stazioni in <strong>wis2box-webapp</strong>, come descritto nella sessione pratica <a href="./configuring-station-metadata">Configurazione dei Metadati delle Stazioni</a>.</p>
-<p>Assicurati di poter accedere alla tua VM studente utilizzando il tuo client SSH (ad es., PuTTY).</p>
-<p>Assicurati che wis2box sia attivo e funzionante:</p>
+<h2 id="introduction">Introduction</h2>
+<p>In WIS2, data is shared in real-time using WIS2 data notifications that contain a "canonical" link from which the data can be downloaded.</p>
+<p>To trigger the data workflow in a WIS2 Node using the wis2box software, data must be uploaded to the <strong>wis2box-incoming</strong> bucket in <strong>MinIO</strong>, which initiates the wis2box workflow. This process results in the data being published via a WIS2 data notification. Depending on the data mappings configured in your wis2box instance, the data may be transformed into BUFR format before being published.</p>
+<p>In this exercise, we will use sample data files to trigger the wis2box workflow and <strong>publish WIS2 data notifications</strong> for the dataset you configured in the previous practical session.</p>
+<p>During the exercise, we will monitor the status of the data ingestion using the <strong>Grafana dashboard</strong> and <strong>MQTT Explorer</strong>. The Grafana dashboard uses data from Prometheus and Loki to display the status of your wis2box, while MQTT Explorer allows you to see the WIS2 data notifications published by your wis2box instance.</p>
+<p>Note that wis2box will transform the example data into BUFR format before publishing it to the MQTT broker, as per the data mappings pre-configured in your dataset. For this exercise, we will focus on the different methods to upload data to your wis2box instance and verify successful ingestion and publication. Data transformation will be covered later in the <a href="../data-conversion-tools/">Data Conversion Tools</a> practical session.</p>
+<h2 id="preparation">Preparation</h2>
+<p>This section uses the dataset for "surface-based-observations/synop" previously created in the <a href="../configuring-wis2box-datasets/">Configuring Datasets in wis2box</a> practical session. It also requires knowledge of configuring stations in the <strong>wis2box-webapp</strong>, as described in the <a href="../configuring-station-metadata/">Configuring Station Metadata</a> practical session.</p>
+<p>Ensure you can log in to your student VM using your SSH client (e.g., PuTTY).</p>
+<p>Ensure wis2box is up and running:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box/
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>start
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>status
 </code></pre></div>
-<p>Assicurati che MQTT Explorer sia in esecuzione e connesso alla tua istanza utilizzando le credenziali pubbliche <code>everyone/everyone</code> con una sottoscrizione al topic <code>origin/a/wis2/#</code>.</p>
-<p>Assicurati di avere un browser web aperto con il dashboard di Grafana per la tua istanza navigando a <code>http://YOUR-HOST:3000</code>.</p>
-<h3 id="prepara-i-dati-di-esempio">Prepara i Dati di Esempio</h3>
-<p>Copia la directory <code>exercise-materials/data-ingest-exercises</code> nella directory che hai definito come <code>WIS2BOX_HOST_DATADIR</code> nel tuo file <code>wis2box.env</code>:</p>
+<p>Ensure MQTT Explorer is running and connected to your instance using the public credentials <code>everyone/everyone</code> with a subscription to the topic <code>origin/a/wis2/#</code>.</p>
+<p>Ensure you have a web browser open with the Grafana dashboard for your instance by navigating to <code>http://YOUR-HOST:3000</code>.</p>
+<h3 id="prepare-example-data">Prepare Example Data</h3>
+<p>Copy the directory <code>exercise-materials/data-ingest-exercises</code> to the directory you defined as the <code>WIS2BOX_HOST_DATADIR</code> in your <code>wis2box.env</code> file:</p>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>-r<span class="w"> </span>~/exercise-materials/data-ingest-exercises<span class="w"> </span>~/wis2box-data/
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Il <code>WIS2BOX_HOST_DATADIR</code> è montato come <code>/data/wis2box/</code> all'interno del container wis2box-management dal file <code>docker-compose.yml</code> incluso nella directory <code>wis2box</code>.</p>
-<p>Questo ti permette di condividere dati tra l'host e il container.</p>
+<p>The <code>WIS2BOX_HOST_DATADIR</code> is mounted as <code>/data/wis2box/</code> inside the wis2box-management container by the <code>docker-compose.yml</code> file included in the <code>wis2box</code> directory.</p>
+<p>This allows you to share data between the host and the container.</p>
 </div>
-<h3 id="aggiungi-la-stazione-di-test">Aggiungi la Stazione di Test</h3>
-<p>Aggiungi la stazione con l'identificatore WIGOS <code>0-20000-0-64400</code> alla tua istanza wis2box utilizzando l'editor di stazioni in wis2box-webapp.</p>
-<p>Recupera la stazione da OSCAR:</p>
+<h3 id="add-the-test-station">Add the Test Station</h3>
+<p>Add the station with WIGOS identifier <code>0-20000-0-64400</code> to your wis2box instance using the station editor in the wis2box-webapp.</p>
+<p>Retrieve the station from OSCAR:</p>
 <p><img alt="oscar-station" src="/../assets/img/webapp-test-station-oscar-search.png" width="600"></p>
-<p>Aggiungi la stazione ai dataset che hai creato per la pubblicazione su "../surface-based-observations/synop" e salva le modifiche utilizzando il tuo token di autenticazione:</p>
+<p>Add the station to the datasets you created for publishing on "../surface-based-observations/synop" and save the changes using your authentication token:</p>
 <p><img alt="webapp-test-station" src="/../assets/img/webapp-test-station-save.png" width="800"></p>
-<p>Nota che puoi rimuovere questa stazione dal tuo dataset dopo la sessione pratica.</p>
-<h2 id="test-dellingestione-dei-dati-dalla-riga-di-comando">Test dell'Ingestione dei Dati dalla Riga di Comando</h2>
-<p>In questo esercizio, utilizzeremo il comando <code>wis2box data ingest</code> per caricare dati su MinIO.</p>
-<p>Assicurati di trovarti nella directory <code>wis2box</code> e accedi al container <strong>wis2box-management</strong>:</p>
+<p>Note that you can remove this station from your dataset after the practical session.</p>
+<h2 id="testing-data-ingestion-from-the-command-line">Testing Data Ingestion from the Command Line</h2>
+<p>In this exercise, we will use the <code>wis2box data ingest</code> command to upload data to MinIO.</p>
+<p>Ensure you are in the <code>wis2box</code> directory and log in to the <strong>wis2box-management</strong> container:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 python3<span class="w"> </span>wis2box-ctl.py<span class="w"> </span>login
 </code></pre></div>
-<p>Verifica che i seguenti dati di esempio siano disponibili nella directory <code>/data/wis2box/</code> all'interno del container <strong>wis2box-management</strong>:</p>
+<p>Verify the following sample data is available in the directory <code>/data/wis2box/</code> within the <strong>wis2box-management</strong> container:</p>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lh<span class="w"> </span>/data/wis2box/data-ingest-exercises/synop_202412030900.txt
 </code></pre></div>
 <div class="admonition question">
-<p class="admonition-title">Ingestione dei Dati Utilizzando <code>wis2box data ingest</code></p>
-<p>Esegui il seguente comando per ingestire il file di dati di esempio nella tua istanza wis2box:</p>
+<p class="admonition-title">Ingesting Data Using <code>wis2box data ingest</code></p>
+<p>Execute the following command to ingest the sample data file into your wis2box instance:</p>
 <div class="highlight"><pre><span></span><code>wis2box<span class="w"> </span>data<span class="w"> </span>ingest<span class="w"> </span>-p<span class="w"> </span>/data/wis2box/data-ingest-exercises/synop_202412030900.txt<span class="w"> </span>--metadata-id<span class="w"> </span>urn:wmo:md:not-my-centre:synop-test
 </code></pre></div>
-<p>I dati sono stati ingestiti con successo? In caso contrario, qual è stato il messaggio di errore e come puoi risolverlo?</p>
+<p>Was the data successfully ingested? If not, what was the error message, and how can you fix it?</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>I dati <strong>non</strong> sono stati ingestiti con successo. Dovresti vedere quanto segue:</p>
+<summary>Click to Reveal Answer</summary>
+<p>The data was <strong>not</strong> successfully ingested. You should see the following:</p>
 <div class="highlight"><pre><span></span><code>Error:<span class="w"> </span><span class="nv">metadata_id</span><span class="o">=</span>urn:wmo:md:not-my-centre:synop-test<span class="w"> </span>not<span class="w"> </span>found<span class="w"> </span><span class="k">in</span><span class="w"> </span>data<span class="w"> </span>mappings
 </code></pre></div>
-<p>Il messaggio di errore indica che l'identificatore dei metadati che hai fornito non corrisponde a nessuno dei dataset che hai configurato nella tua istanza wis2box.</p>
-<p>Fornisci l'ID dei metadati corretto che corrisponde al dataset che hai creato nella sessione pratica precedente e ripeti il comando di ingestione dei dati fino a vedere il seguente output:</p>
+<p>The error message indicates that the metadata identifier you provided does not match any of the datasets you have configured in your wis2box instance.</p>
+<p>Provide the correct metadata ID that matches the dataset you created in the previous practical session and repeat the data ingestion command until you see the following output:</p>
 <div class="highlight"><pre><span></span><code>Processing<span class="w"> </span>/data/wis2box/data-ingest-exercises/synop_202412030900.txt
 Done
 </code></pre></div>
 </details>
-<p>Vai alla console MinIO nel tuo browser e controlla se il file <code>synop_202412030900.txt</code> è stato caricato nel bucket <code>wis2box-incoming</code>. Dovresti vedere una nuova directory con il nome del dataset che hai fornito nell'opzione <code>--metadata-id</code>, e all'interno di questa directory, troverai il file <code>synop_202412030900.txt</code>:</p>
+<p>Go to the MinIO console in your browser and check if the file <code>synop_202412030900.txt</code> was uploaded to the <code>wis2box-incoming</code> bucket. You should see a new directory with the name of the dataset you provided in the <code>--metadata-id</code> option, and inside this directory, you will find the file <code>synop_202412030900.txt</code>:</p>
 <p><img alt="minio-wis2box-incoming-dataset-folder" src="/../assets/img/minio-data-ingest-test-data.png" width="800"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Il comando <code>wis2box data ingest</code> ha caricato il file nel bucket <code>wis2box-incoming</code> in MinIO in una directory denominata con l'identificatore dei metadati che hai fornito.</p>
+<p>The <code>wis2box data ingest</code> command uploaded the file to the <code>wis2box-incoming</code> bucket in MinIO in a directory named after the metadata identifier you provided.</p>
 </div>
-<p>Vai al dashboard di Grafana nel tuo browser e controlla lo stato dell'ingestione dei dati.</p>
+<p>Go to the Grafana dashboard in your browser and check the status of the data ingestion.</p>
 <div class="admonition question">
-<p class="admonition-title">Verifica lo Stato dell'Ingestione dei Dati su Grafana</p>
-<p>Vai al dashboard di Grafana all'indirizzo <strong>http://your-host:3000</strong> e controlla lo stato dell'ingestione dei dati nel tuo browser.</p>
-<p>Come puoi vedere se i dati sono stati ingestiti e pubblicati con successo?</p>
+<p class="admonition-title">Check the Status of the Data Ingestion on Grafana</p>
+<p>Go to the Grafana dashboard at <strong>http://your-host:3000</strong> and check the status of the data ingestion in your browser.</p>
+<p>How can you see if the data was successfully ingested and published?</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>Se hai ingestito i dati con successo, dovresti vedere quanto segue:</p>
+<summary>Click to Reveal Answer</summary>
+<p>If you successfully ingested the data, you should see the following:</p>
 <p><img alt="grafana_data_ingest" src="/../assets/img/grafana_data-ingest-test.png" width="400">  </p>
-<p>Se non vedi questo, controlla i messaggi di AVVISO o ERRORE visualizzati nella parte inferiore del dashboard e tenta di risolverli.</p>
+<p>If you do not see this, please check for WARNING or ERROR messages displayed at the bottom of the dashboard and attempt to resolve them.</p>
 </details>
 <div class="admonition question">
-<p class="admonition-title">Verifica il Broker MQTT per le Notifiche WIS2</p>
-<p>Vai a MQTT Explorer e controlla se puoi vedere il messaggio di notifica WIS2 per i dati che hai appena ingestito.</p>
-<p>Quante notifiche di dati WIS2 sono state pubblicate dalla tua wis2box?</p>
-<p>Come accedi al contenuto dei dati pubblicati?</p>
+<p class="admonition-title">Check the MQTT Broker for WIS2 Notifications</p>
+<p>Go to the MQTT Explorer and check if you can see the WIS2 notification message for the data you just ingested.</p>
+<p>How many WIS2 data notifications were published by your wis2box?</p>
+<p>How do you access the content of the data being published?</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>Dovresti vedere 1 notifica di dati WIS2 pubblicata dalla tua wis2box.</p>
-<p>Per accedere al contenuto dei dati pubblicati, puoi espandere la struttura del topic per vedere i diversi livelli del messaggio fino a raggiungere l'ultimo livello e rivedere il contenuto del messaggio.</p>
-<p>Il contenuto del messaggio ha una sezione "links" con una chiave "rel" di "canonical" e una chiave "href" con l'URL per scaricare i dati. L'URL sarà nel formato <code>http://YOUR-HOST/data/...</code>. </p>
-<p>Nota che il formato dei dati è BUFR e avrai bisogno di un parser BUFR per visualizzare il contenuto dei dati. Il formato BUFR è un formato binario utilizzato dai servizi meteorologici per lo scambio di dati. I plugin di dati all'interno di wis2box hanno trasformato i dati in BUFR prima di pubblicarli.</p>
+<summary>Click to Reveal Answer</summary>
+<p>You should see 1 WIS2 data notification published by your wis2box.</p>
+<p>To access the content of the data being published, you can expand the topic structure to see the different levels of the message until you reach the last level and review the message content.</p>
+<p>The message content has a "links" section with a "rel" key of "canonical" and a "href" key with the URL to download the data. The URL will be in the format <code>http://YOUR-HOST/data/...</code>. </p>
+<p>Note that the data format is BUFR, and you will need a BUFR parser to view the content of the data. The BUFR format is a binary format used by meteorological services to exchange data. The data plugins inside wis2box transformed the data into BUFR before publishing it.</p>
 </details>
-<p>Dopo aver completato questo esercizio, esci dal container <strong>wis2box-management</strong>:</p>
+<p>After completing this exercise, exit the <strong>wis2box-management</strong> container:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div>
-<h2 id="caricamento-dei-dati-utilizzando-linterfaccia-web-di-minio">Caricamento dei Dati Utilizzando l'Interfaccia Web di MinIO</h2>
-<p>Negli esercizi precedenti, hai caricato dati disponibili sull'host wis2box su MinIO utilizzando il comando <code>wis2box data ingest</code>. </p>
-<p>Successivamente, utilizzeremo l'interfaccia web di MinIO, che ti permette di scaricare e caricare dati su MinIO utilizzando un browser web.</p>
+<h2 id="uploading-data-using-the-minio-web-interface">Uploading Data Using the MinIO Web Interface</h2>
+<p>In the previous exercises, you uploaded data available on the wis2box host to MinIO using the <code>wis2box data ingest</code> command. </p>
+<p>Next, we will use the MinIO web interface, which allows you to download and upload data to MinIO using a web browser.</p>
 <div class="admonition question">
-<p class="admonition-title">Ricarica i Dati Utilizzando l'Interfaccia Web di MinIO</p>
-<p>Vai all'interfaccia web di MinIO nel tuo browser e naviga al bucket <code>wis2box-incoming</code>. Vedrai il file <code>synop_202412030900.txt</code> che hai caricato negli esercizi precedenti.</p>
-<p>Clicca sul file e avrai l'opzione di scaricarlo:</p>
+<p class="admonition-title">Re-upload Data Using the MinIO Web Interface</p>
+<p>Go to the MinIO web interface in your browser and browse to the <code>wis2box-incoming</code> bucket. You will see the file <code>synop_202412030900.txt</code> you uploaded in the previous exercises.</p>
+<p>Click on the file, and you will have the option to download it:</p>
 <p><img alt="minio-wis2box-incoming-dataset-folder" src="/../assets/img/minio-download.png" width="800"></p>
-<p>Puoi scaricare questo file e ricaricarlo nello stesso percorso in MinIO per riattivare il flusso di lavoro wis2box.</p>
-<p>Controlla il dashboard di Grafana e MQTT Explorer per vedere se i dati sono stati ingestiti e pubblicati con successo.</p>
+<p>You can download this file and re-upload it to the same path in MinIO to re-trigger the wis2box workflow.</p>
+<p>Check the Grafana dashboard and MQTT Explorer to see if the data was successfully ingested and published.</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>Vedrai un messaggio che indica che wis2box ha già pubblicato questi dati:</p>
+<summary>Click to Reveal Answer</summary>
+<p>You will see a message indicating that the wis2box already published this data:</p>
 <div class="highlight"><pre><span></span><code>ERROR<span class="w"> </span>-<span class="w"> </span>Data<span class="w"> </span>already<span class="w"> </span>published<span class="w"> </span><span class="k">for</span><span class="w"> </span>WIGOS_0-20000-0-64400_20241203T090000-bufr4<span class="p">;</span><span class="w"> </span>not<span class="w"> </span>publishing
 </code></pre></div>
-<p>Questo dimostra che il flusso di lavoro dei dati è stato attivato, ma i dati non sono stati ripubblicati. Il wis2box non pubblicherà gli stessi dati due volte. </p>
+<p>This demonstrates that the data workflow was triggered, but the data was not re-published. The wis2box will not publish the same data twice. </p>
 </details>
 <div class="admonition question">
-<p class="admonition-title">Carica Nuovi Dati Utilizzando l'Interfaccia Web di MinIO</p>
-<p>Scarica questo file di esempio <a href="../../../sample-data/synop_202502040900.txt">synop_202502040900.txt</a> (clic destro e seleziona "salva con nome" per scaricare il file).</p>
-<p>Carica il file che hai scaricato utilizzando l'interfaccia web nel stesso percorso in MinIO come il file precedente.</p>
-<p>I dati sono stati ingestiti e pubblicati con successo?</p>
+<p class="admonition-title">Upload New Data Using the MinIO Web Interface</p>
+<p>Download this sample file <a href="../../../sample-data/synop_202502040900.txt">synop_202502040900.txt</a> (right-click and select "save as" to download the file).</p>
+<p>Upload the file you downloaded using the web interface to the same path in MinIO as the previous file.</p>
+<p>Did the data ingest and publish successfully?</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>Vai al dashboard di Grafana e controlla se i dati sono stati ingestiti e pubblicati con successo.</p>
-<p>Se utilizzi il percorso sbagliato, vedrai un messaggio di errore nei log.</p>
-<p>Se utilizzi il percorso corretto, vedrai una notifica di dati WIS2 in più pubblicata per la stazione di test <code>0-20000-0-64400</code>, indicando che i dati sono stati ingestiti e pubblicati con successo.</p>
+<summary>Click to Reveal Answer</summary>
+<p>Go to the Grafana dashboard and check if the data was successfully ingested and published.</p>
+<p>If you use the wrong path, you will see an error message in the logs.</p>
+<p>If you use the correct path, you will see one more WIS2 data notification published for test station <code>0-20000-0-64400</code>, indicating that the data was successfully ingested and published.</p>
 <p><img alt="grafana_data_ingest" src="/../assets/img/grafana_data-ingest-test2.png" width="400"> </p>
 </details>
-<h2 id="caricamento-dei-dati-utilizzando-sftp">Caricamento dei Dati Utilizzando SFTP</h2>
-<p>Il servizio MinIO in wis2box può anche essere accessibile tramite SFTP. Il server SFTP per MinIO è collegato alla porta 8022 sull'host (la porta 22 è utilizzata per SSH).</p>
-<p>In questo esercizio, dimostreremo come utilizzare WinSCP per caricare dati su MinIO utilizzando SFTP.</p>
-<p>Puoi configurare una nuova connessione WinSCP come mostrato in questo screenshot:</p>
+<h2 id="uploading-data-using-sftp">Uploading Data Using SFTP</h2>
+<p>The MinIO service in wis2box can also be accessed over SFTP. The SFTP server for MinIO is bound to port 8022 on the host (port 22 is used for SSH).</p>
+<p>In this exercise, we will demonstrate how to use WinSCP to upload data to MinIO using SFTP.</p>
+<p>You can set up a new WinSCP connection as shown in this screenshot:</p>
 <p><img alt="winscp-sftp-connection" src="/../assets/img/winscp-sftp-login.png" width="400"></p>
-<p>Le credenziali per la connessione SFTP sono definite da <code>WIS2BOX_STORAGE_USERNAME</code> e <code>WIS2BOX_STORAGE_PASSWORD</code> nel tuo file <code>wis2box.env</code> e sono le stesse credenziali che hai utilizzato per connetterti all'interfaccia UI di MinIO.</p>
-<p>Quando accedi, vedrai i bucket utilizzati da wis2box in MinIO:</p>
+<p>The credentials for the SFTP connection are defined by <code>WIS2BOX_STORAGE_USERNAME</code> and <code>WIS2BOX_STORAGE_PASSWORD</code> in your <code>wis2box.env</code> file and are the same as the credentials you used to connect to the MinIO UI.</p>
+<p>When you log in, you will see the buckets used by wis2box in MinIO:</p>
 <p><img alt="winscp-sftp-bucket" src="/../assets/img/winscp-buckets.png" width="600"></p>
-<p>Puoi navigare al bucket <code>wis2box-incoming</code> e poi alla cartella per il tuo dataset. Vedrai i file che hai caricato negli esercizi precedenti:</p>
+<p>You can navigate to the <code>wis2box-incoming</code> bucket and then to the folder for your dataset. You will see the files you uploaded in the previous exercises:</p>
 <p><img alt="winscp-sftp-incoming-path" src="/../assets/img/winscp-incoming-data-path.png" width="600"></p>
 <div class="admonition question">
-<p class="admonition-title">Carica Dati Utilizzando SFTP</p>
-<p>Scarica questo file di esempio sul tuo computer locale:</p>
-<p><a href="../../../sample-data/synop_202503030900.txt">synop_202503030900.txt</a> (clic destro e seleziona "salva con nome" per scaricare il file).</p>
-<p>Poi caricalo nel percorso del dataset in arrivo in MinIO utilizzando la tua sessione SFTP in WinSCP.</p>
-<p>Controlla il dashboard di Grafana e MQTT Explorer per vedere se i dati sono stati ingestiti e pubblicati con successo.</p>
+<p class="admonition-title">Upload Data Using SFTP</p>
+<p>Download this sample file to your local computer:</p>
+<p><a href="../../../sample-data/synop_202503030900.txt">synop_202503030900.txt</a> (right-click and select "save as" to download the file).</p>
+<p>Then upload it to the incoming dataset path in MinIO using your SFTP session in WinSCP.</p>
+<p>Check the Grafana dashboard and MQTT Explorer to see if the data was successfully ingested and published.</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>Dovresti vedere una nuova notifica di dati WIS2 pubblicata per la stazione di test <code>0-20000-0-64400</code>, indicando che i dati sono stati ingestiti e pubblicati con successo.</p>
-<p><img alt="grafana_data_ingest" src="/../assets/img/grafana_data-ingest-test3.png" width="400"></p>
+<summary>Click to Reveal Answer</summary>
+<p>You should see a new WIS2 data notification published for the test station <code>0-20000-0-64400</code>, indicating that the data was successfully ingested and published.</p>
+<p><img alt="grafana_data_ingest" src="/../assets/img/grafana_data-ingest-test3.png" width="400"> </p>
+<p>If you use the wrong path, you will see an error message in the logs.</p>
 </details>
-<p>Se utilizzi un percorso errato, vedrai un messaggio di errore nei log.</p>
-<h2 id="caricamento-dei-dati-utilizzando-uno-script-python">Caricamento dei Dati Utilizzando uno Script Python</h2>
-<p>In questo esercizio, utilizzeremo il client Python di MinIO per copiare i dati in MinIO.</p>
-<p>MinIO fornisce un client Python, che può essere installato come segue:</p>
+<h2 id="uploading-data-using-a-python-script">Uploading Data Using a Python Script</h2>
+<p>In this exercise, we will use the MinIO Python client to copy data into MinIO.</p>
+<p>MinIO provides a Python client, which can be installed as follows:</p>
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>minio
 </code></pre></div>
-<p>Sul tuo VM studente, il pacchetto 'minio' per Python sarà già installato.</p>
-<p>Nella directory <code>exercise-materials/data-ingest-exercises</code>, troverai uno script di esempio <code>copy_file_to_incoming.py</code> che può essere utilizzato per copiare i file in MinIO.</p>
-<p>Prova a eseguire lo script per copiare il file di dati di esempio <code>synop_202501030900.txt</code> nel bucket <code>wis2box-incoming</code> in MinIO come segue:</p>
+<p>On your student VM, the 'minio' package for Python will already be installed.</p>
+<p>In the <code>exercise-materials/data-ingest-exercises</code> directory, you will find an example script <code>copy_file_to_incoming.py</code> that can be used to copy files into MinIO.</p>
+<p>Try to run the script to copy the sample data file <code>synop_202501030900.txt</code> into the <code>wis2box-incoming</code> bucket in MinIO as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box-data/data-ingest-exercises
 python3<span class="w"> </span>copy_file_to_incoming.py<span class="w"> </span>synop_202501030900.txt
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Riceverai un errore poiché lo script non è configurato per accedere al punto finale di MinIO sul tuo wis2box.</p>
+<p>You will get an error as the script is not configured to access the MinIO endpoint on your wis2box yet.</p>
 </div>
-<p>Lo script deve conoscere il punto finale corretto per accedere a MinIO sul tuo wis2box. Se wis2box è in esecuzione sul tuo host, il punto finale di MinIO è disponibile su <code>http://YOUR-HOST:9000</code>. Lo script deve anche essere aggiornato con la tua password di archiviazione e il percorso nel bucket di MinIO per memorizzare i dati.</p>
+<p>The script needs to know the correct endpoint for accessing MinIO on your wis2box. If wis2box is running on your host, the MinIO endpoint is available at <code>http://YOUR-HOST:9000</code>. The script also needs to be updated with your storage password and the path in the MinIO bucket to store the data.</p>
 <div class="admonition question">
-<p class="admonition-title">Aggiorna lo Script e Ingestisci i Dati CSV</p>
-<p>Modifica lo script <code>copy_file_to_incoming.py</code> per risolvere gli errori, utilizzando uno dei seguenti metodi:
-- Da riga di comando: usa l'editor di testo <code>nano</code> o <code>vim</code> per modificare lo script.
-- Utilizzando WinSCP: avvia una nuova connessione utilizzando il Protocollo File <code>SCP</code> e le stesse credenziali del tuo client SSH. Naviga nella directory <code>wis2box-data/data-ingest-exercises</code> e modifica <code>copy_file_to_incoming.py</code> utilizzando l'editor di testo integrato.</p>
-<p>Assicurati di:</p>
+<p class="admonition-title">Update the Script and Ingest the CSV Data</p>
+<p>Edit the script <code>copy_file_to_incoming.py</code> to address the errors, using one of the following methods:
+- From the command line: use the <code>nano</code> or <code>vim</code> text editor to edit the script.
+- Using WinSCP: start a new connection using File Protocol <code>SCP</code> and the same credentials as your SSH client. Navigate into the directory <code>wis2box-data/data-ingest-exercises</code> and edit <code>copy_file_to_incoming.py</code> using the built-in text editor.</p>
+<p>Ensure that you:</p>
 <ul>
-<li>Definire il punto finale MinIO corretto per il tuo host.</li>
-<li>Fornire la password di archiviazione corretta per la tua istanza MinIO.</li>
-<li>Fornire il percorso corretto nel bucket MinIO per memorizzare i dati.</li>
+<li>Define the correct MinIO endpoint for your host.</li>
+<li>Provide the correct storage password for your MinIO instance.</li>
+<li>Provide the correct path in the MinIO bucket to store the data.</li>
 </ul>
-<p>Riesegui lo script per ingestire il file di dati di esempio <code>synop_202501030900.txt</code> in MinIO:</p>
+<p>Re-run the script to ingest the sample data file <code>synop_202501030900.txt</code> into MinIO:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>~/wis2box-data/<span class="w"> </span>~/wis2box-data/synop_202501030900.txt
 </code></pre></div>
-<p>Assicurati che gli errori siano risolti.</p>
+<p>Ensure the errors are resolved.</p>
 </div>
-<p>Una volta che riesci a eseguire lo script con successo, vedrai un messaggio che indica che il file è stato copiato in MinIO, e dovresti vedere le notifiche dei dati pubblicate dalla tua istanza wis2box in MQTT Explorer.</p>
-<p>Puoi anche controllare la dashboard di Grafana per vedere se i dati sono stati ingestiti e pubblicati con successo.</p>
-<p>Ora che lo script funziona, puoi provare a copiare altri file in MinIO utilizzando lo stesso script.</p>
+<p>Once you manage to run the script successfully, you will see a message indicating that the file was copied to MinIO, and you should see data notifications published by your wis2box instance in MQTT Explorer.</p>
+<p>You can also check the Grafana dashboard to see if the data was successfully ingested and published.</p>
+<p>Now that the script is working, you can try to copy other files into MinIO using the same script.</p>
 <div class="admonition question">
-<p class="admonition-title">Ingestione di Dati Binari in Formato BUFR</p>
-<p>Esegui il seguente comando per copiare il file di dati binari <code>bufr-example.bin</code> nel bucket <code>wis2box-incoming</code> in MinIO:</p>
+<p class="admonition-title">Ingesting Binary Data in BUFR Format</p>
+<p>Run the following command to copy the binary data file <code>bufr-example.bin</code> into the <code>wis2box-incoming</code> bucket in MinIO:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>copy_file_to_incoming.py<span class="w"> </span>bufr-example.bin
 </code></pre></div>
 </div>
-<p>Controlla la dashboard di Grafana e MQTT Explorer per vedere se i dati di prova sono stati ingestiti e pubblicati con successo. Se vedi degli errori, prova a risolverli.</p>
+<p>Check the Grafana dashboard and MQTT Explorer to see if the test data was successfully ingested and published. If you see any errors, try to resolve them.</p>
 <div class="admonition question">
-<p class="admonition-title">Verifica dell'Ingestione dei Dati</p>
-<p>Quanti messaggi sono stati pubblicati al broker MQTT per questo campione di dati?</p>
+<p class="admonition-title">Verify the Data Ingest</p>
+<p>How many messages were published to the MQTT broker for this data sample?</p>
 </div>
 <details class="success">
-<summary>Clicca per Rivelare la Risposta</summary>
-<p>Vedrai errori segnalati in Grafana poiché le stazioni nel file BUFR non sono definite nell'elenco delle stazioni della tua istanza wis2box. </p>
-<p>Se tutte le stazioni utilizzate nel file BUFR sono definite nella tua istanza wis2box, dovresti vedere 10 messaggi pubblicati al broker MQTT. Ogni notifica corrisponde ai dati di una stazione per un timestamp di osservazione.</p>
-<p>Il plugin <code>wis2box.data.bufr4.ObservationDataBUFR</code> divide il file BUFR in singoli messaggi BUFR e pubblica un messaggio per ogni stazione e timestamp di osservazione.</p>
+<summary>Click to Reveal Answer</summary>
+<p>You will see errors reported in Grafana as the stations in the BUFR file are not defined in the station list of your wis2box instance. </p>
+<p>If all stations used in the BUFR file are defined in your wis2box instance, you should see 10 messages published to the MQTT broker. Each notification corresponds to data for one station for one observation timestamp.</p>
+<p>The plugin <code>wis2box.data.bufr4.ObservationDataBUFR</code> splits the BUFR file into individual BUFR messages and publishes one message for each station and observation timestamp.</p>
 </details>
-<h2 id="conclusione">Conclusione</h2>
+<h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">
-<p class="admonition-title">Congratulazioni!</p>
-<p>In questa sessione pratica, hai imparato come:</p>
+<p class="admonition-title">Congratulations!</p>
+<p>In this practical session, you learned how to:</p>
 <ul>
-<li>Attivare il flusso di lavoro wis2box caricando dati su MinIO utilizzando vari metodi.</li>
-<li>Risolvere gli errori comuni nel processo di ingestione dei dati utilizzando la dashboard di Grafana e i log della tua istanza wis2box.</li>
-<li>Monitorare le notifiche dei dati WIS2 pubblicate dal tuo wis2box nella dashboard di Grafana e in MQTT Explorer.</li>
+<li>Trigger the wis2box workflow by uploading data to MinIO using various methods.</li>
+<li>Debug common errors in the data ingestion process using the Grafana dashboard and the logs of your wis2box instance.</li>
+<li>Monitor WIS2 data notifications published by your wis2box in the Grafana dashboard and MQTT Explorer.</li>
 </ul>
 </div>
 

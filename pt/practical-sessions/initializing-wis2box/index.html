@@ -26,7 +26,7 @@
     
     
       
-        <title>Inicializando o wis2box - WIS2 in a box training</title>
+        <title>Initializing wis2box - WIS2 in a box training</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inicializando-o-wis2box" class="md-skip">
+        <a href="#initializing-wis2box" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inicializando o wis2box
+              Initializing wis2box
             
           </span>
         </div>
@@ -281,12 +281,508 @@
   
   
   <span class="md-ellipsis">
-    Início
+    Home
     
   </span>
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Practical sessions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Practical sessions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connecting to WIS2 over MQTT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accessing-your-student-vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessing your student VM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Initializing wis2box
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Initializing wis2box
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-the-initial-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating the initial configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating the initial configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wis2box-host-data-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box-host-data directory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wis2box-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box URL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webapp-storage-and-broker-passwords" class="md-nav__link">
+    <span class="md-ellipsis">
+      WEBAPP, STORAGE and BROKER passwords
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-wis2boxenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review wis2box.env
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-wis2box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start wis2box
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box-webapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box webapp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wis2box-broker" class="md-nav__link">
+    <span class="md-ellipsis">
+      wis2box-broker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring datasets in wis2box
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuring-station-metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring station metadata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ingesting-data-for-publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ingesting Data for Publication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-conversion-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Conversion Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csv2bufr-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSV-to-BUFR mapping templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding GTS headers to WIS2 notifications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets-with-access-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up a recommended dataset with access control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downloading-data-from-wis2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Downloading and decoding data from WIS2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Discovering datasets from the WIS2 Global Discovery Catalogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -314,15 +810,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Guias rápidos
+    cheatsheets
     
   </span>
   
@@ -330,10 +826,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Guias rápidos
+            cheatsheets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -434,15 +930,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Modelos csv2bufr
+    csv2bufr-templates
     
   </span>
   
@@ -450,10 +946,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Modelos csv2bufr
+            csv2bufr-templates
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -469,7 +965,7 @@
   
   
   <span class="md-ellipsis">
-    Modelo AWS
+    AWS Template
     
   </span>
   
@@ -492,503 +988,7 @@
   
   
   <span class="md-ellipsis">
-    Template DAYCLI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Sessões práticas
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Sessões práticas
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../connecting-to-wis2-over-mqtt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conectando ao WIS2 via MQTT
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../accessing-your-student-vm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Acessando sua VM de estudante
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Inicializando o wis2box
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Inicializando o wis2box
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#preparacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preparação
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#criando-a-configuracao-inicial" class="md-nav__link">
-    <span class="md-ellipsis">
-      Criando a configuração inicial
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Criando a configuração inicial">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diretorio-wis2box-host-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diretório wis2box-host-data
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#url-do-wis2box" class="md-nav__link">
-    <span class="md-ellipsis">
-      URL do wis2box
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#senhas-do-webapp-storage-e-broker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Senhas do WEBAPP, STORAGE e BROKER
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#revisar-wis2boxenv" class="md-nav__link">
-    <span class="md-ellipsis">
-      Revisar wis2box.env
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iniciar-o-wis2box" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iniciar o wis2box
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-do-wis2box" class="md-nav__link">
-    <span class="md-ellipsis">
-      API do wis2box
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aplicativo-web-do-wis2box" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aplicativo web do wis2box
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wis2box-broker" class="md-nav__link">
-    <span class="md-ellipsis">
-      wis2box-broker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-wis2box-datasets/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurando conjuntos de dados no wis2box
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuring-station-metadata/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurando metadados de estação
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ingesting-data-for-publication/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ingestão de Dados para Publicação
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../data-conversion-tools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ferramentas de Conversão de Dados
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../csv2bufr-templates/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Modelos de mapeamento de CSV para BUFR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adding-gts-headers-to-wis2-notifications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Adicionando cabeçalhos GTS às notificações WIS2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datasets-with-access-control/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Configurando um conjunto de dados recomendado com controle de acesso
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../downloading-data-from-wis2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Baixando e decodificando dados do WIS2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../discovering-datasets-from-wis2-gdc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Descobrindo conjuntos de dados do Catálogo Global de Descoberta WIS2
+    DAYCLI Template
     
   </span>
   
@@ -1033,55 +1033,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#preparacao" class="md-nav__link">
+  <a href="#preparation" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparação
+      Preparation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#criando-a-configuracao-inicial" class="md-nav__link">
+  <a href="#creating-the-initial-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando a configuração inicial
+      Creating the initial configuration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Criando a configuração inicial">
+    <nav class="md-nav" aria-label="Creating the initial configuration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#diretorio-wis2box-host-data" class="md-nav__link">
+  <a href="#wis2box-host-data-directory" class="md-nav__link">
     <span class="md-ellipsis">
-      Diretório wis2box-host-data
+      wis2box-host-data directory
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#url-do-wis2box" class="md-nav__link">
+  <a href="#wis2box-url" class="md-nav__link">
     <span class="md-ellipsis">
-      URL do wis2box
+      wis2box URL
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#senhas-do-webapp-storage-e-broker" class="md-nav__link">
+  <a href="#webapp-storage-and-broker-passwords" class="md-nav__link">
     <span class="md-ellipsis">
-      Senhas do WEBAPP, STORAGE e BROKER
+      WEBAPP, STORAGE and BROKER passwords
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#revisar-wis2boxenv" class="md-nav__link">
+  <a href="#review-wis2boxenv" class="md-nav__link">
     <span class="md-ellipsis">
-      Revisar wis2box.env
+      Review wis2box.env
     </span>
   </a>
   
@@ -1093,27 +1093,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#iniciar-o-wis2box" class="md-nav__link">
+  <a href="#start-wis2box" class="md-nav__link">
     <span class="md-ellipsis">
-      Iniciar o wis2box
+      Start wis2box
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-do-wis2box" class="md-nav__link">
+  <a href="#wis2box-api" class="md-nav__link">
     <span class="md-ellipsis">
-      API do wis2box
+      wis2box API
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aplicativo-web-do-wis2box" class="md-nav__link">
+  <a href="#wis2box-webapp" class="md-nav__link">
     <span class="md-ellipsis">
-      Aplicativo web do wis2box
+      wis2box webapp
     </span>
   </a>
   
@@ -1129,9 +1129,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusão
+      Conclusion
     </span>
   </a>
   
@@ -1153,137 +1153,137 @@
 
 
 
-<h1 id="inicializando-o-wis2box">Inicializando o wis2box</h1>
+<h1 id="initializing-wis2box">Initializing wis2box</h1>
 <div class="admonition abstract">
-<p class="admonition-title">Resultados de aprendizado</p>
-<p>Ao final desta sessão prática, você será capaz de:</p>
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this practical session, you will be able to:</p>
 <ul>
-<li>executar o script <code>wis2box-create-config.py</code> para criar a configuração inicial</li>
-<li>iniciar o wis2box e verificar o status de seus componentes</li>
-<li>visualizar o conteúdo do <strong>wis2box-api</strong></li>
-<li>acessar o <strong>wis2box-webapp</strong></li>
-<li>conectar ao <strong>wis2box-broker</strong> local usando o MQTT Explorer</li>
+<li>run the <code>wis2box-create-config.py</code> script to create the initial configuration</li>
+<li>start wis2box and check the status of its components</li>
+<li>view the contents of the <strong>wis2box-api</strong></li>
+<li>access the <strong>wis2box-webapp</strong></li>
+<li>connect to the local <strong>wis2box-broker</strong> using MQTT Explorer</li>
 </ul>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Os materiais de treinamento atuais são baseados no wis2box-release 1.0.0.</p>
-<p>Veja <a href="../accessing-your-student-vm/">accessing-your-student-vm</a> para instruções sobre como baixar e instalar o pacote de software do wis2box se você estiver realizando este treinamento fora de uma sessão de treinamento local.</p>
+<p>The current training materials are based on wis2box-release 1.0.0. </p>
+<p>See <a href="../accessing-your-student-vm/">accessing-your-student-vm</a> for instructions on how to download and install the wis2box software stack if you are running this training outside of a local training session.</p>
 </div>
-<h2 id="preparacao">Preparação</h2>
-<p>Faça login na sua VM designada com seu nome de usuário e senha e certifique-se de que você está no diretório <code>wis2box</code>:</p>
+<h2 id="preparation">Preparation</h2>
+<p>Login to your designated VM with your username and password and ensure you are in the <code>wis2box</code> directory:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/wis2box
 </code></pre></div>
-<h2 id="criando-a-configuracao-inicial">Criando a configuração inicial</h2>
-<p>A configuração inicial para o wis2box requer:</p>
+<h2 id="creating-the-initial-configuration">Creating the initial configuration</h2>
+<p>The initial configuration for the wis2box requires:</p>
 <ul>
-<li>um arquivo de ambiente <code>wis2box.env</code> contendo os parâmetros de configuração</li>
-<li>um diretório na máquina hospedeira para compartilhar entre a máquina hospedeira e os contêineres do wis2box definidos pela variável de ambiente <code>WIS2BOX_HOST_DATADIR</code></li>
+<li>an environment file <code>wis2box.env</code> containing the configuration parameters</li>
+<li>a directory on the host-machine to share between the host machine and the wis2box containers defined by the <code>WIS2BOX_HOST_DATADIR</code> environment variable</li>
 </ul>
-<p>O script <code>wis2box-create-config.py</code> pode ser usado para criar a configuração inicial do seu wis2box.</p>
-<p>Ele fará uma série de perguntas para ajudar a configurar sua configuração.</p>
-<p>Você poderá revisar e atualizar os arquivos de configuração após a conclusão do script.</p>
-<p>Execute o script da seguinte forma:</p>
+<p>The <code>wis2box-create-config.py</code> script can be used to create the initial configuration of your wis2box. </p>
+<p>It will ask you a set of question to help setup your configuration.</p>
+<p>You will be able to review and update the configuration files after the script has completed.</p>
+<p>Run the script as follows:</p>
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>wis2box-create-config.py
 </code></pre></div>
-<h3 id="diretorio-wis2box-host-data">Diretório wis2box-host-data</h3>
-<p>O script pedirá que você insira o diretório a ser usado para a variável de ambiente <code>WIS2BOX_HOST_DATADIR</code>.</p>
-<p>Observe que você precisa definir o caminho completo para este diretório.</p>
-<p>Por exemplo, se seu nome de usuário é <code>username</code>, o caminho completo para o diretório é <code>/home/username/wis2box-data</code>:</p>
+<h3 id="wis2box-host-data-directory">wis2box-host-data directory</h3>
+<p>The script will ask you to enter the directory to be used for the <code>WIS2BOX_HOST_DATADIR</code> environment variable.</p>
+<p>Note that you need to define the full path to this directory.</p>
+<p>For example if your username is <code>username</code>, the full path to the directory is <code>/home/username/wis2box-data</code>:</p>
 <div class="highlight"><pre><span></span><code>username@student-vm-username:~/wis2box$ python3 wis2box-create-config.py
-Por favor, insira o diretório a ser usado para WIS2BOX_HOST_DATADIR:
+Please enter the directory to be used for WIS2BOX_HOST_DATADIR:
 /home/username/wis2box-data
-O diretório a ser usado para WIS2BOX_HOST_DATADIR será definido como:
+The directory to be used for WIS2BOX_HOST_DATADIR will be set to:
     /home/username/wis2box-data
-Está correto? (s/n/sair)
-s
-O diretório /home/username/wis2box-data foi criado.
+Is this correct? (y/n/exit)
+y
+The directory /home/username/wis2box-data has been created.
 </code></pre></div>
-<h3 id="url-do-wis2box">URL do wis2box</h3>
-<p>Em seguida, será solicitado que você insira a URL para seu wis2box. Esta é a URL que será usada para acessar a aplicação web, API e UI do wis2box.</p>
-<p>Por favor, use <code>http://&lt;seu-nome-de-host-ou-ip&gt;</code> como a URL.</p>
-<div class="highlight"><pre><span></span><code>Por favor, insira a URL do wis2box:
- Para testes locais a URL é http://localhost
- Para habilitar o acesso remoto, a URL deve apontar para o endereço IP público ou nome de domínio do servidor que hospeda o wis2box.
+<h3 id="wis2box-url">wis2box URL</h3>
+<p>Next, you will be asked to enter the URL for your wis2box. This is the URL that will be used to access the wis2box web application, API and UI.</p>
+<p>Please use <code>http://&lt;your-hostname-or-ip&gt;</code> as the URL.</p>
+<div class="highlight"><pre><span></span><code>Please enter the URL of the wis2box:
+ For local testing the URL is http://localhost
+ To enable remote access, the URL should point to the public IP address or domain name of the server hosting the wis2box.
 http://username.wis2.training
-A URL do wis2box será definida como:
+The URL of the wis2box will be set to:
   http://username.wis2.training
-Está correto? (s/n/sair)
+Is this correct? (y/n/exit)
 </code></pre></div>
-<h3 id="senhas-do-webapp-storage-e-broker">Senhas do WEBAPP, STORAGE e BROKER</h3>
-<p>Você pode usar a opção de geração de senha aleatória quando solicitado e definir <code>WIS2BOX_WEBAPP_PASSWORD</code>, <code>WIS2BOX_STORAGE_PASSWORD</code>, <code>WIS2BOX_BROKER_PASSWORD</code> por conta própria.</p>
-<p>Não se preocupe em lembrar essas senhas, elas serão armazenadas no arquivo <code>wis2box.env</code> no seu diretório wis2box.</p>
-<h3 id="revisar-wis2boxenv">Revisar <code>wis2box.env</code></h3>
-<p>Uma vez que o script estiver concluído, verifique o conteúdo do arquivo <code>wis2box.env</code> no seu diretório atual:</p>
+<h3 id="webapp-storage-and-broker-passwords">WEBAPP, STORAGE and BROKER passwords</h3>
+<p>You can use the option of random password generation when prompted for and <code>WIS2BOX_WEBAPP_PASSWORD</code>, <code>WIS2BOX_STORAGE_PASSWORD</code>, <code>WIS2BOX_BROKER_PASSWORD</code> and define your own.</p>
+<p>Don't worry about remembering these passwords, they will be stored in the <code>wis2box.env</code> file in your wis2box-directory.</p>
+<h3 id="review-wis2boxenv">Review <code>wis2box.env</code></h3>
+<p>Once the scripts is completed check the contents of the <code>wis2box.env</code> file in your current directory:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/wis2box/wis2box.env
 </code></pre></div>
-<p>Ou verifique o conteúdo do arquivo via WinSCP.</p>
+<p>Or check the content of the file via WinSCP.</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Qual é o valor de WISBOX_BASEMAP_URL no arquivo wis2box.env?</p>
+<p>What is the value of WISBOX_BASEMAP_URL in the wis2box.env file?</p>
 </div>
 <details class="success">
-<summary>Clique para revelar a resposta</summary>
-<p>O valor padrão para WIS2BOX_BASEMAP_URL é <code>https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</code>.</p>
-<p>Esta URL refere-se ao servidor de tiles do OpenStreetMap. Se você deseja usar um provedor de mapas diferente, você pode alterar essa URL para apontar para um servidor de tiles diferente.</p>
+<summary>Click to reveal answer</summary>
+<p>The default value for WIS2BOX_BASEMAP_URL is <code>https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</code>.</p>
+<p>This URL refers to the OpenStreetMap tile server. If you want to use a different map provider, you can change this URL to point to a different tile server.</p>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Qual é o valor da variável de ambiente WIS2BOX_STORAGE_DATA_RETENTION_DAYS no arquivo wis2box.env?</p>
+<p>What is the value of the WIS2BOX_STORAGE_DATA_RETENTION_DAYS environment variable in the wis2box.env file?</p>
 </div>
 <details class="success">
-<summary>Clique para revelar a resposta</summary>
-<p>O valor padrão para WIS2BOX_STORAGE_DATA_RETENTION_DAYS é 30 dias. Você pode alterar esse valor para um número diferente de dias, se desejar.</p>
-<p>O contêiner wis2box-management executa um cronjob diariamente para remover dados mais antigos que o número de dias definido por WIS2BOX_STORAGE_DATA_RETENTION_DAYS do bucket <code>wis2box-public</code> e do backend da API:</p>
+<summary>Click to reveal answer</summary>
+<p>The default value for WIS2BOX_STORAGE_DATA_RETENTION_DAYS is 30 days. You can change this value to a different number of days if you wish.</p>
+<p>The wis2box-management container runs a cronjob on a daily basis to remove data older than the number of days defined by WIS2BOX_STORAGE_DATA_RETENTION_DAYS from the <code>wis2box-public</code> bucket and the API backend:</p>
 <div class="highlight"><pre><span></span><code>0 0 * * * su wis2box -c &quot;wis2box data clean --days=$WIS2BOX_STORAGE_DATA_RETENTION_DAYS&quot;
 </code></pre></div>
 </details>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>O arquivo <code>wis2box.env</code> contém variáveis de ambiente que definem a configuração do seu wis2box. Para mais informações, consulte a <a href="https://docs.wis2box.wis.wmo.int/en/latest/reference/configuration.html">wis2box-documentation</a>.</p>
-<p>Não edite o arquivo <code>wis2box.env</code> a menos que você tenha certeza das alterações que está fazendo. Alterações incorretas podem fazer com que seu wis2box pare de funcionar.</p>
-<p>Não compartilhe o conteúdo do seu arquivo <code>wis2box.env</code> com ninguém, pois ele contém informações sensíveis, como senhas.</p>
+<p>The <code>wis2box.env</code> file contains environment variables defining the configuration of your wis2box. For more information consult the <a href="https://docs.wis2box.wis.wmo.int/en/latest/reference/configuration.html">wis2box-documentation</a>.</p>
+<p>Do not edit the <code>wis2box.env</code> file unless you are sure of the changes you are making. Incorrect changes can cause your wis2box to stop working.</p>
+<p>Do not share the contents of your <code>wis2box.env</code> file with anyone, as it contains sensitive information such as passwords.</p>
 </div>
-<h2 id="iniciar-o-wis2box">Iniciar o wis2box</h2>
-<p>Certifique-se de que você está no diretório que contém os arquivos de definição do pacote de software do wis2box:</p>
+<h2 id="start-wis2box">Start wis2box</h2>
+<p>Ensure you are in the directory containing the wis2box software stack definition files:</p>
 <div class="highlight"><pre><span></span><code>cd ~/wis2box
 </code></pre></div>
-<p>Inicie o wis2box com o seguinte comando:</p>
+<p>Start wis2box with the following command:</p>
 <div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py start
 </code></pre></div>
-<p>Ao executar este comando pela primeira vez, você verá a seguinte saída:</p>
-<div class="highlight"><pre><span></span><code>Nenhum arquivo docker-compose.images-*.yml encontrado, criando um
-Versão atual=Indefinida, última versão=1.0.0
-Gostaria de atualizar? (s/n/sair)
+<p>When running this command for the first time, you will see the following output:</p>
+<div class="highlight"><pre><span></span><code>No docker-compose.images-*.yml files found, creating one
+Current version=Undefined, latest version=1.0.0
+Would you like to update ? (y/n/exit)
 </code></pre></div>
-<p>Selecione <code>s</code> e o script criará o arquivo <code>docker-compose.images-1.0.0.yml</code>, baixará as imagens Docker necessárias e iniciará os serviços.</p>
-<p>Baixar as imagens pode levar algum tempo, dependendo da velocidade da sua conexão com a internet. Esta etapa é necessária apenas na primeira vez que você iniciar o wis2box.</p>
-<p>Inspeccione o status com o seguinte comando:</p>
+<p>Select <code>y</code> and the the script will create the file <code>docker-compose.images-1.0.0.yml</code>, download the required Docker images and start the services.</p>
+<p>Downloading the images may take some time depending on your internet connection speed. This step is only required the first time you start wis2box.</p>
+<p>Inspect the status with the following command:</p>
 <div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py status
 </code></pre></div>
-<p>Repita este comando até que todos os serviços estejam funcionando.</p>
+<p>Repeat this command until all services are up and running.</p>
 <div class="admonition note">
-<p class="admonition-title">wis2box e Docker</p>
-<p>O wis2box funciona como um conjunto de contêineres Docker gerenciados pelo docker-compose.</p>
-<p>Os serviços são definidos nos diversos <code>docker-compose*.yml</code> que podem ser encontrados no diretório <code>~/wis2box/</code>.</p>
-<p>O script Python <code>wis2box-ctl.py</code> é usado para executar os comandos subjacentes do Docker Compose que controlam os serviços do wis2box.</p>
-<p>Você não precisa conhecer os detalhes dos contêineres Docker para executar o pacote de software do wis2box, mas pode inspecionar os arquivos <code>docker-compose*.yml</code> para ver como os serviços são definidos. Se você estiver interessado em aprender mais sobre Docker, pode encontrar mais informações na <a href="https://docs.docker.com/">Docker documentation</a>.</p>
+<p class="admonition-title">wis2box and Docker</p>
+<p>wis2box runs as a set of Docker containers managed by docker-compose.</p>
+<p>The services are defined in the various <code>docker-compose*.yml</code> which can be found in the <code>~/wis2box/</code> directory.</p>
+<p>The Python script <code>wis2box-ctl.py</code> is used to run the underlying Docker Compose commands that control the wis2box services.</p>
+<p>You don't need to know the details of the Docker containers to run the wis2box software stack, but you can inspect the <code>docker-compose*.yml</code> and files to see how the services are defined. If you are interested in learning more about Docker, you can find more information in the <a href="https://docs.docker.com/">Docker documentation</a>.</p>
 </div>
-<p>Para fazer login no contêiner wis2box-management, use o seguinte comando:</p>
+<p>To login to the wis2box-management container, use the following command:</p>
 <div class="highlight"><pre><span></span><code>python3 wis2box-ctl.py login
 </code></pre></div>
-<p>Dentro do contêiner wis2box-management, você pode executar vários comandos para gerenciar seu wis2box, como:</p>
+<p>Inside the wis2box-management container you can run various commands to manage your wis2box, such as:</p>
 <ul>
-<li><code>wis2box auth add-token --path processes/wis2box</code> : para criar um token de autorização para o endpoint <code>processes/wis2box</code></li>
-<li><code>wis2box data clean --days=&lt;number-of-days&gt;</code> : para limpar dados mais antigos que um certo número de dias do bucket <code>wis2box-public</code></li>
+<li><code>wis2box auth add-token --path processes/wis2box</code> : to create an authorization token for the <code>processes/wis2box</code> endpoint</li>
+<li><code>wis2box data clean --days=&lt;number-of-days&gt;</code> : to clean up data older than a certain number of days from the <code>wis2box-public</code> bucket</li>
 </ul>
-<p>Para sair do contêiner e voltar para a máquina hospedeira, use o seguinte comando:</p>
+<p>To exit the container and go back to the host machine, use the following command:</p>
 <div class="highlight"><pre><span></span><code>exit
 </code></pre></div>
-<p>Execute o seguinte comando para ver os contêineres docker em execução na sua máquina hospedeira:</p>
+<p>Run the following command to see the docker containers running on your host machine:</p>
 <div class="highlight"><pre><span></span><code>docker ps
 </code></pre></div>
-<p>Você deve ver os seguintes contêineres em execução:</p>
+<p>You should see the following containers running:</p>
 <ul>
 <li>wis2box-management</li>
 <li>wis2box-api</li>
@@ -1300,11 +1300,11 @@ Gostaria de atualizar? (s/n/sair)
 <li>grafana</li>
 <li>loki</li>
 </ul>
-<p>Esses contêineres fazem parte do pacote de software do wis2box e fornecem os vários serviços necessários para executar o wis2box.</p>
-<p>Execute o seguinte comando para ver os volumes docker em execução na sua máquina hospedeira:</p>
+<p>These containers are part of the wis2box software stack and provide the various services required to run the wis2box.</p>
+<p>Run the following command to see the docker volumes running on your host machine:</p>
 <div class="highlight"><pre><span></span><code>docker volume ls
 </code></pre></div>
-<p>Você deve ver os seguintes volumes:</p>
+<p>You should see the following volumes:</p>
 <ul>
 <li>wis2box_project_auth-data</li>
 <li>wis2box_project_es-data</li>
@@ -1314,61 +1314,61 @@ Gostaria de atualizar? (s/n/sair)
 <li>wis2box_project_loki-data</li>
 <li>wis2box_project_mosquitto-config</li>
 </ul>
-<p>Bem como alguns volumes anônimos usados pelos vários contêineres.</p>
-<p>Os volumes que começam com <code>wis2box_project_</code> são usados para armazenar dados persistentes para os vários serviços no pacote de software do wis2box.</p>
-<h2 id="api-do-wis2box">API do wis2box</h2>
-<p>O wis2box contém uma API (Interface de Programação de Aplicações) que fornece acesso a dados e processos para visualização interativa, transformação de dados e publicação.</p>
-<p>Abra uma nova aba e navegue até a página <code>http://YOUR-HOST/oapi</code>.</p>
+<p>As well as some anonymous volumes used by the various containers.</p>
+<p>The volumes starting with <code>wis2box_project_</code> are used to store persistent data for the various services in the wis2box software stack.</p>
+<h2 id="wis2box-api">wis2box API</h2>
+<p>The wis2box contains an API (Application Programming Interface) that provide data access and processes for interactive visualization, data transformation and publication.</p>
+<p>Open a new tab and navigate to the page <code>http://YOUR-HOST/oapi</code>.</p>
 <p><img alt="wis2box-api.png" src="/../assets/img/wis2box-api.png" width="800"></p>
-<p>Esta é a página inicial da API do wis2box (executada via contêiner <strong>wis2box-api</strong>).</p>
+<p>This is the landing page of the wis2box API (running via the <strong>wis2box-api</strong> container).</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quais coleções estão disponíveis atualmente?</p>
+<p>What collections are currently available?</p>
 </div>
 <details class="success">
-<summary>Clique para revelar a resposta</summary>
-<p>Para visualizar as coleções atualmente disponíveis através da API, clique em <code>Ver as coleções neste serviço</code>:</p>
+<summary>Click to reveal answer</summary>
+<p>To view collections currently available through the API, click <code>View the collections in this service</code>:</p>
 <p><img alt="wis2box-api-collections.png" src="/../assets/img/wis2box-api-collections.png" width="600"></p>
-<p>As seguintes coleções estão atualmente disponíveis:</p>
+<p>The following collections are currently available:</p>
 <ul>
-<li>Estações</li>
-<li>Notificações de dados</li>
-<li>Metadados de descoberta</li>
+<li>Stations</li>
+<li>Data notifications</li>
+<li>Discovery metadata</li>
 </ul>
 </details>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>Quantas notificações de dados foram publicadas?</p>
+<p>How many data notifications have been published?</p>
 </div>
 <details class="success">
-<summary>Clique para revelar a resposta</summary>
-<p>Clique em "Notificações de dados", depois clique em <code>Navegar pelos itens de "Notificações de Dados"</code>. </p>
-<p>Você notará que a página diz "Nenhum item" pois ainda não foram publicadas notificações de dados.</p>
+<summary>Click to reveal answer</summary>
+<p>Click on "Data notifications", then click on <code>Browse through the items of "Data Notifications"</code>. </p>
+<p>You will note that the page says "No items" as no Data notifications have been published yet.</p>
 </details>
-<h2 id="aplicativo-web-do-wis2box">Aplicativo web do wis2box</h2>
-<p>Abra um navegador da web e visite a página <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
-<p>Você verá um pop-up pedindo seu nome de usuário e senha. Use o nome de usuário padrão <code>wis2box-user</code> e o <code>WIS2BOX_WEBAPP_PASSWORD</code> definido no arquivo <code>wis2box.env</code> e clique em "Entrar":</p>
+<h2 id="wis2box-webapp">wis2box webapp</h2>
+<p>Open a web browser and visit the page <code>http://YOUR-HOST/wis2box-webapp</code>.</p>
+<p>You will see a pop-up asking for your username and password. Use the default username <code>wis2box-user</code> and the <code>WIS2BOX_WEBAPP_PASSWORD</code> defined in the <code>wis2box.env</code> file and click "Sign in":</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Verifique seu wis2box.env para o valor do seu WIS2BOX_WEBAPP_PASSWORD. Você pode usar o seguinte comando para verificar o valor dessa variável de ambiente:</p>
+<p>Check you wis2box.env for the value of your WIS2BOX_WEBAPP_PASSWORD. You can use the following command to check the value of this environment variable:</p>
 <div class="highlight"><pre><span></span><code>cat ~/wis2box/wis2box.env | grep WIS2BOX_WEBAPP_PASSWORD
 </code></pre></div>
 </div>
-<p>Uma vez logado, mova o mouse para o menu à esquerda para ver as opções disponíveis no aplicativo web do wis2box:</p>
+<p>Once logged in, you move your mouse to the menu on the left to see the options available in the wis2box web application:</p>
 <p><img alt="wis2box-webapp-menu.png" src="/../assets/img/wis2box-webapp-menu.png" width="400"></p>
-<p>Este é o aplicativo web do wis2box que permite interagir com seu wis2box:</p>
+<p>This is the wis2box web application to enable you to interact with your wis2box:</p>
 <ul>
-<li>criar e gerenciar conjuntos de dados</li>
-<li>atualizar/revisar seus metadados de estação</li>
-<li>fazer upload de observações manuais usando o formulário FM-12 synop </li>
-<li>monitorar notificações publicadas no seu wis2box-broker</li>
+<li>create and manage datasets</li>
+<li>update/review your station metadata</li>
+<li>upload manual observations using FM-12 synop form </li>
+<li>monitor notifications published on your wis2box-broker</li>
 </ul>
-<p>Usaremos este aplicativo web em uma sessão posterior.</p>
+<p>We will use this web application in a later session.</p>
 <h2 id="wis2box-broker">wis2box-broker</h2>
-<p>Abra o MQTT Explorer no seu computador e prepare uma nova conexão para se conectar ao seu broker (executado via contêiner <strong>wis2box-broker</strong>).</p>
-<p>Clique em <code>+</code> para adicionar uma nova conexão:</p>
+<p>Open the MQTT Explorer on your computer and prepare a new connection to connect to your broker (running via the <strong>wis2box-broker</strong> container).</p>
+<p>Click <code>+</code> to add a new connection:</p>
 <p><img alt="mqtt-explorer-new-connection.png" src="/../assets/img/mqtt-explorer-new-connection.png" width="300"></p>
-<p>Você pode clicar no botão 'AVANÇADO' e verificar se você tem inscrições nos seguintes tópicos:</p>
+<p>You can click on the 'ADVANCED' button and verify you have subscriptions to the the following topics:</p>
 <ul>
 <li><code>#</code></li>
 <li><code>$SYS/#</code></li>
@@ -1376,39 +1376,39 @@ Gostaria de atualizar? (s/n/sair)
 <p><img alt="mqtt-explorer-topics.png" src="/../assets/img/mqtt-explorer-topics.png" width="550"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>O tópico <code>#</code> é uma inscrição curinga que se inscreverá em todos os tópicos publicados no broker.</p>
-<p>As mensagens publicadas sob o tópico <code>$SYS</code> são mensagens do sistema publicadas pelo próprio serviço mosquitto.</p>
+<p>The <code>#</code> topic is a wildcard subscription that will subscribe to all topics published on the broker.</p>
+<p>The messages published under the <code>$SYS</code> topic are system messages published by the mosquitto service itself.</p>
 </div>
-<p>Use os seguintes detalhes de conexão, certificando-se de substituir o valor de <code>&lt;your-host&gt;</code> pelo seu nome de host e <code>&lt;WIS2BOX_BROKER_PASSWORD&gt;</code> pelo valor do seu arquivo <code>wis2box.env</code>:</p>
+<p>Use the following connection details, making sure to replace the value of <code>&lt;your-host&gt;</code> with your hostname and <code>&lt;WIS2BOX_BROKER_PASSWORD&gt;</code> with the value from your <code>wis2box.env</code> file:</p>
 <ul>
-<li><strong>Protocolo: mqtt://</strong></li>
+<li><strong>Protocol: mqtt://</strong></li>
 <li><strong>Host: <code>&lt;your-host&gt;</code></strong></li>
-<li><strong>Porta: 1883</strong></li>
-<li><strong>Nome de usuário: wis2box</strong></li>
-<li><strong>Senha: <code>&lt;WIS2BOX_BROKER_PASSWORD&gt;</code></strong></li>
+<li><strong>Port: 1883</strong></li>
+<li><strong>Username: wis2box</strong></li>
+<li><strong>Password: <code>&lt;WIS2BOX_BROKER_PASSWORD&gt;</code></strong></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Você pode verificar seu wis2box.env para o valor do seu WIS2BOX_BROKER_PASSWORD. Você pode usar o seguinte comando para verificar o valor dessa variável de ambiente:</p>
+<p>You can check your wis2box.env for the value of your WIS2BOX_BROKER_PASSWORD. You can use the following command to check the value of this environment variable:</p>
 <div class="highlight"><pre><span></span><code>cat ~/wis2box/wis2box.env | grep WIS2BOX_BROKER_PASSWORD
 </code></pre></div>
-<p>Observe que esta é a sua senha <strong>interna</strong> do broker, o Global Broker usará credenciais diferentes (somente leitura) para se inscrever no seu broker. Nunca compartilhe essa senha com ninguém.</p>
+<p>Note that this your <strong>internal</strong> broker password, the Global Broker will use different (read-only) credentials to subscribe to your broker. Never share this password with anyone.</p>
 </div>
-<p>Certifique-se de clicar em "SALVAR" para armazenar os detalhes da sua conexão.</p>
-<p>Em seguida, clique em "CONECTAR" para se conectar ao seu <strong>wis2box-broker</strong>.</p>
+<p>Make sure to click "SAVE" to store your connection details.</p>
+<p>Then click "CONNECT" to connect to your <strong>wis2box-broker</strong>.</p>
 <p><img alt="mqtt-explorer-wis2box-broker.png" src="/../assets/img/mqtt-explorer-wis2box-broker.png" width="600"></p>
-<p>Uma vez conectado, verifique se as estatísticas internas do mosquitto estão sendo publicadas pelo seu broker sob o tópico <code>$SYS</code>:</p>
+<p>Once you are connected, verify that your the internal mosquitto statistics being published by your broker under the <code>$SYS</code> topic:</p>
 <p><img alt="mqtt-explorer-sys-topic.png" src="/../assets/img/mqtt-explorer-sys-topic.png" width="400"></p>
-<p>Mantenha o MQTT Explorer aberto, pois usaremos para monitorar as mensagens publicadas no broker.</p>
-<h2 id="conclusao">Conclusão</h2>
+<p>Keep the MQTT Explorer open, as we will use it to monitor the messages published on the broker.</p>
+<h2 id="conclusion">Conclusion</h2>
 <div class="admonition success">
-<p class="admonition-title">Parabéns!</p>
-<p>Nesta sessão prática, você aprendeu a:</p>
+<p class="admonition-title">Congratulations!</p>
+<p>In this practical session, you learned how to:</p>
 <ul>
-<li>executar o script <code>wis2box-create-config.py</code> para criar a configuração inicial</li>
-<li>iniciar o wis2box e verificar o status de seus componentes</li>
-<li>acessar o wis2box-webapp e wis2box-API em um navegador</li>
-<li>conectar ao broker MQTT na sua VM de estudante usando o MQTT Explorer</li>
+<li>run the <code>wis2box-create-config.py</code> script to create the initial configuration</li>
+<li>start wis2box and check the status of its components</li>
+<li>access the wis2box-webapp and wis2box-API in a browser</li>
+<li>connect to the MQTT broker on your student VM using MQTT Explorer</li>
 </ul>
 </div>
 
