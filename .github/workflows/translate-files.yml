@@ -50,6 +50,6 @@ jobs:
           git add .
           git diff --cached --quiet && echo "translated=false" >> $GITHUB_OUTPUT || (
             git commit -m "Auto-translated docs"
-            git push
+            git push origin HEAD:${{ github.head_ref }}
             echo "translated=true" >> $GITHUB_OUTPUT
           )
